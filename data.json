@@ -1,0 +1,241 @@
+{
+  "lastUpdated": "2026-02-02",
+  "nextUpdate": "2026-02-09",
+  "competitors": [
+    {
+      "name": "BYLT Basics",
+      "tier": 1,
+      "site": "byltbasics.com",
+      "category": "Premium basics",
+      "adCount": "~330",
+      "changes": {
+        "offer": null,
+        "lp": null,
+        "creative": "New"
+      },
+      "offers": [
+        { "label": "First Order", "value": "20% off" },
+        { "label": "Free Shipping", "value": "$99+" },
+        { "label": "Free Gift", "value": "$175+ (t-shirt)" }
+      ],
+      "topCreatives": [
+        { "format": "UGC", "hook": "Finally found the perfect basic", "note": "6+ weeks running" },
+        { "format": "Static", "hook": "Checklist format (features)", "note": "Clean, scannable" },
+        { "format": "Video", "hook": "Side-by-side fit comparison", "note": "Before/after style" }
+      ],
+      "whatsWorking": [
+        "Heavy UGC rotation (trust signals)",
+        "Technical fabric claims without health angle",
+        "Premium at fair price positioning",
+        "Clean, minimal aesthetic"
+      ]
+    },
+    {
+      "name": "Cuts Clothing",
+      "tier": 1,
+      "site": "cutsclothing.com",
+      "category": "Premium tees",
+      "adCount": "~380",
+      "changes": {
+        "offer": null,
+        "lp": null,
+        "creative": "New"
+      },
+      "offers": [
+        { "label": "First Order", "value": "15% off (popup)" },
+        { "label": "Free Shipping", "value": "$100+" },
+        { "label": "Bundles", "value": "Starter Pack 3-tee" }
+      ],
+      "topCreatives": [
+        { "format": "Lifestyle", "hook": "For the Sport of Business", "note": "8+ weeks, brand campaign" },
+        { "format": "UGC", "hook": "Influencer testimonials", "note": "Heavy celeb rotation" },
+        { "format": "Static", "hook": "Product grid, color variety", "note": "Collection focus" }
+      ],
+      "whatsWorking": [
+        "Aspirational lifestyle positioning",
+        "Heavy influencer/creator partnerships",
+        "Business casual upgrade angle",
+        "Strong email/SMS game"
+      ]
+    },
+    {
+      "name": "NADS",
+      "tier": 1,
+      "site": "nadsunder.com",
+      "category": "Organic underwear",
+      "adCount": "~210",
+      "flags": ["direct"],
+      "changes": {
+        "offer": "Baseline set",
+        "lp": "Baseline set",
+        "creative": "Heavy launch"
+      },
+      "offers": [
+        { "label": "First Order", "value": "15% off" },
+        { "label": "Social Proof", "value": "1M+ Pairs Sold" },
+        { "label": "Cert", "value": "GOTS Organic" }
+      ],
+      "topCreatives": [
+        { "format": "Long Video", "hook": "What is organic underwear?", "note": "Running since Aug '25" },
+        { "format": "UGC", "hook": "Dr. Becky Campbell - fertility", "note": "Expert authority" },
+        { "format": "Static", "hook": "Ditch the Toxic Underwear", "note": "Chemical ❌ list format" }
+      ],
+      "whatsWorking": [
+        "EXACT same playbook as UndrDog",
+        "Fertility/testosterone messaging",
+        "Expert doctor endorsements",
+        "Long-form educational copy",
+        "Better-for-Balls positioning"
+      ]
+    },
+    {
+      "name": "Hollow Alpaca",
+      "tier": 1,
+      "site": "hollowsocks.com",
+      "category": "Premium alpaca socks",
+      "adCount": "~4,100",
+      "flags": ["heavy-spender"],
+      "changes": {
+        "offer": "Baseline set",
+        "lp": "Baseline set",
+        "creative": "New"
+      },
+      "offers": [
+        { "label": "Main Sale", "value": "Up to 63% OFF" },
+        { "label": "Bundle", "value": "Buy 2 Get 2 FREE" },
+        { "label": "Guarantee", "value": "99-Day Money Back" },
+        { "label": "Social Proof", "value": "3M+ pairs sold" }
+      ],
+      "topCreatives": [
+        { "format": "Long Video", "hook": "Compression socks aren't supposed to hurt", "note": "12+ variants" },
+        { "format": "UGC", "hook": "From below freezing to over 80°", "note": "Temperature angle" },
+        { "format": "Carousel", "hook": "Product benefits checklist", "note": "Heavy ✅ format" }
+      ],
+      "whatsWorking": [
+        "MASSIVE ad volume = serious scale",
+        "Natural fiber positioning (alpaca vs synthetic)",
+        "99-Day Guarantee = strong risk reversal",
+        "USA-Knit 🇺🇸 patriotic angle",
+        "BOGO bundles drive AOV"
+      ]
+    },
+    {
+      "name": "AG1",
+      "tier": 2,
+      "site": "drinkag1.com",
+      "category": "Supplements",
+      "changes": {
+        "offer": null,
+        "lp": null,
+        "creative": null
+      },
+      "offers": [
+        { "label": "First Month", "value": "$20 off" },
+        { "label": "Bonuses", "value": "Free travel packs" }
+      ],
+      "topCreatives": [
+        { "format": "Podcast", "hook": "Expert interviews", "note": "Authority play" },
+        { "format": "UGC", "hook": "Morning routine integration", "note": "Lifestyle" }
+      ],
+      "whatsWorking": [
+        "Master-class content marketing",
+        "Podcast sponsor saturation",
+        "All-in-one simplicity message"
+      ]
+    },
+    {
+      "name": "Happy Mammoth",
+      "tier": 2,
+      "site": "happymammoth.com",
+      "category": "Gut health supplements",
+      "changes": {
+        "offer": null,
+        "lp": null,
+        "creative": null
+      },
+      "offers": [
+        { "label": "Quiz Funnel", "value": "Personalized results" },
+        { "label": "Bundles", "value": "Subscribe & save" }
+      ],
+      "topCreatives": [
+        { "format": "Quiz Ad", "hook": "Take the gut health quiz", "note": "Heavy funnel" },
+        { "format": "UGC", "hook": "Transformation stories", "note": "Before/after" }
+      ],
+      "whatsWorking": [
+        "Quiz-to-sale funnel",
+        "Personalization angle",
+        "Gut health specificity"
+      ]
+    },
+    {
+      "name": "WAMA",
+      "tier": 2,
+      "site": "wamahempwear.com",
+      "category": "Hemp underwear",
+      "adCount": "~7",
+      "changes": {
+        "offer": null,
+        "lp": null,
+        "creative": null
+      },
+      "offers": [
+        { "label": "First Order", "value": "20% off" }
+      ],
+      "topCreatives": [
+        { "format": "Static", "hook": "Ditch Plastic. Choose Hemp.", "note": "Environmental angle" }
+      ],
+      "whatsWorking": [
+        "Eco/sustainability positioning",
+        "NOT hitting health angle - gap for us"
+      ]
+    }
+  ],
+  "trends": {
+    "working": [
+      "UGC heavy — real customer testimonials dominating",
+      "Flat discount first order — most using 15-20% off",
+      "Risk reversal — strong guarantees (99-Day, Lifetime)",
+      "Expert authority — doctors, credentialed influencers",
+      "Checklist format — ✅ emoji lists crushing it",
+      "Social proof numbers — 'X million sold' above fold"
+    ],
+    "gaps": [
+      "Anti-polyester in TEES — Nads does underwear, we own tees",
+      "Durability testing — NOBODY else does destructive demos",
+      "Lifetime guarantee in apparel — major differentiator",
+      "Hemp positioning — Hollow uses alpaca, Nads uses cotton"
+    ],
+    "watch": [
+      "Nads expanding? If they add tees = direct competition",
+      "Hollow's 4,100 ads = serious budget. Study their scaling.",
+      "April boxer briefs launch = collision course with Nads"
+    ]
+  },
+  "actions": [
+    {
+      "priority": "high",
+      "title": "Expert/Doctor Authority Ad",
+      "description": "Like Dr. Chris ($34 CPA). Nads & Hollow both use experts. Double down."
+    },
+    {
+      "priority": "high",
+      "title": "Checklist Static: 'What's in your shirt?'",
+      "description": "Chemical ❌ list format. Both Nads and Hollow use it. Assign to Chino/MTRX."
+    },
+    {
+      "priority": "high",
+      "title": "Chemical ❌ List Copy Format",
+      "description": "❌ Polyester ❌ PFAS ❌ Microplastics → ✅ Hemp ✅ Bamboo ✅ Organic Cotton"
+    },
+    {
+      "priority": "med",
+      "title": "'X tees sold' Social Proof",
+      "description": "Add prominent sold count above fold on LP. Hollow/Nads both use this."
+    },
+    {
+      "priority": "med",
+      "title": "Flat 20% First Order Test",
+      "description": "BYLT uses flat 20% vs our tiered 10/20/30. Simpler message, test conversion."
+    }
+  ]
+}

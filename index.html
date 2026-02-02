@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UndrDog Competitor Intel</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e4e4e4;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container { max-width: 1400px; margin: 0 auto; }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .logo { display: flex; align-items: center; gap: 15px; }
+        .logo h1 { font-size: 24px; font-weight: 600; }
+        .logo span { font-size: 32px; }
+        .last-updated {
+            color: #888;
+            font-size: 14px;
+        }
+        .last-updated strong { color: #4ade80; }
+
+        /* Quick Scan Section */
+        .quick-scan {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 30px;
+        }
+        .quick-scan h2 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .scan-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+        }
+        .scan-card {
+            background: rgba(0,0,0,0.3);
+            border-radius: 12px;
+            padding: 16px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .scan-card .brand {
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .scan-card .brand .tier {
+            font-size: 10px;
+            background: #6366f1;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+        .scan-card .brand .tier.t2 { background: #64748b; }
+        .scan-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            padding: 4px 0;
+        }
+        .scan-item .label { color: #888; }
+        .status { font-size: 12px; padding: 2px 8px; border-radius: 4px; }
+        .status.change { background: rgba(74, 222, 128, 0.2); color: #4ade80; }
+        .status.none { background: rgba(255,255,255,0.1); color: #888; }
+        .status.alert { background: rgba(239, 68, 68, 0.2); color: #ef4444; }
+
+        /* Competitor Cards */
+        .competitors { margin-bottom: 30px; }
+        .competitors h2 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .competitor-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+        }
+        .competitor-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .competitor-card.alert {
+            border-color: rgba(239, 68, 68, 0.5);
+            box-shadow: 0 0 20px rgba(239, 68, 68, 0.1);
+        }
+        .competitor-card.heavy-spender {
+            border-color: rgba(251, 146, 60, 0.5);
+            box-shadow: 0 0 20px rgba(251, 146, 60, 0.1);
+        }
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 16px;
+        }
+        .card-header h3 {
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .card-header .meta {
+            font-size: 12px;
+            color: #888;
+            margin-top: 4px;
+        }
+        .card-header .ads-count {
+            background: rgba(251, 146, 60, 0.2);
+            color: #fb923c;
+            font-size: 12px;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+        .badge {
+            display: inline-block;
+            font-size: 10px;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+            margin-left: 8px;
+        }
+        .badge.direct { background: #ef4444; color: white; }
+        .badge.spender { background: #fb923c; color: white; }
+
+        /* Offer Section */
+        .offer-section {
+            background: rgba(0,0,0,0.3);
+            border-radius: 10px;
+            padding: 14px;
+            margin-bottom: 16px;
+        }
+        .offer-section h4 {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #888;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+        .offer-item {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            padding: 4px 0;
+        }
+        .offer-item .value { font-weight: 600; color: #4ade80; }
+
+        /* Creatives Section */
+        .creatives-section h4 {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #888;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+        .creative-item {
+            background: rgba(0,0,0,0.2);
+            border-radius: 8px;
+            padding: 10px 12px;
+            margin-bottom: 8px;
+            font-size: 13px;
+        }
+        .creative-item .hook {
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+        .creative-item .meta {
+            font-size: 11px;
+            color: #888;
+        }
+        .creative-item .format {
+            display: inline-block;
+            background: rgba(99, 102, 241, 0.3);
+            color: #a5b4fc;
+            font-size: 10px;
+            padding: 2px 6px;
+            border-radius: 4px;
+            margin-right: 6px;
+        }
+
+        /* What's Working */
+        .whats-working {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .whats-working h4 {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #888;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+        .working-list {
+            list-style: none;
+        }
+        .working-list li {
+            font-size: 12px;
+            padding: 3px 0;
+            padding-left: 16px;
+            position: relative;
+            color: #bbb;
+        }
+        .working-list li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #6366f1;
+        }
+
+        /* Trends Section */
+        .trends {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 30px;
+        }
+        .trends h2 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .trends-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .trend-card {
+            background: rgba(0,0,0,0.3);
+            border-radius: 12px;
+            padding: 16px;
+        }
+        .trend-card h4 {
+            font-size: 14px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .trend-item {
+            font-size: 13px;
+            padding: 6px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .trend-item:last-child { border-bottom: none; }
+        .trend-item .emoji { margin-right: 8px; }
+
+        /* Action Items */
+        .actions {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(168, 85, 247, 0.2));
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid rgba(168, 85, 247, 0.3);
+        }
+        .actions h2 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .action-item {
+            background: rgba(0,0,0,0.3);
+            border-radius: 10px;
+            padding: 14px 16px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+        .action-item:last-child { margin-bottom: 0; }
+        .action-priority {
+            font-size: 11px;
+            font-weight: 600;
+            padding: 4px 8px;
+            border-radius: 4px;
+            white-space: nowrap;
+        }
+        .action-priority.high { background: #ef4444; }
+        .action-priority.med { background: #f59e0b; }
+        .action-content h5 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        .action-content p {
+            font-size: 12px;
+            color: #888;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .scan-grid { grid-template-columns: 1fr 1fr; }
+            .competitor-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <span>🎯</span>
+                <h1>Competitor Intel Dashboard</h1>
+            </div>
+            <div class="last-updated">
+                Last updated: <strong id="lastUpdated">Loading...</strong><br>
+                <span id="nextUpdate"></span>
+            </div>
+        </header>
+
+        <!-- Quick Scan -->
+        <section class="quick-scan">
+            <h2>⚡ Weekly Changes</h2>
+            <div class="scan-grid" id="quickScan"></div>
+        </section>
+
+        <!-- Tier 1 Competitors -->
+        <section class="competitors">
+            <h2>🏆 Tier 1 Competitors</h2>
+            <div class="competitor-grid" id="tier1"></div>
+        </section>
+
+        <!-- Tier 2 Competitors -->
+        <section class="competitors">
+            <h2>📊 Tier 2 Watch List</h2>
+            <div class="competitor-grid" id="tier2"></div>
+        </section>
+
+        <!-- Trends -->
+        <section class="trends">
+            <h2>📈 Patterns & Gaps</h2>
+            <div class="trends-grid" id="trends"></div>
+        </section>
+
+        <!-- Recommended Actions -->
+        <section class="actions">
+            <h2>🎬 Recommended Tests</h2>
+            <div id="actions"></div>
+        </section>
+    </div>
+
+    <script>
+        // Load data from JSON file
+        async function loadData() {
+            try {
+                const response = await fetch('data.json');
+                const data = await response.json();
+                renderDashboard(data);
+            } catch (e) {
+                console.error('Failed to load data:', e);
+            }
+        }
+
+        function renderDashboard(data) {
+            // Update header
+            document.getElementById('lastUpdated').textContent = data.lastUpdated;
+            document.getElementById('nextUpdate').textContent = `Next update: ${data.nextUpdate}`;
+
+            // Quick Scan
+            const quickScanHtml = data.competitors.map(c => `
+                <div class="scan-card">
+                    <div class="brand">
+                        ${c.name}
+                        <span class="tier ${c.tier === 2 ? 't2' : ''}">T${c.tier}</span>
+                    </div>
+                    <div class="scan-item">
+                        <span class="label">Offer</span>
+                        <span class="status ${c.changes.offer ? 'change' : 'none'}">${c.changes.offer || 'No change'}</span>
+                    </div>
+                    <div class="scan-item">
+                        <span class="label">LP</span>
+                        <span class="status ${c.changes.lp ? 'change' : 'none'}">${c.changes.lp || 'No change'}</span>
+                    </div>
+                    <div class="scan-item">
+                        <span class="label">Creative</span>
+                        <span class="status ${c.changes.creative ? 'change' : 'none'}">${c.changes.creative || 'No change'}</span>
+                    </div>
+                </div>
+            `).join('');
+            document.getElementById('quickScan').innerHTML = quickScanHtml;
+
+            // Tier 1
+            const tier1Html = data.competitors.filter(c => c.tier === 1).map(renderCompetitorCard).join('');
+            document.getElementById('tier1').innerHTML = tier1Html;
+
+            // Tier 2
+            const tier2Html = data.competitors.filter(c => c.tier === 2).map(renderCompetitorCard).join('');
+            document.getElementById('tier2').innerHTML = tier2Html;
+
+            // Trends
+            const trendsHtml = `
+                <div class="trend-card">
+                    <h4>✅ What's Working Everywhere</h4>
+                    ${data.trends.working.map(t => `<div class="trend-item"><span class="emoji">→</span>${t}</div>`).join('')}
+                </div>
+                <div class="trend-card">
+                    <h4>🎯 Gaps We Can Exploit</h4>
+                    ${data.trends.gaps.map(t => `<div class="trend-item"><span class="emoji">→</span>${t}</div>`).join('')}
+                </div>
+                <div class="trend-card">
+                    <h4>🚨 Watch List</h4>
+                    ${data.trends.watch.map(t => `<div class="trend-item"><span class="emoji">⚠️</span>${t}</div>`).join('')}
+                </div>
+            `;
+            document.getElementById('trends').innerHTML = trendsHtml;
+
+            // Actions
+            const actionsHtml = data.actions.map(a => `
+                <div class="action-item">
+                    <span class="action-priority ${a.priority}">${a.priority.toUpperCase()}</span>
+                    <div class="action-content">
+                        <h5>${a.title}</h5>
+                        <p>${a.description}</p>
+                    </div>
+                </div>
+            `).join('');
+            document.getElementById('actions').innerHTML = actionsHtml;
+        }
+
+        function renderCompetitorCard(c) {
+            const badges = [];
+            if (c.flags?.includes('direct')) badges.push('<span class="badge direct">⚠️ DIRECT</span>');
+            if (c.flags?.includes('heavy-spender')) badges.push('<span class="badge spender">🔥 HEAVY</span>');
+            
+            const cardClass = c.flags?.includes('direct') ? 'alert' : c.flags?.includes('heavy-spender') ? 'heavy-spender' : '';
+
+            return `
+                <div class="competitor-card ${cardClass}">
+                    <div class="card-header">
+                        <div>
+                            <h3>${c.name}${badges.join('')}</h3>
+                            <div class="meta">${c.site} • ${c.category}</div>
+                        </div>
+                        ${c.adCount ? `<span class="ads-count">${c.adCount} ads</span>` : ''}
+                    </div>
+                    
+                    <div class="offer-section">
+                        <h4>💰 Current Offer</h4>
+                        ${c.offers.map(o => `
+                            <div class="offer-item">
+                                <span>${o.label}</span>
+                                <span class="value">${o.value}</span>
+                            </div>
+                        `).join('')}
+                    </div>
+
+                    <div class="creatives-section">
+                        <h4>🏆 Top Creatives</h4>
+                        ${c.topCreatives.slice(0,3).map(cr => `
+                            <div class="creative-item">
+                                <div class="hook"><span class="format">${cr.format}</span>${cr.hook}</div>
+                                <div class="meta">${cr.note || ''}</div>
+                            </div>
+                        `).join('')}
+                    </div>
+
+                    <div class="whats-working">
+                        <h4>📊 What's Working</h4>
+                        <ul class="working-list">
+                            ${c.whatsWorking.slice(0,4).map(w => `<li>${w}</li>`).join('')}
+                        </ul>
+                    </div>
+                </div>
+            `;
+        }
+
+        loadData();
+        // Refresh every 5 minutes
+        setInterval(loadData, 300000);
+    </script>
+</body>
+</html>
