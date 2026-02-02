@@ -80,7 +80,7 @@
       "unitPrice": 54, 
       "currentOffer": "Buy 4 get 30% / Buy 6 get 40%", 
       "effectivePrice": 32.40,
-      "guaranteeDays": "100+ Washes",
+      "guaranteeDays": 20,
       "freeShip": "$100+"
     },
     { 
@@ -145,6 +145,104 @@
       "effectivePrice": 79,
       "guaranteeDays": 90,
       "freeShip": "Included"
+    }
+  ],
+  "bestAdAllTime": [
+    {
+      "brand": "True Classic",
+      "hook": "6-Pack Bundle Deal - 48% OFF",
+      "format": "Static",
+      "startDate": "Oct 2024",
+      "stillRunning": true,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=true%20classic%20tees&search_type=keyword_unordered",
+      "landingPage": "https://www.trueclassictees.com/collections/short-sleeve-tees"
+    },
+    {
+      "brand": "BYLT",
+      "hook": "Drop-Cut LUX - Premium fabric checklist",
+      "format": "Static",
+      "startDate": "Sep 2024",
+      "stillRunning": true,
+      "url": "https://www.facebook.com/ads/library/?id=1360633635369099",
+      "landingPage": "https://byltbasics.com/products/drop-cut-shirt-lux"
+    },
+    {
+      "brand": "Cuts",
+      "hook": "AO Jogger - Airport to dinner versatility",
+      "format": "Video",
+      "startDate": "Nov 2024",
+      "daysRunning": 77,
+      "stillRunning": true,
+      "url": "https://www.facebook.com/ads/library/?id=2161768291019319",
+      "landingPage": "https://www.cutsclothing.com/products/black-ao-jogger"
+    },
+    {
+      "brand": "NADS",
+      "hook": "King's Pack 40% OFF + Free Shipping",
+      "format": "Static",
+      "startDate": "Oct 16, 2024",
+      "daysRunning": 109,
+      "stillRunning": true,
+      "url": "https://www.facebook.com/ads/library/?id=1359238099534566",
+      "landingPage": "https://nadsunder.com/products/the-king-s-pack"
+    },
+    {
+      "brand": "Hollow Alpaca",
+      "hook": "Compression socks aren't supposed to hurt",
+      "format": "Long Video",
+      "startDate": "Dec 2024",
+      "daysRunning": 51,
+      "stillRunning": true,
+      "url": "https://www.facebook.com/ads/library/?id=1220569030025963",
+      "landingPage": "https://hollowsocks.com/pages/10r-compression"
+    },
+    {
+      "brand": "Menerals",
+      "hook": "Stop feeling like Barbie, not Ken",
+      "format": "Long Copy",
+      "startDate": "Jan 13, 2025",
+      "daysRunning": 20,
+      "stillRunning": true,
+      "url": "https://www.facebook.com/ads/library/?id=1536326844305866",
+      "landingPage": "https://menerals.com/pages/welcome-2"
+    },
+    {
+      "brand": "Eatmancereal",
+      "hook": "Cereal Finally Manned Up",
+      "format": "Video",
+      "startDate": "Jan 16, 2025",
+      "daysRunning": 17,
+      "stillRunning": true,
+      "url": "https://www.facebook.com/ads/library/?id=25702938722658851",
+      "landingPage": "https://eatmancereal.com"
+    },
+    {
+      "brand": "Primal Queen",
+      "hook": "Female-focused beef organs testimonial",
+      "format": "Static",
+      "startDate": "Oct 20, 2024",
+      "daysRunning": 105,
+      "stillRunning": true,
+      "url": "https://www.facebook.com/ads/library/?id=1620465702670999",
+      "landingPage": "https://primalqueen.com/pages/tiktok"
+    },
+    {
+      "brand": "AG1",
+      "hook": "Dr. Huberman morning routine",
+      "format": "Video",
+      "startDate": "2024",
+      "stillRunning": true,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=athletic%20greens%20ag1&search_type=keyword_unordered",
+      "landingPage": "https://drinkag1.com"
+    },
+    {
+      "brand": "WAMA",
+      "hook": "Ditch Plastic. Choose Hemp.",
+      "format": "Static",
+      "startDate": "Jan 2025",
+      "stillRunning": true,
+      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=wama%20underwear&search_type=keyword_unordered",
+      "landingPage": "https://wamaunderwear.com"
     }
   ],
   "swipeFile": {
@@ -241,14 +339,14 @@
         { "label": "6-Pack", "value": "48% off" },
         { "label": "10-Pack", "value": "57% off" },
         { "label": "Free Shipping", "value": "$125+" },
-        { "label": "Insiders Club", "value": "$1/mo extra 10%" }
+        { "label": "Guarantee", "value": "100-Day" }
       ],
       "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=true%20classic%20tees&search_type=keyword_unordered",
       "topCreatives": [
         { 
           "format": "Static", 
           "hook": "Classic Crew 6-Pack - 48% OFF", 
-          "note": "Hero offer", 
+          "note": "Top impressions last 7d", 
           "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=true%20classic%20tees&search_type=keyword_unordered",
           "landingPage": "https://www.trueclassictees.com/collections/short-sleeve-tees",
           "daysRunning": 30,
@@ -298,14 +396,15 @@
       "offers": [
         { "label": "First Order", "value": "20% off" },
         { "label": "Free Shipping", "value": "$99+" },
-        { "label": "Free Gift", "value": "$175+ (t-shirt)" }
+        { "label": "Free Gift", "value": "$175+ (t-shirt)" },
+        { "label": "Guarantee", "value": "30-Day" }
       ],
       "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=bylt%20basics&search_type=keyword_unordered",
       "topCreatives": [
         { 
           "format": "Static", 
           "hook": "Roamknit Collection - Comfort fit 😌", 
-          "note": "Running since Jan 13", 
+          "note": "Top impressions last 7d", 
           "url": "https://www.facebook.com/ads/library/?id=1360633635369099",
           "landingPage": "https://byltbasics.com/collections/mens-roamknit-fabric-collection",
           "daysRunning": 20,
@@ -363,14 +462,14 @@
         { "label": "First Order", "value": "15% off (popup)" },
         { "label": "Free Shipping", "value": "$100+" },
         { "label": "Buy 4", "value": "30% off" },
-        { "label": "Buy 6", "value": "40% off" }
+        { "label": "Guarantee", "value": "20-Day" }
       ],
       "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=cutsclothing&search_type=keyword_unordered",
       "topCreatives": [
         { 
           "format": "Static", 
           "hook": "AO Curve-Hem Tee - PYCA Pro®", 
-          "note": "Running since Dec 30", 
+          "note": "Top impressions last 7d", 
           "url": "https://www.facebook.com/ads/library/?id=1349978019769284",
           "landingPage": "https://www.cutsclothing.com/products/black-crew-curve-hem",
           "daysRunning": 34,
@@ -420,14 +519,15 @@
       "offers": [
         { "label": "First Order", "value": "15% off" },
         { "label": "King's Pack", "value": "40% OFF + Free Ship" },
-        { "label": "Social Proof", "value": "1M+ Pairs Sold" }
+        { "label": "Social Proof", "value": "1M+ Pairs Sold" },
+        { "label": "Guarantee", "value": "90-Day" }
       ],
       "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=nadsunder&search_type=keyword_unordered",
       "topCreatives": [
         { 
           "format": "Static", 
           "hook": "Commando Shorts ✅ organic cotton", 
-          "note": "Running since Jan 9", 
+          "note": "Top impressions last 7d", 
           "url": "https://www.facebook.com/ads/library/?id=1399202808596147",
           "landingPage": "https://nadsunder.com/collections/shorts",
           "daysRunning": 24,
@@ -477,7 +577,7 @@
       "offers": [
         { "label": "Main Sale", "value": "Up to 63% OFF" },
         { "label": "Bundle", "value": "Buy 2 Get 2 FREE" },
-        { "label": "Guarantee", "value": "99-Day Money Back" },
+        { "label": "Guarantee", "value": "99-Day" },
         { "label": "Social Proof", "value": "10K+ switched" }
       ],
       "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=hollow%20alpaca&search_type=keyword_unordered",
@@ -485,7 +585,7 @@
         { 
           "format": "Video", 
           "hook": "Compression socks aren't supposed to hurt", 
-          "note": "10 ads running!", 
+          "note": "Top impressions last 7d (10 ads!)", 
           "url": "https://www.facebook.com/ads/library/?id=1220569030025963",
           "landingPage": "https://hollowsocks.com/pages/10r-compression",
           "daysRunning": 51,
@@ -524,14 +624,15 @@
       },
       "offers": [
         { "label": "Risk-Free", "value": "100% money back" },
-        { "label": "Source", "value": "USA-sourced ingredients" }
+        { "label": "Source", "value": "USA-sourced" },
+        { "label": "Guarantee", "value": "90-Day" }
       ],
       "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=menerals&search_type=keyword_unordered",
       "topCreatives": [
         { 
           "format": "Static", 
           "hook": "Powders for Cupcakes - USA made", 
-          "note": "Running since Jan 14", 
+          "note": "Top impressions last 7d", 
           "url": "https://www.facebook.com/ads/library/?id=870372939127341",
           "landingPage": "https://menerals.com/pages/welcome-2",
           "daysRunning": 19,
@@ -570,14 +671,15 @@
       },
       "offers": [
         { "label": "Product", "value": "Creatine + High Protein" },
-        { "label": "Diet", "value": "Keto, Low Sugar" }
+        { "label": "Diet", "value": "Keto, Low Sugar" },
+        { "label": "Guarantee", "value": "30-Day" }
       ],
       "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=eatmancereal&search_type=keyword_unordered",
       "topCreatives": [
         { 
           "format": "Video", 
           "hook": "Cereal without the B.S. is taking over", 
-          "note": "Running since Jan 19", 
+          "note": "Top impressions last 7d", 
           "url": "https://www.facebook.com/ads/library/?id=1384299212780222",
           "landingPage": "https://eatmancereal.com",
           "daysRunning": 14,
@@ -623,7 +725,7 @@
         { 
           "format": "Static", 
           "hook": "Female-focused beef organs - testimonial", 
-          "note": "3 ads running since Oct 20", 
+          "note": "Top impressions last 7d", 
           "url": "https://www.facebook.com/ads/library/?id=1620465702670999",
           "landingPage": "https://primalqueen.com/pages/tiktok",
           "daysRunning": 105,
@@ -663,14 +765,15 @@
       "offers": [
         { "label": "First Month", "value": "$20 off" },
         { "label": "Bonuses", "value": "Free travel packs" },
-        { "label": "Price", "value": "$79/mo sub" }
+        { "label": "Price", "value": "$79/mo sub" },
+        { "label": "Guarantee", "value": "90-Day" }
       ],
       "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=athletic%20greens%20ag1&search_type=keyword_unordered",
       "topCreatives": [
         { 
           "format": "Video", 
           "hook": "Expert interviews - Dr. Huberman", 
-          "note": "Authority play", 
+          "note": "Top impressions last 7d", 
           "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=athletic%20greens%20ag1&search_type=keyword_unordered", 
           "landingPage": "https://drinkag1.com",
           "daysRunning": 90, 
@@ -709,14 +812,15 @@
       },
       "offers": [
         { "label": "First Order", "value": "20% off" },
-        { "label": "First Pair", "value": "Guarantee (free replacement)" }
+        { "label": "First Pair", "value": "Free replacement" },
+        { "label": "Guarantee", "value": "90-Day" }
       ],
       "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=wama%20underwear&search_type=keyword_unordered",
       "topCreatives": [
         { 
           "format": "Static", 
           "hook": "Ditch Plastic. Choose Hemp.", 
-          "note": "Environmental angle", 
+          "note": "Top impressions last 7d", 
           "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=wama%20underwear&search_type=keyword_unordered", 
           "landingPage": "https://wamaunderwear.com",
           "daysRunning": 30, 
@@ -744,13 +848,13 @@
     "gaps": [
       "Anti-polyester in TEES — Cuts uses 62% polyester!",
       "Durability testing — NOBODY else does destructive demos",
-      "Lifetime guarantee in apparel — major differentiator vs 30-100 day",
+      "Lifetime guarantee in apparel — major differentiator vs 20-100 day",
       "Hemp positioning — Hollow uses alpaca, True Classic uses cotton blends"
     ],
     "watch": [
       "True Classic at 2,000+ ads = MASSIVE scale competitor",
       "Primal Queen at 2,800 ads = study their testimonial playbook",
-      "Cuts uses 62% POLYESTER = attack angle for UndrDog",
+      "Cuts uses 62% POLYESTER + only 20-day returns = attack angle",
       "April boxer briefs launch = collision course with Nads"
     ]
   },
@@ -767,12 +871,12 @@
     },
     {
       "priority": "high",
-      "title": "Attack Cuts on Polyester",
-      "description": "Cuts uses 62% polyester in their 'premium' tees. Create comparison ad exposing this."
+      "title": "Attack Cuts on Polyester + Short Returns",
+      "description": "Cuts uses 62% polyester AND only offers 20-day returns. We have Lifetime + 0% polyester."
     },
     {
       "priority": "med",
-      "title": "Lifetime vs 30-100 Day Guarantee",
+      "title": "Lifetime vs 20-100 Day Guarantee",
       "description": "Our lifetime guarantee beats everyone. Make this more prominent in ads."
     },
     {

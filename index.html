@@ -164,6 +164,56 @@
         .checklist-items { list-style: none; font-size: 13px; }
         .checklist-items li { padding: 4px 0; }
 
+        /* Best Ad All Time */
+        .best-all-time {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 30px;
+        }
+        .best-all-time h2 { font-size: 18px; margin-bottom: 8px; }
+        .section-note { font-size: 12px; color: #888; margin-bottom: 16px; }
+        .best-ads-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 12px;
+        }
+        .best-ad-item {
+            background: rgba(0,0,0,0.3);
+            border-radius: 10px;
+            padding: 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.2s;
+            border: 1px solid transparent;
+        }
+        .best-ad-item:hover { background: rgba(234, 179, 8, 0.15); border-color: rgba(234, 179, 8, 0.3); }
+        .best-ad-item .top-row { display: flex; justify-content: space-between; align-items: flex-start; }
+        .best-ad-item .brand-name { font-weight: 600; font-size: 14px; }
+        .best-ad-item .start-date { font-size: 11px; color: #888; }
+        .best-ad-item .hook { font-size: 13px; color: #bbb; }
+        .best-ad-item .format-badge { 
+            display: inline-block; font-size: 10px; padding: 2px 6px; 
+            border-radius: 4px; margin-right: 6px;
+            background: rgba(99, 102, 241, 0.3); color: #a5b4fc;
+        }
+        .best-ad-item .format-badge.video { background: rgba(239, 68, 68, 0.3); color: #f87171; }
+        .best-ad-item .still-running { font-size: 10px; color: #4ade80; }
+        .best-ad-item .bottom-row { display: flex; gap: 8px; margin-top: auto; }
+        .best-ad-item .view-link {
+            font-size: 11px; color: #a5b4fc; text-decoration: none;
+            background: rgba(99, 102, 241, 0.2); padding: 4px 8px; border-radius: 4px;
+        }
+        .best-ad-item .view-link:hover { background: rgba(99, 102, 241, 0.4); }
+        .best-ad-item .lp-link {
+            font-size: 11px; color: #4ade80; text-decoration: none;
+            background: rgba(74, 222, 128, 0.2); padding: 4px 8px; border-radius: 4px;
+        }
+        .best-ad-item .lp-link:hover { background: rgba(74, 222, 128, 0.4); }
+
         /* Quick Scan Section */
         .quick-scan {
             background: rgba(255,255,255,0.05);
@@ -360,6 +410,13 @@
             <div id="swipeContent"></div>
         </section>
 
+        <!-- Best Ad All Time -->
+        <section class="best-all-time">
+            <h2>🏆 Best Ad All Time (by longevity)</h2>
+            <p class="section-note">Longest-running ads = proven winners</p>
+            <div class="best-ads-grid" id="bestAdsAllTime"></div>
+        </section>
+
         <!-- Quick Scan -->
         <section class="quick-scan">
             <h2>⚡ Weekly Changes</h2>
@@ -435,6 +492,27 @@
 
             // Swipe File with links
             renderSwipeFile(data.swipeFile);
+
+            // Best Ad All Time
+            if (data.bestAdAllTime) {
+                document.getElementById('bestAdsAllTime').innerHTML = data.bestAdAllTime.map(ad => `
+                    <div class="best-ad-item">
+                        <div class="top-row">
+                            <span class="brand-name">${ad.brand}</span>
+                            <span class="start-date">Since ${ad.startDate}</span>
+                        </div>
+                        <div class="hook">
+                            <span class="format-badge ${ad.format.toLowerCase().includes('video') ? 'video' : ''}">${ad.format}</span>
+                            ${ad.hook}
+                        </div>
+                        ${ad.stillRunning ? '<span class="still-running">✓ Still running</span>' : ''}
+                        <div class="bottom-row">
+                            <a href="${ad.url}" target="_blank" class="view-link">View Ad ↗</a>
+                            ${ad.landingPage ? `<a href="${ad.landingPage}" target="_blank" class="lp-link">LP ↗</a>` : ''}
+                        </div>
+                    </div>
+                `).join('');
+            }
 
             // Quick Scan
             const quickScanHtml = data.competitors.map(c => `
@@ -634,7 +712,7 @@
                     </div>
 
                     <div class="creatives-section">
-                        <h4>🏆 Top Creatives (by impressions)</h4>
+                        <h4>🏆 Top Creatives — Last 7 Days</h4>
                         ${c.topCreatives.slice(0,4).map(cr => `
                             <div class="creative-item-wrapper">
                                 <a href="${cr.url}" target="_blank" class="creative-item">
