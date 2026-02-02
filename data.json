@@ -1,6 +1,38 @@
 {
   "lastUpdated": "2026-02-02",
   "nextUpdate": "2026-02-09",
+  "newThisWeek": [
+    { "brand": "BYLT", "type": "creative", "detail": "30% OFF 19th Hole Polo - new sale creative", "date": "Jan 31" },
+    { "brand": "Nads", "type": "creative", "detail": "Commando Shorts launch - new product", "date": "Jan 9" },
+    { "brand": "Eatmancereal", "type": "creative", "detail": "Cereal without the B.S. video", "date": "Jan 19" },
+    { "brand": "Menerals", "type": "creative", "detail": "Barbie not Ken testosterone angle", "date": "Jan 13" }
+  ],
+  "priceComparison": [
+    { "brand": "BYLT", "product": "Drop-Cut LUX Tee", "basePrice": 40, "offer": "20% off first order", "effectivePrice": 32, "freeShip": "$99+", "guarantee": "Risk-Free Trial" },
+    { "brand": "Cuts", "product": "AO Curve-Hem Tee", "basePrice": 52, "offer": "15% off popup + bundles up to 60%", "effectivePrice": 44, "freeShip": "$100+", "guarantee": "Perfect Fit Promise" },
+    { "brand": "Nads", "product": "Boxer Briefs (single)", "basePrice": 24, "offer": "King's Pack 20 for $144 (40% off)", "effectivePrice": 7.20, "freeShip": "On packs", "guarantee": "Not specified" },
+    { "brand": "Hollow Alpaca", "product": "Compression Socks", "basePrice": 40, "offer": "Buy 2 Get 2 FREE + 63% off", "effectivePrice": 20, "freeShip": "Included", "guarantee": "99-Day" },
+    { "brand": "UndrDog", "product": "Hemp Tee", "basePrice": 41.50, "offer": "10% 1 / 20% 3-pack / 30% 6-pack", "effectivePrice": 29, "freeShip": "TBD", "guarantee": "Lifetime", "isUs": true }
+  ],
+  "swipeFile": {
+    "problemSolution": [
+      { "brand": "Hollow", "hook": "Compression socks aren't supposed to hurt.", "body": "But most options are way too tight, overheat your feet, and start sliding down halfway through your day. Hollow Socks were built to solve that problem." },
+      { "brand": "Menerals", "hook": "Stop feeling like Barbie, not Ken.", "body": "Your body is screaming for help, and it's a simple fix. The truth: Zinc fuels your testosterone. Boron frees it from its bindings. Magnesium is the spark plug for your endocrine system." },
+      { "brand": "BYLT", "hook": "Tired of tees that lose shape after just a few washes?", "body": "Level up with the long-lasting, wrinkle-resistant, premium feeling Drop-Cut: LUX." }
+    ],
+    "checklist": [
+      { "brand": "Hollow", "items": ["✅ 15–20 mmHg compression to reduce swelling", "✅ Cushioned support to relieve foot pain", "✅ Made from breathable baby alpaca fiber", "✅ Moisture-wicking", "✅ Odor-resistant", "✅ Temperature regulating", "✅ Easy on, easy off — no struggle"] },
+      { "brand": "BYLT", "items": ["✔️ Heathered Performance Fabric", "✔️ Wrinkle Resistant", "✔️ Lightweight and Breathable", "✔️ Straight Hem"] },
+      { "brand": "Nads", "items": ["✅ Crafted from premium, breathable organic cotton", "✅ Designed to be worn with or without underwear", "✅ Perfect for lounging, lifting, or living"] }
+    ],
+    "testimonial": [
+      { "brand": "Primal Queen", "quote": "The female-focused beef organ superfoods in Primal Queen made a huge difference in my life! I feel more energized and even have less bloating.", "name": "Emma L." }
+    ],
+    "masculine": [
+      { "brand": "Menerals", "copy": "He built houses, fixed engines, and raised a family without Chinese powders in his protein shake. Menerals brings back that kind of strength—made in the U.S.A." },
+      { "brand": "Eatmancereal", "copy": "Cereal Finally Manned Up. Creatine. High Protein. Keto. Low Sugar." }
+    ]
+  },
   "competitors": [
     {
       "name": "BYLT Basics",
@@ -9,6 +41,7 @@
       "landingPage": "https://byltbasics.com/collections/mens-roamknit-fabric-collection",
       "category": "Premium basics",
       "adCount": "~330",
+      "creativeBreakdown": { "Static": 45, "Video": 30, "UGC": 15, "Carousel": 10 },
       "changes": {
         "offer": null,
         "lp": null,
@@ -26,28 +59,36 @@
           "hook": "Roamknit Collection - Comfort fit 😌", 
           "note": "Running since Jan 13", 
           "url": "https://www.facebook.com/ads/library/?id=1360633635369099",
-          "landingPage": "https://byltbasics.com/collections/mens-roamknit-fabric-collection"
+          "landingPage": "https://byltbasics.com/collections/mens-roamknit-fabric-collection",
+          "daysRunning": 20,
+          "isNew": false
         },
         { 
           "format": "Static", 
           "hook": "Henley Drop-Cut Long Sleeve LUX", 
           "note": "Running since Jan 29", 
           "url": "https://www.facebook.com/ads/library/?id=1400272418141175",
-          "landingPage": "https://checkout.byltbasics.com/products/henley-drop-cut-long-sleeve-lux"
+          "landingPage": "https://checkout.byltbasics.com/products/henley-drop-cut-long-sleeve-lux",
+          "daysRunning": 4,
+          "isNew": true
         },
         { 
           "format": "Video", 
           "hook": "Kinetic Overshirt ✔️ checklist", 
           "note": "2 ads running", 
           "url": "https://www.facebook.com/ads/library/?id=2043418259769402",
-          "landingPage": "https://byltbasics.com/products/kinetic-overshirt"
+          "landingPage": "https://byltbasics.com/products/kinetic-overshirt",
+          "daysRunning": 4,
+          "isNew": true
         },
         { 
           "format": "Static", 
           "hook": "30% OFF 19th Hole Polo", 
           "note": "Last Call sale", 
           "url": "https://www.facebook.com/ads/library/?id=791477463206845",
-          "landingPage": "https://byltbasics.com/products/19th-hole-polo-last-call"
+          "landingPage": "https://byltbasics.com/products/19th-hole-polo-last-call",
+          "daysRunning": 2,
+          "isNew": true
         }
       ],
       "whatsWorking": [
@@ -64,6 +105,7 @@
       "landingPage": "https://shop.cutsclothing.com/products/white-crew-curve-hem",
       "category": "Premium tees",
       "adCount": "~380",
+      "creativeBreakdown": { "Video": 50, "Static": 25, "UGC": 20, "Carousel": 5 },
       "changes": {
         "offer": null,
         "lp": null,
@@ -72,7 +114,7 @@
       "offers": [
         { "label": "First Order", "value": "15% off (popup)" },
         { "label": "Free Shipping", "value": "$100+" },
-        { "label": "Bundles", "value": "Starter Pack 3-tee" }
+        { "label": "Bundles", "value": "Up to 60% off" }
       ],
       "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=cutsclothing&search_type=keyword_unordered",
       "topCreatives": [
@@ -81,21 +123,27 @@
           "hook": "AO Curve-Hem Tee - PYCA Pro®", 
           "note": "Running since Dec 30", 
           "url": "https://www.facebook.com/ads/library/?id=1349978019769284",
-          "landingPage": "https://shop.cutsclothing.com/products/white-crew-curve-hem"
+          "landingPage": "https://shop.cutsclothing.com/products/white-crew-curve-hem",
+          "daysRunning": 34,
+          "isNew": false
         },
         { 
           "format": "Video", 
           "hook": "AO Jogger - Airport to dinner", 
           "note": "2 ads running", 
           "url": "https://www.facebook.com/ads/library/?id=2161768291019319",
-          "landingPage": "https://www.cutsclothing.com/products/black-ao-jogger"
+          "landingPage": "https://www.cutsclothing.com/products/black-ao-jogger",
+          "daysRunning": 77,
+          "isNew": false
         },
         { 
           "format": "Video", 
           "hook": "Divine Fleece Collection", 
           "note": "Winter collection", 
           "url": "https://www.facebook.com/ads/library/?id=1541479237145962",
-          "landingPage": "https://www.cutsclothing.com/collections/divine-fleece"
+          "landingPage": "https://www.cutsclothing.com/collections/divine-fleece",
+          "daysRunning": 26,
+          "isNew": false
         }
       ],
       "whatsWorking": [
@@ -112,6 +160,7 @@
       "landingPage": "https://nadsunder.com/products/the-king-s-pack",
       "category": "Organic underwear",
       "adCount": "~160",
+      "creativeBreakdown": { "Static": 40, "Video": 35, "UGC": 20, "Long-form": 5 },
       "flags": ["direct"],
       "changes": {
         "offer": "Baseline set",
@@ -130,21 +179,27 @@
           "hook": "Commando Shorts ✅ organic cotton", 
           "note": "Running since Jan 9", 
           "url": "https://www.facebook.com/ads/library/?id=1399202808596147",
-          "landingPage": "https://nadsunder.com/collections/shorts"
+          "landingPage": "https://nadsunder.com/collections/shorts",
+          "daysRunning": 24,
+          "isNew": true
         },
         { 
           "format": "Static", 
           "hook": "King's Pack 40% OFF + Free Ship", 
           "note": "Running since Oct 16", 
           "url": "https://www.facebook.com/ads/library/?id=1359238099534566",
-          "landingPage": "https://nadsunder.com/products/the-king-s-pack"
+          "landingPage": "https://nadsunder.com/products/the-king-s-pack",
+          "daysRunning": 109,
+          "isNew": false
         },
         { 
           "format": "UGC Video", 
           "hook": "My balls are my business", 
           "note": "Luca Padua collab", 
           "url": "https://www.facebook.com/ads/library/?id=25437340882627042",
-          "landingPage": "https://nadsunder.com"
+          "landingPage": "https://nadsunder.com",
+          "daysRunning": 47,
+          "isNew": false
         }
       ],
       "whatsWorking": [
@@ -162,6 +217,7 @@
       "landingPage": "https://hollowsocks.com/pages/10r-compression",
       "category": "Premium alpaca socks",
       "adCount": "~460",
+      "creativeBreakdown": { "Video": 55, "Static": 25, "UGC": 15, "Carousel": 5 },
       "flags": ["heavy-spender"],
       "changes": {
         "offer": "Baseline set",
@@ -181,14 +237,18 @@
           "hook": "Compression socks aren't supposed to hurt", 
           "note": "10 ads running!", 
           "url": "https://www.facebook.com/ads/library/?id=1220569030025963",
-          "landingPage": "https://hollowsocks.com/pages/10r-compression"
+          "landingPage": "https://hollowsocks.com/pages/10r-compression",
+          "daysRunning": 51,
+          "isNew": false
         },
         { 
           "format": "Video", 
           "hook": "14+ Hours. No Swelling. USA-Knit 🇺🇸", 
           "note": "Running since Dec 22", 
           "url": "https://www.facebook.com/ads/library/?id=1384434376684534",
-          "landingPage": "https://hollowsocks.com/pages/10r-compression"
+          "landingPage": "https://hollowsocks.com/pages/10r-compression",
+          "daysRunning": 42,
+          "isNew": false
         }
       ],
       "whatsWorking": [
@@ -206,6 +266,7 @@
       "landingPage": "https://menerals.com/pages/welcome-2",
       "category": "Men's mineral supplements",
       "adCount": "~260",
+      "creativeBreakdown": { "Static": 50, "Video": 30, "Long-form": 15, "UGC": 5 },
       "changes": {
         "offer": null,
         "lp": null,
@@ -222,14 +283,18 @@
           "hook": "Powders for Cupcakes - USA made", 
           "note": "Running since Jan 14", 
           "url": "https://www.facebook.com/ads/library/?id=870372939127341",
-          "landingPage": "https://menerals.com/pages/welcome-2"
+          "landingPage": "https://menerals.com/pages/welcome-2",
+          "daysRunning": 19,
+          "isNew": true
         },
         { 
           "format": "Long Copy", 
           "hook": "Stop feeling like Barbie, not Ken", 
           "note": "Testosterone/minerals angle", 
           "url": "https://www.facebook.com/ads/library/?id=1536326844305866",
-          "landingPage": "https://menerals.com/pages/welcome-2"
+          "landingPage": "https://menerals.com/pages/welcome-2",
+          "daysRunning": 20,
+          "isNew": true
         }
       ],
       "whatsWorking": [
@@ -247,6 +312,7 @@
       "landingPage": "https://eatmancereal.com",
       "category": "High-protein cereal",
       "adCount": "~56",
+      "creativeBreakdown": { "Video": 70, "Static": 20, "UGC": 10 },
       "changes": {
         "offer": null,
         "lp": null,
@@ -263,14 +329,18 @@
           "hook": "Cereal without the B.S. is taking over", 
           "note": "Running since Jan 19", 
           "url": "https://www.facebook.com/ads/library/?id=1384299212780222",
-          "landingPage": "https://eatmancereal.com"
+          "landingPage": "https://eatmancereal.com",
+          "daysRunning": 14,
+          "isNew": true
         },
         { 
           "format": "Video", 
           "hook": "Cereal Finally Manned Up", 
           "note": "Creatine + protein angle", 
           "url": "https://www.facebook.com/ads/library/?id=25702938722658851",
-          "landingPage": "https://eatmancereal.com"
+          "landingPage": "https://eatmancereal.com",
+          "daysRunning": 17,
+          "isNew": true
         }
       ],
       "whatsWorking": [
@@ -287,6 +357,7 @@
       "landingPage": "https://primalqueen.com/pages/tiktok",
       "category": "Women's beef organ supplements",
       "adCount": "~2,800",
+      "creativeBreakdown": { "Static": 60, "Video": 25, "UGC": 10, "Carousel": 5 },
       "flags": ["heavy-spender"],
       "changes": {
         "offer": null,
@@ -304,14 +375,18 @@
           "hook": "Female-focused beef organs - testimonial", 
           "note": "3 ads running since Oct 20", 
           "url": "https://www.facebook.com/ads/library/?id=1620465702670999",
-          "landingPage": "https://primalqueen.com/pages/tiktok"
+          "landingPage": "https://primalqueen.com/pages/tiktok",
+          "daysRunning": 105,
+          "isNew": false
         },
         { 
           "format": "Static", 
           "hook": "More energized, less bloating", 
           "note": "Emma L. testimonial", 
           "url": "https://www.facebook.com/ads/library/?id=1543453536868755",
-          "landingPage": "https://primalqueen.com/pages/tiktok"
+          "landingPage": "https://primalqueen.com/pages/tiktok",
+          "daysRunning": 55,
+          "isNew": false
         }
       ],
       "whatsWorking": [
@@ -328,6 +403,7 @@
       "site": "drinkag1.com",
       "landingPage": "https://drinkag1.com",
       "category": "Supplements",
+      "creativeBreakdown": { "Podcast": 40, "UGC": 35, "Static": 15, "Video": 10 },
       "changes": {
         "offer": null,
         "lp": null,
@@ -339,8 +415,8 @@
       ],
       "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=athletic%20greens%20ag1&search_type=keyword_unordered",
       "topCreatives": [
-        { "format": "Podcast", "hook": "Expert interviews", "note": "Authority play", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=athletic%20greens%20ag1&search_type=keyword_unordered" },
-        { "format": "UGC", "hook": "Morning routine integration", "note": "Lifestyle", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=athletic%20greens%20ag1&search_type=keyword_unordered" }
+        { "format": "Podcast", "hook": "Expert interviews", "note": "Authority play", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=athletic%20greens%20ag1&search_type=keyword_unordered", "daysRunning": 90, "isNew": false },
+        { "format": "UGC", "hook": "Morning routine integration", "note": "Lifestyle", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=athletic%20greens%20ag1&search_type=keyword_unordered", "daysRunning": 60, "isNew": false }
       ],
       "whatsWorking": [
         "Master-class content marketing",
@@ -355,6 +431,7 @@
       "landingPage": "https://wamaunderwear.com",
       "category": "Hemp underwear",
       "adCount": "~7",
+      "creativeBreakdown": { "Static": 80, "Video": 20 },
       "changes": {
         "offer": null,
         "lp": null,
@@ -365,7 +442,7 @@
       ],
       "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=wama%20underwear&search_type=keyword_unordered",
       "topCreatives": [
-        { "format": "Static", "hook": "Ditch Plastic. Choose Hemp.", "note": "Environmental angle", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=wama%20underwear&search_type=keyword_unordered" }
+        { "format": "Static", "hook": "Ditch Plastic. Choose Hemp.", "note": "Environmental angle", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=wama%20underwear&search_type=keyword_unordered", "daysRunning": 30, "isNew": false }
       ],
       "whatsWorking": [
         "Eco/sustainability positioning",
