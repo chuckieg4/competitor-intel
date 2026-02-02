@@ -6,7 +6,7 @@
       "name": "BYLT Basics",
       "tier": 1,
       "site": "byltbasics.com",
-      "landingPage": "https://byltbasics.com",
+      "landingPage": "https://byltbasics.com/collections/mens-roamknit-fabric-collection",
       "category": "Premium basics",
       "adCount": "~330",
       "changes": {
@@ -19,24 +19,49 @@
         { "label": "Free Shipping", "value": "$99+" },
         { "label": "Free Gift", "value": "$175+ (t-shirt)" }
       ],
-      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&view_all_page_id=217494941609502&search_type=page",
+      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=bylt%20basics&search_type=keyword_unordered",
       "topCreatives": [
-        { "format": "Video", "hook": "Tired of tees that lose shape?", "note": "4+ ads running", "url": "https://www.facebook.com/ads/library/?id=1428353588878447" },
-        { "format": "Static", "hook": "Checklist format ✔️ features", "note": "Kinetic Overshirt", "url": "https://www.facebook.com/ads/library/?id=2043418259769402" },
-        { "format": "Video", "hook": "100K+ 5-Star Reviews", "note": "Social proof angle", "url": "https://www.facebook.com/ads/library/?id=1423652186020172" }
+        { 
+          "format": "Static", 
+          "hook": "Roamknit Collection - Comfort fit 😌", 
+          "note": "Running since Jan 13", 
+          "url": "https://www.facebook.com/ads/library/?id=1360633635369099",
+          "landingPage": "https://byltbasics.com/collections/mens-roamknit-fabric-collection"
+        },
+        { 
+          "format": "Static", 
+          "hook": "Henley Drop-Cut Long Sleeve LUX", 
+          "note": "Running since Jan 29", 
+          "url": "https://www.facebook.com/ads/library/?id=1400272418141175",
+          "landingPage": "https://checkout.byltbasics.com/products/henley-drop-cut-long-sleeve-lux"
+        },
+        { 
+          "format": "Video", 
+          "hook": "Kinetic Overshirt ✔️ checklist", 
+          "note": "2 ads running", 
+          "url": "https://www.facebook.com/ads/library/?id=2043418259769402",
+          "landingPage": "https://byltbasics.com/products/kinetic-overshirt"
+        },
+        { 
+          "format": "Static", 
+          "hook": "30% OFF 19th Hole Polo", 
+          "note": "Last Call sale", 
+          "url": "https://www.facebook.com/ads/library/?id=791477463206845",
+          "landingPage": "https://byltbasics.com/products/19th-hole-polo-last-call"
+        }
       ],
       "whatsWorking": [
         "Heavy UGC rotation (trust signals)",
-        "Technical fabric claims without health angle",
+        "✔️ Checklist format for fabric features",
         "Premium at fair price positioning",
-        "Clean, minimal aesthetic"
+        "Free shipping $99+ / Free gift $175+"
       ]
     },
     {
       "name": "Cuts Clothing",
       "tier": 1,
       "site": "cutsclothing.com",
-      "landingPage": "https://cutsclothing.com",
+      "landingPage": "https://shop.cutsclothing.com/products/white-crew-curve-hem",
       "category": "Premium tees",
       "adCount": "~380",
       "changes": {
@@ -49,26 +74,44 @@
         { "label": "Free Shipping", "value": "$100+" },
         { "label": "Bundles", "value": "Starter Pack 3-tee" }
       ],
-      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&view_all_page_id=1769532713352632&search_type=page",
+      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=cutsclothing&search_type=keyword_unordered",
       "topCreatives": [
-        { "format": "Lifestyle", "hook": "For the Sport of Business", "note": "8+ weeks, brand campaign", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&view_all_page_id=1769532713352632&search_type=page" },
-        { "format": "UGC", "hook": "Influencer testimonials", "note": "Heavy celeb rotation", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&view_all_page_id=1769532713352632&search_type=page" },
-        { "format": "Static", "hook": "Product grid, color variety", "note": "Collection focus", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&view_all_page_id=1769532713352632&search_type=page" }
+        { 
+          "format": "Static", 
+          "hook": "AO Curve-Hem Tee - PYCA Pro®", 
+          "note": "Running since Dec 30", 
+          "url": "https://www.facebook.com/ads/library/?id=1349978019769284",
+          "landingPage": "https://shop.cutsclothing.com/products/white-crew-curve-hem"
+        },
+        { 
+          "format": "Video", 
+          "hook": "AO Jogger - Airport to dinner", 
+          "note": "2 ads running", 
+          "url": "https://www.facebook.com/ads/library/?id=2161768291019319",
+          "landingPage": "https://www.cutsclothing.com/products/black-ao-jogger"
+        },
+        { 
+          "format": "Video", 
+          "hook": "Divine Fleece Collection", 
+          "note": "Winter collection", 
+          "url": "https://www.facebook.com/ads/library/?id=1541479237145962",
+          "landingPage": "https://www.cutsclothing.com/collections/divine-fleece"
+        }
       ],
       "whatsWorking": [
         "Aspirational lifestyle positioning",
-        "Heavy influencer/creator partnerships",
-        "Business casual upgrade angle",
-        "Strong email/SMS game"
+        "Athletes/creators/builders messaging",
+        "Signature-fit PYCA Pro® fabric tech",
+        "Seasonal collections (Divine Fleece)"
       ]
     },
     {
       "name": "NADS",
       "tier": 1,
       "site": "nadsunder.com",
-      "landingPage": "https://nadsunder.com",
+      "landingPage": "https://nadsunder.com/products/the-king-s-pack",
       "category": "Organic underwear",
-      "adCount": "~210",
+      "adCount": "~160",
       "flags": ["direct"],
       "changes": {
         "offer": "Baseline set",
@@ -80,17 +123,35 @@
         { "label": "King's Pack", "value": "40% OFF + Free Ship" },
         { "label": "Social Proof", "value": "1M+ Pairs Sold" }
       ],
-      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&view_all_page_id=107135018833320&search_type=page",
+      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=nadsunder&search_type=keyword_unordered",
       "topCreatives": [
-        { "format": "Long Video", "hook": "What is organic underwear?", "note": "Running since Aug '25", "url": "https://www.facebook.com/ads/library/?id=1345460153765021" },
-        { "format": "Static", "hook": "King's Pack 40% OFF", "note": "Bundle offer", "url": "https://www.facebook.com/ads/library/?id=1359238099534566" },
-        { "format": "UGC", "hook": "Side effects: extremely comfortable balls", "note": "Humor angle", "url": "https://www.facebook.com/ads/library/?id=25437340882627042" }
+        { 
+          "format": "Static", 
+          "hook": "Commando Shorts ✅ organic cotton", 
+          "note": "Running since Jan 9", 
+          "url": "https://www.facebook.com/ads/library/?id=1399202808596147",
+          "landingPage": "https://nadsunder.com/collections/shorts"
+        },
+        { 
+          "format": "Static", 
+          "hook": "King's Pack 40% OFF + Free Ship", 
+          "note": "Running since Oct 16", 
+          "url": "https://www.facebook.com/ads/library/?id=1359238099534566",
+          "landingPage": "https://nadsunder.com/products/the-king-s-pack"
+        },
+        { 
+          "format": "UGC Video", 
+          "hook": "My balls are my business", 
+          "note": "Luca Padua collab", 
+          "url": "https://www.facebook.com/ads/library/?id=25437340882627042",
+          "landingPage": "https://nadsunder.com"
+        }
       ],
       "whatsWorking": [
         "EXACT same playbook as UndrDog",
+        "✅ Checklist format for benefits",
         "Fertility/testosterone messaging",
-        "Expert doctor endorsements",
-        "Long-form educational copy",
+        "40% OFF bundle + free shipping",
         "Better-for-Balls positioning"
       ]
     },
@@ -98,9 +159,9 @@
       "name": "Hollow Alpaca",
       "tier": 1,
       "site": "hollowsocks.com",
-      "landingPage": "https://hollowsocks.com",
+      "landingPage": "https://hollowsocks.com/pages/10r-compression",
       "category": "Premium alpaca socks",
-      "adCount": "~4,100",
+      "adCount": "~460",
       "flags": ["heavy-spender"],
       "changes": {
         "offer": "Baseline set",
@@ -111,20 +172,31 @@
         { "label": "Main Sale", "value": "Up to 63% OFF" },
         { "label": "Bundle", "value": "Buy 2 Get 2 FREE" },
         { "label": "Guarantee", "value": "99-Day Money Back" },
-        { "label": "Social Proof", "value": "3M+ pairs sold" }
+        { "label": "Social Proof", "value": "10K+ switched" }
       ],
-      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&view_all_page_id=100869988798986&search_type=page",
+      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=hollow%20alpaca&search_type=keyword_unordered",
       "topCreatives": [
-        { "format": "Long Video", "hook": "Compression socks aren't supposed to hurt", "note": "12+ variants", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&view_all_page_id=100869988798986&search_type=page" },
-        { "format": "UGC", "hook": "From below freezing to over 80°", "note": "Temperature angle", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&view_all_page_id=100869988798986&search_type=page" },
-        { "format": "Carousel", "hook": "Product benefits checklist", "note": "Heavy ✅ format", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&view_all_page_id=100869988798986&search_type=page" }
+        { 
+          "format": "Long Video", 
+          "hook": "Compression socks aren't supposed to hurt", 
+          "note": "10 ads running!", 
+          "url": "https://www.facebook.com/ads/library/?id=1220569030025963",
+          "landingPage": "https://hollowsocks.com/pages/10r-compression"
+        },
+        { 
+          "format": "Video", 
+          "hook": "14+ Hours. No Swelling. USA-Knit 🇺🇸", 
+          "note": "Running since Dec 22", 
+          "url": "https://www.facebook.com/ads/library/?id=1384434376684534",
+          "landingPage": "https://hollowsocks.com/pages/10r-compression"
+        }
       ],
       "whatsWorking": [
         "MASSIVE ad volume = serious scale",
-        "Natural fiber positioning (alpaca vs synthetic)",
+        "✅ Full checklist format (7+ benefits)",
         "99-Day Guarantee = strong risk reversal",
         "USA-Knit 🇺🇸 patriotic angle",
-        "BOGO bundles drive AOV"
+        "Problem→Solution long-form copy"
       ]
     },
     {
@@ -142,10 +214,10 @@
         { "label": "First Month", "value": "$20 off" },
         { "label": "Bonuses", "value": "Free travel packs" }
       ],
-      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&view_all_page_id=283026498702498&search_type=page",
+      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=athletic%20greens%20ag1&search_type=keyword_unordered",
       "topCreatives": [
-        { "format": "Podcast", "hook": "Expert interviews", "note": "Authority play", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&view_all_page_id=283026498702498&search_type=page" },
-        { "format": "UGC", "hook": "Morning routine integration", "note": "Lifestyle", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&view_all_page_id=283026498702498&search_type=page" }
+        { "format": "Podcast", "hook": "Expert interviews", "note": "Authority play", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=athletic%20greens%20ag1&search_type=keyword_unordered" },
+        { "format": "UGC", "hook": "Morning routine integration", "note": "Lifestyle", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=athletic%20greens%20ag1&search_type=keyword_unordered" }
       ],
       "whatsWorking": [
         "Master-class content marketing",
@@ -168,7 +240,7 @@
         { "label": "Quiz Funnel", "value": "Personalized results" },
         { "label": "Bundles", "value": "Subscribe & save" }
       ],
-      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&view_all_page_id=1973abortal1974672179472977&search_type=page",
+      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=happy%20mammoth&search_type=keyword_unordered",
       "topCreatives": [
         { "format": "Quiz Ad", "hook": "Take the gut health quiz", "note": "Heavy funnel", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=happy%20mammoth&search_type=keyword_unordered" },
         { "format": "UGC", "hook": "Transformation stories", "note": "Before/after", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=happy%20mammoth&search_type=keyword_unordered" }
@@ -206,12 +278,12 @@
   ],
   "trends": {
     "working": [
-      "UGC heavy — real customer testimonials dominating",
-      "Flat discount first order — most using 15-20% off",
-      "Risk reversal — strong guarantees (99-Day, Lifetime)",
-      "Expert authority — doctors, credentialed influencers",
-      "Checklist format — ✅ emoji lists crushing it",
-      "Social proof numbers — 'X million sold' above fold"
+      "✅ Checklist format — all top performers use it",
+      "Long-form problem→solution copy (Hollow, Nads)",
+      "Bundle offers — 40% OFF packs, Buy 2 Get 2",
+      "99-Day or Lifetime guarantees",
+      "USA-made/Knit patriotic angle",
+      "Social proof — 'X switched', 'X sold'"
     ],
     "gaps": [
       "Anti-polyester in TEES — Nads does underwear, we own tees",
@@ -220,12 +292,17 @@
       "Hemp positioning — Hollow uses alpaca, Nads uses cotton"
     ],
     "watch": [
-      "Nads expanding? If they add tees = direct competition",
-      "Hollow's 4,100 ads = serious budget. Study their scaling.",
+      "Nads expanding to shorts — could tees be next?",
+      "Hollow's checklist format crushing it — steal it",
       "April boxer briefs launch = collision course with Nads"
     ]
   },
   "actions": [
+    {
+      "priority": "high",
+      "title": "Steal Hollow's ✅ Checklist Format",
+      "description": "Their top ad lists 7+ benefits with ✅ emojis. We need this exact format for hemp benefits."
+    },
     {
       "priority": "high",
       "title": "Expert/Doctor Authority Ad",
@@ -233,23 +310,18 @@
     },
     {
       "priority": "high",
-      "title": "Checklist Static: 'What's in your shirt?'",
-      "description": "Chemical ❌ list format. Both Nads and Hollow use it. Assign to Chino/MTRX."
-    },
-    {
-      "priority": "high",
-      "title": "Chemical ❌ List Copy Format",
-      "description": "❌ Polyester ❌ PFAS ❌ Microplastics → ✅ Hemp ✅ Bamboo ✅ Organic Cotton"
+      "title": "Problem→Solution Long Copy",
+      "description": "Hollow opens with 'Compression socks aren't supposed to hurt' then pivots to solution. Test this structure."
     },
     {
       "priority": "med",
-      "title": "'X tees sold' Social Proof",
-      "description": "Add prominent sold count above fold on LP. Hollow/Nads both use this."
+      "title": "Bundle Offer Test",
+      "description": "Nads: 40% OFF 20-pack. Hollow: Buy 2 Get 2. Test aggressive bundle pricing."
     },
     {
       "priority": "med",
-      "title": "Flat 20% First Order Test",
-      "description": "BYLT uses flat 20% vs our tiered 10/20/30. Simpler message, test conversion."
+      "title": "Landing Page: Product Page vs Collection",
+      "description": "BYLT sends to collections, Nads sends to product bundles. Test both."
     }
   ]
 }
