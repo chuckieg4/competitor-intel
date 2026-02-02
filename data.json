@@ -1,326 +1,182 @@
 {
   "lastUpdated": "2026-02-02",
   "nextUpdate": "2026-02-09",
-  "newThisWeek": [
-    { 
-      "brand": "True Classic", 
-      "type": "creative", 
-      "detail": "Flash Deals campaign - up to 57% off packs", 
-      "date": "Feb 2",
-      "link": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=true%20classic%20tees&search_type=keyword_unordered"
-    },
-    { 
-      "brand": "BYLT", 
-      "type": "creative", 
-      "detail": "30% OFF 19th Hole Polo - Last Call sale creative", 
-      "date": "Jan 31",
-      "link": "https://www.facebook.com/ads/library/?id=791477463206845"
-    },
-    { 
-      "brand": "Cuts", 
-      "type": "offer", 
-      "detail": "Buy 4 Get 30% OFF / Buy 6 Get 40% OFF bundle", 
-      "date": "Jan 30",
-      "link": "https://www.cutsclothing.com/products/black-crew-curve-hem"
-    },
-    { 
-      "brand": "Nads", 
-      "type": "creative", 
-      "detail": "Commando Shorts launch - new product line", 
-      "date": "Jan 9",
-      "link": "https://www.facebook.com/ads/library/?id=1399202808596147"
-    },
-    { 
-      "brand": "Eatmancereal", 
-      "type": "creative", 
-      "detail": "Cereal without the B.S. video", 
-      "date": "Jan 19",
-      "link": "https://www.facebook.com/ads/library/?id=1384299212780222"
-    },
-    { 
-      "brand": "Menerals", 
-      "type": "creative", 
-      "detail": "Barbie not Ken testosterone angle", 
-      "date": "Jan 13",
-      "link": "https://www.facebook.com/ads/library/?id=1536326844305866"
-    }
-  ],
-  "offerComparison": [
-    { 
-      "brand": "UndrDog", 
-      "product": "Hemp Tee", 
-      "unitPrice": 41.50, 
-      "currentOffer": "10% off 1 / 20% off 3 / 30% off 6", 
-      "effectivePrice": 29.05,
-      "guaranteeDays": "Lifetime",
-      "freeShip": "TBD",
-      "isUs": true
-    },
-    { 
-      "brand": "True Classic", 
-      "product": "Classic Crew", 
-      "unitPrice": 35, 
-      "currentOffer": "48% off 6-pack / 57% off 10-pack", 
-      "effectivePrice": 18.33,
-      "guaranteeDays": 100,
-      "freeShip": "$125+"
-    },
-    { 
-      "brand": "BYLT", 
-      "product": "Drop-Cut LUX", 
-      "unitPrice": 40, 
-      "currentOffer": "20% off first order + 10% off 3-pack", 
-      "effectivePrice": 32,
-      "guaranteeDays": 30,
-      "freeShip": "$99+"
-    },
-    { 
-      "brand": "Cuts", 
-      "product": "AO Curve-Hem", 
-      "unitPrice": 54, 
-      "currentOffer": "Buy 4 get 30% / Buy 6 get 40%", 
-      "effectivePrice": 32.40,
-      "guaranteeDays": 20,
-      "freeShip": "$100+"
-    },
-    { 
-      "brand": "Nads", 
-      "product": "Boxer Brief", 
-      "unitPrice": 24, 
-      "currentOffer": "King's Pack 40% OFF (20 for $144)", 
-      "effectivePrice": 7.20,
-      "guaranteeDays": 90,
-      "freeShip": "On packs"
-    },
-    { 
-      "brand": "Hollow Alpaca", 
-      "product": "Compression Socks", 
-      "unitPrice": 40, 
-      "currentOffer": "Buy 2 Get 2 FREE + 63% off", 
-      "effectivePrice": 20,
-      "guaranteeDays": 99,
-      "freeShip": "Included"
-    },
-    { 
-      "brand": "WAMA", 
-      "product": "Hemp Boxer", 
-      "unitPrice": 38, 
-      "currentOffer": "20% off first order", 
-      "effectivePrice": 30.40,
-      "guaranteeDays": 90,
-      "freeShip": "$75+"
-    },
-    { 
-      "brand": "Menerals", 
-      "product": "Mineral Blend", 
-      "unitPrice": 49, 
-      "currentOffer": "100% money back", 
-      "effectivePrice": 49,
-      "guaranteeDays": 90,
-      "freeShip": "Included"
-    },
-    { 
-      "brand": "Primal Queen", 
-      "product": "Beef Organs", 
-      "unitPrice": 56, 
-      "currentOffer": "Subscribe & Save", 
-      "effectivePrice": 50,
-      "guaranteeDays": 365,
-      "freeShip": "On sub"
-    },
-    { 
-      "brand": "Eatmancereal", 
-      "product": "Man Cereal", 
-      "unitPrice": 38, 
-      "currentOffer": "30-day guarantee up to $100", 
-      "effectivePrice": 38,
-      "guaranteeDays": 30,
-      "freeShip": "$50+"
-    },
-    { 
-      "brand": "AG1", 
-      "product": "Greens Powder", 
-      "unitPrice": 99, 
-      "currentOffer": "$20 off first + free travel packs", 
-      "effectivePrice": 79,
-      "guaranteeDays": 90,
-      "freeShip": "Included"
-    }
-  ],
-  "bestAdAllTime": [
-    {
-      "brand": "True Classic",
-      "hook": "6-Pack Bundle Deal - 48% OFF",
-      "format": "Static",
-      "startDate": "Oct 2024",
-      "stillRunning": true,
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=true%20classic%20tees&search_type=keyword_unordered",
-      "landingPage": "https://www.trueclassictees.com/collections/short-sleeve-tees"
-    },
-    {
-      "brand": "BYLT",
-      "hook": "Drop-Cut LUX - Premium fabric checklist",
-      "format": "Static",
-      "startDate": "Sep 2024",
-      "stillRunning": true,
-      "url": "https://www.facebook.com/ads/library/?id=1360633635369099",
-      "landingPage": "https://byltbasics.com/products/drop-cut-shirt-lux"
-    },
-    {
-      "brand": "Cuts",
-      "hook": "AO Jogger - Airport to dinner versatility",
-      "format": "Video",
-      "startDate": "Nov 2024",
-      "daysRunning": 77,
-      "stillRunning": true,
-      "url": "https://www.facebook.com/ads/library/?id=2161768291019319",
-      "landingPage": "https://www.cutsclothing.com/products/black-ao-jogger"
-    },
-    {
-      "brand": "NADS",
-      "hook": "King's Pack 40% OFF + Free Shipping",
-      "format": "Static",
-      "startDate": "Oct 16, 2024",
-      "daysRunning": 109,
-      "stillRunning": true,
-      "url": "https://www.facebook.com/ads/library/?id=1359238099534566",
-      "landingPage": "https://nadsunder.com/products/the-king-s-pack"
-    },
-    {
-      "brand": "Hollow Alpaca",
-      "hook": "Compression socks aren't supposed to hurt",
-      "format": "Long Video",
-      "startDate": "Dec 2024",
-      "daysRunning": 51,
-      "stillRunning": true,
-      "url": "https://www.facebook.com/ads/library/?id=1220569030025963",
-      "landingPage": "https://hollowsocks.com/pages/10r-compression"
-    },
-    {
-      "brand": "Menerals",
-      "hook": "Stop feeling like Barbie, not Ken",
-      "format": "Long Copy",
-      "startDate": "Jan 13, 2025",
-      "daysRunning": 20,
-      "stillRunning": true,
-      "url": "https://www.facebook.com/ads/library/?id=1536326844305866",
-      "landingPage": "https://menerals.com/pages/welcome-2"
-    },
-    {
-      "brand": "Eatmancereal",
-      "hook": "Cereal Finally Manned Up",
-      "format": "Video",
-      "startDate": "Jan 16, 2025",
-      "daysRunning": 17,
-      "stillRunning": true,
-      "url": "https://www.facebook.com/ads/library/?id=25702938722658851",
-      "landingPage": "https://eatmancereal.com"
-    },
-    {
-      "brand": "Primal Queen",
-      "hook": "Female-focused beef organs testimonial",
-      "format": "Static",
-      "startDate": "Oct 20, 2024",
-      "daysRunning": 105,
-      "stillRunning": true,
-      "url": "https://www.facebook.com/ads/library/?id=1620465702670999",
-      "landingPage": "https://primalqueen.com/pages/tiktok"
-    },
-    {
-      "brand": "AG1",
-      "hook": "Dr. Huberman morning routine",
-      "format": "Video",
-      "startDate": "2024",
-      "stillRunning": true,
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=athletic%20greens%20ag1&search_type=keyword_unordered",
-      "landingPage": "https://drinkag1.com"
-    },
-    {
-      "brand": "WAMA",
-      "hook": "Ditch Plastic. Choose Hemp.",
-      "format": "Static",
-      "startDate": "Jan 2025",
-      "stillRunning": true,
-      "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=wama%20underwear&search_type=keyword_unordered",
-      "landingPage": "https://wamaunderwear.com"
-    }
-  ],
-  "swipeFile": {
-    "problemSolution": [
-      { 
-        "brand": "Hollow", 
-        "hook": "Compression socks aren't supposed to hurt.", 
-        "body": "But most options are way too tight, overheat your feet, and start sliding down halfway through your day. Hollow Socks were built to solve that problem.",
-        "link": "https://www.facebook.com/ads/library/?id=1220569030025963"
-      },
-      { 
-        "brand": "Menerals", 
-        "hook": "Stop feeling like Barbie, not Ken.", 
-        "body": "Your body is screaming for help, and it's a simple fix. The truth: Zinc fuels your testosterone. Boron frees it from its bindings. Magnesium is the spark plug for your endocrine system.",
-        "link": "https://www.facebook.com/ads/library/?id=1536326844305866"
-      },
-      { 
-        "brand": "BYLT", 
-        "hook": "Tired of tees that lose shape after just a few washes?", 
-        "body": "Level up with the long-lasting, wrinkle-resistant, premium feeling Drop-Cut: LUX.",
-        "link": "https://www.facebook.com/ads/library/?id=1360633635369099"
-      },
-      { 
-        "brand": "True Classic", 
-        "hook": "Baggy, unflattering fit? Stiff, scratchy fabrics?", 
-        "body": "True Classic solves 3 problems: Fit that sharpens your look. Fabrics that are soft, stretchy, and comfortable. Premium quality without the premium price tag.",
-        "link": "https://www.trueclassictees.com"
-      }
+  "undrdogIntel": {
+    "topAds": [
+      { "name": "SweatTest_9x16", "cpa": 39, "status": "🏆 Evergreen since Mar 2024", "type": "Demo", "angle": "Breathability" },
+      { "name": "Dr. Chris Health Authority", "cpa": 34.60, "status": "🏆 Top performer", "type": "Expert", "angle": "Health/Science" },
+      { "name": "MTRX_UD2_M1_STAT3_4-5", "cpa": 43, "status": "🔥 $15K+ spend", "type": "Static", "angle": "Product" },
+      { "name": "Flamethrower Demo", "cpa": 45, "status": "✅ Proven", "type": "Demo", "angle": "Durability" },
+      { "name": "BowTest / BBGun", "cpa": 48, "status": "✅ Proven", "type": "Demo", "angle": "Durability" }
     ],
-    "checklist": [
-      { 
-        "brand": "Hollow", 
-        "items": ["✅ 15–20 mmHg compression to reduce swelling", "✅ Cushioned support to relieve foot pain", "✅ Made from breathable baby alpaca fiber", "✅ Moisture-wicking", "✅ Odor-resistant", "✅ Temperature regulating", "✅ Easy on, easy off — no struggle"],
-        "link": "https://www.facebook.com/ads/library/?id=1220569030025963"
-      },
-      { 
-        "brand": "BYLT", 
-        "items": ["✔️ Heathered Performance Fabric", "✔️ Wrinkle Resistant", "✔️ Lightweight and Breathable", "✔️ Straight Hem"],
-        "link": "https://www.facebook.com/ads/library/?id=1360633635369099"
-      },
-      { 
-        "brand": "Nads", 
-        "items": ["✅ Crafted from premium, breathable organic cotton", "✅ Designed to be worn with or without underwear", "✅ Perfect for lounging, lifting, or living"],
-        "link": "https://www.facebook.com/ads/library/?id=1399202808596147"
-      },
-      { 
-        "brand": "True Classic", 
-        "items": ["✅ Ultra-soft everyday fabric", "✅ Fitted arms, relaxed body", "✅ 100-Day Fit Guarantee", "✅ 66,000+ 5-star reviews"],
-        "link": "https://www.trueclassictees.com"
-      }
+    "winningAngles": [
+      { "angle": "Destructive Demos", "desc": "Fire, knife, bow, BB gun, gasoline tests", "performance": "High" },
+      { "angle": "Health Authority", "desc": "Dr. Chris style - expert citing studies", "performance": "Best CPA" },
+      { "angle": "Anti-Polyester", "desc": "Microplastics, fertility, zero plastic", "performance": "High" },
+      { "angle": "Fit Transformation", "desc": "Hides gut/man-boobs, Alpha Frame Fit", "performance": "Medium" },
+      { "angle": "Hemp History", "desc": "1930s conspiracy, DuPont banned hemp", "performance": "Medium" },
+      { "angle": "Lifetime Guarantee", "desc": "Buy once, wear for life", "performance": "Medium" }
     ],
-    "testimonial": [
-      { 
-        "brand": "Primal Queen", 
-        "quote": "The female-focused beef organ superfoods in Primal Queen made a huge difference in my life! I feel more energized and even have less bloating.", 
-        "name": "Emma L.",
-        "link": "https://www.facebook.com/ads/library/?id=1620465702670999"
-      },
-      { 
-        "brand": "True Classic", 
-        "quote": "Finally found tees that fit right. The fitted arms and relaxed body is perfect for guys with athletic builds.", 
-        "name": "Verified Buyer",
-        "link": "https://www.trueclassictees.com/pages/reviews"
-      }
+    "creativeTypes": [
+      { "type": "Destructive Demos", "pct": 35, "note": "Bread and butter" },
+      { "type": "MTRX Statics", "pct": 25, "note": "High volume testing" },
+      { "type": "UGC/Testimonials", "pct": 20, "note": "Social proof" },
+      { "type": "Founder Story", "pct": 10, "note": "Origin/mission" },
+      { "type": "Expert/Dr. Chris", "pct": 10, "note": "Lowest CPA" }
     ],
-    "masculine": [
-      { 
-        "brand": "Menerals", 
-        "copy": "He built houses, fixed engines, and raised a family without Chinese powders in his protein shake. Menerals brings back that kind of strength—made in the U.S.A.",
-        "link": "https://www.facebook.com/ads/library/?id=870372939127341"
-      },
-      { 
-        "brand": "Eatmancereal", 
-        "copy": "Cereal Finally Manned Up. Creatine. High Protein. Keto. Low Sugar.",
-        "link": "https://www.facebook.com/ads/library/?id=1384299212780222"
-      }
+    "keyMessages": [
+      "World's toughest, most breathable, toxin-free tee",
+      "Patent-pending DuraFlow™ (51% hemp, 31% bamboo, 18% organic cotton)",
+      "Nature's revenge on microplastics",
+      "Sweat Less. Stink Less. Buy Less.",
+      "Lifetime Guarantee — yes, for real",
+      "Makes an average Joe look jacked"
     ]
   },
+  "hookBank": {
+    "question": [
+      { "hook": "Tired of shirts that shrink after one wash?", "source": "True Classic" },
+      { "hook": "Why do your shirts smell after 2 hours?", "source": "UndrDog angle" },
+      { "hook": "Did you know your shirt is made of plastic?", "source": "Anti-polyester" },
+      { "hook": "What if I told you polyester is killing your testosterone?", "source": "Health angle" },
+      { "hook": "Ever wonder why hemp was banned in 1937?", "source": "Conspiracy" }
+    ],
+    "statement": [
+      { "hook": "This shirt survived a flamethrower.", "source": "UndrDog demo" },
+      { "hook": "Compression socks aren't supposed to hurt.", "source": "Hollow Alpaca" },
+      { "hook": "Cereal finally manned up.", "source": "Eatmancereal" },
+      { "hook": "Your shirt is shedding microplastics into your bloodstream.", "source": "Health angle" },
+      { "hook": "I threw away every polyester shirt I owned.", "source": "Testimonial" }
+    ],
+    "demo": [
+      { "hook": "Watch what happens when I hit this shirt with a blowtorch.", "source": "Flamethrower" },
+      { "hook": "I shot this shirt with a BB gun. Here's what happened.", "source": "BB gun test" },
+      { "hook": "Pouring gasoline on a $40 shirt.", "source": "Gasoline test" },
+      { "hook": "Knife vs Hemp. Let's see who wins.", "source": "Knife test" },
+      { "hook": "I wore this shirt for 72 hours straight. Smell test results:", "source": "Odor test" }
+    ],
+    "controversy": [
+      { "hook": "Nobody's talking about the plastic in your clothes.", "source": "Anti-polyester" },
+      { "hook": "Big Textile doesn't want you to know this.", "source": "Conspiracy" },
+      { "hook": "DuPont got hemp banned in 1937. Here's why.", "source": "Hemp history" },
+      { "hook": "Your 'premium' shirt is 62% plastic.", "source": "Cuts attack" },
+      { "hook": "Polyester is for cupcakes.", "source": "Menerals style" }
+    ],
+    "result": [
+      { "hook": "I've worn this shirt 200+ times. Still looks new.", "source": "Longevity" },
+      { "hook": "My wife noticed the difference immediately.", "source": "Testimonial" },
+      { "hook": "Went from dad bod to looking jacked in one shirt.", "source": "Fit angle" },
+      { "hook": "$40 shirt. 5 years later. Zero regrets.", "source": "Value angle" },
+      { "hook": "The last shirt you'll ever need to buy.", "source": "Lifetime" }
+    ]
+  },
+  "winningFormats": [
+    { 
+      "format": "Destructive Demo", 
+      "desc": "Show the product surviving extreme tests (fire, knife, etc.)", 
+      "whyWorks": "Proves durability claims instantly. Pattern interrupt.",
+      "examples": ["Flamethrower test", "Knife test", "BB gun test", "Gasoline pour"],
+      "bestFor": "UndrDog",
+      "competitors": "Nobody else does this"
+    },
+    { 
+      "format": "✅ Checklist Static", 
+      "desc": "List 5-7 benefits with checkmarks", 
+      "whyWorks": "Scannable. Communicates value fast. Works in feed.",
+      "examples": ["✅ Hemp fiber", "✅ Lifetime guarantee", "✅ Zero polyester"],
+      "bestFor": "Everyone",
+      "competitors": "Hollow (7+ items), BYLT, Nads, True Classic"
+    },
+    { 
+      "format": "Problem → Solution", 
+      "desc": "Open with pain point, pivot to product as fix", 
+      "whyWorks": "Creates emotional connection before selling.",
+      "examples": ["'Compression socks hurt' → Hollow Socks", "'Shirts shrink' → UndrDog"],
+      "bestFor": "Long-form video",
+      "competitors": "Hollow Alpaca, True Classic"
+    },
+    { 
+      "format": "Expert/Authority", 
+      "desc": "Doctor or expert citing studies/research", 
+      "whyWorks": "Builds trust. Allows health claims safely.",
+      "examples": ["Dr. Chris for UndrDog ($34 CPA)", "Dr. Huberman for AG1"],
+      "bestFor": "Health angles",
+      "competitors": "AG1, Primal Queen"
+    },
+    { 
+      "format": "UGC Testimonial", 
+      "desc": "Real customer sharing experience", 
+      "whyWorks": "Social proof. Relatable. Native to feed.",
+      "examples": ["'I was skeptical until...'", "'My husband won't wear anything else'"],
+      "bestFor": "Trust building",
+      "competitors": "Primal Queen (2,800 ads!), True Classic"
+    },
+    { 
+      "format": "Fit Transformation", 
+      "desc": "Before/after showing how product improves appearance", 
+      "whyWorks": "Visual proof. Aspirational.",
+      "examples": ["'Hides gut and man-boobs'", "'Makes average Joe look jacked'"],
+      "bestFor": "Apparel",
+      "competitors": "True Classic, BYLT"
+    },
+    { 
+      "format": "Founder Story", 
+      "desc": "Origin story - why the product was created", 
+      "whyWorks": "Builds brand connection. Differentiates from big brands.",
+      "examples": ["Fertility journey → no polyester mission", "Couldn't find a shirt that lasted"],
+      "bestFor": "Brand building",
+      "competitors": "Less common - opportunity"
+    }
+  ],
+  "scriptStructures": [
+    {
+      "name": "Problem-Agitate-Solution",
+      "structure": ["Hook: State the problem", "Agitate: Make it worse", "Solution: Introduce product", "Proof: Demo or testimonial", "CTA: Offer"],
+      "example": "Tired of shirts that shrink? → Most tees are polyester garbage designed to fail → UndrDog is 51% hemp that gets SOFTER with every wash → [demo] → Lifetime guarantee, 10% off"
+    },
+    {
+      "name": "I Was Skeptical Until...",
+      "structure": ["Skepticism hook", "What changed my mind", "Results I got", "Why you should try"],
+      "example": "I thought $40 for a t-shirt was insane → Then I learned my $15 shirts were shedding plastic → 6 months later, still looks brand new → Lifetime guarantee means zero risk"
+    },
+    {
+      "name": "3 Reasons Why",
+      "structure": ["Hook: 3 reasons statement", "Reason 1 (most important)", "Reason 2", "Reason 3 (often the twist)", "CTA"],
+      "example": "3 reasons I threw away all my polyester → 1. Microplastics in my blood → 2. They stink after 2 hours → 3. Hemp is literally indestructible [demo]"
+    },
+    {
+      "name": "Nobody Talks About This",
+      "structure": ["Controversy hook", "The hidden truth", "Evidence/proof", "The solution", "CTA"],
+      "example": "Nobody talks about the plastic in your shirt → 60% of clothing is polyester (fossil fuels) → Studies show microplastics in human testes → UndrDog: 0% polyester, 100% plants"
+    },
+    {
+      "name": "Watch What Happens",
+      "structure": ["Demo setup", "The test", "Surprising result", "What this means", "CTA"],
+      "example": "I'm about to hit this shirt with a blowtorch → [blowtorch demo] → Still intact. Try that with your Hanes → This is what 51% hemp does → Link in bio"
+    }
+  ],
+  "hotAngles": [
+    { "angle": "Anti-Polyester/Microplastics", "heat": "🔥🔥🔥", "why": "Health consciousness rising. Studies linking microplastics to fertility." },
+    { "angle": "USA-Made/Anti-Import", "heat": "🔥🔥🔥", "why": "Menerals crushing with 'Chinese powders' angle. Patriotic messaging." },
+    { "angle": "Testosterone/Fertility", "heat": "🔥🔥", "why": "Men's health trending. Nads, Menerals both using this." },
+    { "angle": "Lifetime Guarantee", "heat": "🔥🔥", "why": "UndrDog unique advantage. Most competitors 20-100 days." },
+    { "angle": "Destructive Demos", "heat": "🔥🔥🔥", "why": "Pattern interrupt. Nobody else doing this. Proves claims instantly." },
+    { "angle": "Anti-Fast-Fashion", "heat": "🔥🔥", "why": "Sustainability angle. Buy less, buy better." }
+  ],
+  "newThisWeek": [
+    { "brand": "True Classic", "type": "creative", "detail": "Flash Deals campaign - up to 57% off packs", "date": "Feb 2", "link": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=true%20classic%20tees&search_type=keyword_unordered" },
+    { "brand": "BYLT", "type": "creative", "detail": "30% OFF 19th Hole Polo - Last Call sale creative", "date": "Jan 31", "link": "https://www.facebook.com/ads/library/?id=791477463206845" },
+    { "brand": "Cuts", "type": "offer", "detail": "Buy 4 Get 30% OFF / Buy 6 Get 40% OFF bundle", "date": "Jan 30", "link": "https://www.cutsclothing.com/products/black-crew-curve-hem" },
+    { "brand": "Nads", "type": "creative", "detail": "Commando Shorts launch - new product line", "date": "Jan 9", "link": "https://www.facebook.com/ads/library/?id=1399202808596147" }
+  ],
+  "offerComparison": [
+    { "brand": "UndrDog", "product": "Hemp Tee", "unitPrice": 41.50, "currentOffer": "10% off 1 / 20% off 3 / 30% off 6", "effectivePrice": 29.05, "guaranteeDays": "Lifetime", "freeShip": "TBD", "isUs": true },
+    { "brand": "True Classic", "product": "Classic Crew", "unitPrice": 35, "currentOffer": "48% off 6-pack / 57% off 10-pack", "effectivePrice": 18.33, "guaranteeDays": 100, "freeShip": "$125+" },
+    { "brand": "BYLT", "product": "Drop-Cut LUX", "unitPrice": 40, "currentOffer": "20% off first order + 10% off 3-pack", "effectivePrice": 32, "guaranteeDays": 30, "freeShip": "$99+" },
+    { "brand": "Cuts", "product": "AO Curve-Hem", "unitPrice": 54, "currentOffer": "Buy 4 get 30% / Buy 6 get 40%", "effectivePrice": 32.40, "guaranteeDays": 20, "freeShip": "$100+" },
+    { "brand": "Nads", "product": "Boxer Brief", "unitPrice": 24, "currentOffer": "King's Pack 40% OFF (20 for $144)", "effectivePrice": 7.20, "guaranteeDays": 90, "freeShip": "On packs" },
+    { "brand": "Hollow Alpaca", "product": "Compression Socks", "unitPrice": 40, "currentOffer": "Buy 2 Get 2 FREE + 63% off", "effectivePrice": 20, "guaranteeDays": 99, "freeShip": "Included" }
+  ],
   "competitors": [
     {
       "name": "True Classic",
@@ -330,120 +186,39 @@
       "category": "Budget premium tees",
       "adCount": "~2,000+",
       "creativeBreakdown": { "Static": 55, "Video": 45 },
-      "changes": {
-        "offer": "New",
-        "lp": null,
-        "creative": "New"
-      },
+      "changes": { "offer": "New", "lp": null, "creative": "New" },
       "offers": [
         { "label": "6-Pack", "value": "48% off" },
         { "label": "10-Pack", "value": "57% off" },
-        { "label": "Free Shipping", "value": "$125+" },
         { "label": "Guarantee", "value": "100-Day" }
       ],
       "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=true%20classic%20tees&search_type=keyword_unordered",
       "topCreatives": [
-        { 
-          "format": "Static", 
-          "hook": "Classic Crew 6-Pack - 48% OFF", 
-          "note": "Top impressions last 7d", 
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=true%20classic%20tees&search_type=keyword_unordered",
-          "landingPage": "https://www.trueclassictees.com/collections/short-sleeve-tees",
-          "daysRunning": 30,
-          "isNew": false
-        },
-        { 
-          "format": "Video", 
-          "hook": "Problem→Solution fit transformation", 
-          "note": "Before/after style", 
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=true%20classic%20tees&search_type=keyword_unordered",
-          "landingPage": "https://www.trueclassictees.com/pages/fit-guarantee",
-          "daysRunning": 45,
-          "isNew": false
-        },
-        { 
-          "format": "Static", 
-          "hook": "100-Day Fit Guarantee", 
-          "note": "Risk reversal focus", 
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=true%20classic%20tees&search_type=keyword_unordered",
-          "landingPage": "https://www.trueclassictees.com/pages/fit-guarantee",
-          "daysRunning": 60,
-          "isNew": false
-        }
+        { "format": "Static", "hook": "Classic Crew 6-Pack - 48% OFF", "note": "Top impressions last 7d", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=true%20classic%20tees&search_type=keyword_unordered", "landingPage": "https://www.trueclassictees.com/collections/short-sleeve-tees", "daysRunning": 30, "isNew": false },
+        { "format": "Video", "hook": "Problem→Solution fit transformation", "note": "Before/after style", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=true%20classic%20tees&search_type=keyword_unordered", "landingPage": "https://www.trueclassictees.com/pages/fit-guarantee", "daysRunning": 45, "isNew": false }
       ],
-      "whatsWorking": [
-        "MASSIVE scale (2000+ active ads)",
-        "Aggressive bundle pricing (up to 57% off)",
-        "100-Day Fit Guarantee",
-        "Insiders Club membership upsell",
-        "Problem→Solution positioning",
-        "296K+ verified reviews as social proof"
-      ]
+      "whatsWorking": ["MASSIVE scale (2000+ ads)", "Aggressive bundle pricing", "100-Day Fit Guarantee", "296K+ verified reviews"]
     },
     {
       "name": "BYLT Basics",
       "tier": 1,
       "site": "byltbasics.com",
-      "landingPage": "https://byltbasics.com/collections/mens-roamknit-fabric-collection",
+      "landingPage": "https://byltbasics.com/products/drop-cut-shirt-lux",
       "category": "Premium basics",
       "adCount": "~330",
       "creativeBreakdown": { "Static": 60, "Video": 40 },
-      "changes": {
-        "offer": null,
-        "lp": null,
-        "creative": "New"
-      },
+      "changes": { "offer": null, "lp": null, "creative": "New" },
       "offers": [
         { "label": "First Order", "value": "20% off" },
         { "label": "Free Shipping", "value": "$99+" },
-        { "label": "Free Gift", "value": "$175+ (t-shirt)" },
         { "label": "Guarantee", "value": "30-Day" }
       ],
       "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=bylt%20basics&search_type=keyword_unordered",
       "topCreatives": [
-        { 
-          "format": "Static", 
-          "hook": "Roamknit Collection - Comfort fit 😌", 
-          "note": "Top impressions last 7d", 
-          "url": "https://www.facebook.com/ads/library/?id=1360633635369099",
-          "landingPage": "https://byltbasics.com/collections/mens-roamknit-fabric-collection",
-          "daysRunning": 20,
-          "isNew": false
-        },
-        { 
-          "format": "Static", 
-          "hook": "Henley Drop-Cut Long Sleeve LUX", 
-          "note": "Running since Jan 29", 
-          "url": "https://www.facebook.com/ads/library/?id=1400272418141175",
-          "landingPage": "https://checkout.byltbasics.com/products/henley-drop-cut-long-sleeve-lux",
-          "daysRunning": 4,
-          "isNew": true
-        },
-        { 
-          "format": "Video", 
-          "hook": "Kinetic Overshirt ✔️ checklist", 
-          "note": "2 ads running", 
-          "url": "https://www.facebook.com/ads/library/?id=2043418259769402",
-          "landingPage": "https://byltbasics.com/products/kinetic-overshirt",
-          "daysRunning": 4,
-          "isNew": true
-        },
-        { 
-          "format": "Static", 
-          "hook": "30% OFF 19th Hole Polo", 
-          "note": "Last Call sale", 
-          "url": "https://www.facebook.com/ads/library/?id=791477463206845",
-          "landingPage": "https://byltbasics.com/products/19th-hole-polo-last-call",
-          "daysRunning": 2,
-          "isNew": true
-        }
+        { "format": "Static", "hook": "Drop-Cut LUX ✔️ checklist", "note": "Top impressions last 7d", "url": "https://www.facebook.com/ads/library/?id=1360633635369099", "landingPage": "https://byltbasics.com/products/drop-cut-shirt-lux", "daysRunning": 20, "isNew": false },
+        { "format": "Static", "hook": "30% OFF 19th Hole Polo", "note": "Last Call sale", "url": "https://www.facebook.com/ads/library/?id=791477463206845", "landingPage": "https://byltbasics.com/products/19th-hole-polo-last-call", "daysRunning": 2, "isNew": true }
       ],
-      "whatsWorking": [
-        "Heavy UGC rotation (trust signals)",
-        "✔️ Checklist format for fabric features",
-        "Premium at fair price positioning",
-        "Free shipping $99+ / Free gift $175+"
-      ]
+      "whatsWorking": ["✔️ Checklist format", "Premium at fair price", "Free gift at $175+"]
     },
     {
       "name": "Cuts Clothing",
@@ -453,54 +228,18 @@
       "category": "Premium tees",
       "adCount": "~380",
       "creativeBreakdown": { "Static": 35, "Video": 65 },
-      "changes": {
-        "offer": "New",
-        "lp": null,
-        "creative": "New"
-      },
+      "changes": { "offer": "New", "lp": null, "creative": "New" },
       "offers": [
-        { "label": "First Order", "value": "15% off (popup)" },
-        { "label": "Free Shipping", "value": "$100+" },
         { "label": "Buy 4", "value": "30% off" },
-        { "label": "Guarantee", "value": "20-Day" }
+        { "label": "Buy 6", "value": "40% off" },
+        { "label": "Guarantee", "value": "⚠️ 20-Day" }
       ],
       "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=cutsclothing&search_type=keyword_unordered",
       "topCreatives": [
-        { 
-          "format": "Static", 
-          "hook": "AO Curve-Hem Tee - PYCA Pro®", 
-          "note": "Top impressions last 7d", 
-          "url": "https://www.facebook.com/ads/library/?id=1349978019769284",
-          "landingPage": "https://www.cutsclothing.com/products/black-crew-curve-hem",
-          "daysRunning": 34,
-          "isNew": false
-        },
-        { 
-          "format": "Video", 
-          "hook": "AO Jogger - Airport to dinner", 
-          "note": "2 ads running", 
-          "url": "https://www.facebook.com/ads/library/?id=2161768291019319",
-          "landingPage": "https://www.cutsclothing.com/products/black-ao-jogger",
-          "daysRunning": 77,
-          "isNew": false
-        },
-        { 
-          "format": "Video", 
-          "hook": "Divine Fleece Collection", 
-          "note": "Winter collection", 
-          "url": "https://www.facebook.com/ads/library/?id=1541479237145962",
-          "landingPage": "https://www.cutsclothing.com/collections/divine-fleece",
-          "daysRunning": 26,
-          "isNew": false
-        }
+        { "format": "Static", "hook": "AO Curve-Hem - PYCA Pro®", "note": "Top impressions last 7d", "url": "https://www.facebook.com/ads/library/?id=1349978019769284", "landingPage": "https://www.cutsclothing.com/products/black-crew-curve-hem", "daysRunning": 34, "isNew": false },
+        { "format": "Video", "hook": "AO Jogger - Airport to dinner", "note": "77 days running", "url": "https://www.facebook.com/ads/library/?id=2161768291019319", "landingPage": "https://www.cutsclothing.com/products/black-ao-jogger", "daysRunning": 77, "isNew": false }
       ],
-      "whatsWorking": [
-        "Aspirational lifestyle positioning",
-        "Athletes/creators/builders messaging",
-        "Signature-fit PYCA Pro® fabric tech",
-        "⚠️ Uses 62% POLYESTER blend",
-        "Seasonal collections (Divine Fleece)"
-      ]
+      "whatsWorking": ["Lifestyle positioning", "PYCA Pro® fabric tech", "⚠️ 62% POLYESTER", "⚠️ Only 20-day returns"]
     },
     {
       "name": "NADS",
@@ -511,378 +250,104 @@
       "adCount": "~160",
       "creativeBreakdown": { "Static": 55, "Video": 45 },
       "flags": ["direct"],
-      "changes": {
-        "offer": "Baseline set",
-        "lp": "Baseline set",
-        "creative": "Heavy launch"
-      },
+      "changes": { "offer": null, "lp": null, "creative": "New" },
       "offers": [
-        { "label": "First Order", "value": "15% off" },
-        { "label": "King's Pack", "value": "40% OFF + Free Ship" },
-        { "label": "Social Proof", "value": "1M+ Pairs Sold" },
+        { "label": "King's Pack", "value": "40% OFF" },
+        { "label": "Social Proof", "value": "1M+ Pairs" },
         { "label": "Guarantee", "value": "90-Day" }
       ],
       "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=nadsunder&search_type=keyword_unordered",
       "topCreatives": [
-        { 
-          "format": "Static", 
-          "hook": "Commando Shorts ✅ organic cotton", 
-          "note": "Top impressions last 7d", 
-          "url": "https://www.facebook.com/ads/library/?id=1399202808596147",
-          "landingPage": "https://nadsunder.com/collections/shorts",
-          "daysRunning": 24,
-          "isNew": true
-        },
-        { 
-          "format": "Static", 
-          "hook": "King's Pack 40% OFF + Free Ship", 
-          "note": "Running since Oct 16", 
-          "url": "https://www.facebook.com/ads/library/?id=1359238099534566",
-          "landingPage": "https://nadsunder.com/products/the-king-s-pack",
-          "daysRunning": 109,
-          "isNew": false
-        },
-        { 
-          "format": "Video", 
-          "hook": "My balls are my business", 
-          "note": "Luca Padua collab", 
-          "url": "https://www.facebook.com/ads/library/?id=25437340882627042",
-          "landingPage": "https://nadsunder.com",
-          "daysRunning": 47,
-          "isNew": false
-        }
+        { "format": "Static", "hook": "Commando Shorts ✅ organic", "note": "New product launch", "url": "https://www.facebook.com/ads/library/?id=1399202808596147", "landingPage": "https://nadsunder.com/collections/shorts", "daysRunning": 24, "isNew": true },
+        { "format": "Static", "hook": "King's Pack 40% OFF", "note": "109 days running", "url": "https://www.facebook.com/ads/library/?id=1359238099534566", "landingPage": "https://nadsunder.com/products/the-king-s-pack", "daysRunning": 109, "isNew": false }
       ],
-      "whatsWorking": [
-        "EXACT same playbook as UndrDog",
-        "✅ Checklist format for benefits",
-        "Fertility/testosterone messaging",
-        "40% OFF bundle + free shipping",
-        "Better-for-Balls positioning"
-      ]
+      "whatsWorking": ["Same playbook as UndrDog", "✅ Checklist format", "Fertility messaging", "Better-for-Balls"]
     },
     {
       "name": "Hollow Alpaca",
       "tier": 1,
       "site": "hollowsocks.com",
       "landingPage": "https://hollowsocks.com/pages/10r-compression",
-      "category": "Premium alpaca socks",
+      "category": "Premium socks",
       "adCount": "~460",
       "creativeBreakdown": { "Static": 30, "Video": 70 },
       "flags": ["heavy-spender"],
-      "changes": {
-        "offer": "Baseline set",
-        "lp": "Baseline set",
-        "creative": "New"
-      },
+      "changes": { "offer": null, "lp": null, "creative": "New" },
       "offers": [
-        { "label": "Main Sale", "value": "Up to 63% OFF" },
         { "label": "Bundle", "value": "Buy 2 Get 2 FREE" },
-        { "label": "Guarantee", "value": "99-Day" },
-        { "label": "Social Proof", "value": "10K+ switched" }
+        { "label": "Guarantee", "value": "99-Day" }
       ],
       "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=hollow%20alpaca&search_type=keyword_unordered",
       "topCreatives": [
-        { 
-          "format": "Video", 
-          "hook": "Compression socks aren't supposed to hurt", 
-          "note": "Top impressions last 7d (10 ads!)", 
-          "url": "https://www.facebook.com/ads/library/?id=1220569030025963",
-          "landingPage": "https://hollowsocks.com/pages/10r-compression",
-          "daysRunning": 51,
-          "isNew": false
-        },
-        { 
-          "format": "Video", 
-          "hook": "14+ Hours. No Swelling. USA-Knit 🇺🇸", 
-          "note": "Running since Dec 22", 
-          "url": "https://www.facebook.com/ads/library/?id=1384434376684534",
-          "landingPage": "https://hollowsocks.com/pages/10r-compression",
-          "daysRunning": 42,
-          "isNew": false
-        }
+        { "format": "Video", "hook": "Compression socks aren't supposed to hurt", "note": "10 ads running!", "url": "https://www.facebook.com/ads/library/?id=1220569030025963", "landingPage": "https://hollowsocks.com/pages/10r-compression", "daysRunning": 51, "isNew": false }
       ],
-      "whatsWorking": [
-        "MASSIVE ad volume = serious scale",
-        "✅ Full checklist format (7+ benefits)",
-        "99-Day Guarantee = strong risk reversal",
-        "USA-Knit 🇺🇸 patriotic angle",
-        "Problem→Solution long-form copy"
-      ]
+      "whatsWorking": ["Problem→Solution long-form", "✅ 7+ item checklist", "99-Day Guarantee", "USA-Knit 🇺🇸"]
     },
     {
       "name": "Menerals",
       "tier": 2,
       "site": "menerals.com",
       "landingPage": "https://menerals.com/pages/welcome-2",
-      "category": "Men's mineral supplements",
+      "category": "Men's supplements",
       "adCount": "~260",
       "creativeBreakdown": { "Static": 65, "Video": 35 },
-      "changes": {
-        "offer": null,
-        "lp": null,
-        "creative": "New"
-      },
+      "changes": { "offer": null, "lp": null, "creative": "New" },
       "offers": [
         { "label": "Risk-Free", "value": "100% money back" },
-        { "label": "Source", "value": "USA-sourced" },
         { "label": "Guarantee", "value": "90-Day" }
       ],
       "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=menerals&search_type=keyword_unordered",
       "topCreatives": [
-        { 
-          "format": "Static", 
-          "hook": "Powders for Cupcakes - USA made", 
-          "note": "Top impressions last 7d", 
-          "url": "https://www.facebook.com/ads/library/?id=870372939127341",
-          "landingPage": "https://menerals.com/pages/welcome-2",
-          "daysRunning": 19,
-          "isNew": true
-        },
-        { 
-          "format": "Static", 
-          "hook": "Stop feeling like Barbie, not Ken", 
-          "note": "Testosterone/minerals angle", 
-          "url": "https://www.facebook.com/ads/library/?id=1536326844305866",
-          "landingPage": "https://menerals.com/pages/welcome-2",
-          "daysRunning": 20,
-          "isNew": true
-        }
+        { "format": "Static", "hook": "Powders for Cupcakes - USA made", "note": "Anti-import angle", "url": "https://www.facebook.com/ads/library/?id=870372939127341", "landingPage": "https://menerals.com/pages/welcome-2", "daysRunning": 19, "isNew": true },
+        { "format": "Static", "hook": "Stop feeling like Barbie, not Ken", "note": "Testosterone angle", "url": "https://www.facebook.com/ads/library/?id=1536326844305866", "landingPage": "https://menerals.com/pages/welcome-2", "daysRunning": 20, "isNew": true }
       ],
-      "whatsWorking": [
-        "Anti-import/USA-made positioning",
-        "Testosterone/hormone messaging",
-        "Masculine voice (anti-soft messaging)",
-        "100+ trace minerals claim",
-        "Long-form educational copy"
-      ]
-    },
-    {
-      "name": "Eatmancereal",
-      "tier": 2,
-      "site": "eatmancereal.com",
-      "landingPage": "https://eatmancereal.com",
-      "category": "High-protein cereal",
-      "adCount": "~56",
-      "creativeBreakdown": { "Static": 25, "Video": 75 },
-      "changes": {
-        "offer": null,
-        "lp": null,
-        "creative": "New"
-      },
-      "offers": [
-        { "label": "Product", "value": "Creatine + High Protein" },
-        { "label": "Diet", "value": "Keto, Low Sugar" },
-        { "label": "Guarantee", "value": "30-Day" }
-      ],
-      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=eatmancereal&search_type=keyword_unordered",
-      "topCreatives": [
-        { 
-          "format": "Video", 
-          "hook": "Cereal without the B.S. is taking over", 
-          "note": "Top impressions last 7d", 
-          "url": "https://www.facebook.com/ads/library/?id=1384299212780222",
-          "landingPage": "https://eatmancereal.com",
-          "daysRunning": 14,
-          "isNew": true
-        },
-        { 
-          "format": "Video", 
-          "hook": "Cereal Finally Manned Up", 
-          "note": "Creatine + protein angle", 
-          "url": "https://www.facebook.com/ads/library/?id=25702938722658851",
-          "landingPage": "https://eatmancereal.com",
-          "daysRunning": 17,
-          "isNew": true
-        }
-      ],
-      "whatsWorking": [
-        "Masculine positioning (Manned Up)",
-        "Anti-BS/anti-junk messaging",
-        "Functional benefits (creatine, protein)",
-        "Simple product concept"
-      ]
+      "whatsWorking": ["Anti-import/USA-made", "Masculine 'anti-soft' voice", "Testosterone messaging"]
     },
     {
       "name": "Primal Queen",
       "tier": 2,
       "site": "primalqueen.com",
       "landingPage": "https://primalqueen.com/pages/tiktok",
-      "category": "Women's beef organ supplements",
+      "category": "Women's supplements",
       "adCount": "~2,800",
       "creativeBreakdown": { "Static": 70, "Video": 30 },
       "flags": ["heavy-spender"],
-      "changes": {
-        "offer": null,
-        "lp": null,
-        "creative": null
-      },
+      "changes": { "offer": null, "lp": null, "creative": null },
       "offers": [
-        { "label": "Angle", "value": "Female-focused" },
         { "label": "Guarantee", "value": "365-Day (!)" }
       ],
       "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=primal%20queen&search_type=keyword_unordered",
       "topCreatives": [
-        { 
-          "format": "Static", 
-          "hook": "Female-focused beef organs - testimonial", 
-          "note": "Top impressions last 7d", 
-          "url": "https://www.facebook.com/ads/library/?id=1620465702670999",
-          "landingPage": "https://primalqueen.com/pages/tiktok",
-          "daysRunning": 105,
-          "isNew": false
-        },
-        { 
-          "format": "Static", 
-          "hook": "More energized, less bloating", 
-          "note": "Emma L. testimonial", 
-          "url": "https://www.facebook.com/ads/library/?id=1543453536868755",
-          "landingPage": "https://primalqueen.com/pages/tiktok",
-          "daysRunning": 55,
-          "isNew": false
-        }
+        { "format": "Static", "hook": "Testimonial-led beef organs", "note": "105 days running", "url": "https://www.facebook.com/ads/library/?id=1620465702670999", "landingPage": "https://primalqueen.com/pages/tiktok", "daysRunning": 105, "isNew": false }
       ],
-      "whatsWorking": [
-        "MASSIVE scale (2,800 ads!)",
-        "Testimonial-led creatives",
-        "365-Day guarantee (industry leading)",
-        "Female-focused positioning",
-        "Energy + hormone balancing claims"
-      ]
-    },
-    {
-      "name": "AG1",
-      "tier": 2,
-      "site": "drinkag1.com",
-      "landingPage": "https://drinkag1.com",
-      "category": "Supplements",
-      "adCount": "~500+",
-      "creativeBreakdown": { "Static": 40, "Video": 60 },
-      "changes": {
-        "offer": null,
-        "lp": null,
-        "creative": null
-      },
-      "offers": [
-        { "label": "First Month", "value": "$20 off" },
-        { "label": "Bonuses", "value": "Free travel packs" },
-        { "label": "Price", "value": "$79/mo sub" },
-        { "label": "Guarantee", "value": "90-Day" }
-      ],
-      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=athletic%20greens%20ag1&search_type=keyword_unordered",
-      "topCreatives": [
-        { 
-          "format": "Video", 
-          "hook": "Expert interviews - Dr. Huberman", 
-          "note": "Top impressions last 7d", 
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=athletic%20greens%20ag1&search_type=keyword_unordered", 
-          "landingPage": "https://drinkag1.com",
-          "daysRunning": 90, 
-          "isNew": false 
-        },
-        { 
-          "format": "Video", 
-          "hook": "Morning routine integration", 
-          "note": "Lifestyle UGC", 
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=athletic%20greens%20ag1&search_type=keyword_unordered", 
-          "landingPage": "https://drinkag1.com",
-          "daysRunning": 60, 
-          "isNew": false 
-        }
-      ],
-      "whatsWorking": [
-        "Master-class content marketing",
-        "Podcast sponsor saturation",
-        "Celebrity endorsements (Hugh Jackman)",
-        "All-in-one simplicity message",
-        "90-Day guarantee"
-      ]
-    },
-    {
-      "name": "WAMA",
-      "tier": 2,
-      "site": "wamaunderwear.com",
-      "landingPage": "https://wamaunderwear.com",
-      "category": "Hemp underwear",
-      "adCount": "~7",
-      "creativeBreakdown": { "Static": 80, "Video": 20 },
-      "changes": {
-        "offer": null,
-        "lp": null,
-        "creative": null
-      },
-      "offers": [
-        { "label": "First Order", "value": "20% off" },
-        { "label": "First Pair", "value": "Free replacement" },
-        { "label": "Guarantee", "value": "90-Day" }
-      ],
-      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=wama%20underwear&search_type=keyword_unordered",
-      "topCreatives": [
-        { 
-          "format": "Static", 
-          "hook": "Ditch Plastic. Choose Hemp.", 
-          "note": "Top impressions last 7d", 
-          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=wama%20underwear&search_type=keyword_unordered", 
-          "landingPage": "https://wamaunderwear.com",
-          "daysRunning": 30, 
-          "isNew": false 
-        }
-      ],
-      "whatsWorking": [
-        "Eco/sustainability positioning",
-        "Hemp underwear positioning",
-        "NOT hitting health angle - gap for us",
-        "90-Day return policy"
-      ]
+      "whatsWorking": ["2,800 ads = MASSIVE scale", "Testimonial-led creatives", "365-Day guarantee"]
     }
   ],
   "trends": {
     "working": [
       "✅ Checklist format — all top performers use it",
-      "Long-form problem→solution copy (Hollow, Nads)",
-      "Bundle offers — 40-57% OFF packs, Buy 2 Get 2",
-      "90-100 Day guarantees (365 for Primal Queen!)",
-      "USA-made/sourced patriotic angle",
-      "Masculine 'anti-soft' messaging (Menerals, Eatmancereal)",
-      "Testimonial-led creatives (Primal Queen, True Classic)"
+      "Problem→Solution long-form (Hollow, Nads)",
+      "Bundle offers — 40-57% OFF packs",
+      "90-100 Day guarantees",
+      "USA-made patriotic angle",
+      "Masculine 'anti-soft' messaging"
     ],
     "gaps": [
-      "Anti-polyester in TEES — Cuts uses 62% polyester!",
-      "Durability testing — NOBODY else does destructive demos",
-      "Lifetime guarantee in apparel — major differentiator vs 20-100 day",
-      "Hemp positioning — Hollow uses alpaca, True Classic uses cotton blends"
+      "Anti-polyester in TEES — Cuts uses 62%!",
+      "Destructive demos — NOBODY else does this",
+      "Lifetime guarantee — major differentiator",
+      "Hemp positioning unique to UndrDog"
     ],
     "watch": [
-      "True Classic at 2,000+ ads = MASSIVE scale competitor",
-      "Primal Queen at 2,800 ads = study their testimonial playbook",
-      "Cuts uses 62% POLYESTER + only 20-day returns = attack angle",
-      "April boxer briefs launch = collision course with Nads"
+      "True Classic: 2,000+ ads, aggressive pricing",
+      "Primal Queen: 2,800 ads, testimonial playbook",
+      "Cuts: 62% polyester + 20-day returns = attack"
     ]
   },
   "actions": [
-    {
-      "priority": "high",
-      "title": "Steal Hollow's ✅ Checklist Format",
-      "description": "Their top ad lists 7+ benefits with ✅ emojis. We need this exact format for hemp benefits."
-    },
-    {
-      "priority": "high",
-      "title": "Expert/Doctor Authority Ad",
-      "description": "Like Dr. Chris ($34 CPA). Nads & Hollow both use experts. Double down."
-    },
-    {
-      "priority": "high",
-      "title": "Attack Cuts on Polyester + Short Returns",
-      "description": "Cuts uses 62% polyester AND only offers 20-day returns. We have Lifetime + 0% polyester."
-    },
-    {
-      "priority": "med",
-      "title": "Lifetime vs 20-100 Day Guarantee",
-      "description": "Our lifetime guarantee beats everyone. Make this more prominent in ads."
-    },
-    {
-      "priority": "med",
-      "title": "Bundle Offer Test",
-      "description": "True Classic does 57% off 10-packs. Test aggressive bundle pricing."
-    }
+    { "priority": "high", "title": "Checklist Format Static", "description": "Hollow's top ad has 7+ benefits with ✅. Create this for hemp." },
+    { "priority": "high", "title": "Attack Cuts on Polyester", "description": "62% polyester + 20-day returns. We have Lifetime + 0%." },
+    { "priority": "high", "title": "Double Down on Dr. Chris", "description": "$34 CPA. More expert content citing studies." },
+    { "priority": "med", "title": "New Destructive Demo Ideas", "description": "Microwave test, pool test, fog machine breathability." }
   ]
 }

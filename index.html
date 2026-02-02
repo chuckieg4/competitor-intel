@@ -8,7 +8,7 @@
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
             color: #e4e4e4;
             min-height: 100vh;
@@ -17,244 +17,150 @@
         .container { max-width: 1400px; margin: 0 auto; }
         
         header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 30px;
-            padding-bottom: 20px;
+            display: flex; justify-content: space-between; align-items: center;
+            margin-bottom: 30px; padding-bottom: 20px;
             border-bottom: 1px solid rgba(255,255,255,0.1);
         }
         .logo { display: flex; align-items: center; gap: 15px; }
-        .logo h1 { font-size: 24px; font-weight: 600; }
+        .logo h1 { font-size: 24px; }
         .logo span { font-size: 32px; }
         .last-updated { color: #888; font-size: 14px; text-align: right; }
         .last-updated strong { color: #4ade80; }
 
-        /* New This Week */
-        .new-this-week {
-            background: linear-gradient(135deg, rgba(251, 146, 60, 0.15), rgba(239, 68, 68, 0.15));
-            border: 1px solid rgba(251, 146, 60, 0.3);
-            border-radius: 16px;
-            padding: 24px;
-            margin-bottom: 30px;
-        }
-        .new-this-week h2 { font-size: 18px; margin-bottom: 16px; }
-        .new-items { display: flex; flex-wrap: wrap; gap: 12px; }
-        .new-item {
-            background: rgba(0,0,0,0.3);
-            border-radius: 8px;
-            padding: 12px 16px;
-            font-size: 13px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            text-decoration: none;
-            color: inherit;
-            transition: all 0.2s;
-            border: 1px solid transparent;
-        }
-        .new-item:hover { background: rgba(251, 146, 60, 0.2); border-color: rgba(251, 146, 60, 0.4); }
-        .new-item .brand-tag {
-            background: #fb923c;
-            color: #000;
-            font-size: 10px;
-            font-weight: 700;
-            padding: 3px 8px;
-            border-radius: 4px;
-        }
-        .new-item .brand-tag.creative { background: #6366f1; color: white; }
-        .new-item .brand-tag.offer { background: #4ade80; color: #000; }
-        .new-item .brand-tag.lander { background: #f59e0b; color: #000; }
-        .new-item .date { color: #888; font-size: 11px; }
-        .new-item .link-icon { font-size: 12px; opacity: 0.5; }
-        .new-item:hover .link-icon { opacity: 1; }
+        /* Section Styles */
+        section { background: rgba(255,255,255,0.05); border-radius: 16px; padding: 24px; margin-bottom: 24px; }
+        section h2 { font-size: 18px; margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
+        .section-desc { font-size: 13px; color: #888; margin-bottom: 16px; }
 
-        /* Offer Comparison Table */
-        .offer-comparison {
-            background: rgba(255,255,255,0.05);
-            border-radius: 16px;
-            padding: 24px;
-            margin-bottom: 30px;
-            overflow-x: auto;
-        }
-        .offer-comparison h2 { font-size: 18px; margin-bottom: 16px; }
-        .offer-table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 13px;
-        }
-        .offer-table th {
-            text-align: left;
-            padding: 12px;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-            color: #888;
-            font-weight: 500;
-            font-size: 11px;
-            text-transform: uppercase;
-        }
-        .offer-table td {
-            padding: 12px;
-            border-bottom: 1px solid rgba(255,255,255,0.05);
-        }
+        /* UndrDog Intel Section */
+        .undrdog-section { background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(168, 85, 247, 0.15)); border: 1px solid rgba(99, 102, 241, 0.3); }
+        .undrdog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .undrdog-card { background: rgba(0,0,0,0.3); border-radius: 12px; padding: 16px; }
+        .undrdog-card h3 { font-size: 14px; color: #a5b4fc; margin-bottom: 12px; text-transform: uppercase; }
+        .top-ad-item { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.05); font-size: 13px; }
+        .top-ad-item:last-child { border-bottom: none; }
+        .top-ad-item .name { font-weight: 500; }
+        .top-ad-item .cpa { color: #4ade80; font-weight: 600; }
+        .top-ad-item .status { font-size: 11px; color: #888; }
+        .angle-item { padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .angle-item:last-child { border-bottom: none; }
+        .angle-item .angle-name { font-weight: 500; font-size: 13px; }
+        .angle-item .angle-desc { font-size: 12px; color: #888; }
+        .key-message { background: rgba(99, 102, 241, 0.2); padding: 8px 12px; border-radius: 6px; font-size: 12px; margin-bottom: 8px; border-left: 3px solid #6366f1; }
+
+        /* Hook Bank */
+        .hook-tabs { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+        .hook-tab { background: rgba(0,0,0,0.3); border: none; color: #888; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-size: 12px; transition: all 0.2s; }
+        .hook-tab.active { background: #f59e0b; color: #000; }
+        .hook-tab:hover { background: rgba(245, 158, 11, 0.3); color: white; }
+        .hook-content { display: none; }
+        .hook-content.active { display: block; }
+        .hook-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; }
+        .hook-card { background: rgba(0,0,0,0.3); border-radius: 10px; padding: 14px; border-left: 3px solid #f59e0b; }
+        .hook-card .hook-text { font-size: 14px; font-weight: 500; color: #fbbf24; margin-bottom: 6px; }
+        .hook-card .hook-source { font-size: 11px; color: #888; }
+        .hook-card .copy-btn { background: rgba(245, 158, 11, 0.2); border: none; color: #fbbf24; padding: 4px 8px; border-radius: 4px; font-size: 10px; cursor: pointer; margin-top: 8px; }
+        .hook-card .copy-btn:hover { background: rgba(245, 158, 11, 0.4); }
+
+        /* Winning Formats */
+        .formats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; }
+        .format-card { background: rgba(0,0,0,0.3); border-radius: 12px; padding: 16px; }
+        .format-card h4 { font-size: 15px; font-weight: 600; margin-bottom: 8px; color: #4ade80; }
+        .format-card .desc { font-size: 13px; color: #bbb; margin-bottom: 10px; }
+        .format-card .why { font-size: 12px; color: #888; margin-bottom: 10px; padding: 8px; background: rgba(74, 222, 128, 0.1); border-radius: 6px; }
+        .format-card .examples { font-size: 11px; color: #a5b4fc; }
+        .format-card .competitors { font-size: 11px; color: #888; margin-top: 6px; }
+
+        /* Script Structures */
+        .scripts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 16px; }
+        .script-card { background: rgba(0,0,0,0.3); border-radius: 12px; padding: 16px; }
+        .script-card h4 { font-size: 14px; font-weight: 600; margin-bottom: 12px; color: #a5b4fc; }
+        .script-card .structure { list-style: none; margin-bottom: 12px; }
+        .script-card .structure li { font-size: 12px; padding: 4px 0; padding-left: 20px; position: relative; color: #888; }
+        .script-card .structure li::before { content: attr(data-step); position: absolute; left: 0; color: #6366f1; font-weight: 600; }
+        .script-card .example { font-size: 12px; color: #bbb; padding: 10px; background: rgba(99, 102, 241, 0.1); border-radius: 6px; font-style: italic; }
+
+        /* Hot Angles */
+        .angles-grid { display: flex; flex-wrap: wrap; gap: 12px; }
+        .angle-tag { background: rgba(0,0,0,0.3); border-radius: 8px; padding: 12px 16px; display: flex; align-items: center; gap: 10px; }
+        .angle-tag .heat { font-size: 14px; }
+        .angle-tag .name { font-weight: 500; font-size: 13px; }
+        .angle-tag .why { font-size: 11px; color: #888; max-width: 200px; }
+
+        /* New This Week */
+        .new-this-week { background: linear-gradient(135deg, rgba(251, 146, 60, 0.15), rgba(239, 68, 68, 0.15)); border: 1px solid rgba(251, 146, 60, 0.3); }
+        .new-items { display: flex; flex-wrap: wrap; gap: 12px; }
+        .new-item { background: rgba(0,0,0,0.3); border-radius: 8px; padding: 12px 16px; font-size: 13px; display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit; transition: all 0.2s; border: 1px solid transparent; }
+        .new-item:hover { background: rgba(251, 146, 60, 0.2); border-color: rgba(251, 146, 60, 0.4); }
+        .new-item .brand-tag { background: #fb923c; color: #000; font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 4px; }
+        .new-item .date { color: #888; font-size: 11px; }
+
+        /* Offer Comparison */
+        .offer-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+        .offer-table th { text-align: left; padding: 12px; border-bottom: 1px solid rgba(255,255,255,0.1); color: #888; font-weight: 500; font-size: 11px; text-transform: uppercase; }
+        .offer-table td { padding: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); }
         .offer-table tr:hover { background: rgba(255,255,255,0.03); }
         .offer-table .brand-name { font-weight: 600; }
-        .offer-table .unit-price { color: #888; }
         .offer-table .effective-price { color: #4ade80; font-weight: 600; }
-        .offer-table .offer-text { color: #a5b4fc; font-size: 12px; }
         .offer-table .us-row { background: rgba(99, 102, 241, 0.1); }
-        .offer-table .us-row td { border-color: rgba(99, 102, 241, 0.3); }
-        .guarantee-badge {
-            display: inline-block;
-            padding: 3px 8px;
-            border-radius: 4px;
-            font-size: 11px;
-            font-weight: 600;
-        }
+        .guarantee-badge { display: inline-block; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
         .guarantee-badge.lifetime { background: rgba(234, 179, 8, 0.3); color: #fbbf24; }
         .guarantee-badge.long { background: rgba(74, 222, 128, 0.2); color: #4ade80; }
         .guarantee-badge.standard { background: rgba(255,255,255,0.1); color: #888; }
         .guarantee-badge.short { background: rgba(239, 68, 68, 0.2); color: #ef4444; }
 
-        /* Quick Scan Section */
-        .quick-scan {
-            background: rgba(255,255,255,0.05);
-            border-radius: 16px;
-            padding: 24px;
-            margin-bottom: 30px;
-        }
-        .quick-scan h2 { font-size: 18px; margin-bottom: 20px; }
-        .scan-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 16px;
-        }
-        .scan-card {
-            background: rgba(0,0,0,0.3);
-            border-radius: 12px;
-            padding: 16px;
-            border: 1px solid rgba(255,255,255,0.1);
-        }
-        .scan-card .brand { font-weight: 600; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
-        .scan-card .brand .tier { font-size: 10px; background: #6366f1; padding: 2px 6px; border-radius: 4px; }
-        .scan-card .brand .tier.t2 { background: #64748b; }
-        .scan-item { display: flex; justify-content: space-between; font-size: 13px; padding: 4px 0; }
-        .scan-item .label { color: #888; }
-        .status { font-size: 12px; padding: 2px 8px; border-radius: 4px; }
-        .status.change { background: rgba(74, 222, 128, 0.2); color: #4ade80; }
-        .status.none { background: rgba(255,255,255,0.1); color: #888; }
-
-        /* Competitor Cards */
-        .competitors { margin-bottom: 30px; }
-        .competitors h2 { font-size: 18px; margin-bottom: 20px; }
+        /* Competitors */
         .competitor-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 20px; }
-        .competitor-card {
-            background: rgba(255,255,255,0.05);
-            border-radius: 16px;
-            padding: 24px;
-            border: 1px solid rgba(255,255,255,0.1);
-        }
-        .competitor-card.alert { border-color: rgba(239, 68, 68, 0.5); box-shadow: 0 0 20px rgba(239, 68, 68, 0.1); }
-        .competitor-card.heavy-spender { border-color: rgba(251, 146, 60, 0.5); box-shadow: 0 0 20px rgba(251, 146, 60, 0.1); }
-        .card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px; }
-        .card-header h3 { font-size: 18px; font-weight: 600; display: flex; align-items: center; gap: 8px; }
-        .card-header h3 .lp-link { font-size: 14px; color: #6366f1; text-decoration: none; opacity: 0.7; }
-        .card-header h3 .lp-link:hover { opacity: 1; }
-        .card-header .meta { font-size: 12px; color: #888; margin-top: 4px; }
-        .card-header .ads-count { background: rgba(251, 146, 60, 0.2); color: #fb923c; font-size: 12px; padding: 4px 10px; border-radius: 20px; font-weight: 600; }
-        .badge { display: inline-block; font-size: 10px; padding: 3px 8px; border-radius: 4px; font-weight: 600; margin-left: 8px; }
-        .badge.direct { background: #ef4444; color: white; }
-        .badge.spender { background: #fb923c; color: white; }
-
-        /* Creative Mix Bar (Static vs Video) */
-        .creative-mix { margin-bottom: 16px; }
-        .creative-mix h4 { font-size: 11px; text-transform: uppercase; color: #888; margin-bottom: 8px; }
-        .mix-bar { display: flex; height: 10px; border-radius: 5px; overflow: hidden; margin-bottom: 6px; }
+        .competitor-card { background: rgba(255,255,255,0.05); border-radius: 16px; padding: 20px; border: 1px solid rgba(255,255,255,0.1); }
+        .competitor-card.alert { border-color: rgba(239, 68, 68, 0.5); }
+        .competitor-card.heavy-spender { border-color: rgba(251, 146, 60, 0.5); }
+        .card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }
+        .card-header h3 { font-size: 16px; display: flex; align-items: center; gap: 8px; }
+        .card-header h3 a { color: #6366f1; text-decoration: none; font-size: 14px; }
+        .card-header .meta { font-size: 11px; color: #888; margin-top: 4px; }
+        .card-header .ads-count { background: rgba(251, 146, 60, 0.2); color: #fb923c; font-size: 11px; padding: 4px 10px; border-radius: 20px; }
+        .badge { font-size: 10px; padding: 3px 8px; border-radius: 4px; font-weight: 600; margin-left: 6px; }
+        .badge.direct { background: #ef4444; }
+        .badge.spender { background: #fb923c; }
+        .mix-bar { display: flex; height: 8px; border-radius: 4px; overflow: hidden; margin: 8px 0; }
         .mix-bar .static { background: #6366f1; }
         .mix-bar .video { background: #ef4444; }
-        .mix-legend { display: flex; gap: 16px; }
-        .mix-legend span { font-size: 11px; color: #888; display: flex; align-items: center; gap: 6px; }
-        .mix-legend .dot { width: 10px; height: 10px; border-radius: 3px; }
-        .mix-legend .dot.static { background: #6366f1; }
-        .mix-legend .dot.video { background: #ef4444; }
-
-        /* Offer Section */
-        .offer-section { background: rgba(0,0,0,0.3); border-radius: 10px; padding: 14px; margin-bottom: 16px; }
-        .offer-section h4 { font-size: 12px; text-transform: uppercase; color: #888; margin-bottom: 10px; }
-        .offer-item { display: flex; justify-content: space-between; font-size: 13px; padding: 4px 0; }
-        .offer-item .value { font-weight: 600; color: #4ade80; }
-
-        /* Creatives Section */
-        .creatives-section h4 { font-size: 12px; text-transform: uppercase; color: #888; margin-bottom: 10px; }
-        .creative-item-wrapper { display: flex; align-items: stretch; gap: 8px; margin-bottom: 8px; }
-        .creative-item {
-            flex: 1;
-            background: rgba(0,0,0,0.2);
-            border-radius: 8px;
-            padding: 10px 12px;
-            font-size: 13px;
-            text-decoration: none;
-            color: inherit;
-            display: block;
-            transition: all 0.2s;
-            border: 1px solid transparent;
-        }
-        .creative-item:hover { background: rgba(99, 102, 241, 0.15); border-color: rgba(99, 102, 241, 0.3); }
-        .creative-item .hook { font-weight: 500; margin-bottom: 4px; display: flex; align-items: center; justify-content: space-between; }
-        .creative-item .hook .link-icon { font-size: 12px; opacity: 0.5; }
-        .creative-item:hover .hook .link-icon { opacity: 1; }
-        .creative-item .meta { font-size: 11px; color: #888; display: flex; align-items: center; gap: 8px; }
-        .creative-item .format { display: inline-block; background: rgba(99, 102, 241, 0.3); color: #a5b4fc; font-size: 10px; padding: 2px 6px; border-radius: 4px; margin-right: 6px; }
+        .mix-legend { display: flex; gap: 12px; font-size: 10px; color: #888; margin-bottom: 12px; }
+        .mix-legend .dot { width: 8px; height: 8px; border-radius: 2px; display: inline-block; margin-right: 4px; }
+        .offer-section { background: rgba(0,0,0,0.2); border-radius: 8px; padding: 12px; margin-bottom: 12px; }
+        .offer-section h4 { font-size: 11px; text-transform: uppercase; color: #888; margin-bottom: 8px; }
+        .offer-item { display: flex; justify-content: space-between; font-size: 12px; padding: 3px 0; }
+        .offer-item .value { color: #4ade80; font-weight: 500; }
+        .creative-item { background: rgba(0,0,0,0.2); border-radius: 6px; padding: 10px; margin-bottom: 8px; text-decoration: none; color: inherit; display: block; transition: all 0.2s; }
+        .creative-item:hover { background: rgba(99, 102, 241, 0.15); }
+        .creative-item .hook { font-size: 12px; font-weight: 500; margin-bottom: 4px; }
+        .creative-item .meta { font-size: 10px; color: #888; }
+        .creative-item .format { background: rgba(99, 102, 241, 0.3); color: #a5b4fc; font-size: 9px; padding: 2px 5px; border-radius: 3px; margin-right: 5px; }
         .creative-item .format.video { background: rgba(239, 68, 68, 0.3); color: #f87171; }
-        .longevity { font-size: 10px; padding: 2px 6px; border-radius: 4px; }
+        .longevity { font-size: 9px; padding: 2px 5px; border-radius: 3px; }
         .longevity.winner { background: rgba(234, 179, 8, 0.3); color: #fbbf24; }
-        .longevity.proven { background: rgba(74, 222, 128, 0.2); color: #4ade80; }
         .longevity.new { background: rgba(251, 146, 60, 0.3); color: #fb923c; }
-        .lp-button {
-            display: flex; align-items: center; justify-content: center;
-            padding: 8px 10px; background: rgba(74, 222, 128, 0.2); color: #4ade80;
-            text-decoration: none; border-radius: 8px; font-size: 11px; font-weight: 600;
-        }
-        .lp-button:hover { background: rgba(74, 222, 128, 0.4); color: white; }
-        .view-all-ads {
-            display: inline-block; margin-top: 12px; padding: 8px 14px;
-            background: rgba(99, 102, 241, 0.2); color: #a5b4fc;
-            text-decoration: none; border-radius: 6px; font-size: 12px; font-weight: 500;
-        }
-        .view-all-ads:hover { background: rgba(99, 102, 241, 0.4); color: white; }
-
-        /* What's Working */
-        .whats-working { margin-top: 16px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.1); }
-        .whats-working h4 { font-size: 12px; text-transform: uppercase; color: #888; margin-bottom: 10px; }
-        .working-list { list-style: none; }
-        .working-list li { font-size: 12px; padding: 3px 0; padding-left: 16px; position: relative; color: #bbb; }
+        .view-all-ads { display: inline-block; margin-top: 8px; padding: 6px 12px; background: rgba(99, 102, 241, 0.2); color: #a5b4fc; text-decoration: none; border-radius: 5px; font-size: 11px; }
+        .view-all-ads:hover { background: rgba(99, 102, 241, 0.4); }
+        .working-list { list-style: none; margin-top: 12px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.1); }
+        .working-list li { font-size: 11px; padding: 3px 0; padding-left: 14px; position: relative; color: #bbb; }
         .working-list li::before { content: "→"; position: absolute; left: 0; color: #6366f1; }
 
-        /* Trends Section */
-        .trends { background: rgba(255,255,255,0.05); border-radius: 16px; padding: 24px; margin-bottom: 30px; }
-        .trends h2 { font-size: 18px; margin-bottom: 20px; }
-        .trends-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        /* Trends & Actions */
+        .trends-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
         .trend-card { background: rgba(0,0,0,0.3); border-radius: 12px; padding: 16px; }
         .trend-card h4 { font-size: 14px; margin-bottom: 12px; }
-        .trend-item { font-size: 13px; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .trend-item { font-size: 12px; padding: 5px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
         .trend-item:last-child { border-bottom: none; }
-        .trend-item .emoji { margin-right: 8px; }
-
-        /* Actions */
-        .actions {
-            background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(168, 85, 247, 0.2));
-            border-radius: 16px; padding: 24px; border: 1px solid rgba(168, 85, 247, 0.3);
-        }
-        .actions h2 { font-size: 18px; margin-bottom: 20px; }
-        .action-item { background: rgba(0,0,0,0.3); border-radius: 10px; padding: 14px 16px; margin-bottom: 12px; display: flex; align-items: flex-start; gap: 12px; }
-        .action-item:last-child { margin-bottom: 0; }
-        .action-priority { font-size: 11px; font-weight: 600; padding: 4px 8px; border-radius: 4px; white-space: nowrap; }
+        .actions-section { background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(168, 85, 247, 0.2)); border: 1px solid rgba(168, 85, 247, 0.3); }
+        .action-item { background: rgba(0,0,0,0.3); border-radius: 10px; padding: 14px; margin-bottom: 10px; display: flex; align-items: flex-start; gap: 12px; }
+        .action-priority { font-size: 10px; font-weight: 600; padding: 4px 8px; border-radius: 4px; }
         .action-priority.high { background: #ef4444; }
         .action-priority.med { background: #f59e0b; }
-        .action-content h5 { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
-        .action-content p { font-size: 12px; color: #888; }
+        .action-content h5 { font-size: 13px; margin-bottom: 4px; }
+        .action-content p { font-size: 11px; color: #888; }
 
         @media (max-width: 768px) {
-            .scan-grid { grid-template-columns: 1fr 1fr; }
             .competitor-grid { grid-template-columns: 1fr; }
             .offer-table { font-size: 11px; }
             .offer-table th, .offer-table td { padding: 8px; }
@@ -266,65 +172,80 @@
         <header>
             <div class="logo">
                 <span>🎯</span>
-                <h1>Competitor Intel Dashboard</h1>
+                <h1>UndrDog Creator Intel</h1>
             </div>
             <div class="last-updated">
-                Last updated: <strong id="lastUpdated">Loading...</strong><br>
-                <span id="nextUpdate"></span>
+                Last updated: <strong id="lastUpdated"></strong>
             </div>
         </header>
 
+        <!-- UndrDog Intel -->
+        <section class="undrdog-section">
+            <h2>🐕 What's Working for UndrDog</h2>
+            <div class="undrdog-grid" id="undrdogIntel"></div>
+        </section>
+
+        <!-- Hook Bank -->
+        <section>
+            <h2>🎣 Hook Bank</h2>
+            <p class="section-desc">Scroll-stopping opening lines. Click to copy.</p>
+            <div class="hook-tabs" id="hookTabs"></div>
+            <div id="hookContent"></div>
+        </section>
+
+        <!-- Winning Formats -->
+        <section>
+            <h2>🎬 Winning Formats</h2>
+            <p class="section-desc">Content types that convert. Pick your format, then find hooks above.</p>
+            <div class="formats-grid" id="winningFormats"></div>
+        </section>
+
+        <!-- Script Structures -->
+        <section>
+            <h2>📝 Script Structures</h2>
+            <p class="section-desc">Proven templates. Fill in the blanks with UndrDog content.</p>
+            <div class="scripts-grid" id="scriptStructures"></div>
+        </section>
+
+        <!-- Hot Angles -->
+        <section>
+            <h2>🔥 Hot Angles Right Now</h2>
+            <div class="angles-grid" id="hotAngles"></div>
+        </section>
+
         <!-- New This Week -->
         <section class="new-this-week">
-            <h2>🔥 New This Week</h2>
+            <h2>📢 New This Week</h2>
             <div class="new-items" id="newThisWeek"></div>
         </section>
 
         <!-- Offer Comparison -->
-        <section class="offer-comparison">
+        <section>
             <h2>💰 Offer Comparison</h2>
-            <table class="offer-table">
-                <thead>
-                    <tr>
-                        <th>Brand</th>
-                        <th>Core Product</th>
-                        <th>1-Unit Price</th>
-                        <th>Current Offer</th>
-                        <th>Best Price</th>
-                        <th>Free Ship</th>
-                        <th>Guarantee</th>
-                    </tr>
-                </thead>
-                <tbody id="offerTable"></tbody>
-            </table>
+            <div style="overflow-x: auto;">
+                <table class="offer-table">
+                    <thead>
+                        <tr><th>Brand</th><th>Product</th><th>Price</th><th>Offer</th><th>Best Price</th><th>Guarantee</th></tr>
+                    </thead>
+                    <tbody id="offerTable"></tbody>
+                </table>
+            </div>
         </section>
 
-        <!-- Quick Scan -->
-        <section class="quick-scan">
-            <h2>⚡ Weekly Changes</h2>
-            <div class="scan-grid" id="quickScan"></div>
-        </section>
-
-        <!-- Tier 1 Competitors -->
-        <section class="competitors">
-            <h2>🏆 Tier 1 Competitors</h2>
-            <div class="competitor-grid" id="tier1"></div>
-        </section>
-
-        <!-- Tier 2 Competitors -->
-        <section class="competitors">
-            <h2>📊 Tier 2 Watch List</h2>
-            <div class="competitor-grid" id="tier2"></div>
+        <!-- Competitors -->
+        <section>
+            <h2>🏆 Competitor Deep Dive</h2>
+            <div class="competitor-grid" id="competitors"></div>
         </section>
 
         <!-- Trends -->
-        <section class="trends">
+        <section>
             <h2>📈 Patterns & Gaps</h2>
             <div class="trends-grid" id="trends"></div>
         </section>
 
-        <!-- Recommended Actions -->
-        <section class="actions">
+        <!-- Actions -->
+        <section class="actions-section">
             <h2>🎬 Recommended Tests</h2>
             <div id="actions"></div>
         </section>
@@ -332,198 +253,219 @@
 
     <script>
         async function loadData() {
-            try {
-                const response = await fetch('data.json');
-                const data = await response.json();
-                renderDashboard(data);
-            } catch (e) {
-                console.error('Failed to load data:', e);
-            }
+            const response = await fetch('data.json');
+            const data = await response.json();
+            render(data);
         }
 
-        function renderDashboard(data) {
+        function render(data) {
             document.getElementById('lastUpdated').textContent = data.lastUpdated;
-            document.getElementById('nextUpdate').textContent = `Next update: ${data.nextUpdate}`;
 
-            // New This Week with links
+            // UndrDog Intel
+            if (data.undrdogIntel) {
+                const ud = data.undrdogIntel;
+                document.getElementById('undrdogIntel').innerHTML = `
+                    <div class="undrdog-card">
+                        <h3>🏆 Top Performing Ads</h3>
+                        ${ud.topAds.map(ad => `
+                            <div class="top-ad-item">
+                                <div>
+                                    <div class="name">${ad.name}</div>
+                                    <div class="status">${ad.status} • ${ad.type}</div>
+                                </div>
+                                <div class="cpa">$${ad.cpa} CPA</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                    <div class="undrdog-card">
+                        <h3>🎯 Winning Angles</h3>
+                        ${ud.winningAngles.map(a => `
+                            <div class="angle-item">
+                                <div class="angle-name">${a.angle}</div>
+                                <div class="angle-desc">${a.desc}</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                    <div class="undrdog-card">
+                        <h3>💬 Key Messages</h3>
+                        ${ud.keyMessages.map(m => `<div class="key-message">${m}</div>`).join('')}
+                    </div>
+                `;
+            }
+
+            // Hook Bank
+            if (data.hookBank) {
+                const categories = Object.keys(data.hookBank);
+                const labels = { question: '❓ Question', statement: '💥 Statement', demo: '🔬 Demo', controversy: '🔥 Controversy', result: '✨ Result' };
+                document.getElementById('hookTabs').innerHTML = categories.map((cat, i) => 
+                    `<button class="hook-tab ${i === 0 ? 'active' : ''}" data-tab="${cat}">${labels[cat] || cat}</button>`
+                ).join('');
+                document.getElementById('hookContent').innerHTML = categories.map((cat, i) => `
+                    <div class="hook-content ${i === 0 ? 'active' : ''}" data-content="${cat}">
+                        <div class="hook-grid">
+                            ${data.hookBank[cat].map(h => `
+                                <div class="hook-card">
+                                    <div class="hook-text">"${h.hook}"</div>
+                                    <div class="hook-source">Source: ${h.source}</div>
+                                    <button class="copy-btn" onclick="navigator.clipboard.writeText('${h.hook.replace(/'/g, "\\'")}'); this.textContent='Copied!'">📋 Copy</button>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `).join('');
+                document.querySelectorAll('.hook-tab').forEach(tab => {
+                    tab.addEventListener('click', () => {
+                        document.querySelectorAll('.hook-tab').forEach(t => t.classList.remove('active'));
+                        document.querySelectorAll('.hook-content').forEach(c => c.classList.remove('active'));
+                        tab.classList.add('active');
+                        document.querySelector(`[data-content="${tab.dataset.tab}"]`).classList.add('active');
+                    });
+                });
+            }
+
+            // Winning Formats
+            if (data.winningFormats) {
+                document.getElementById('winningFormats').innerHTML = data.winningFormats.map(f => `
+                    <div class="format-card">
+                        <h4>${f.format}</h4>
+                        <div class="desc">${f.desc}</div>
+                        <div class="why">💡 ${f.whyWorks}</div>
+                        <div class="examples">Examples: ${f.examples.join(', ')}</div>
+                        <div class="competitors">Who's using it: ${f.competitors}</div>
+                    </div>
+                `).join('');
+            }
+
+            // Script Structures
+            if (data.scriptStructures) {
+                document.getElementById('scriptStructures').innerHTML = data.scriptStructures.map(s => `
+                    <div class="script-card">
+                        <h4>${s.name}</h4>
+                        <ol class="structure">
+                            ${s.structure.map((step, i) => `<li data-step="${i+1}.">${step}</li>`).join('')}
+                        </ol>
+                        <div class="example">"${s.example}"</div>
+                    </div>
+                `).join('');
+            }
+
+            // Hot Angles
+            if (data.hotAngles) {
+                document.getElementById('hotAngles').innerHTML = data.hotAngles.map(a => `
+                    <div class="angle-tag">
+                        <span class="heat">${a.heat}</span>
+                        <div>
+                            <div class="name">${a.angle}</div>
+                            <div class="why">${a.why}</div>
+                        </div>
+                    </div>
+                `).join('');
+            }
+
+            // New This Week
             if (data.newThisWeek) {
                 document.getElementById('newThisWeek').innerHTML = data.newThisWeek.map(item => `
                     <a href="${item.link}" target="_blank" class="new-item">
-                        <span class="brand-tag ${item.type}">${item.brand}</span>
+                        <span class="brand-tag">${item.brand}</span>
                         <span>${item.detail}</span>
                         <span class="date">${item.date}</span>
-                        <span class="link-icon">↗</span>
                     </a>
                 `).join('');
             }
 
-            // Offer Comparison with guarantee days
+            // Offer Comparison
             if (data.offerComparison) {
                 document.getElementById('offerTable').innerHTML = data.offerComparison.map(p => `
                     <tr class="${p.isUs ? 'us-row' : ''}">
                         <td class="brand-name">${p.brand}${p.isUs ? ' ⭐' : ''}</td>
                         <td>${p.product}</td>
-                        <td class="unit-price">$${p.unitPrice}</td>
-                        <td class="offer-text">${p.currentOffer}</td>
+                        <td>$${p.unitPrice}</td>
+                        <td>${p.currentOffer}</td>
                         <td class="effective-price">$${p.effectivePrice}</td>
-                        <td>${p.freeShip}</td>
                         <td>${getGuaranteeBadge(p.guaranteeDays)}</td>
                     </tr>
                 `).join('');
             }
 
-            // Quick Scan
-            const quickScanHtml = data.competitors.map(c => `
-                <div class="scan-card">
-                    <div class="brand">
-                        ${c.name}
-                        <span class="tier ${c.tier === 2 ? 't2' : ''}">T${c.tier}</span>
-                    </div>
-                    <div class="scan-item">
-                        <span class="label">Offer</span>
-                        <span class="status ${c.changes.offer ? 'change' : 'none'}">${c.changes.offer || 'No change'}</span>
-                    </div>
-                    <div class="scan-item">
-                        <span class="label">LP</span>
-                        <span class="status ${c.changes.lp ? 'change' : 'none'}">${c.changes.lp || 'No change'}</span>
-                    </div>
-                    <div class="scan-item">
-                        <span class="label">Creative</span>
-                        <span class="status ${c.changes.creative ? 'change' : 'none'}">${c.changes.creative || 'No change'}</span>
-                    </div>
-                </div>
-            `).join('');
-            document.getElementById('quickScan').innerHTML = quickScanHtml;
-
-            // Tier 1 & 2
-            document.getElementById('tier1').innerHTML = data.competitors.filter(c => c.tier === 1).map(renderCompetitorCard).join('');
-            document.getElementById('tier2').innerHTML = data.competitors.filter(c => c.tier === 2).map(renderCompetitorCard).join('');
+            // Competitors
+            if (data.competitors) {
+                document.getElementById('competitors').innerHTML = data.competitors.map(c => {
+                    const badges = [];
+                    if (c.flags?.includes('direct')) badges.push('<span class="badge direct">⚠️ DIRECT</span>');
+                    if (c.flags?.includes('heavy-spender')) badges.push('<span class="badge spender">🔥 HEAVY</span>');
+                    const cardClass = c.flags?.includes('direct') ? 'alert' : c.flags?.includes('heavy-spender') ? 'heavy-spender' : '';
+                    const staticPct = c.creativeBreakdown?.Static || 0;
+                    const videoPct = c.creativeBreakdown?.Video || 0;
+                    return `
+                        <div class="competitor-card ${cardClass}">
+                            <div class="card-header">
+                                <div>
+                                    <h3>${c.name} ${c.landingPage ? `<a href="${c.landingPage}" target="_blank">↗</a>` : ''}${badges.join('')}</h3>
+                                    <div class="meta">${c.site}</div>
+                                </div>
+                                ${c.adCount ? `<span class="ads-count">${c.adCount}</span>` : ''}
+                            </div>
+                            <div class="mix-bar">
+                                <div class="static" style="width:${staticPct}%"></div>
+                                <div class="video" style="width:${videoPct}%"></div>
+                            </div>
+                            <div class="mix-legend">
+                                <span><span class="dot" style="background:#6366f1"></span>Static ${staticPct}%</span>
+                                <span><span class="dot" style="background:#ef4444"></span>Video ${videoPct}%</span>
+                            </div>
+                            <div class="offer-section">
+                                <h4>Current Offer</h4>
+                                ${c.offers.map(o => `<div class="offer-item"><span>${o.label}</span><span class="value">${o.value}</span></div>`).join('')}
+                            </div>
+                            <div>
+                                <h4 style="font-size:11px;color:#888;margin-bottom:8px;">TOP CREATIVES — LAST 7 DAYS</h4>
+                                ${c.topCreatives?.slice(0,3).map(cr => `
+                                    <a href="${cr.url}" target="_blank" class="creative-item">
+                                        <div class="hook"><span class="format ${cr.format.toLowerCase().includes('video') ? 'video' : ''}">${cr.format}</span>${cr.hook}</div>
+                                        <div class="meta">${cr.note || ''} ${cr.daysRunning >= 60 ? '<span class="longevity winner">🏆 60d+</span>' : cr.isNew ? '<span class="longevity new">🆕 NEW</span>' : ''}</div>
+                                    </a>
+                                `).join('') || ''}
+                                ${c.adsLibraryUrl ? `<a href="${c.adsLibraryUrl}" target="_blank" class="view-all-ads">View All Ads →</a>` : ''}
+                            </div>
+                            <ul class="working-list">
+                                ${c.whatsWorking?.slice(0,4).map(w => `<li>${w}</li>`).join('') || ''}
+                            </ul>
+                        </div>
+                    `;
+                }).join('');
+            }
 
             // Trends
-            document.getElementById('trends').innerHTML = `
-                <div class="trend-card">
-                    <h4>✅ What's Working Everywhere</h4>
-                    ${data.trends.working.map(t => `<div class="trend-item"><span class="emoji">→</span>${t}</div>`).join('')}
-                </div>
-                <div class="trend-card">
-                    <h4>🎯 Gaps We Can Exploit</h4>
-                    ${data.trends.gaps.map(t => `<div class="trend-item"><span class="emoji">→</span>${t}</div>`).join('')}
-                </div>
-                <div class="trend-card">
-                    <h4>🚨 Watch List</h4>
-                    ${data.trends.watch.map(t => `<div class="trend-item"><span class="emoji">⚠️</span>${t}</div>`).join('')}
-                </div>
-            `;
+            if (data.trends) {
+                document.getElementById('trends').innerHTML = `
+                    <div class="trend-card"><h4>✅ What's Working</h4>${data.trends.working.map(t => `<div class="trend-item">→ ${t}</div>`).join('')}</div>
+                    <div class="trend-card"><h4>🎯 Gaps to Exploit</h4>${data.trends.gaps.map(t => `<div class="trend-item">→ ${t}</div>`).join('')}</div>
+                    <div class="trend-card"><h4>🚨 Watch List</h4>${data.trends.watch.map(t => `<div class="trend-item">⚠️ ${t}</div>`).join('')}</div>
+                `;
+            }
 
             // Actions
-            document.getElementById('actions').innerHTML = data.actions.map(a => `
-                <div class="action-item">
-                    <span class="action-priority ${a.priority}">${a.priority.toUpperCase()}</span>
-                    <div class="action-content">
-                        <h5>${a.title}</h5>
-                        <p>${a.description}</p>
+            if (data.actions) {
+                document.getElementById('actions').innerHTML = data.actions.map(a => `
+                    <div class="action-item">
+                        <span class="action-priority ${a.priority}">${a.priority.toUpperCase()}</span>
+                        <div class="action-content"><h5>${a.title}</h5><p>${a.description}</p></div>
                     </div>
-                </div>
-            `).join('');
+                `).join('');
+            }
         }
 
         function getGuaranteeBadge(days) {
             if (days === 'Lifetime') return '<span class="guarantee-badge lifetime">♾️ LIFETIME</span>';
-            if (days === '100+ Washes') return '<span class="guarantee-badge long">🧺 100+ Washes</span>';
             if (typeof days === 'number') {
-                if (days >= 100) return `<span class="guarantee-badge long">${days} days</span>`;
-                if (days >= 90) return `<span class="guarantee-badge standard">${days} days</span>`;
-                return `<span class="guarantee-badge short">${days} days</span>`;
+                if (days >= 100) return `<span class="guarantee-badge long">${days}d</span>`;
+                if (days >= 90) return `<span class="guarantee-badge standard">${days}d</span>`;
+                return `<span class="guarantee-badge short">${days}d</span>`;
             }
             return `<span class="guarantee-badge standard">${days}</span>`;
         }
 
-        function getLongevityBadge(days, isNew) {
-            if (isNew) return '<span class="longevity new">🆕 NEW</span>';
-            if (days >= 60) return '<span class="longevity winner">🏆 60d+</span>';
-            if (days >= 30) return '<span class="longevity proven">⭐ 30d+</span>';
-            return '';
-        }
-
-        function renderCreativeMix(breakdown) {
-            if (!breakdown) return '';
-            const staticPct = breakdown.Static || 0;
-            const videoPct = breakdown.Video || 0;
-            return `
-                <div class="creative-mix">
-                    <h4>📊 Creative Mix (Static vs Video)</h4>
-                    <div class="mix-bar">
-                        <div class="static" style="width:${staticPct}%" title="Static: ${staticPct}%"></div>
-                        <div class="video" style="width:${videoPct}%" title="Video: ${videoPct}%"></div>
-                    </div>
-                    <div class="mix-legend">
-                        <span><span class="dot static"></span>Static ${staticPct}%</span>
-                        <span><span class="dot video"></span>Video ${videoPct}%</span>
-                    </div>
-                </div>
-            `;
-        }
-
-        function renderCompetitorCard(c) {
-            const badges = [];
-            if (c.flags?.includes('direct')) badges.push('<span class="badge direct">⚠️ DIRECT</span>');
-            if (c.flags?.includes('heavy-spender')) badges.push('<span class="badge spender">🔥 HEAVY</span>');
-            const cardClass = c.flags?.includes('direct') ? 'alert' : c.flags?.includes('heavy-spender') ? 'heavy-spender' : '';
-
-            return `
-                <div class="competitor-card ${cardClass}">
-                    <div class="card-header">
-                        <div>
-                            <h3>${c.name}${c.landingPage ? `<a href="${c.landingPage}" target="_blank" class="lp-link" title="Visit landing page">↗</a>` : ''}${badges.join('')}</h3>
-                            <div class="meta">${c.site} • ${c.category}</div>
-                        </div>
-                        ${c.adCount ? `<span class="ads-count">${c.adCount} ads</span>` : ''}
-                    </div>
-                    
-                    ${renderCreativeMix(c.creativeBreakdown)}
-                    
-                    <div class="offer-section">
-                        <h4>💰 Current Offer</h4>
-                        ${c.offers.map(o => `
-                            <div class="offer-item">
-                                <span>${o.label}</span>
-                                <span class="value">${o.value}</span>
-                            </div>
-                        `).join('')}
-                    </div>
-
-                    <div class="creatives-section">
-                        <h4>🏆 Top Creatives — Last 7 Days</h4>
-                        ${c.topCreatives.slice(0,4).map(cr => `
-                            <div class="creative-item-wrapper">
-                                <a href="${cr.url}" target="_blank" class="creative-item">
-                                    <div class="hook">
-                                        <span><span class="format ${cr.format.toLowerCase().includes('video') ? 'video' : ''}">${cr.format}</span>${cr.hook}</span>
-                                        <span class="link-icon">📊</span>
-                                    </div>
-                                    <div class="meta">
-                                        ${cr.note || ''}
-                                        ${getLongevityBadge(cr.daysRunning, cr.isNew)}
-                                    </div>
-                                </a>
-                                ${cr.landingPage ? `<a href="${cr.landingPage}" target="_blank" class="lp-button" title="View landing page">LP ↗</a>` : ''}
-                            </div>
-                        `).join('')}
-                        ${c.adsLibraryUrl ? `<a href="${c.adsLibraryUrl}" target="_blank" class="view-all-ads">View All ${c.adCount || ''} Ads →</a>` : ''}
-                    </div>
-
-                    <div class="whats-working">
-                        <h4>📊 What's Working</h4>
-                        <ul class="working-list">
-                            ${c.whatsWorking.slice(0,5).map(w => `<li>${w}</li>`).join('')}
-                        </ul>
-                    </div>
-                </div>
-            `;
-        }
-
         loadData();
-        setInterval(loadData, 300000);
     </script>
 </body>
 </html>
