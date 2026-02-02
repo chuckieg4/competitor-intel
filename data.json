@@ -200,6 +200,129 @@
       ]
     },
     {
+      "name": "Menerals",
+      "tier": 2,
+      "site": "menerals.com",
+      "landingPage": "https://menerals.com/pages/welcome-2",
+      "category": "Men's mineral supplements",
+      "adCount": "~260",
+      "changes": {
+        "offer": null,
+        "lp": null,
+        "creative": "New"
+      },
+      "offers": [
+        { "label": "Risk-Free", "value": "100% money back" },
+        { "label": "Source", "value": "USA-sourced ingredients" }
+      ],
+      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=menerals&search_type=keyword_unordered",
+      "topCreatives": [
+        { 
+          "format": "Static", 
+          "hook": "Powders for Cupcakes - USA made", 
+          "note": "Running since Jan 14", 
+          "url": "https://www.facebook.com/ads/library/?id=870372939127341",
+          "landingPage": "https://menerals.com/pages/welcome-2"
+        },
+        { 
+          "format": "Long Copy", 
+          "hook": "Stop feeling like Barbie, not Ken", 
+          "note": "Testosterone/minerals angle", 
+          "url": "https://www.facebook.com/ads/library/?id=1536326844305866",
+          "landingPage": "https://menerals.com/pages/welcome-2"
+        }
+      ],
+      "whatsWorking": [
+        "Anti-import/USA-made positioning",
+        "Testosterone/hormone messaging",
+        "Masculine voice (anti-soft messaging)",
+        "100+ trace minerals claim",
+        "Long-form educational copy"
+      ]
+    },
+    {
+      "name": "Eatmancereal",
+      "tier": 2,
+      "site": "eatmancereal.com",
+      "landingPage": "https://eatmancereal.com",
+      "category": "High-protein cereal",
+      "adCount": "~56",
+      "changes": {
+        "offer": null,
+        "lp": null,
+        "creative": "New"
+      },
+      "offers": [
+        { "label": "Product", "value": "Creatine + High Protein" },
+        { "label": "Diet", "value": "Keto, Low Sugar" }
+      ],
+      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=eatmancereal&search_type=keyword_unordered",
+      "topCreatives": [
+        { 
+          "format": "Video", 
+          "hook": "Cereal without the B.S. is taking over", 
+          "note": "Running since Jan 19", 
+          "url": "https://www.facebook.com/ads/library/?id=1384299212780222",
+          "landingPage": "https://eatmancereal.com"
+        },
+        { 
+          "format": "Video", 
+          "hook": "Cereal Finally Manned Up", 
+          "note": "Creatine + protein angle", 
+          "url": "https://www.facebook.com/ads/library/?id=25702938722658851",
+          "landingPage": "https://eatmancereal.com"
+        }
+      ],
+      "whatsWorking": [
+        "Masculine positioning (Manned Up)",
+        "Anti-BS/anti-junk messaging",
+        "Functional benefits (creatine, protein)",
+        "Simple product concept"
+      ]
+    },
+    {
+      "name": "Primal Queen",
+      "tier": 2,
+      "site": "primalqueen.com",
+      "landingPage": "https://primalqueen.com/pages/tiktok",
+      "category": "Women's beef organ supplements",
+      "adCount": "~2,800",
+      "flags": ["heavy-spender"],
+      "changes": {
+        "offer": null,
+        "lp": null,
+        "creative": null
+      },
+      "offers": [
+        { "label": "Angle", "value": "Female-focused" },
+        { "label": "Product", "value": "Beef organ superfoods" }
+      ],
+      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=primal%20queen&search_type=keyword_unordered",
+      "topCreatives": [
+        { 
+          "format": "Static", 
+          "hook": "Female-focused beef organs - testimonial", 
+          "note": "3 ads running since Oct 20", 
+          "url": "https://www.facebook.com/ads/library/?id=1620465702670999",
+          "landingPage": "https://primalqueen.com/pages/tiktok"
+        },
+        { 
+          "format": "Static", 
+          "hook": "More energized, less bloating", 
+          "note": "Emma L. testimonial", 
+          "url": "https://www.facebook.com/ads/library/?id=1543453536868755",
+          "landingPage": "https://primalqueen.com/pages/tiktok"
+        }
+      ],
+      "whatsWorking": [
+        "MASSIVE scale (2,800 ads!)",
+        "Testimonial-led creatives",
+        "Ancestral/primal health angle",
+        "Female-focused positioning",
+        "Energy + hormone balancing claims"
+      ]
+    },
+    {
       "name": "AG1",
       "tier": 2,
       "site": "drinkag1.com",
@@ -223,32 +346,6 @@
         "Master-class content marketing",
         "Podcast sponsor saturation",
         "All-in-one simplicity message"
-      ]
-    },
-    {
-      "name": "Happy Mammoth",
-      "tier": 2,
-      "site": "happymammoth.com",
-      "landingPage": "https://happymammoth.com",
-      "category": "Gut health supplements",
-      "changes": {
-        "offer": null,
-        "lp": null,
-        "creative": null
-      },
-      "offers": [
-        { "label": "Quiz Funnel", "value": "Personalized results" },
-        { "label": "Bundles", "value": "Subscribe & save" }
-      ],
-      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=happy%20mammoth&search_type=keyword_unordered",
-      "topCreatives": [
-        { "format": "Quiz Ad", "hook": "Take the gut health quiz", "note": "Heavy funnel", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=happy%20mammoth&search_type=keyword_unordered" },
-        { "format": "UGC", "hook": "Transformation stories", "note": "Before/after", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=happy%20mammoth&search_type=keyword_unordered" }
-      ],
-      "whatsWorking": [
-        "Quiz-to-sale funnel",
-        "Personalization angle",
-        "Gut health specificity"
       ]
     },
     {
@@ -282,8 +379,9 @@
       "Long-form problem→solution copy (Hollow, Nads)",
       "Bundle offers — 40% OFF packs, Buy 2 Get 2",
       "99-Day or Lifetime guarantees",
-      "USA-made/Knit patriotic angle",
-      "Social proof — 'X switched', 'X sold'"
+      "USA-made/sourced patriotic angle",
+      "Masculine 'anti-soft' messaging (Menerals, Eatmancereal)",
+      "Testimonial-led creatives (Primal Queen)"
     ],
     "gaps": [
       "Anti-polyester in TEES — Nads does underwear, we own tees",
@@ -293,7 +391,8 @@
     ],
     "watch": [
       "Nads expanding to shorts — could tees be next?",
-      "Hollow's checklist format crushing it — steal it",
+      "Primal Queen at 2,800 ads = MASSIVE scale",
+      "Menerals hitting testosterone angle hard",
       "April boxer briefs launch = collision course with Nads"
     ]
   },
@@ -315,13 +414,13 @@
     },
     {
       "priority": "med",
-      "title": "Bundle Offer Test",
-      "description": "Nads: 40% OFF 20-pack. Hollow: Buy 2 Get 2. Test aggressive bundle pricing."
+      "title": "Masculine 'Anti-BS' Voice",
+      "description": "Menerals & Eatmancereal use aggressive masculine copy. Test: 'Polyester is for cupcakes.'"
     },
     {
       "priority": "med",
-      "title": "Landing Page: Product Page vs Collection",
-      "description": "BYLT sends to collections, Nads sends to product bundles. Test both."
+      "title": "Bundle Offer Test",
+      "description": "Nads: 40% OFF 20-pack. Hollow: Buy 2 Get 2. Test aggressive bundle pricing."
     }
   ]
 }
