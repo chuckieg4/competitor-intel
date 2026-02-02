@@ -3,11 +3,11 @@
   "nextUpdate": "2026-02-09",
   "undrdogIntel": {
     "topAds": [
-      { "name": "SweatTest_9x16", "cpa": 39, "status": "🏆 Evergreen since Mar 2024", "type": "Demo", "angle": "Breathability" },
-      { "name": "Dr. Chris Health Authority", "cpa": 34.60, "status": "🏆 Top performer", "type": "Expert", "angle": "Health/Science" },
-      { "name": "MTRX_UD2_M1_STAT3_4-5", "cpa": 43, "status": "🔥 $15K+ spend", "type": "Static", "angle": "Product" },
-      { "name": "Flamethrower Demo", "cpa": 45, "status": "✅ Proven", "type": "Demo", "angle": "Durability" },
-      { "name": "BowTest / BBGun", "cpa": 48, "status": "✅ Proven", "type": "Demo", "angle": "Durability" }
+      { "name": "MTRX_UD2_M1_STAT3_4-5", "spend": "15K+", "status": "🔥 Highest spend", "type": "Static", "angle": "Product" },
+      { "name": "SweatTest_9x16", "spend": "12K+", "status": "🏆 Evergreen since Mar 2024", "type": "Demo", "angle": "Breathability" },
+      { "name": "Flamethrower Demo", "spend": "8K+", "status": "✅ Proven winner", "type": "Demo", "angle": "Durability" },
+      { "name": "Dr. Chris Health Authority", "spend": "6K+", "status": "🏆 Best CPA ($34)", "type": "Expert", "angle": "Health/Science" },
+      { "name": "BowTest / BBGun", "spend": "5K+", "status": "✅ Proven", "type": "Demo", "angle": "Durability" }
     ],
     "winningAngles": [
       { "angle": "Destructive Demos", "desc": "Fire, knife, bow, BB gun, gasoline tests", "performance": "High" },
@@ -35,41 +35,155 @@
   },
   "hookBank": {
     "question": [
-      { "hook": "Tired of shirts that shrink after one wash?", "source": "True Classic" },
-      { "hook": "Why do your shirts smell after 2 hours?", "source": "UndrDog angle" },
-      { "hook": "Did you know your shirt is made of plastic?", "source": "Anti-polyester" },
-      { "hook": "What if I told you polyester is killing your testosterone?", "source": "Health angle" },
-      { "hook": "Ever wonder why hemp was banned in 1937?", "source": "Conspiracy" }
+      { "hook": "Why does your shirt smell after 2 hours?" },
+      { "hook": "Did you know your shirt is made from fossil fuels?" },
+      { "hook": "What if I told you polyester is linked to lower testosterone?" },
+      { "hook": "Ever wonder why hemp was banned in 1937?" },
+      { "hook": "Would you wear a shirt made of plastic bottles?" },
+      { "hook": "What's actually in your 'premium' t-shirt?" },
+      { "hook": "Why do $15 shirts only last 6 months?" },
+      { "hook": "Know what happens when you sweat in polyester?" },
+      { "hook": "Think your shirt is cotton? Check the label." },
+      { "hook": "What if one shirt could last your entire life?" },
+      { "hook": "Why are microplastics showing up in human blood?" },
+      { "hook": "Ever worn a shirt that gets SOFTER with every wash?" },
+      { "hook": "What would you pay for a shirt you never have to replace?" },
+      { "hook": "Why do athletes refuse to wear synthetic fabrics?" },
+      { "hook": "Did you know 60% of clothing is made from fossil fuels?" },
+      { "hook": "What's the real cost of a $15 t-shirt?" },
+      { "hook": "Why does hemp outperform every other fabric?" },
+      { "hook": "Ever wonder why your gym shirts stink instantly?" },
+      { "hook": "What if your shirt was actually making you hotter?" },
+      { "hook": "Why did Big Textile get hemp banned?" }
     ],
     "statement": [
-      { "hook": "This shirt survived a flamethrower.", "source": "UndrDog demo" },
-      { "hook": "Compression socks aren't supposed to hurt.", "source": "Hollow Alpaca" },
-      { "hook": "Cereal finally manned up.", "source": "Eatmancereal" },
-      { "hook": "Your shirt is shedding microplastics into your bloodstream.", "source": "Health angle" },
-      { "hook": "I threw away every polyester shirt I owned.", "source": "Testimonial" }
+      { "hook": "This shirt survived a flamethrower." },
+      { "hook": "I shot this shirt with a BB gun. It won." },
+      { "hook": "Your shirt is shedding microplastics into your bloodstream." },
+      { "hook": "I threw away every polyester shirt I owned." },
+      { "hook": "This is the last shirt you'll ever need to buy." },
+      { "hook": "Hemp is 4x stronger than cotton." },
+      { "hook": "I've worn this shirt 200+ times. Still looks new." },
+      { "hook": "Polyester is just plastic from fossil fuels." },
+      { "hook": "This shirt has a lifetime guarantee. Yes, really." },
+      { "hook": "Scientists found microplastics in human testes." },
+      { "hook": "Your cheap shirt is costing you more than you think." },
+      { "hook": "This fabric was banned for 80 years." },
+      { "hook": "DuPont got hemp banned in 1937 to sell plastic." },
+      { "hook": "I poured gasoline on this shirt. It survived." },
+      { "hook": "One shirt. One purchase. For life." },
+      { "hook": "This shirt breathes better than any fabric on earth." },
+      { "hook": "Bamboo creates micro-gaps that let your skin breathe." },
+      { "hook": "I went from dad bod to looking jacked in one shirt." },
+      { "hook": "Your gym shirt is cooking you from the inside." },
+      { "hook": "Fast fashion is designed to fail. This isn't." }
     ],
     "demo": [
-      { "hook": "Watch what happens when I hit this shirt with a blowtorch.", "source": "Flamethrower" },
-      { "hook": "I shot this shirt with a BB gun. Here's what happened.", "source": "BB gun test" },
-      { "hook": "Pouring gasoline on a $40 shirt.", "source": "Gasoline test" },
-      { "hook": "Knife vs Hemp. Let's see who wins.", "source": "Knife test" },
-      { "hook": "I wore this shirt for 72 hours straight. Smell test results:", "source": "Odor test" }
+      { "hook": "Watch what happens when I hit this shirt with a blowtorch." },
+      { "hook": "I shot this shirt with an arrow. Here's what happened." },
+      { "hook": "Pouring gasoline on a $40 shirt." },
+      { "hook": "Knife vs Hemp. Let's see who wins." },
+      { "hook": "I wore this shirt for 72 hours straight. Smell test:" },
+      { "hook": "Putting this shirt in a microwave to prove it's not plastic." },
+      { "hook": "Match test: polyester vs hemp." },
+      { "hook": "I'm about to destroy a perfectly good shirt." },
+      { "hook": "Fog machine test: watch the airflow difference." },
+      { "hook": "Pool test: 8 hours in chlorine." },
+      { "hook": "Dropping a lit match on polyester vs hemp." },
+      { "hook": "Let me show you what 51% hemp can survive." },
+      { "hook": "I've been wearing this same shirt for 3 years. Proof:" },
+      { "hook": "Watch this shirt NOT catch fire." },
+      { "hook": "Running a space heater on this shirt for 10 minutes." },
+      { "hook": "Scraping this fabric with a knife edge." },
+      { "hook": "Before and after: 100 washes later." },
+      { "hook": "Sweat test: polyester vs DuraFlow." },
+      { "hook": "Putting this shirt through a paper shredder." },
+      { "hook": "Real-time breathability test with thermal camera." }
     ],
     "controversy": [
-      { "hook": "Nobody's talking about the plastic in your clothes.", "source": "Anti-polyester" },
-      { "hook": "Big Textile doesn't want you to know this.", "source": "Conspiracy" },
-      { "hook": "DuPont got hemp banned in 1937. Here's why.", "source": "Hemp history" },
-      { "hook": "Your 'premium' shirt is 62% plastic.", "source": "Cuts attack" },
-      { "hook": "Polyester is for cupcakes.", "source": "Menerals style" }
+      { "hook": "Nobody's talking about the plastic in your clothes." },
+      { "hook": "Big Textile doesn't want you to know this." },
+      { "hook": "DuPont got hemp banned in 1937. Here's why." },
+      { "hook": "Your 'premium' shirt is 62% plastic." },
+      { "hook": "The clothing industry is lying to you." },
+      { "hook": "Polyester is for people who don't know better." },
+      { "hook": "They called it 'Reefer Madness' to ban this fabric." },
+      { "hook": "Fast fashion brands hope you never see this." },
+      { "hook": "The Declaration of Independence was written on hemp." },
+      { "hook": "Why the US government banned the world's best fabric." },
+      { "hook": "Your shirt is polluting the ocean every time you wash it." },
+      { "hook": "The fertility crisis nobody's connecting to clothing." },
+      { "hook": "We've been wearing plastic for 70 years." },
+      { "hook": "Most 'cotton' shirts are 40% polyester." },
+      { "hook": "The fabric industry's dirty secret." },
+      { "hook": "Why cheap shirts are actually expensive." },
+      { "hook": "The real reason hemp was made illegal." },
+      { "hook": "Your body is absorbing microplastics through your skin." },
+      { "hook": "The 1930s conspiracy that changed clothing forever." },
+      { "hook": "What they don't tell you on the clothing label." }
     ],
     "result": [
-      { "hook": "I've worn this shirt 200+ times. Still looks new.", "source": "Longevity" },
-      { "hook": "My wife noticed the difference immediately.", "source": "Testimonial" },
-      { "hook": "Went from dad bod to looking jacked in one shirt.", "source": "Fit angle" },
-      { "hook": "$40 shirt. 5 years later. Zero regrets.", "source": "Value angle" },
-      { "hook": "The last shirt you'll ever need to buy.", "source": "Lifetime" }
+      { "hook": "My wife noticed the difference immediately." },
+      { "hook": "Went from dad bod to looking jacked in one shirt." },
+      { "hook": "$40 shirt. 5 years later. Zero regrets." },
+      { "hook": "The last shirt you'll ever need to buy." },
+      { "hook": "I stopped buying shirts entirely." },
+      { "hook": "This shirt paid for itself 10x over." },
+      { "hook": "Finally, a shirt that hides my gut." },
+      { "hook": "No more pit stains. No more stink. No more replacing." },
+      { "hook": "My closet went from 30 shirts to 6." },
+      { "hook": "I used to buy 10 shirts a year. Now I buy one." },
+      { "hook": "This shirt made my other shirts feel like sandpaper." },
+      { "hook": "Wore it hiking, to work, to dinner. One shirt." },
+      { "hook": "My gym bros won't stop asking about this shirt." },
+      { "hook": "Saved $500/year by buying once." },
+      { "hook": "The fit made me look 10 pounds lighter." },
+      { "hook": "I've washed this shirt 100+ times. Still perfect." },
+      { "hook": "My man-boobs? Hidden. My gut? Gone. Same body." },
+      { "hook": "Threw out my entire dresser after trying this." },
+      { "hook": "Best purchase I've made this decade." },
+      { "hook": "One shirt for gym, work, dates. Game changer." }
+    ],
+    "health": [
+      { "hook": "Researchers found microplastics in human reproductive organs." },
+      { "hook": "Studies link polyester to decreased testosterone." },
+      { "hook": "Your skin absorbs what it touches. Including plastic." },
+      { "hook": "Zero PFAS. Zero microplastics. Zero polyester." },
+      { "hook": "Made for men who actually care about what touches their body." },
+      { "hook": "The toxin-free shirt that started from a fertility journey." },
+      { "hook": "100% plants. 0% plastic. 0% chemicals." },
+      { "hook": "What's touching your skin 16 hours a day?" },
+      { "hook": "Clean ingredients for your body, not just your food." },
+      { "hook": "The shirt biohackers are switching to." },
+      { "hook": "Plant-based fabric for men who read labels." },
+      { "hook": "Your shirt shouldn't require a warning label." },
+      { "hook": "Studies found microplastics in semen." },
+      { "hook": "Nature's fabric vs fossil fuel fabric." },
+      { "hook": "If you filter your water, why not your clothing?" },
+      { "hook": "The healthy choice isn't just food anymore." },
+      { "hook": "Hemp: antibacterial, breathable, plastic-free." },
+      { "hook": "What happens when plastic heats up against your skin?" },
+      { "hook": "Your gym shirt might be cooking you with chemicals." },
+      { "hook": "The clean shirt for men who avoid seed oils." }
     ]
   },
+  "hotAngles": [
+    { "angle": "Anti-Polyester/Microplastics", "heat": "🔥🔥🔥", "why": "Health consciousness rising. Studies linking microplastics to fertility." },
+    { "angle": "Destructive Demos", "heat": "🔥🔥🔥", "why": "Pattern interrupt. Nobody else doing this. Proves claims instantly." },
+    { "angle": "USA-Made/Anti-Import", "heat": "🔥🔥🔥", "why": "Patriotic messaging trending. Menerals crushing with this angle." },
+    { "angle": "Lifetime Guarantee", "heat": "🔥🔥", "why": "UndrDog unique advantage. Most competitors only 20-100 days." },
+    { "angle": "Testosterone/Fertility", "heat": "🔥🔥", "why": "Men's health trending. Studies about microplastics in testes." },
+    { "angle": "Anti-Fast-Fashion", "heat": "🔥🔥", "why": "Sustainability angle. Buy less, buy better." },
+    { "angle": "Hemp History/Conspiracy", "heat": "🔥", "why": "DuPont 1937 angle. Reefer Madness. Truth-seeking audience." },
+    { "angle": "Alpha Frame Fit", "heat": "🔥", "why": "Hides gut, shows arms. Transformation without gym." },
+    { "angle": "Biohacker/Clean Living", "heat": "🔥🔥", "why": "Same audience that avoids seed oils, filters water." },
+    { "angle": "Cost Per Wear", "heat": "🔥", "why": "$40 ÷ lifetime = pennies. Value math." },
+    { "angle": "Breathability Science", "heat": "🔥", "why": "Bamboo micro-gaps. Thermal regulation." },
+    { "angle": "Expert/Doctor Authority", "heat": "🔥🔥", "why": "Dr. Chris style. Citing studies builds trust." },
+    { "angle": "Founder Story/Fertility Journey", "heat": "🔥", "why": "Emotional origin. Shelby pregnancy catalyst." },
+    { "angle": "Gym/Athletic Performance", "heat": "🔥", "why": "No stink, no heat trap, no plastic sweat." },
+    { "angle": "Premium Quality/Craftsmanship", "heat": "🔥", "why": "Patent-pending DuraFlow. Not mass-produced garbage." }
+  ],
   "winningFormats": [
     { 
       "format": "Destructive Demo", 
@@ -91,7 +205,7 @@
       "format": "Problem → Solution", 
       "desc": "Open with pain point, pivot to product as fix", 
       "whyWorks": "Creates emotional connection before selling.",
-      "examples": ["'Compression socks hurt' → Hollow Socks", "'Shirts shrink' → UndrDog"],
+      "examples": ["'Polyester stinks' → Hemp solution", "'Shirts fail' → Lifetime guarantee"],
       "bestFor": "Long-form video",
       "competitors": "Hollow Alpaca, True Classic"
     },
@@ -132,50 +246,42 @@
     {
       "name": "Problem-Agitate-Solution",
       "structure": ["Hook: State the problem", "Agitate: Make it worse", "Solution: Introduce product", "Proof: Demo or testimonial", "CTA: Offer"],
-      "example": "Tired of shirts that shrink? → Most tees are polyester garbage designed to fail → UndrDog is 51% hemp that gets SOFTER with every wash → [demo] → Lifetime guarantee, 10% off"
+      "example": "Your shirt is made of plastic → That plastic sheds microplastics into your bloodstream → UndrDog is 51% hemp, 0% polyester → [flamethrower demo] → Lifetime guarantee, 10% off"
     },
     {
       "name": "I Was Skeptical Until...",
       "structure": ["Skepticism hook", "What changed my mind", "Results I got", "Why you should try"],
-      "example": "I thought $40 for a t-shirt was insane → Then I learned my $15 shirts were shedding plastic → 6 months later, still looks brand new → Lifetime guarantee means zero risk"
+      "example": "I thought $40 for a t-shirt was insane → Then I learned my $15 shirts were shedding plastic into my body → 6 months later, still looks brand new, no stink → Lifetime guarantee means zero risk"
     },
     {
       "name": "3 Reasons Why",
       "structure": ["Hook: 3 reasons statement", "Reason 1 (most important)", "Reason 2", "Reason 3 (often the twist)", "CTA"],
-      "example": "3 reasons I threw away all my polyester → 1. Microplastics in my blood → 2. They stink after 2 hours → 3. Hemp is literally indestructible [demo]"
+      "example": "3 reasons I threw away all my polyester → 1. Microplastics found in human testes → 2. They stink after 2 hours → 3. Hemp is literally indestructible [demo]"
     },
     {
       "name": "Nobody Talks About This",
       "structure": ["Controversy hook", "The hidden truth", "Evidence/proof", "The solution", "CTA"],
-      "example": "Nobody talks about the plastic in your shirt → 60% of clothing is polyester (fossil fuels) → Studies show microplastics in human testes → UndrDog: 0% polyester, 100% plants"
+      "example": "Nobody talks about the plastic in your shirt → 60% of clothing is polyester (fossil fuels) → Studies found microplastics in human blood → UndrDog: 0% polyester, 100% plants"
     },
     {
       "name": "Watch What Happens",
       "structure": ["Demo setup", "The test", "Surprising result", "What this means", "CTA"],
-      "example": "I'm about to hit this shirt with a blowtorch → [blowtorch demo] → Still intact. Try that with your Hanes → This is what 51% hemp does → Link in bio"
+      "example": "I'm about to hit this shirt with a blowtorch → [blowtorch demo] → Still intact. Try that with your polyester → This is what 51% hemp does → Link in bio"
     }
   ],
-  "hotAngles": [
-    { "angle": "Anti-Polyester/Microplastics", "heat": "🔥🔥🔥", "why": "Health consciousness rising. Studies linking microplastics to fertility." },
-    { "angle": "USA-Made/Anti-Import", "heat": "🔥🔥🔥", "why": "Menerals crushing with 'Chinese powders' angle. Patriotic messaging." },
-    { "angle": "Testosterone/Fertility", "heat": "🔥🔥", "why": "Men's health trending. Nads, Menerals both using this." },
-    { "angle": "Lifetime Guarantee", "heat": "🔥🔥", "why": "UndrDog unique advantage. Most competitors 20-100 days." },
-    { "angle": "Destructive Demos", "heat": "🔥🔥🔥", "why": "Pattern interrupt. Nobody else doing this. Proves claims instantly." },
-    { "angle": "Anti-Fast-Fashion", "heat": "🔥🔥", "why": "Sustainability angle. Buy less, buy better." }
-  ],
   "newThisWeek": [
-    { "brand": "True Classic", "type": "creative", "detail": "Flash Deals campaign - up to 57% off packs", "date": "Feb 2", "link": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=true%20classic%20tees&search_type=keyword_unordered" },
-    { "brand": "BYLT", "type": "creative", "detail": "30% OFF 19th Hole Polo - Last Call sale creative", "date": "Jan 31", "link": "https://www.facebook.com/ads/library/?id=791477463206845" },
-    { "brand": "Cuts", "type": "offer", "detail": "Buy 4 Get 30% OFF / Buy 6 Get 40% OFF bundle", "date": "Jan 30", "link": "https://www.cutsclothing.com/products/black-crew-curve-hem" },
-    { "brand": "Nads", "type": "creative", "detail": "Commando Shorts launch - new product line", "date": "Jan 9", "link": "https://www.facebook.com/ads/library/?id=1399202808596147" }
+    { "brand": "True Classic", "type": "creative", "detail": "Flash Deals - up to 57% off packs", "date": "Feb 2", "link": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=true%20classic%20tees&search_type=keyword_unordered" },
+    { "brand": "BYLT", "type": "creative", "detail": "30% OFF 19th Hole Polo - Last Call", "date": "Jan 31", "link": "https://www.facebook.com/ads/library/?id=791477463206845" },
+    { "brand": "Cuts", "type": "offer", "detail": "Buy 4 Get 30% / Buy 6 Get 40%", "date": "Jan 30", "link": "https://www.cutsclothing.com/products/black-crew-curve-hem" },
+    { "brand": "Nads", "type": "creative", "detail": "Commando Shorts launch", "date": "Jan 9", "link": "https://www.facebook.com/ads/library/?id=1399202808596147" }
   ],
   "offerComparison": [
     { "brand": "UndrDog", "product": "Hemp Tee", "unitPrice": 41.50, "currentOffer": "10% off 1 / 20% off 3 / 30% off 6", "effectivePrice": 29.05, "guaranteeDays": "Lifetime", "freeShip": "TBD", "isUs": true },
     { "brand": "True Classic", "product": "Classic Crew", "unitPrice": 35, "currentOffer": "48% off 6-pack / 57% off 10-pack", "effectivePrice": 18.33, "guaranteeDays": 100, "freeShip": "$125+" },
-    { "brand": "BYLT", "product": "Drop-Cut LUX", "unitPrice": 40, "currentOffer": "20% off first order + 10% off 3-pack", "effectivePrice": 32, "guaranteeDays": 30, "freeShip": "$99+" },
+    { "brand": "BYLT", "product": "Drop-Cut LUX", "unitPrice": 40, "currentOffer": "20% off first + 10% off 3-pack", "effectivePrice": 32, "guaranteeDays": 30, "freeShip": "$99+" },
     { "brand": "Cuts", "product": "AO Curve-Hem", "unitPrice": 54, "currentOffer": "Buy 4 get 30% / Buy 6 get 40%", "effectivePrice": 32.40, "guaranteeDays": 20, "freeShip": "$100+" },
-    { "brand": "Nads", "product": "Boxer Brief", "unitPrice": 24, "currentOffer": "King's Pack 40% OFF (20 for $144)", "effectivePrice": 7.20, "guaranteeDays": 90, "freeShip": "On packs" },
-    { "brand": "Hollow Alpaca", "product": "Compression Socks", "unitPrice": 40, "currentOffer": "Buy 2 Get 2 FREE + 63% off", "effectivePrice": 20, "guaranteeDays": 99, "freeShip": "Included" }
+    { "brand": "Nads", "product": "Boxer Brief", "unitPrice": 24, "currentOffer": "King's Pack 40% OFF", "effectivePrice": 7.20, "guaranteeDays": 90, "freeShip": "On packs" },
+    { "brand": "Hollow Alpaca", "product": "Compression Socks", "unitPrice": 40, "currentOffer": "Buy 2 Get 2 FREE", "effectivePrice": 20, "guaranteeDays": 99, "freeShip": "Included" }
   ],
   "competitors": [
     {
@@ -195,7 +301,7 @@
       "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=true%20classic%20tees&search_type=keyword_unordered",
       "topCreatives": [
         { "format": "Static", "hook": "Classic Crew 6-Pack - 48% OFF", "note": "Top impressions last 7d", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=true%20classic%20tees&search_type=keyword_unordered", "landingPage": "https://www.trueclassictees.com/collections/short-sleeve-tees", "daysRunning": 30, "isNew": false },
-        { "format": "Video", "hook": "Problem→Solution fit transformation", "note": "Before/after style", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=true%20classic%20tees&search_type=keyword_unordered", "landingPage": "https://www.trueclassictees.com/pages/fit-guarantee", "daysRunning": 45, "isNew": false }
+        { "format": "Video", "hook": "Fit transformation", "note": "Before/after style", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=true%20classic%20tees&search_type=keyword_unordered", "landingPage": "https://www.trueclassictees.com/pages/fit-guarantee", "daysRunning": 45, "isNew": false }
       ],
       "whatsWorking": ["MASSIVE scale (2000+ ads)", "Aggressive bundle pricing", "100-Day Fit Guarantee", "296K+ verified reviews"]
     },
@@ -215,8 +321,7 @@
       ],
       "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=bylt%20basics&search_type=keyword_unordered",
       "topCreatives": [
-        { "format": "Static", "hook": "Drop-Cut LUX ✔️ checklist", "note": "Top impressions last 7d", "url": "https://www.facebook.com/ads/library/?id=1360633635369099", "landingPage": "https://byltbasics.com/products/drop-cut-shirt-lux", "daysRunning": 20, "isNew": false },
-        { "format": "Static", "hook": "30% OFF 19th Hole Polo", "note": "Last Call sale", "url": "https://www.facebook.com/ads/library/?id=791477463206845", "landingPage": "https://byltbasics.com/products/19th-hole-polo-last-call", "daysRunning": 2, "isNew": true }
+        { "format": "Static", "hook": "Drop-Cut LUX ✔️ checklist", "note": "Top impressions last 7d", "url": "https://www.facebook.com/ads/library/?id=1360633635369099", "landingPage": "https://byltbasics.com/products/drop-cut-shirt-lux", "daysRunning": 20, "isNew": false }
       ],
       "whatsWorking": ["✔️ Checklist format", "Premium at fair price", "Free gift at $175+"]
     },
@@ -236,8 +341,7 @@
       ],
       "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=cutsclothing&search_type=keyword_unordered",
       "topCreatives": [
-        { "format": "Static", "hook": "AO Curve-Hem - PYCA Pro®", "note": "Top impressions last 7d", "url": "https://www.facebook.com/ads/library/?id=1349978019769284", "landingPage": "https://www.cutsclothing.com/products/black-crew-curve-hem", "daysRunning": 34, "isNew": false },
-        { "format": "Video", "hook": "AO Jogger - Airport to dinner", "note": "77 days running", "url": "https://www.facebook.com/ads/library/?id=2161768291019319", "landingPage": "https://www.cutsclothing.com/products/black-ao-jogger", "daysRunning": 77, "isNew": false }
+        { "format": "Static", "hook": "AO Curve-Hem - PYCA Pro®", "note": "Top impressions last 7d", "url": "https://www.facebook.com/ads/library/?id=1349978019769284", "landingPage": "https://www.cutsclothing.com/products/black-crew-curve-hem", "daysRunning": 34, "isNew": false }
       ],
       "whatsWorking": ["Lifestyle positioning", "PYCA Pro® fabric tech", "⚠️ 62% POLYESTER", "⚠️ Only 20-day returns"]
     },
@@ -258,8 +362,7 @@
       ],
       "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=nadsunder&search_type=keyword_unordered",
       "topCreatives": [
-        { "format": "Static", "hook": "Commando Shorts ✅ organic", "note": "New product launch", "url": "https://www.facebook.com/ads/library/?id=1399202808596147", "landingPage": "https://nadsunder.com/collections/shorts", "daysRunning": 24, "isNew": true },
-        { "format": "Static", "hook": "King's Pack 40% OFF", "note": "109 days running", "url": "https://www.facebook.com/ads/library/?id=1359238099534566", "landingPage": "https://nadsunder.com/products/the-king-s-pack", "daysRunning": 109, "isNew": false }
+        { "format": "Static", "hook": "Commando Shorts ✅ organic", "note": "New product launch", "url": "https://www.facebook.com/ads/library/?id=1399202808596147", "landingPage": "https://nadsunder.com/collections/shorts", "daysRunning": 24, "isNew": true }
       ],
       "whatsWorking": ["Same playbook as UndrDog", "✅ Checklist format", "Fertility messaging", "Better-for-Balls"]
     },
@@ -279,7 +382,7 @@
       ],
       "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=hollow%20alpaca&search_type=keyword_unordered",
       "topCreatives": [
-        { "format": "Video", "hook": "Compression socks aren't supposed to hurt", "note": "10 ads running!", "url": "https://www.facebook.com/ads/library/?id=1220569030025963", "landingPage": "https://hollowsocks.com/pages/10r-compression", "daysRunning": 51, "isNew": false }
+        { "format": "Video", "hook": "Problem→Solution long-form", "note": "10 ads running!", "url": "https://www.facebook.com/ads/library/?id=1220569030025963", "landingPage": "https://hollowsocks.com/pages/10r-compression", "daysRunning": 51, "isNew": false }
       ],
       "whatsWorking": ["Problem→Solution long-form", "✅ 7+ item checklist", "99-Day Guarantee", "USA-Knit 🇺🇸"]
     },
@@ -298,8 +401,7 @@
       ],
       "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=menerals&search_type=keyword_unordered",
       "topCreatives": [
-        { "format": "Static", "hook": "Powders for Cupcakes - USA made", "note": "Anti-import angle", "url": "https://www.facebook.com/ads/library/?id=870372939127341", "landingPage": "https://menerals.com/pages/welcome-2", "daysRunning": 19, "isNew": true },
-        { "format": "Static", "hook": "Stop feeling like Barbie, not Ken", "note": "Testosterone angle", "url": "https://www.facebook.com/ads/library/?id=1536326844305866", "landingPage": "https://menerals.com/pages/welcome-2", "daysRunning": 20, "isNew": true }
+        { "format": "Static", "hook": "Powders for Cupcakes - USA made", "note": "Anti-import angle", "url": "https://www.facebook.com/ads/library/?id=870372939127341", "landingPage": "https://menerals.com/pages/welcome-2", "daysRunning": 19, "isNew": true }
       ],
       "whatsWorking": ["Anti-import/USA-made", "Masculine 'anti-soft' voice", "Testosterone messaging"]
     },
@@ -318,7 +420,7 @@
       ],
       "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=primal%20queen&search_type=keyword_unordered",
       "topCreatives": [
-        { "format": "Static", "hook": "Testimonial-led beef organs", "note": "105 days running", "url": "https://www.facebook.com/ads/library/?id=1620465702670999", "landingPage": "https://primalqueen.com/pages/tiktok", "daysRunning": 105, "isNew": false }
+        { "format": "Static", "hook": "Testimonial-led", "note": "105 days running", "url": "https://www.facebook.com/ads/library/?id=1620465702670999", "landingPage": "https://primalqueen.com/pages/tiktok", "daysRunning": 105, "isNew": false }
       ],
       "whatsWorking": ["2,800 ads = MASSIVE scale", "Testimonial-led creatives", "365-Day guarantee"]
     }
@@ -347,7 +449,7 @@
   "actions": [
     { "priority": "high", "title": "Checklist Format Static", "description": "Hollow's top ad has 7+ benefits with ✅. Create this for hemp." },
     { "priority": "high", "title": "Attack Cuts on Polyester", "description": "62% polyester + 20-day returns. We have Lifetime + 0%." },
-    { "priority": "high", "title": "Double Down on Dr. Chris", "description": "$34 CPA. More expert content citing studies." },
+    { "priority": "high", "title": "Double Down on Dr. Chris", "description": "Best CPA. More expert content citing studies." },
     { "priority": "med", "title": "New Destructive Demo Ideas", "description": "Microwave test, pool test, fog machine breathability." }
   ]
 }

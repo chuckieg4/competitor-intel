@@ -81,11 +81,17 @@
         .script-card .example { font-size: 12px; color: #bbb; padding: 10px; background: rgba(99, 102, 241, 0.1); border-radius: 6px; font-style: italic; }
 
         /* Hot Angles */
-        .angles-grid { display: flex; flex-wrap: wrap; gap: 12px; }
+        .angles-grid { display: flex; flex-direction: column; gap: 12px; }
+        .angles-list { display: flex; flex-wrap: wrap; gap: 12px; }
         .angle-tag { background: rgba(0,0,0,0.3); border-radius: 8px; padding: 12px 16px; display: flex; align-items: center; gap: 10px; }
         .angle-tag .heat { font-size: 14px; }
         .angle-tag .name { font-weight: 500; font-size: 13px; }
         .angle-tag .why { font-size: 11px; color: #888; max-width: 200px; }
+        
+        /* Load More */
+        .load-more-btn { display: block; margin: 20px auto 0; padding: 12px 24px; background: linear-gradient(135deg, #6366f1, #8b5cf6); border: none; color: white; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+        .load-more-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4); }
+        .all-loaded { text-align: center; color: #4ade80; font-size: 12px; margin-top: 16px; }
 
         /* New This Week */
         .new-this-week { background: linear-gradient(135deg, rgba(251, 146, 60, 0.15), rgba(239, 68, 68, 0.15)); border: 1px solid rgba(251, 146, 60, 0.3); }
@@ -187,8 +193,8 @@
 
         <!-- Hook Bank -->
         <section>
-            <h2>🎣 Hook Bank</h2>
-            <p class="section-desc">Scroll-stopping opening lines. Click to copy.</p>
+            <h2>🎣 Hook Bank for UndrDog</h2>
+            <p class="section-desc">Scroll-stopping opening lines written for UndrDog. Click to copy.</p>
             <div class="hook-tabs" id="hookTabs"></div>
             <div id="hookContent"></div>
         </section>
@@ -293,26 +299,47 @@
                 `;
             }
 
-            // Hook Bank
+            // Hook Bank with Load More
             if (data.hookBank) {
+                window.hookData = data.hookBank;
+                window.hookVisible = {};
                 const categories = Object.keys(data.hookBank);
-                const labels = { question: '❓ Question', statement: '💥 Statement', demo: '🔬 Demo', controversy: '🔥 Controversy', result: '✨ Result' };
+                const labels = { question: '❓ Question', statement: '💥 Statement', demo: '🔬 Demo', controversy: '🔥 Controversy', result: '✨ Result', health: '🏥 Health' };
+                categories.forEach(cat => window.hookVisible[cat] = 5);
+                
                 document.getElementById('hookTabs').innerHTML = categories.map((cat, i) => 
                     `<button class="hook-tab ${i === 0 ? 'active' : ''}" data-tab="${cat}">${labels[cat] || cat}</button>`
                 ).join('');
-                document.getElementById('hookContent').innerHTML = categories.map((cat, i) => `
-                    <div class="hook-content ${i === 0 ? 'active' : ''}" data-content="${cat}">
-                        <div class="hook-grid">
-                            ${data.hookBank[cat].map(h => `
-                                <div class="hook-card">
-                                    <div class="hook-text">"${h.hook}"</div>
-                                    <div class="hook-source">Source: ${h.source}</div>
-                                    <button class="copy-btn" onclick="navigator.clipboard.writeText('${h.hook.replace(/'/g, "\\'")}'); this.textContent='Copied!'">📋 Copy</button>
+                
+                function renderHooks() {
+                    document.getElementById('hookContent').innerHTML = categories.map((cat, i) => {
+                        const hooks = data.hookBank[cat];
+                        const visible = window.hookVisible[cat];
+                        const hasMore = hooks.length > visible;
+                        return `
+                            <div class="hook-content ${i === 0 ? 'active' : ''}" data-content="${cat}">
+                                <div class="hook-grid">
+                                    ${hooks.slice(0, visible).map(h => `
+                                        <div class="hook-card">
+                                            <div class="hook-text">"${h.hook}"</div>
+                                            <button class="copy-btn" onclick="navigator.clipboard.writeText('${h.hook.replace(/'/g, "\\'")}'); this.textContent='Copied!'">📋 Copy</button>
+                                        </div>
+                                    `).join('')}
                                 </div>
-                            `).join('')}
-                        </div>
-                    </div>
-                `).join('');
+                                ${hasMore ? `<button class="load-more-btn" onclick="loadMoreHooks('${cat}')" data-cat="${cat}">Load More (${hooks.length - visible} remaining)</button>` : '<p class="all-loaded">✓ All hooks loaded</p>'}
+                            </div>
+                        `;
+                    }).join('');
+                }
+                renderHooks();
+                
+                window.loadMoreHooks = function(cat) {
+                    window.hookVisible[cat] += 5;
+                    renderHooks();
+                    document.querySelector(`[data-content="${cat}"]`).classList.add('active');
+                    document.querySelectorAll('.hook-tab').forEach(t => t.classList.toggle('active', t.dataset.tab === cat));
+                };
+                
                 document.querySelectorAll('.hook-tab').forEach(tab => {
                     tab.addEventListener('click', () => {
                         document.querySelectorAll('.hook-tab').forEach(t => t.classList.remove('active'));
@@ -349,17 +376,35 @@
                 `).join('');
             }
 
-            // Hot Angles
+            // Hot Angles with Load More
             if (data.hotAngles) {
-                document.getElementById('hotAngles').innerHTML = data.hotAngles.map(a => `
-                    <div class="angle-tag">
-                        <span class="heat">${a.heat}</span>
-                        <div>
-                            <div class="name">${a.angle}</div>
-                            <div class="why">${a.why}</div>
+                window.anglesData = data.hotAngles;
+                window.anglesVisible = 6;
+                
+                function renderAngles() {
+                    const visible = window.anglesVisible;
+                    const hasMore = data.hotAngles.length > visible;
+                    document.getElementById('hotAngles').innerHTML = `
+                        <div class="angles-list">
+                            ${data.hotAngles.slice(0, visible).map(a => `
+                                <div class="angle-tag">
+                                    <span class="heat">${a.heat}</span>
+                                    <div>
+                                        <div class="name">${a.angle}</div>
+                                        <div class="why">${a.why}</div>
+                                    </div>
+                                </div>
+                            `).join('')}
                         </div>
-                    </div>
-                `).join('');
+                        ${hasMore ? `<button class="load-more-btn" onclick="loadMoreAngles()">Load More Angles (${data.hotAngles.length - visible} remaining)</button>` : '<p class="all-loaded">✓ All angles loaded</p>'}
+                    `;
+                }
+                renderAngles();
+                
+                window.loadMoreAngles = function() {
+                    window.anglesVisible += 5;
+                    renderAngles();
+                };
             }
 
             // New This Week
