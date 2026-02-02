@@ -270,22 +270,43 @@
             // UndrDog Intel
             if (data.undrdogIntel) {
                 const ud = data.undrdogIntel;
+                const formatMoney = n => n >= 1000 ? `$${(n/1000).toFixed(1)}K` : `$${n}`;
                 document.getElementById('undrdogIntel').innerHTML = `
                     <div class="undrdog-card">
-                        <h3>🏆 Top Performing Ads</h3>
-                        ${ud.topAds.map(ad => `
+                        <h3>🔥 Top Ads — Last 7 Days</h3>
+                        <div style="font-size:10px;color:#888;margin-bottom:8px;">Real-time data from Meta Ads</div>
+                        ${(ud.topAdsLast7d || []).slice(0,5).map(ad => `
                             <div class="top-ad-item">
                                 <div>
                                     <div class="name">${ad.name}</div>
-                                    <div class="status">${ad.status} • ${ad.type}</div>
+                                    <div class="status">${ad.status} • ${ad.type} • ${ad.angle}</div>
                                 </div>
-                                <div class="cpa">$${ad.cpa} CPA</div>
+                                <div style="text-align:right">
+                                    <div class="cpa">$${ad.cpa.toFixed(0)} CPA</div>
+                                    <div style="font-size:10px;color:#888">${formatMoney(ad.spend)} • ${ad.purchases} sales</div>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                    <div class="undrdog-card">
+                        <h3>🏆 Top Ads — Last 30 Days</h3>
+                        <div style="font-size:10px;color:#888;margin-bottom:8px;">Updated: ${ud.dataAsOf || data.lastUpdated}</div>
+                        ${(ud.topAdsLast30d || []).slice(0,6).map(ad => `
+                            <div class="top-ad-item">
+                                <div>
+                                    <div class="name">${ad.name}</div>
+                                    <div class="status">${ad.status} • ${ad.type} • ${ad.angle}</div>
+                                </div>
+                                <div style="text-align:right">
+                                    <div class="cpa">$${ad.cpa.toFixed(0)} CPA</div>
+                                    <div style="font-size:10px;color:#888">${formatMoney(ad.spend)} • ${ad.purchases} sales</div>
+                                </div>
                             </div>
                         `).join('')}
                     </div>
                     <div class="undrdog-card">
                         <h3>🎯 Winning Angles</h3>
-                        ${ud.winningAngles.map(a => `
+                        ${(ud.winningAngles || []).map(a => `
                             <div class="angle-item">
                                 <div class="angle-name">${a.angle}</div>
                                 <div class="angle-desc">${a.desc}</div>
@@ -294,7 +315,7 @@
                     </div>
                     <div class="undrdog-card">
                         <h3>💬 Key Messages</h3>
-                        ${ud.keyMessages.map(m => `<div class="key-message">${m}</div>`).join('')}
+                        ${(ud.keyMessages || []).map(m => `<div class="key-message">${m}</div>`).join('')}
                     </div>
                 `;
             }
