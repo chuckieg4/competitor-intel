@@ -6,6 +6,7 @@
       "name": "BYLT Basics",
       "tier": 1,
       "site": "byltbasics.com",
+      "landingPage": "https://byltbasics.com",
       "category": "Premium basics",
       "adCount": "~330",
       "changes": {
@@ -18,11 +19,11 @@
         { "label": "Free Shipping", "value": "$99+" },
         { "label": "Free Gift", "value": "$175+ (t-shirt)" }
       ],
-      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&media_type=all&q=bylt%20basics&search_type=keyword_unordered",
+      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&view_all_page_id=217494941609502&search_type=page",
       "topCreatives": [
-        { "format": "UGC", "hook": "Finally found the perfect basic", "note": "6+ weeks running", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&media_type=all&q=bylt%20basics&search_type=keyword_unordered" },
-        { "format": "Static", "hook": "Checklist format (features)", "note": "Clean, scannable", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&media_type=all&q=bylt%20basics&search_type=keyword_unordered" },
-        { "format": "Video", "hook": "Side-by-side fit comparison", "note": "Before/after style", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&media_type=all&q=bylt%20basics&search_type=keyword_unordered" }
+        { "format": "Video", "hook": "Tired of tees that lose shape?", "note": "4+ ads running", "url": "https://www.facebook.com/ads/library/?id=1428353588878447" },
+        { "format": "Static", "hook": "Checklist format ✔️ features", "note": "Kinetic Overshirt", "url": "https://www.facebook.com/ads/library/?id=2043418259769402" },
+        { "format": "Video", "hook": "100K+ 5-Star Reviews", "note": "Social proof angle", "url": "https://www.facebook.com/ads/library/?id=1423652186020172" }
       ],
       "whatsWorking": [
         "Heavy UGC rotation (trust signals)",
@@ -35,6 +36,7 @@
       "name": "Cuts Clothing",
       "tier": 1,
       "site": "cutsclothing.com",
+      "landingPage": "https://cutsclothing.com",
       "category": "Premium tees",
       "adCount": "~380",
       "changes": {
@@ -47,11 +49,11 @@
         { "label": "Free Shipping", "value": "$100+" },
         { "label": "Bundles", "value": "Starter Pack 3-tee" }
       ],
-      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&media_type=all&q=cuts%20clothing&search_type=keyword_unordered",
+      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&view_all_page_id=1769532713352632&search_type=page",
       "topCreatives": [
-        { "format": "Lifestyle", "hook": "For the Sport of Business", "note": "8+ weeks, brand campaign", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&media_type=all&q=cuts%20clothing&search_type=keyword_unordered" },
-        { "format": "UGC", "hook": "Influencer testimonials", "note": "Heavy celeb rotation", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&media_type=all&q=cuts%20clothing&search_type=keyword_unordered" },
-        { "format": "Static", "hook": "Product grid, color variety", "note": "Collection focus", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&media_type=all&q=cuts%20clothing&search_type=keyword_unordered" }
+        { "format": "Lifestyle", "hook": "For the Sport of Business", "note": "8+ weeks, brand campaign", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&view_all_page_id=1769532713352632&search_type=page" },
+        { "format": "UGC", "hook": "Influencer testimonials", "note": "Heavy celeb rotation", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&view_all_page_id=1769532713352632&search_type=page" },
+        { "format": "Static", "hook": "Product grid, color variety", "note": "Collection focus", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&view_all_page_id=1769532713352632&search_type=page" }
       ],
       "whatsWorking": [
         "Aspirational lifestyle positioning",
@@ -64,6 +66,7 @@
       "name": "NADS",
       "tier": 1,
       "site": "nadsunder.com",
+      "landingPage": "https://nadsunder.com",
       "category": "Organic underwear",
       "adCount": "~210",
       "flags": ["direct"],
@@ -74,14 +77,14 @@
       },
       "offers": [
         { "label": "First Order", "value": "15% off" },
-        { "label": "Social Proof", "value": "1M+ Pairs Sold" },
-        { "label": "Cert", "value": "GOTS Organic" }
+        { "label": "King's Pack", "value": "40% OFF + Free Ship" },
+        { "label": "Social Proof", "value": "1M+ Pairs Sold" }
       ],
-      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&media_type=all&q=nads%20underwear&search_type=keyword_unordered",
+      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&view_all_page_id=107135018833320&search_type=page",
       "topCreatives": [
-        { "format": "Long Video", "hook": "What is organic underwear?", "note": "Running since Aug '25", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&media_type=all&q=nads%20underwear&search_type=keyword_unordered" },
-        { "format": "UGC", "hook": "Dr. Becky Campbell - fertility", "note": "Expert authority", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&media_type=all&q=nads%20underwear&search_type=keyword_unordered" },
-        { "format": "Static", "hook": "Ditch the Toxic Underwear", "note": "Chemical ❌ list format", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&media_type=all&q=nads%20underwear&search_type=keyword_unordered" }
+        { "format": "Long Video", "hook": "What is organic underwear?", "note": "Running since Aug '25", "url": "https://www.facebook.com/ads/library/?id=1345460153765021" },
+        { "format": "Static", "hook": "King's Pack 40% OFF", "note": "Bundle offer", "url": "https://www.facebook.com/ads/library/?id=1359238099534566" },
+        { "format": "UGC", "hook": "Side effects: extremely comfortable balls", "note": "Humor angle", "url": "https://www.facebook.com/ads/library/?id=25437340882627042" }
       ],
       "whatsWorking": [
         "EXACT same playbook as UndrDog",
@@ -95,6 +98,7 @@
       "name": "Hollow Alpaca",
       "tier": 1,
       "site": "hollowsocks.com",
+      "landingPage": "https://hollowsocks.com",
       "category": "Premium alpaca socks",
       "adCount": "~4,100",
       "flags": ["heavy-spender"],
@@ -109,11 +113,11 @@
         { "label": "Guarantee", "value": "99-Day Money Back" },
         { "label": "Social Proof", "value": "3M+ pairs sold" }
       ],
-      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&media_type=all&q=hollow%20alpaca&search_type=keyword_unordered",
+      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&view_all_page_id=100869988798986&search_type=page",
       "topCreatives": [
-        { "format": "Long Video", "hook": "Compression socks aren't supposed to hurt", "note": "12+ variants", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&media_type=all&q=hollow%20alpaca&search_type=keyword_unordered" },
-        { "format": "UGC", "hook": "From below freezing to over 80°", "note": "Temperature angle", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&media_type=all&q=hollow%20alpaca&search_type=keyword_unordered" },
-        { "format": "Carousel", "hook": "Product benefits checklist", "note": "Heavy ✅ format", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&media_type=all&q=hollow%20alpaca&search_type=keyword_unordered" }
+        { "format": "Long Video", "hook": "Compression socks aren't supposed to hurt", "note": "12+ variants", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&view_all_page_id=100869988798986&search_type=page" },
+        { "format": "UGC", "hook": "From below freezing to over 80°", "note": "Temperature angle", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&view_all_page_id=100869988798986&search_type=page" },
+        { "format": "Carousel", "hook": "Product benefits checklist", "note": "Heavy ✅ format", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&view_all_page_id=100869988798986&search_type=page" }
       ],
       "whatsWorking": [
         "MASSIVE ad volume = serious scale",
@@ -127,6 +131,7 @@
       "name": "AG1",
       "tier": 2,
       "site": "drinkag1.com",
+      "landingPage": "https://drinkag1.com",
       "category": "Supplements",
       "changes": {
         "offer": null,
@@ -137,10 +142,10 @@
         { "label": "First Month", "value": "$20 off" },
         { "label": "Bonuses", "value": "Free travel packs" }
       ],
-      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&media_type=all&q=ag1%20athletic%20greens&search_type=keyword_unordered",
+      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&view_all_page_id=283026498702498&search_type=page",
       "topCreatives": [
-        { "format": "Podcast", "hook": "Expert interviews", "note": "Authority play", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&media_type=all&q=ag1%20athletic%20greens&search_type=keyword_unordered" },
-        { "format": "UGC", "hook": "Morning routine integration", "note": "Lifestyle", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&media_type=all&q=ag1%20athletic%20greens&search_type=keyword_unordered" }
+        { "format": "Podcast", "hook": "Expert interviews", "note": "Authority play", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&view_all_page_id=283026498702498&search_type=page" },
+        { "format": "UGC", "hook": "Morning routine integration", "note": "Lifestyle", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&view_all_page_id=283026498702498&search_type=page" }
       ],
       "whatsWorking": [
         "Master-class content marketing",
@@ -152,6 +157,7 @@
       "name": "Happy Mammoth",
       "tier": 2,
       "site": "happymammoth.com",
+      "landingPage": "https://happymammoth.com",
       "category": "Gut health supplements",
       "changes": {
         "offer": null,
@@ -162,10 +168,10 @@
         { "label": "Quiz Funnel", "value": "Personalized results" },
         { "label": "Bundles", "value": "Subscribe & save" }
       ],
-      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&media_type=all&q=happy%20mammoth&search_type=keyword_unordered",
+      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&view_all_page_id=1973abortal1974672179472977&search_type=page",
       "topCreatives": [
-        { "format": "Quiz Ad", "hook": "Take the gut health quiz", "note": "Heavy funnel", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&media_type=all&q=happy%20mammoth&search_type=keyword_unordered" },
-        { "format": "UGC", "hook": "Transformation stories", "note": "Before/after", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&media_type=all&q=happy%20mammoth&search_type=keyword_unordered" }
+        { "format": "Quiz Ad", "hook": "Take the gut health quiz", "note": "Heavy funnel", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=happy%20mammoth&search_type=keyword_unordered" },
+        { "format": "UGC", "hook": "Transformation stories", "note": "Before/after", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=happy%20mammoth&search_type=keyword_unordered" }
       ],
       "whatsWorking": [
         "Quiz-to-sale funnel",
@@ -176,7 +182,8 @@
     {
       "name": "WAMA",
       "tier": 2,
-      "site": "wamahempwear.com",
+      "site": "wamaunderwear.com",
+      "landingPage": "https://wamaunderwear.com",
       "category": "Hemp underwear",
       "adCount": "~7",
       "changes": {
@@ -187,9 +194,9 @@
       "offers": [
         { "label": "First Order", "value": "20% off" }
       ],
-      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&media_type=all&q=wama%20underwear&search_type=keyword_unordered",
+      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=wama%20underwear&search_type=keyword_unordered",
       "topCreatives": [
-        { "format": "Static", "hook": "Ditch Plastic. Choose Hemp.", "note": "Environmental angle", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&media_type=all&q=wama%20underwear&search_type=keyword_unordered" }
+        { "format": "Static", "hook": "Ditch Plastic. Choose Hemp.", "note": "Environmental angle", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=wama%20underwear&search_type=keyword_unordered" }
       ],
       "whatsWorking": [
         "Eco/sustainability positioning",

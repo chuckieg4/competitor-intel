@@ -122,6 +122,19 @@
         .card-header h3 {
             font-size: 18px;
             font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .card-header h3 .lp-link {
+            font-size: 14px;
+            color: #6366f1;
+            text-decoration: none;
+            opacity: 0.7;
+            transition: opacity 0.2s;
+        }
+        .card-header h3 .lp-link:hover {
+            opacity: 1;
         }
         .card-header .meta {
             font-size: 12px;
@@ -490,7 +503,7 @@
                 <div class="competitor-card ${cardClass}">
                     <div class="card-header">
                         <div>
-                            <h3>${c.name}${badges.join('')}</h3>
+                            <h3>${c.name}${c.landingPage ? `<a href="${c.landingPage}" target="_blank" class="lp-link" title="Visit landing page">↗</a>` : ''}${badges.join('')}</h3>
                             <div class="meta">${c.site} • ${c.category}</div>
                         </div>
                         ${c.adCount ? `<span class="ads-count">${c.adCount} ads</span>` : ''}
