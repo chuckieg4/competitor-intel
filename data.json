@@ -2,38 +2,286 @@
   "lastUpdated": "2026-02-02",
   "nextUpdate": "2026-02-09",
   "newThisWeek": [
-    { "brand": "BYLT", "type": "creative", "detail": "30% OFF 19th Hole Polo - new sale creative", "date": "Jan 31" },
-    { "brand": "Nads", "type": "creative", "detail": "Commando Shorts launch - new product", "date": "Jan 9" },
-    { "brand": "Eatmancereal", "type": "creative", "detail": "Cereal without the B.S. video", "date": "Jan 19" },
-    { "brand": "Menerals", "type": "creative", "detail": "Barbie not Ken testosterone angle", "date": "Jan 13" }
+    { 
+      "brand": "True Classic", 
+      "type": "creative", 
+      "detail": "Flash Deals campaign - up to 57% off packs", 
+      "date": "Feb 2",
+      "link": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=true%20classic%20tees&search_type=keyword_unordered"
+    },
+    { 
+      "brand": "BYLT", 
+      "type": "creative", 
+      "detail": "30% OFF 19th Hole Polo - Last Call sale creative", 
+      "date": "Jan 31",
+      "link": "https://www.facebook.com/ads/library/?id=791477463206845"
+    },
+    { 
+      "brand": "Cuts", 
+      "type": "offer", 
+      "detail": "Buy 4 Get 30% OFF / Buy 6 Get 40% OFF bundle", 
+      "date": "Jan 30",
+      "link": "https://www.cutsclothing.com/products/black-crew-curve-hem"
+    },
+    { 
+      "brand": "Nads", 
+      "type": "creative", 
+      "detail": "Commando Shorts launch - new product line", 
+      "date": "Jan 9",
+      "link": "https://www.facebook.com/ads/library/?id=1399202808596147"
+    },
+    { 
+      "brand": "Eatmancereal", 
+      "type": "creative", 
+      "detail": "Cereal without the B.S. video", 
+      "date": "Jan 19",
+      "link": "https://www.facebook.com/ads/library/?id=1384299212780222"
+    },
+    { 
+      "brand": "Menerals", 
+      "type": "creative", 
+      "detail": "Barbie not Ken testosterone angle", 
+      "date": "Jan 13",
+      "link": "https://www.facebook.com/ads/library/?id=1536326844305866"
+    }
   ],
-  "priceComparison": [
-    { "brand": "BYLT", "product": "Drop-Cut LUX Tee", "basePrice": 40, "offer": "20% off first order", "effectivePrice": 32, "freeShip": "$99+", "guarantee": "Risk-Free Trial" },
-    { "brand": "Cuts", "product": "AO Curve-Hem Tee", "basePrice": 52, "offer": "15% off popup + bundles up to 60%", "effectivePrice": 44, "freeShip": "$100+", "guarantee": "Perfect Fit Promise" },
-    { "brand": "Nads", "product": "Boxer Briefs (single)", "basePrice": 24, "offer": "King's Pack 20 for $144 (40% off)", "effectivePrice": 7.20, "freeShip": "On packs", "guarantee": "Not specified" },
-    { "brand": "Hollow Alpaca", "product": "Compression Socks", "basePrice": 40, "offer": "Buy 2 Get 2 FREE + 63% off", "effectivePrice": 20, "freeShip": "Included", "guarantee": "99-Day" },
-    { "brand": "UndrDog", "product": "Hemp Tee", "basePrice": 41.50, "offer": "10% 1 / 20% 3-pack / 30% 6-pack", "effectivePrice": 29, "freeShip": "TBD", "guarantee": "Lifetime", "isUs": true }
+  "offerComparison": [
+    { 
+      "brand": "UndrDog", 
+      "product": "Hemp Tee", 
+      "unitPrice": 41.50, 
+      "currentOffer": "10% off 1 / 20% off 3 / 30% off 6", 
+      "effectivePrice": 29.05,
+      "guaranteeDays": "Lifetime",
+      "freeShip": "TBD",
+      "isUs": true
+    },
+    { 
+      "brand": "True Classic", 
+      "product": "Classic Crew", 
+      "unitPrice": 35, 
+      "currentOffer": "48% off 6-pack / 57% off 10-pack", 
+      "effectivePrice": 18.33,
+      "guaranteeDays": 100,
+      "freeShip": "$125+"
+    },
+    { 
+      "brand": "BYLT", 
+      "product": "Drop-Cut LUX", 
+      "unitPrice": 40, 
+      "currentOffer": "20% off first order + 10% off 3-pack", 
+      "effectivePrice": 32,
+      "guaranteeDays": 30,
+      "freeShip": "$99+"
+    },
+    { 
+      "brand": "Cuts", 
+      "product": "AO Curve-Hem", 
+      "unitPrice": 54, 
+      "currentOffer": "Buy 4 get 30% / Buy 6 get 40%", 
+      "effectivePrice": 32.40,
+      "guaranteeDays": "100+ Washes",
+      "freeShip": "$100+"
+    },
+    { 
+      "brand": "Nads", 
+      "product": "Boxer Brief", 
+      "unitPrice": 24, 
+      "currentOffer": "King's Pack 40% OFF (20 for $144)", 
+      "effectivePrice": 7.20,
+      "guaranteeDays": 90,
+      "freeShip": "On packs"
+    },
+    { 
+      "brand": "Hollow Alpaca", 
+      "product": "Compression Socks", 
+      "unitPrice": 40, 
+      "currentOffer": "Buy 2 Get 2 FREE + 63% off", 
+      "effectivePrice": 20,
+      "guaranteeDays": 99,
+      "freeShip": "Included"
+    },
+    { 
+      "brand": "WAMA", 
+      "product": "Hemp Boxer", 
+      "unitPrice": 38, 
+      "currentOffer": "20% off first order", 
+      "effectivePrice": 30.40,
+      "guaranteeDays": 90,
+      "freeShip": "$75+"
+    },
+    { 
+      "brand": "Menerals", 
+      "product": "Mineral Blend", 
+      "unitPrice": 49, 
+      "currentOffer": "100% money back", 
+      "effectivePrice": 49,
+      "guaranteeDays": 90,
+      "freeShip": "Included"
+    },
+    { 
+      "brand": "Primal Queen", 
+      "product": "Beef Organs", 
+      "unitPrice": 56, 
+      "currentOffer": "Subscribe & Save", 
+      "effectivePrice": 50,
+      "guaranteeDays": 365,
+      "freeShip": "On sub"
+    },
+    { 
+      "brand": "Eatmancereal", 
+      "product": "Man Cereal", 
+      "unitPrice": 38, 
+      "currentOffer": "30-day guarantee up to $100", 
+      "effectivePrice": 38,
+      "guaranteeDays": 30,
+      "freeShip": "$50+"
+    },
+    { 
+      "brand": "AG1", 
+      "product": "Greens Powder", 
+      "unitPrice": 99, 
+      "currentOffer": "$20 off first + free travel packs", 
+      "effectivePrice": 79,
+      "guaranteeDays": 90,
+      "freeShip": "Included"
+    }
   ],
   "swipeFile": {
     "problemSolution": [
-      { "brand": "Hollow", "hook": "Compression socks aren't supposed to hurt.", "body": "But most options are way too tight, overheat your feet, and start sliding down halfway through your day. Hollow Socks were built to solve that problem." },
-      { "brand": "Menerals", "hook": "Stop feeling like Barbie, not Ken.", "body": "Your body is screaming for help, and it's a simple fix. The truth: Zinc fuels your testosterone. Boron frees it from its bindings. Magnesium is the spark plug for your endocrine system." },
-      { "brand": "BYLT", "hook": "Tired of tees that lose shape after just a few washes?", "body": "Level up with the long-lasting, wrinkle-resistant, premium feeling Drop-Cut: LUX." }
+      { 
+        "brand": "Hollow", 
+        "hook": "Compression socks aren't supposed to hurt.", 
+        "body": "But most options are way too tight, overheat your feet, and start sliding down halfway through your day. Hollow Socks were built to solve that problem.",
+        "link": "https://www.facebook.com/ads/library/?id=1220569030025963"
+      },
+      { 
+        "brand": "Menerals", 
+        "hook": "Stop feeling like Barbie, not Ken.", 
+        "body": "Your body is screaming for help, and it's a simple fix. The truth: Zinc fuels your testosterone. Boron frees it from its bindings. Magnesium is the spark plug for your endocrine system.",
+        "link": "https://www.facebook.com/ads/library/?id=1536326844305866"
+      },
+      { 
+        "brand": "BYLT", 
+        "hook": "Tired of tees that lose shape after just a few washes?", 
+        "body": "Level up with the long-lasting, wrinkle-resistant, premium feeling Drop-Cut: LUX.",
+        "link": "https://www.facebook.com/ads/library/?id=1360633635369099"
+      },
+      { 
+        "brand": "True Classic", 
+        "hook": "Baggy, unflattering fit? Stiff, scratchy fabrics?", 
+        "body": "True Classic solves 3 problems: Fit that sharpens your look. Fabrics that are soft, stretchy, and comfortable. Premium quality without the premium price tag.",
+        "link": "https://www.trueclassictees.com"
+      }
     ],
     "checklist": [
-      { "brand": "Hollow", "items": ["✅ 15–20 mmHg compression to reduce swelling", "✅ Cushioned support to relieve foot pain", "✅ Made from breathable baby alpaca fiber", "✅ Moisture-wicking", "✅ Odor-resistant", "✅ Temperature regulating", "✅ Easy on, easy off — no struggle"] },
-      { "brand": "BYLT", "items": ["✔️ Heathered Performance Fabric", "✔️ Wrinkle Resistant", "✔️ Lightweight and Breathable", "✔️ Straight Hem"] },
-      { "brand": "Nads", "items": ["✅ Crafted from premium, breathable organic cotton", "✅ Designed to be worn with or without underwear", "✅ Perfect for lounging, lifting, or living"] }
+      { 
+        "brand": "Hollow", 
+        "items": ["✅ 15–20 mmHg compression to reduce swelling", "✅ Cushioned support to relieve foot pain", "✅ Made from breathable baby alpaca fiber", "✅ Moisture-wicking", "✅ Odor-resistant", "✅ Temperature regulating", "✅ Easy on, easy off — no struggle"],
+        "link": "https://www.facebook.com/ads/library/?id=1220569030025963"
+      },
+      { 
+        "brand": "BYLT", 
+        "items": ["✔️ Heathered Performance Fabric", "✔️ Wrinkle Resistant", "✔️ Lightweight and Breathable", "✔️ Straight Hem"],
+        "link": "https://www.facebook.com/ads/library/?id=1360633635369099"
+      },
+      { 
+        "brand": "Nads", 
+        "items": ["✅ Crafted from premium, breathable organic cotton", "✅ Designed to be worn with or without underwear", "✅ Perfect for lounging, lifting, or living"],
+        "link": "https://www.facebook.com/ads/library/?id=1399202808596147"
+      },
+      { 
+        "brand": "True Classic", 
+        "items": ["✅ Ultra-soft everyday fabric", "✅ Fitted arms, relaxed body", "✅ 100-Day Fit Guarantee", "✅ 66,000+ 5-star reviews"],
+        "link": "https://www.trueclassictees.com"
+      }
     ],
     "testimonial": [
-      { "brand": "Primal Queen", "quote": "The female-focused beef organ superfoods in Primal Queen made a huge difference in my life! I feel more energized and even have less bloating.", "name": "Emma L." }
+      { 
+        "brand": "Primal Queen", 
+        "quote": "The female-focused beef organ superfoods in Primal Queen made a huge difference in my life! I feel more energized and even have less bloating.", 
+        "name": "Emma L.",
+        "link": "https://www.facebook.com/ads/library/?id=1620465702670999"
+      },
+      { 
+        "brand": "True Classic", 
+        "quote": "Finally found tees that fit right. The fitted arms and relaxed body is perfect for guys with athletic builds.", 
+        "name": "Verified Buyer",
+        "link": "https://www.trueclassictees.com/pages/reviews"
+      }
     ],
     "masculine": [
-      { "brand": "Menerals", "copy": "He built houses, fixed engines, and raised a family without Chinese powders in his protein shake. Menerals brings back that kind of strength—made in the U.S.A." },
-      { "brand": "Eatmancereal", "copy": "Cereal Finally Manned Up. Creatine. High Protein. Keto. Low Sugar." }
+      { 
+        "brand": "Menerals", 
+        "copy": "He built houses, fixed engines, and raised a family without Chinese powders in his protein shake. Menerals brings back that kind of strength—made in the U.S.A.",
+        "link": "https://www.facebook.com/ads/library/?id=870372939127341"
+      },
+      { 
+        "brand": "Eatmancereal", 
+        "copy": "Cereal Finally Manned Up. Creatine. High Protein. Keto. Low Sugar.",
+        "link": "https://www.facebook.com/ads/library/?id=1384299212780222"
+      }
     ]
   },
   "competitors": [
+    {
+      "name": "True Classic",
+      "tier": 1,
+      "site": "trueclassictees.com",
+      "landingPage": "https://www.trueclassictees.com/collections/short-sleeve-tees",
+      "category": "Budget premium tees",
+      "adCount": "~2,000+",
+      "creativeBreakdown": { "Static": 55, "Video": 45 },
+      "changes": {
+        "offer": "New",
+        "lp": null,
+        "creative": "New"
+      },
+      "offers": [
+        { "label": "6-Pack", "value": "48% off" },
+        { "label": "10-Pack", "value": "57% off" },
+        { "label": "Free Shipping", "value": "$125+" },
+        { "label": "Insiders Club", "value": "$1/mo extra 10%" }
+      ],
+      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=true%20classic%20tees&search_type=keyword_unordered",
+      "topCreatives": [
+        { 
+          "format": "Static", 
+          "hook": "Classic Crew 6-Pack - 48% OFF", 
+          "note": "Hero offer", 
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=true%20classic%20tees&search_type=keyword_unordered",
+          "landingPage": "https://www.trueclassictees.com/collections/short-sleeve-tees",
+          "daysRunning": 30,
+          "isNew": false
+        },
+        { 
+          "format": "Video", 
+          "hook": "Problem→Solution fit transformation", 
+          "note": "Before/after style", 
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=true%20classic%20tees&search_type=keyword_unordered",
+          "landingPage": "https://www.trueclassictees.com/pages/fit-guarantee",
+          "daysRunning": 45,
+          "isNew": false
+        },
+        { 
+          "format": "Static", 
+          "hook": "100-Day Fit Guarantee", 
+          "note": "Risk reversal focus", 
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=true%20classic%20tees&search_type=keyword_unordered",
+          "landingPage": "https://www.trueclassictees.com/pages/fit-guarantee",
+          "daysRunning": 60,
+          "isNew": false
+        }
+      ],
+      "whatsWorking": [
+        "MASSIVE scale (2000+ active ads)",
+        "Aggressive bundle pricing (up to 57% off)",
+        "100-Day Fit Guarantee",
+        "Insiders Club membership upsell",
+        "Problem→Solution positioning",
+        "296K+ verified reviews as social proof"
+      ]
+    },
     {
       "name": "BYLT Basics",
       "tier": 1,
@@ -41,7 +289,7 @@
       "landingPage": "https://byltbasics.com/collections/mens-roamknit-fabric-collection",
       "category": "Premium basics",
       "adCount": "~330",
-      "creativeBreakdown": { "Static": 45, "Video": 30, "UGC": 15, "Carousel": 10 },
+      "creativeBreakdown": { "Static": 60, "Video": 40 },
       "changes": {
         "offer": null,
         "lp": null,
@@ -102,19 +350,20 @@
       "name": "Cuts Clothing",
       "tier": 1,
       "site": "cutsclothing.com",
-      "landingPage": "https://shop.cutsclothing.com/products/white-crew-curve-hem",
+      "landingPage": "https://www.cutsclothing.com/products/black-crew-curve-hem",
       "category": "Premium tees",
       "adCount": "~380",
-      "creativeBreakdown": { "Video": 50, "Static": 25, "UGC": 20, "Carousel": 5 },
+      "creativeBreakdown": { "Static": 35, "Video": 65 },
       "changes": {
-        "offer": null,
+        "offer": "New",
         "lp": null,
         "creative": "New"
       },
       "offers": [
         { "label": "First Order", "value": "15% off (popup)" },
         { "label": "Free Shipping", "value": "$100+" },
-        { "label": "Bundles", "value": "Up to 60% off" }
+        { "label": "Buy 4", "value": "30% off" },
+        { "label": "Buy 6", "value": "40% off" }
       ],
       "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=cutsclothing&search_type=keyword_unordered",
       "topCreatives": [
@@ -123,7 +372,7 @@
           "hook": "AO Curve-Hem Tee - PYCA Pro®", 
           "note": "Running since Dec 30", 
           "url": "https://www.facebook.com/ads/library/?id=1349978019769284",
-          "landingPage": "https://shop.cutsclothing.com/products/white-crew-curve-hem",
+          "landingPage": "https://www.cutsclothing.com/products/black-crew-curve-hem",
           "daysRunning": 34,
           "isNew": false
         },
@@ -150,6 +399,7 @@
         "Aspirational lifestyle positioning",
         "Athletes/creators/builders messaging",
         "Signature-fit PYCA Pro® fabric tech",
+        "⚠️ Uses 62% POLYESTER blend",
         "Seasonal collections (Divine Fleece)"
       ]
     },
@@ -160,7 +410,7 @@
       "landingPage": "https://nadsunder.com/products/the-king-s-pack",
       "category": "Organic underwear",
       "adCount": "~160",
-      "creativeBreakdown": { "Static": 40, "Video": 35, "UGC": 20, "Long-form": 5 },
+      "creativeBreakdown": { "Static": 55, "Video": 45 },
       "flags": ["direct"],
       "changes": {
         "offer": "Baseline set",
@@ -193,7 +443,7 @@
           "isNew": false
         },
         { 
-          "format": "UGC Video", 
+          "format": "Video", 
           "hook": "My balls are my business", 
           "note": "Luca Padua collab", 
           "url": "https://www.facebook.com/ads/library/?id=25437340882627042",
@@ -217,7 +467,7 @@
       "landingPage": "https://hollowsocks.com/pages/10r-compression",
       "category": "Premium alpaca socks",
       "adCount": "~460",
-      "creativeBreakdown": { "Video": 55, "Static": 25, "UGC": 15, "Carousel": 5 },
+      "creativeBreakdown": { "Static": 30, "Video": 70 },
       "flags": ["heavy-spender"],
       "changes": {
         "offer": "Baseline set",
@@ -233,7 +483,7 @@
       "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=hollow%20alpaca&search_type=keyword_unordered",
       "topCreatives": [
         { 
-          "format": "Long Video", 
+          "format": "Video", 
           "hook": "Compression socks aren't supposed to hurt", 
           "note": "10 ads running!", 
           "url": "https://www.facebook.com/ads/library/?id=1220569030025963",
@@ -266,7 +516,7 @@
       "landingPage": "https://menerals.com/pages/welcome-2",
       "category": "Men's mineral supplements",
       "adCount": "~260",
-      "creativeBreakdown": { "Static": 50, "Video": 30, "Long-form": 15, "UGC": 5 },
+      "creativeBreakdown": { "Static": 65, "Video": 35 },
       "changes": {
         "offer": null,
         "lp": null,
@@ -288,7 +538,7 @@
           "isNew": true
         },
         { 
-          "format": "Long Copy", 
+          "format": "Static", 
           "hook": "Stop feeling like Barbie, not Ken", 
           "note": "Testosterone/minerals angle", 
           "url": "https://www.facebook.com/ads/library/?id=1536326844305866",
@@ -312,7 +562,7 @@
       "landingPage": "https://eatmancereal.com",
       "category": "High-protein cereal",
       "adCount": "~56",
-      "creativeBreakdown": { "Video": 70, "Static": 20, "UGC": 10 },
+      "creativeBreakdown": { "Static": 25, "Video": 75 },
       "changes": {
         "offer": null,
         "lp": null,
@@ -357,7 +607,7 @@
       "landingPage": "https://primalqueen.com/pages/tiktok",
       "category": "Women's beef organ supplements",
       "adCount": "~2,800",
-      "creativeBreakdown": { "Static": 60, "Video": 25, "UGC": 10, "Carousel": 5 },
+      "creativeBreakdown": { "Static": 70, "Video": 30 },
       "flags": ["heavy-spender"],
       "changes": {
         "offer": null,
@@ -366,7 +616,7 @@
       },
       "offers": [
         { "label": "Angle", "value": "Female-focused" },
-        { "label": "Product", "value": "Beef organ superfoods" }
+        { "label": "Guarantee", "value": "365-Day (!)" }
       ],
       "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=primal%20queen&search_type=keyword_unordered",
       "topCreatives": [
@@ -392,7 +642,7 @@
       "whatsWorking": [
         "MASSIVE scale (2,800 ads!)",
         "Testimonial-led creatives",
-        "Ancestral/primal health angle",
+        "365-Day guarantee (industry leading)",
         "Female-focused positioning",
         "Energy + hormone balancing claims"
       ]
@@ -403,7 +653,8 @@
       "site": "drinkag1.com",
       "landingPage": "https://drinkag1.com",
       "category": "Supplements",
-      "creativeBreakdown": { "Podcast": 40, "UGC": 35, "Static": 15, "Video": 10 },
+      "adCount": "~500+",
+      "creativeBreakdown": { "Static": 40, "Video": 60 },
       "changes": {
         "offer": null,
         "lp": null,
@@ -411,17 +662,36 @@
       },
       "offers": [
         { "label": "First Month", "value": "$20 off" },
-        { "label": "Bonuses", "value": "Free travel packs" }
+        { "label": "Bonuses", "value": "Free travel packs" },
+        { "label": "Price", "value": "$79/mo sub" }
       ],
       "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=athletic%20greens%20ag1&search_type=keyword_unordered",
       "topCreatives": [
-        { "format": "Podcast", "hook": "Expert interviews", "note": "Authority play", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=athletic%20greens%20ag1&search_type=keyword_unordered", "daysRunning": 90, "isNew": false },
-        { "format": "UGC", "hook": "Morning routine integration", "note": "Lifestyle", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=athletic%20greens%20ag1&search_type=keyword_unordered", "daysRunning": 60, "isNew": false }
+        { 
+          "format": "Video", 
+          "hook": "Expert interviews - Dr. Huberman", 
+          "note": "Authority play", 
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=athletic%20greens%20ag1&search_type=keyword_unordered", 
+          "landingPage": "https://drinkag1.com",
+          "daysRunning": 90, 
+          "isNew": false 
+        },
+        { 
+          "format": "Video", 
+          "hook": "Morning routine integration", 
+          "note": "Lifestyle UGC", 
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=athletic%20greens%20ag1&search_type=keyword_unordered", 
+          "landingPage": "https://drinkag1.com",
+          "daysRunning": 60, 
+          "isNew": false 
+        }
       ],
       "whatsWorking": [
         "Master-class content marketing",
         "Podcast sponsor saturation",
-        "All-in-one simplicity message"
+        "Celebrity endorsements (Hugh Jackman)",
+        "All-in-one simplicity message",
+        "90-Day guarantee"
       ]
     },
     {
@@ -438,15 +708,26 @@
         "creative": null
       },
       "offers": [
-        { "label": "First Order", "value": "20% off" }
+        { "label": "First Order", "value": "20% off" },
+        { "label": "First Pair", "value": "Guarantee (free replacement)" }
       ],
       "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=wama%20underwear&search_type=keyword_unordered",
       "topCreatives": [
-        { "format": "Static", "hook": "Ditch Plastic. Choose Hemp.", "note": "Environmental angle", "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=wama%20underwear&search_type=keyword_unordered", "daysRunning": 30, "isNew": false }
+        { 
+          "format": "Static", 
+          "hook": "Ditch Plastic. Choose Hemp.", 
+          "note": "Environmental angle", 
+          "url": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=wama%20underwear&search_type=keyword_unordered", 
+          "landingPage": "https://wamaunderwear.com",
+          "daysRunning": 30, 
+          "isNew": false 
+        }
       ],
       "whatsWorking": [
         "Eco/sustainability positioning",
-        "NOT hitting health angle - gap for us"
+        "Hemp underwear positioning",
+        "NOT hitting health angle - gap for us",
+        "90-Day return policy"
       ]
     }
   ],
@@ -454,22 +735,22 @@
     "working": [
       "✅ Checklist format — all top performers use it",
       "Long-form problem→solution copy (Hollow, Nads)",
-      "Bundle offers — 40% OFF packs, Buy 2 Get 2",
-      "99-Day or Lifetime guarantees",
+      "Bundle offers — 40-57% OFF packs, Buy 2 Get 2",
+      "90-100 Day guarantees (365 for Primal Queen!)",
       "USA-made/sourced patriotic angle",
       "Masculine 'anti-soft' messaging (Menerals, Eatmancereal)",
-      "Testimonial-led creatives (Primal Queen)"
+      "Testimonial-led creatives (Primal Queen, True Classic)"
     ],
     "gaps": [
-      "Anti-polyester in TEES — Nads does underwear, we own tees",
+      "Anti-polyester in TEES — Cuts uses 62% polyester!",
       "Durability testing — NOBODY else does destructive demos",
-      "Lifetime guarantee in apparel — major differentiator",
-      "Hemp positioning — Hollow uses alpaca, Nads uses cotton"
+      "Lifetime guarantee in apparel — major differentiator vs 30-100 day",
+      "Hemp positioning — Hollow uses alpaca, True Classic uses cotton blends"
     ],
     "watch": [
-      "Nads expanding to shorts — could tees be next?",
-      "Primal Queen at 2,800 ads = MASSIVE scale",
-      "Menerals hitting testosterone angle hard",
+      "True Classic at 2,000+ ads = MASSIVE scale competitor",
+      "Primal Queen at 2,800 ads = study their testimonial playbook",
+      "Cuts uses 62% POLYESTER = attack angle for UndrDog",
       "April boxer briefs launch = collision course with Nads"
     ]
   },
@@ -486,18 +767,18 @@
     },
     {
       "priority": "high",
-      "title": "Problem→Solution Long Copy",
-      "description": "Hollow opens with 'Compression socks aren't supposed to hurt' then pivots to solution. Test this structure."
+      "title": "Attack Cuts on Polyester",
+      "description": "Cuts uses 62% polyester in their 'premium' tees. Create comparison ad exposing this."
     },
     {
       "priority": "med",
-      "title": "Masculine 'Anti-BS' Voice",
-      "description": "Menerals & Eatmancereal use aggressive masculine copy. Test: 'Polyester is for cupcakes.'"
+      "title": "Lifetime vs 30-100 Day Guarantee",
+      "description": "Our lifetime guarantee beats everyone. Make this more prominent in ads."
     },
     {
       "priority": "med",
       "title": "Bundle Offer Test",
-      "description": "Nads: 40% OFF 20-pack. Hollow: Buy 2 Get 2. Test aggressive bundle pricing."
+      "description": "True Classic does 57% off 10-packs. Test aggressive bundle pricing."
     }
   ]
 }
