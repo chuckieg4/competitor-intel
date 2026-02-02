@@ -115,106 +115,6 @@
         .guarantee-badge.standard { background: rgba(255,255,255,0.1); color: #888; }
         .guarantee-badge.short { background: rgba(239, 68, 68, 0.2); color: #ef4444; }
 
-        /* Swipe File */
-        .swipe-file {
-            background: rgba(255,255,255,0.05);
-            border-radius: 16px;
-            padding: 24px;
-            margin-bottom: 30px;
-        }
-        .swipe-file h2 { font-size: 18px; margin-bottom: 16px; }
-        .swipe-tabs { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
-        .swipe-tab {
-            background: rgba(0,0,0,0.3);
-            border: none;
-            color: #888;
-            padding: 8px 16px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 12px;
-            transition: all 0.2s;
-        }
-        .swipe-tab.active { background: #6366f1; color: white; }
-        .swipe-tab:hover { background: rgba(99, 102, 241, 0.3); color: white; }
-        .swipe-content { display: none; }
-        .swipe-content.active { display: block; }
-        .swipe-card {
-            background: rgba(0,0,0,0.3);
-            border-radius: 10px;
-            padding: 16px;
-            margin-bottom: 12px;
-            border-left: 3px solid #6366f1;
-        }
-        .swipe-card .card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
-        .swipe-card .brand { font-size: 11px; color: #888; }
-        .swipe-card .hook { font-weight: 600; font-size: 15px; margin-bottom: 8px; color: #f59e0b; }
-        .swipe-card .body { font-size: 13px; color: #bbb; line-height: 1.5; }
-        .swipe-card .actions { margin-top: 12px; display: flex; gap: 8px; }
-        .swipe-card .copy-btn, .swipe-card .view-btn {
-            background: rgba(99, 102, 241, 0.2);
-            border: none;
-            color: #a5b4fc;
-            padding: 6px 12px;
-            border-radius: 4px;
-            font-size: 11px;
-            cursor: pointer;
-            text-decoration: none;
-        }
-        .swipe-card .copy-btn:hover, .swipe-card .view-btn:hover { background: rgba(99, 102, 241, 0.4); }
-        .swipe-card .view-btn { background: rgba(74, 222, 128, 0.2); color: #4ade80; }
-        .checklist-items { list-style: none; font-size: 13px; }
-        .checklist-items li { padding: 4px 0; }
-
-        /* Best Ad All Time */
-        .best-all-time {
-            background: rgba(255,255,255,0.05);
-            border-radius: 16px;
-            padding: 24px;
-            margin-bottom: 30px;
-        }
-        .best-all-time h2 { font-size: 18px; margin-bottom: 8px; }
-        .section-note { font-size: 12px; color: #888; margin-bottom: 16px; }
-        .best-ads-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 12px;
-        }
-        .best-ad-item {
-            background: rgba(0,0,0,0.3);
-            border-radius: 10px;
-            padding: 14px;
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            text-decoration: none;
-            color: inherit;
-            transition: all 0.2s;
-            border: 1px solid transparent;
-        }
-        .best-ad-item:hover { background: rgba(234, 179, 8, 0.15); border-color: rgba(234, 179, 8, 0.3); }
-        .best-ad-item .top-row { display: flex; justify-content: space-between; align-items: flex-start; }
-        .best-ad-item .brand-name { font-weight: 600; font-size: 14px; }
-        .best-ad-item .start-date { font-size: 11px; color: #888; }
-        .best-ad-item .hook { font-size: 13px; color: #bbb; }
-        .best-ad-item .format-badge { 
-            display: inline-block; font-size: 10px; padding: 2px 6px; 
-            border-radius: 4px; margin-right: 6px;
-            background: rgba(99, 102, 241, 0.3); color: #a5b4fc;
-        }
-        .best-ad-item .format-badge.video { background: rgba(239, 68, 68, 0.3); color: #f87171; }
-        .best-ad-item .still-running { font-size: 10px; color: #4ade80; }
-        .best-ad-item .bottom-row { display: flex; gap: 8px; margin-top: auto; }
-        .best-ad-item .view-link {
-            font-size: 11px; color: #a5b4fc; text-decoration: none;
-            background: rgba(99, 102, 241, 0.2); padding: 4px 8px; border-radius: 4px;
-        }
-        .best-ad-item .view-link:hover { background: rgba(99, 102, 241, 0.4); }
-        .best-ad-item .lp-link {
-            font-size: 11px; color: #4ade80; text-decoration: none;
-            background: rgba(74, 222, 128, 0.2); padding: 4px 8px; border-radius: 4px;
-        }
-        .best-ad-item .lp-link:hover { background: rgba(74, 222, 128, 0.4); }
-
         /* Quick Scan Section */
         .quick-scan {
             background: rgba(255,255,255,0.05);
@@ -399,25 +299,6 @@
             </table>
         </section>
 
-        <!-- Swipe File -->
-        <section class="swipe-file">
-            <h2>📋 Swipe File / Copy Bank</h2>
-            <div class="swipe-tabs">
-                <button class="swipe-tab active" data-tab="problemSolution">Problem→Solution</button>
-                <button class="swipe-tab" data-tab="checklist">✅ Checklists</button>
-                <button class="swipe-tab" data-tab="testimonial">Testimonials</button>
-                <button class="swipe-tab" data-tab="masculine">Masculine Voice</button>
-            </div>
-            <div id="swipeContent"></div>
-        </section>
-
-        <!-- Best Ad All Time -->
-        <section class="best-all-time">
-            <h2>🏆 Best Ad All Time (by longevity)</h2>
-            <p class="section-note">Longest-running ads = proven winners</p>
-            <div class="best-ads-grid" id="bestAdsAllTime"></div>
-        </section>
-
         <!-- Quick Scan -->
         <section class="quick-scan">
             <h2>⚡ Weekly Changes</h2>
@@ -491,30 +372,6 @@
                 `).join('');
             }
 
-            // Swipe File with links
-            renderSwipeFile(data.swipeFile);
-
-            // Best Ad All Time
-            if (data.bestAdAllTime) {
-                document.getElementById('bestAdsAllTime').innerHTML = data.bestAdAllTime.map(ad => `
-                    <div class="best-ad-item">
-                        <div class="top-row">
-                            <span class="brand-name">${ad.brand}</span>
-                            <span class="start-date">Since ${ad.startDate}</span>
-                        </div>
-                        <div class="hook">
-                            <span class="format-badge ${ad.format.toLowerCase().includes('video') ? 'video' : ''}">${ad.format}</span>
-                            ${ad.hook}
-                        </div>
-                        ${ad.stillRunning ? '<span class="still-running">✓ Still running</span>' : ''}
-                        <div class="bottom-row">
-                            <a href="${ad.url}" target="_blank" class="view-link">View Ad ↗</a>
-                            ${ad.landingPage ? `<a href="${ad.landingPage}" target="_blank" class="lp-link">LP ↗</a>` : ''}
-                        </div>
-                    </div>
-                `).join('');
-            }
-
             // Quick Scan
             const quickScanHtml = data.competitors.map(c => `
                 <div class="scan-card">
@@ -579,83 +436,6 @@
                 return `<span class="guarantee-badge short">${days} days</span>`;
             }
             return `<span class="guarantee-badge standard">${days}</span>`;
-        }
-
-        function renderSwipeFile(swipeFile) {
-            const content = document.getElementById('swipeContent');
-            
-            const tabs = {
-                problemSolution: swipeFile.problemSolution?.map(s => `
-                    <div class="swipe-card">
-                        <div class="card-header">
-                            <div class="brand">${s.brand}</div>
-                        </div>
-                        <div class="hook">"${s.hook}"</div>
-                        <div class="body">${s.body}</div>
-                        <div class="actions">
-                            <button class="copy-btn" onclick="copyText(\`${s.hook} ${s.body}\`)">📋 Copy</button>
-                            ${s.link ? `<a href="${s.link}" target="_blank" class="view-btn">View Ad ↗</a>` : ''}
-                        </div>
-                    </div>
-                `).join('') || '',
-                checklist: swipeFile.checklist?.map(s => `
-                    <div class="swipe-card">
-                        <div class="card-header">
-                            <div class="brand">${s.brand}</div>
-                        </div>
-                        <ul class="checklist-items">
-                            ${s.items.map(i => `<li>${i}</li>`).join('')}
-                        </ul>
-                        <div class="actions">
-                            <button class="copy-btn" onclick="copyText(\`${s.items.join('\\n')}\`)">📋 Copy</button>
-                            ${s.link ? `<a href="${s.link}" target="_blank" class="view-btn">View Ad ↗</a>` : ''}
-                        </div>
-                    </div>
-                `).join('') || '',
-                testimonial: swipeFile.testimonial?.map(s => `
-                    <div class="swipe-card">
-                        <div class="card-header">
-                            <div class="brand">${s.brand}</div>
-                        </div>
-                        <div class="hook">"${s.quote}"</div>
-                        <div class="body">— ${s.name}</div>
-                        <div class="actions">
-                            <button class="copy-btn" onclick="copyText(\`${s.quote} — ${s.name}\`)">📋 Copy</button>
-                            ${s.link ? `<a href="${s.link}" target="_blank" class="view-btn">View Ad ↗</a>` : ''}
-                        </div>
-                    </div>
-                `).join('') || '',
-                masculine: swipeFile.masculine?.map(s => `
-                    <div class="swipe-card">
-                        <div class="card-header">
-                            <div class="brand">${s.brand}</div>
-                        </div>
-                        <div class="body">${s.copy}</div>
-                        <div class="actions">
-                            <button class="copy-btn" onclick="copyText(\`${s.copy}\`)">📋 Copy</button>
-                            ${s.link ? `<a href="${s.link}" target="_blank" class="view-btn">View Ad ↗</a>` : ''}
-                        </div>
-                    </div>
-                `).join('') || ''
-            };
-
-            content.innerHTML = Object.entries(tabs).map(([key, html]) => 
-                `<div class="swipe-content ${key === 'problemSolution' ? 'active' : ''}" data-content="${key}">${html}</div>`
-            ).join('');
-
-            document.querySelectorAll('.swipe-tab').forEach(tab => {
-                tab.addEventListener('click', () => {
-                    document.querySelectorAll('.swipe-tab').forEach(t => t.classList.remove('active'));
-                    document.querySelectorAll('.swipe-content').forEach(c => c.classList.remove('active'));
-                    tab.classList.add('active');
-                    document.querySelector(`[data-content="${tab.dataset.tab}"]`).classList.add('active');
-                });
-            });
-        }
-
-        function copyText(text) {
-            navigator.clipboard.writeText(text);
-            alert('Copied to clipboard!');
         }
 
         function getLongevityBadge(days, isNew) {
