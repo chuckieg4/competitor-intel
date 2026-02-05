@@ -206,6 +206,13 @@
             <div class="formats-grid" id="winningFormats"></div>
         </section>
 
+        <!-- Creator Scripts -->
+        <section class="creator-scripts-section" style="background: linear-gradient(135deg, rgba(74, 222, 128, 0.15), rgba(34, 197, 94, 0.15)); border: 1px solid rgba(74, 222, 128, 0.3);">
+            <h2>🎬 Creator Scripts — Ready to Shoot</h2>
+            <p class="section-desc">Written human, not ad voice. Based on competitor intel + what's working.</p>
+            <div class="scripts-grid" id="creatorScripts"></div>
+        </section>
+
         <!-- Script Structures -->
         <section>
             <h2>📝 Script Structures</h2>
@@ -380,6 +387,33 @@
                         <div class="why">💡 ${f.whyWorks}</div>
                         <div class="examples">Examples: ${f.examples.join(', ')}</div>
                         <div class="competitors">Who's using it: ${f.competitors}</div>
+                    </div>
+                `).join('');
+            }
+
+            // Creator Scripts
+            if (data.creatorScripts) {
+                document.getElementById('creatorScripts').innerHTML = data.creatorScripts.map(s => `
+                    <div class="script-card" style="border-left: 3px solid ${s.priority === 'high' ? '#ef4444' : s.priority === 'medium' ? '#f59e0b' : '#22c55e'};">
+                        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px;">
+                            <h4 style="color:#4ade80;">${s.title}</h4>
+                            <span style="font-size:10px;padding:3px 8px;border-radius:4px;background:${s.priority === 'high' ? '#ef4444' : s.priority === 'medium' ? '#f59e0b' : '#22c55e'};color:#000;font-weight:600;">${s.priority.toUpperCase()}</span>
+                        </div>
+                        <div style="font-size:11px;color:#888;margin-bottom:8px;">
+                            <strong>Angle:</strong> ${s.angle} • <strong>Format:</strong> ${s.format}
+                        </div>
+                        <div style="font-size:11px;color:#a5b4fc;margin-bottom:12px;">
+                            <strong>Best for:</strong> ${s.bestFor.join(', ')}
+                        </div>
+                        <div style="font-size:11px;color:#fbbf24;margin-bottom:8px;font-weight:500;">
+                            🎬 Hook: ${s.hook}
+                        </div>
+                        ${s.concept ? `<div style="font-size:11px;color:#888;margin-bottom:8px;padding:8px;background:rgba(74,222,128,0.1);border-radius:6px;">💡 ${s.concept}</div>` : ''}
+                        <details style="margin-top:8px;">
+                            <summary style="cursor:pointer;font-size:12px;color:#4ade80;font-weight:500;">📜 View Full Script</summary>
+                            <div style="margin-top:10px;padding:12px;background:rgba(0,0,0,0.3);border-radius:8px;font-size:12px;line-height:1.6;white-space:pre-wrap;color:#ddd;">${s.script}</div>
+                            <button onclick="navigator.clipboard.writeText(\`${s.script.replace(/`/g, '\\`').replace(/\$/g, '\\$')}\`); this.textContent='Copied!'" style="margin-top:8px;padding:6px 12px;background:rgba(74,222,128,0.2);border:none;color:#4ade80;border-radius:4px;font-size:11px;cursor:pointer;">📋 Copy Script</button>
+                        </details>
                     </div>
                 `).join('');
             }
