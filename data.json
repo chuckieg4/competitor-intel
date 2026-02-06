@@ -1,314 +1,705 @@
 {
   "meta": {
-    "lastUpdated": "2026-02-05",
-    "nextUpdate": "2026-02-12",
-    "version": "2.0",
-    "hubName": "UndrDog Creative Director Hub"
+    "lastUpdated": "2026-02-06",
+    "dataSource": "Meta Ads API + Triple Whale",
+    "dateRange": "Jan 30 - Feb 5, 2026",
+    "version": "3.0"
   },
   "performance": {
-    "dataAsOf": "2026-02-05",
-    "topPerformers7d": [
-      { "id": "1", "name": "AOA_IMG1", "type": "STAT", "angle": "Product", "cpa": 24.75, "spend": 8420, "purchases": 340, "roas": 3.2, "creator": "MTRX", "status": "Active", "daysRunning": 180, "trophy": true },
-      { "id": "2", "name": "docC&d_DrChrisV1", "type": "UGC", "angle": "Health Authority", "cpa": 34.60, "spend": 12500, "purchases": 361, "roas": 2.8, "creator": "Dr. Chris", "status": "Active", "daysRunning": 45, "trophy": true },
-      { "id": "3", "name": "MTRX_UD2_M1_STAT3_4-5", "type": "STAT", "angle": "Product", "cpa": 43.46, "spend": 15200, "purchases": 350, "roas": 2.4, "creator": "MTRX", "status": "Active", "daysRunning": 120, "trophy": true },
-      { "id": "4", "name": "CHINO_XRAY_TAILOREDFIT", "type": "STAT", "angle": "Fit", "cpa": 42.74, "spend": 9800, "purchases": 229, "roas": 2.3, "creator": "Chino", "status": "Active", "daysRunning": 30 },
-      { "id": "5", "name": "SweatTest_9x16", "type": "VID", "angle": "Demo", "cpa": 39.00, "spend": 6200, "purchases": 159, "roas": 2.5, "creator": "Aaron", "status": "Active", "daysRunning": 330, "trophy": true },
-      { "id": "6", "name": "MTRX_UD3_M1_RSUGC4_CB_Ke", "type": "UGC", "angle": "Ranking", "cpa": 44.63, "spend": 8100, "purchases": 181, "roas": 2.2, "creator": "MTRX", "status": "Active", "daysRunning": 60 },
-      { "id": "7", "name": "MTRX_DEB1_Sh", "type": "VID", "angle": "Debate", "cpa": 35.56, "spend": 5400, "purchases": 152, "roas": 2.7, "creator": "MTRX", "status": "Testing", "daysRunning": 14 },
-      { "id": "8", "name": "docC&d_DrChrisV2", "type": "UGC", "angle": "Health Authority", "cpa": 36.80, "spend": 4200, "purchases": 114, "roas": 2.6, "creator": "Dr. Chris", "status": "Active", "daysRunning": 30 },
-      { "id": "9", "name": "MTRX_UD2_M1_UGC3", "type": "UGC", "angle": "Testimonial", "cpa": 47.63, "spend": 7800, "purchases": 164, "roas": 2.1, "creator": "MTRX", "status": "Active", "daysRunning": 90 },
-      { "id": "10", "name": "CHINO_XRAY_TAILOREDFIT-6", "type": "STAT", "angle": "Fit", "cpa": 55.20, "spend": 4100, "purchases": 74, "roas": 1.8, "creator": "Chino", "status": "Testing", "daysRunning": 7 }
+    "topPerformers": [
+      {
+        "rank": 1,
+        "name": "MTRX_UD2_M1_STAT3_4-5",
+        "id": "120231567346760698",
+        "type": "STAT",
+        "spend": 2187.35,
+        "purchases": 60,
+        "cpa": 36.46,
+        "impressions": 55007,
+        "adUrl": "https://www.facebook.com/ads/library/?id=122241190322179579",
+        "creativeType": "Static",
+        "trophy": true
+      },
+      {
+        "rank": 2,
+        "name": "MTRX_UD3_M1_RSUGC4_CB_Ke_V2",
+        "id": "120234705268210698",
+        "type": "UGC",
+        "spend": 1136.63,
+        "purchases": 17,
+        "cpa": 66.86,
+        "impressions": 22483,
+        "adUrl": "https://www.facebook.com/ads/library/?id=1377177143668645",
+        "creativeType": "Video",
+        "trophy": true
+      },
+      {
+        "rank": 3,
+        "name": "CHINO_XRAY_TAILOREDFIT",
+        "id": "120235966608880698",
+        "type": "STAT",
+        "spend": 562.95,
+        "purchases": 10,
+        "cpa": 56.30,
+        "impressions": 33227,
+        "adUrl": "https://www.facebook.com/ads/library/?id=122251312940179579",
+        "creativeType": "Static",
+        "trophy": true
+      },
+      {
+        "rank": 4,
+        "name": "MTRX_UD3_M1_RSUGC4_CB_Ke_V5",
+        "id": "120236018211670698",
+        "type": "UGC",
+        "spend": 510.09,
+        "purchases": 9,
+        "cpa": 56.68,
+        "impressions": 19178,
+        "adUrl": "https://www.facebook.com/ads/library/?id=1352186022801303",
+        "creativeType": "Video"
+      },
+      {
+        "rank": 5,
+        "name": "MTRX_UD3_M1_RSUGC4_CB_Ke_V4",
+        "id": "120235963303480698",
+        "type": "UGC",
+        "spend": 231.75,
+        "purchases": 4,
+        "cpa": 57.94,
+        "impressions": 5794,
+        "adUrl": "https://www.facebook.com/ads/library/?id=2218024002022947",
+        "creativeType": "Video"
+      },
+      {
+        "rank": 6,
+        "name": "AOA_IMG1",
+        "id": "120236244854360698",
+        "type": "STAT",
+        "spend": 177.86,
+        "purchases": 8,
+        "cpa": 22.23,
+        "impressions": 8969,
+        "adUrl": "https://www.facebook.com/ads/library/?id=122162536790179579",
+        "creativeType": "Static",
+        "trophy": true,
+        "note": "Running since Aug 2024!"
+      },
+      {
+        "rank": 7,
+        "name": "BretStatics_OG.V4",
+        "id": "120236244854960698",
+        "type": "STAT",
+        "spend": 114.62,
+        "purchases": 4,
+        "cpa": 28.66,
+        "impressions": 5773,
+        "adUrl": "https://www.facebook.com/ads/library/?id=122170060322179579",
+        "creativeType": "Static"
+      },
+      {
+        "rank": 8,
+        "name": "MTRX_UD2_M3_STAT3",
+        "id": "120231272387000698",
+        "type": "STAT",
+        "spend": 82.39,
+        "purchases": 4,
+        "cpa": 20.60,
+        "impressions": 3610,
+        "adUrl": "https://www.facebook.com/ads/library/?id=122237267942179579",
+        "creativeType": "Static",
+        "trophy": true
+      },
+      {
+        "rank": 9,
+        "name": "MTRX_UD3_M1_RSUGC4_V4 (Copy)",
+        "id": "120236291826970698",
+        "type": "UGC",
+        "spend": 83.20,
+        "purchases": 2,
+        "cpa": 41.60,
+        "impressions": 2036,
+        "adUrl": "#",
+        "creativeType": "Video"
+      },
+      {
+        "rank": 10,
+        "name": "docC&d_DrChrisV3",
+        "id": "120236020173490698",
+        "type": "UGC",
+        "spend": 34.28,
+        "purchases": 1,
+        "cpa": 34.28,
+        "impressions": 934,
+        "adUrl": "https://www.facebook.com/ads/library/?id=1253554296123664",
+        "creativeType": "Video",
+        "trophy": true,
+        "note": "Health authority angle"
+      }
     ],
-    "winnersWall": [
-      { "name": "AOA_IMG1", "cpa": 24.75, "totalSpend": 85000, "totalPurchases": 3400, "daysRunning": 180, "creator": "MTRX", "angle": "Product" },
-      { "name": "docC&d_DrChrisV1", "cpa": 34.60, "totalSpend": 48000, "totalPurchases": 1388, "daysRunning": 45, "creator": "Dr. Chris", "angle": "Health" },
-      { "name": "SweatTest_9x16", "cpa": 39.00, "totalSpend": 142000, "totalPurchases": 3641, "daysRunning": 330, "creator": "Aaron", "angle": "Demo" },
-      { "name": "MTRX_UD2_M1_STAT3_4-5", "cpa": 43.46, "totalSpend": 95000, "totalPurchases": 2186, "daysRunning": 120, "creator": "MTRX", "angle": "Product" },
-      { "name": "Flamethrower_V2", "cpa": 41.20, "totalSpend": 62000, "totalPurchases": 1505, "daysRunning": 200, "creator": "Aaron", "angle": "Demo" }
-    ],
+    "summaryStats": {
+      "totalSpend": 5668.72,
+      "totalPurchases": 138,
+      "avgCpa": 41.08,
+      "totalImpressions": 188475,
+      "dateRange": "Jan 30 - Feb 5, 2026"
+    },
     "formatBreakdown": [
-      { "format": "STAT", "spend": 52000, "purchases": 1180, "cpa": 44.07, "pctOfSpend": 40, "trend": "up" },
-      { "format": "UGC", "spend": 32500, "purchases": 820, "cpa": 39.63, "pctOfSpend": 25, "trend": "up" },
-      { "format": "VID", "spend": 26000, "purchases": 580, "cpa": 44.83, "pctOfSpend": 20, "trend": "stable" },
-      { "format": "DrChris", "spend": 19500, "purchases": 530, "cpa": 36.79, "pctOfSpend": 15, "trend": "up" }
+      {
+        "format": "STATIC",
+        "spend": 3206.88,
+        "purchases": 87,
+        "cpa": 36.86,
+        "pctOfSpend": 56.6
+      },
+      {
+        "format": "VIDEO/UGC",
+        "spend": 2461.84,
+        "purchases": 51,
+        "cpa": 48.27,
+        "pctOfSpend": 43.4
+      }
     ],
-    "creatorLeaderboard": [
-      { "name": "MTRX", "spend": 52000, "purchases": 1250, "avgCpa": 41.60, "winningAds": 8, "trend": "stable" },
-      { "name": "Dr. Chris", "spend": 19500, "purchases": 530, "avgCpa": 36.79, "winningAds": 3, "trend": "up" },
-      { "name": "Aaron", "spend": 18000, "purchases": 420, "avgCpa": 42.86, "winningAds": 4, "trend": "stable" },
-      { "name": "Chino", "spend": 15000, "purchases": 320, "avgCpa": 46.88, "winningAds": 2, "trend": "up" },
-      { "name": "Dalton", "spend": 12000, "purchases": 240, "avgCpa": 50.00, "winningAds": 1, "trend": "down" },
-      { "name": "Growthpod", "spend": 8000, "purchases": 160, "avgCpa": 50.00, "winningAds": 1, "trend": "stable" }
-    ],
-    "cpaTrend": [
-      { "week": "Jan 6", "cpa": 48.20 },
-      { "week": "Jan 13", "cpa": 45.80 },
-      { "week": "Jan 20", "cpa": 44.30 },
-      { "week": "Jan 27", "cpa": 42.90 },
-      { "week": "Feb 3", "cpa": 41.50 }
+    "cpaTrendDaily": [
+      { "date": "Jan 30", "cpa": 45.20 },
+      { "date": "Jan 31", "cpa": 42.80 },
+      { "date": "Feb 1", "cpa": 38.50 },
+      { "date": "Feb 2", "cpa": 40.20 },
+      { "date": "Feb 3", "cpa": 39.80 },
+      { "date": "Feb 4", "cpa": 42.10 },
+      { "date": "Feb 5", "cpa": 38.90 }
     ]
   },
-  "competitors": [
-    {
-      "name": "True Classic",
-      "tier": 1,
-      "site": "trueclassictees.com",
-      "landingPage": "https://www.trueclassictees.com/collections/short-sleeve-tees",
-      "category": "Budget premium tees",
-      "adCount": "2,000+",
-      "creativeBreakdown": { "Static": 55, "Video": 45 },
-      "flags": ["heavy-spender"],
-      "offers": [
-        { "label": "6-Pack", "value": "48% off" },
-        { "label": "10-Pack", "value": "57% off" },
-        { "label": "Guarantee", "value": "100-Day" }
-      ],
-      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=true%20classic%20tees",
-      "topCreatives": [
-        { "format": "Static", "hook": "Classic Crew 6-Pack - 48% OFF", "note": "Top impressions", "url": "#", "daysRunning": 30 },
-        { "format": "Video", "hook": "Fit transformation", "note": "Before/after style", "url": "#", "daysRunning": 45 }
-      ],
-      "whatsWorking": ["MASSIVE scale (2000+ ads)", "Aggressive bundle pricing", "100-Day Fit Guarantee", "296K+ verified reviews"],
-      "stealThis": ["Pack bundle pricing structure", "Before/after fit transformation format", "100-Day guarantee framing"]
-    },
-    {
-      "name": "BYLT Basics",
-      "tier": 1,
-      "site": "byltbasics.com",
-      "landingPage": "https://byltbasics.com/products/drop-cut-shirt-lux",
-      "category": "Premium basics",
-      "adCount": "~330",
-      "creativeBreakdown": { "Static": 60, "Video": 40 },
-      "offers": [
-        { "label": "First Order", "value": "20% off" },
-        { "label": "Free Shipping", "value": "$99+" },
-        { "label": "Guarantee", "value": "30-Day" }
-      ],
-      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=bylt%20basics",
-      "topCreatives": [
-        { "format": "Static", "hook": "Drop-Cut LUX ✔️ checklist", "note": "Top impressions", "url": "#", "daysRunning": 20 }
-      ],
-      "whatsWorking": ["✔️ Checklist format", "Premium at fair price", "Free gift at $175+"],
-      "stealThis": ["Checklist format for benefits", "Drop-cut fit positioning", "Bundle builder tool"]
-    },
-    {
-      "name": "Cuts Clothing",
-      "tier": 1,
-      "site": "cutsclothing.com",
-      "landingPage": "https://www.cutsclothing.com/products/black-crew-curve-hem",
-      "category": "Premium tees",
-      "adCount": "~380",
-      "creativeBreakdown": { "Static": 35, "Video": 65 },
-      "offers": [
-        { "label": "Buy 4", "value": "30% off" },
-        { "label": "Buy 6", "value": "40% off" },
-        { "label": "Guarantee", "value": "⚠️ 20-Day" }
-      ],
-      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=cutsclothing",
-      "topCreatives": [
-        { "format": "Static", "hook": "AO Curve-Hem - PYCA Pro®", "note": "Top impressions", "url": "#", "daysRunning": 34 }
-      ],
-      "whatsWorking": ["Lifestyle positioning", "PYCA Pro® fabric tech", "⚠️ 62% POLYESTER", "⚠️ Only 20-day returns"],
-      "stealThis": ["ATTACK: 62% polyester vs our 0%", "ATTACK: 20-day vs Lifetime guarantee", "Curve-hem fit positioning"],
-      "attackOpportunity": true
-    },
-    {
-      "name": "NADS",
-      "tier": 1,
-      "site": "nadsunder.com",
-      "landingPage": "https://nadsunder.com/products/the-king-s-pack",
-      "category": "Organic underwear",
-      "adCount": "~160",
-      "creativeBreakdown": { "Static": 55, "Video": 45 },
-      "flags": ["direct"],
-      "offers": [
-        { "label": "King's Pack", "value": "40% OFF" },
-        { "label": "Social Proof", "value": "1M+ Pairs" },
-        { "label": "Guarantee", "value": "90-Day" }
-      ],
-      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=nadsunder",
-      "topCreatives": [
-        { "format": "Static", "hook": "Commando Shorts ✅ organic", "note": "Product expansion", "url": "#", "daysRunning": 24 }
-      ],
-      "whatsWorking": ["Same playbook as UndrDog", "✅ Checklist format", "Fertility messaging", "Better-for-Balls"],
-      "stealThis": ["Fertility/testosterone messaging", "✅ Organic certification callouts", "Pack naming (King's Pack)"]
-    },
-    {
-      "name": "Hollow Alpaca",
-      "tier": 1,
-      "site": "hollowsocks.com",
-      "landingPage": "https://hollowsocks.com/pages/10r-compression",
-      "category": "Premium socks",
-      "adCount": "~460",
-      "creativeBreakdown": { "Static": 30, "Video": 70 },
-      "flags": ["heavy-spender"],
-      "offers": [
-        { "label": "Bundle", "value": "Buy 2 Get 2 FREE" },
-        { "label": "Guarantee", "value": "99-Day" }
-      ],
-      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=hollow%20alpaca",
-      "topCreatives": [
-        { "format": "Video", "hook": "Problem→Solution long-form", "note": "10 ads running!", "url": "#", "daysRunning": 51 }
-      ],
-      "whatsWorking": ["Problem→Solution long-form", "✅ 7+ item checklist", "99-Day Guarantee", "USA-Knit 🇺🇸"],
-      "stealThis": ["Long-form problem→solution format", "7+ item checklist", "USA-made positioning"]
-    },
-    {
-      "name": "Primal Queen",
-      "tier": 2,
-      "site": "primalqueen.com",
-      "landingPage": "https://primalqueen.com/pages/tiktok",
-      "category": "Women's supplements",
-      "adCount": "~2,800",
-      "creativeBreakdown": { "Static": 70, "Video": 30 },
-      "flags": ["heavy-spender"],
-      "offers": [
-        { "label": "Guarantee", "value": "365-Day (!)" }
-      ],
-      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=primal%20queen",
-      "topCreatives": [
-        { "format": "Static", "hook": "Testimonial-led", "note": "105 days running", "url": "#", "daysRunning": 105 }
-      ],
-      "whatsWorking": ["2,800 ads = MASSIVE scale", "Testimonial-led creatives", "365-Day guarantee"],
-      "stealThis": ["365-day guarantee framing", "Testimonial-heavy creative mix", "Scale testing playbook"]
-    },
-    {
-      "name": "AG1",
-      "tier": 2,
-      "site": "drinkag1.com",
-      "landingPage": "https://drinkag1.com",
-      "category": "Supplements",
-      "adCount": "~1,500+",
-      "creativeBreakdown": { "Static": 40, "Video": 60 },
-      "flags": ["heavy-spender"],
-      "offers": [
-        { "label": "First Sub", "value": "26% off" },
-        { "label": "Bonus", "value": "Welcome Kit" },
-        { "label": "Guarantee", "value": "90-Day" }
-      ],
-      "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=ag1",
-      "topCreatives": [
-        { "format": "Video", "hook": "Huberman partnership", "note": "Authority stacking", "url": "#", "daysRunning": 60 }
-      ],
-      "whatsWorking": ["Authority marketing masterclass", "Huberman + Hugh Jackman", "Clinical study references", "Simple daily routine"],
-      "stealThis": ["Authority/expert partnership model", "Clinical study citations in ads", "Welcome kit bundle"]
-    }
-  ],
-  "offerComparison": [
-    { "brand": "UndrDog", "product": "Hemp Tee", "unitPrice": 41.50, "currentOffer": "10% off 1 / 20% off 3 / 30% off 6", "effectivePrice": 29.05, "guaranteeDays": "Lifetime", "isUs": true },
-    { "brand": "True Classic", "product": "Classic Crew", "unitPrice": 35, "currentOffer": "48% off 6-pack / 57% off 10-pack", "effectivePrice": 18.33, "guaranteeDays": 100 },
-    { "brand": "BYLT", "product": "Drop-Cut LUX", "unitPrice": 40, "currentOffer": "20% off first + 10% off 3-pack", "effectivePrice": 32, "guaranteeDays": 30 },
-    { "brand": "Cuts", "product": "AO Curve-Hem", "unitPrice": 54, "currentOffer": "Buy 4 get 30% / Buy 6 get 40%", "effectivePrice": 32.40, "guaranteeDays": 20 },
-    { "brand": "Nads", "product": "Boxer Brief", "unitPrice": 24, "currentOffer": "King's Pack 40% OFF", "effectivePrice": 7.20, "guaranteeDays": 90 },
-    { "brand": "Hollow Alpaca", "product": "Compression Socks", "unitPrice": 40, "currentOffer": "Buy 2 Get 2 FREE", "effectivePrice": 20, "guaranteeDays": 99 }
-  ],
-  "briefs": {
-    "active": [
-      { "id": "B001", "title": "Anti-Polyester Attack Campaign", "angle": "Health", "status": "In Production", "creator": "Aaron", "dueDate": "2026-02-10", "priority": "high", "notes": "Target Cuts' 62% polyester. Use microplastics studies." },
-      { "id": "B002", "title": "X-Ray Fit Series V2", "angle": "Fit", "status": "Scripting", "creator": "Chino", "dueDate": "2026-02-15", "priority": "high", "notes": "Expand on XRAY_TAILOREDFIT success. More angles." },
-      { "id": "B003", "title": "DrChris V4-V6", "angle": "Health Authority", "status": "Waiting on Creator", "creator": "Dr. Chris", "dueDate": "2026-02-20", "priority": "high", "notes": "Need 3 more expert videos. Best CPA in account." },
-      { "id": "B004", "title": "Microwave Test Demo", "angle": "Demo", "status": "Concept", "creator": "Aaron", "dueDate": "2026-02-25", "priority": "medium", "notes": "Polyester melts, hemp doesn't. Visual proof." },
-      { "id": "B005", "title": "Project 000 Launch Content", "angle": "Product", "status": "Planning", "creator": "Multiple", "dueDate": "2026-02-28", "priority": "high", "notes": "Clean Slate drop content. Natural undyed tee." }
-    ],
-    "templates": {
-      "destructive": {
-        "name": "Destructive Demo",
-        "description": "Show the product surviving extreme tests",
-        "structure": ["Hook: Setup the test", "Demo: Execute the destruction", "Reveal: Show it survived", "Compare: What happens to polyester", "CTA: Lifetime guarantee"],
-        "examples": ["Flamethrower", "BB Gun", "Knife Test", "Gasoline Dump", "Bow & Arrow"],
-        "bestFor": ["Aaron"]
+  "competitors": {
+    "tier1": [
+      {
+        "name": "BYLT Basics",
+        "site": "byltbasics.com",
+        "adCount": "~330",
+        "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=bylt%20basics",
+        "landingPage": "https://byltbasics.com/products/drop-cut-shirt-lux",
+        "topAds": [
+          {
+            "hook": "Drop-Cut LUX ✔️ checklist",
+            "format": "Static",
+            "angle": "Premium fabric tech",
+            "link": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=bylt%20basics"
+          },
+          {
+            "hook": "100K+ 5-Star Reviews",
+            "format": "Static",
+            "angle": "Social proof",
+            "link": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=bylt%20basics"
+          }
+        ],
+        "currentOffer": "20% off first order + Free shipping $99+",
+        "guarantee": "30-Day",
+        "whatsWorking": [
+          "✔️ Checklist format for features",
+          "Review count prominence (100K+)",
+          "Free gift at $175 threshold",
+          "Premium at fair price positioning"
+        ]
       },
-      "health": {
-        "name": "Health Authority",
-        "description": "Expert citing studies/research",
-        "structure": ["Hook: Surprising health fact", "Problem: Microplastics/polyester danger", "Studies: Cite research with sources", "Solution: Natural fiber alternative", "CTA: Made for men who care"],
-        "examples": ["DrChrisV1-V3", "Fertility studies", "Testosterone research"],
-        "bestFor": ["Dr. Chris", "Dalton"]
+      {
+        "name": "Cuts Clothing",
+        "site": "cutsclothing.com",
+        "adCount": "~380",
+        "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=cuts%20clothing",
+        "landingPage": "https://www.cutsclothing.com/products/black-crew-curve-hem",
+        "topAds": [
+          {
+            "hook": "AO Curve-Hem - PYCA Pro®",
+            "format": "Static",
+            "angle": "Fabric tech",
+            "link": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=cuts%20clothing"
+          },
+          {
+            "hook": "For the Sport of Business",
+            "format": "Video",
+            "angle": "Lifestyle",
+            "link": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=cuts%20clothing"
+          }
+        ],
+        "currentOffer": "Buy 4 get 30% / Buy 6 get 40%",
+        "guarantee": "20-Day (!)",
+        "whatsWorking": [
+          "Aspirational lifestyle positioning",
+          "Curve-hem fit as differentiator",
+          "⚠️ 62% POLYESTER - ATTACK OPPORTUNITY",
+          "⚠️ Only 20-day returns"
+        ],
+        "attackOpportunity": true
       },
-      "fit": {
-        "name": "Fit Transformation",
-        "description": "Show how the shirt changes appearance",
-        "structure": ["Hook: Before state (baggy/unflattering)", "Problem: Regular shirts hide your work", "Reveal: The Alpha Frame Fit", "Demo: How it hugs arms, hides gut", "CTA: Look 10 lbs lighter"],
-        "examples": ["X-Ray statics", "Before/after", "Fit breakdown"],
-        "bestFor": ["Chino", "MTRX"]
+      {
+        "name": "NADS",
+        "site": "nadsunder.com",
+        "adCount": "~160",
+        "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=nads%20underwear",
+        "landingPage": "https://nadsunder.com/products/the-king-s-pack",
+        "flag": "DIRECT COMPETITOR",
+        "topAds": [
+          {
+            "hook": "Ditch the Toxic Underwear",
+            "format": "Static",
+            "angle": "Anti-toxin/health",
+            "link": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=nads%20underwear"
+          },
+          {
+            "hook": "Better-for-Balls Underwear",
+            "format": "Video",
+            "angle": "Fertility/testosterone",
+            "link": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=nads%20underwear"
+          }
+        ],
+        "currentOffer": "King's Pack 40% OFF",
+        "guarantee": "90-Day",
+        "whatsWorking": [
+          "EXACT same playbook as UndrDog",
+          "Fertility/testosterone messaging",
+          "Expert endorsements",
+          "1 Million+ Pairs Sold proof"
+        ]
       },
-      "conspiracy": {
-        "name": "Hemp Conspiracy",
-        "description": "Truth-bomb about hemp history",
-        "structure": ["Hook: Something doesn't add up", "History: Hemp used for thousands of years", "Plot: DuPont + 1937 ban", "Reveal: Big Plastic won", "CTA: Take back your wardrobe"],
-        "examples": ["DuPont angle", "Reefer Madness", "Declaration of Independence"],
-        "bestFor": ["Dalton", "Aaron"]
+      {
+        "name": "Hollow Alpaca",
+        "site": "hollowsocks.com",
+        "adCount": "~4,100",
+        "adsLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=hollow%20alpaca",
+        "landingPage": "https://hollowsocks.com/pages/10r-compression",
+        "flag": "HEAVY SPENDER",
+        "topAds": [
+          {
+            "hook": "Problem→Solution long-form",
+            "format": "Video",
+            "angle": "Natural fiber benefits",
+            "link": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=hollow%20alpaca"
+          },
+          {
+            "hook": "99-Day Money Back",
+            "format": "Static",
+            "angle": "Risk reversal",
+            "link": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=hollow%20alpaca"
+          }
+        ],
+        "currentOffer": "Buy 2 Get 2 FREE",
+        "guarantee": "99-Day",
+        "whatsWorking": [
+          "MASSIVE ad volume (4,100+ ads)",
+          "Natural fiber positioning",
+          "99-Day guarantee",
+          "USA-Knit 🇺🇸 angle"
+        ]
       }
-    }
+    ],
+    "trendsIndustryWide": [
+      "Heavy UGC + testimonial content across all competitors",
+      "15-30% flat discount for first order is standard",
+      "✔️ Checklist format performing well (BYLT, NADS, Hollow)",
+      "Strong risk reversal (90-99 day guarantees)",
+      "Expert/doctor endorsements (AG1, NADS)",
+      "Chemical/toxin callout lists (❌ bad ✅ good)",
+      "Social proof numbers above fold (X million sold)"
+    ],
+    "whereToFocus": [
+      "Health angle in TEES - NADS does underwear, Cuts is 62% polyester",
+      "Destructive demos - NOBODY else does this, uniquely UD",
+      "Lifetime guarantee - major differentiator vs 20-90 day competitors",
+      "Hemp positioning - Hollow uses alpaca, NADS uses cotton",
+      "Anti-polyester in apparel - Cuts is vulnerable (62% polyester)"
+    ]
   },
-  "hookLibrary": {
-    "question": [
-      "Why does your shirt smell after 2 hours?",
-      "Did you know your shirt is made from fossil fuels?",
-      "What if I told you polyester is linked to lower testosterone?",
-      "Ever wonder why hemp was banned in 1937?",
-      "Would you wear a shirt made of plastic bottles?",
-      "What's actually in your 'premium' t-shirt?",
-      "Why do $15 shirts only last 6 months?",
-      "Know what happens when you sweat in polyester?",
-      "What would you pay for a shirt you never have to replace?",
-      "Why are microplastics showing up in human blood?"
+  "creativeBriefs": {
+    "creatorScripts": [
+      {
+        "title": "Anti-Polyester Attack",
+        "angle": "Health/Durability Hybrid",
+        "creator": "Aaron or Dalton",
+        "script": "Look, I'm not gonna tell you what to wear. But I will show you what your shirt is actually made of.\n\n[holds up polyester shirt]\n\nThis... this is plastic. Like, actual plastic from fossil fuels. 62% polyester means 62% of this came from an oil refinery.\n\nI started thinking about this when my wife and I were trying to have a kid. Started looking into all the stuff touching my body 16 hours a day.\n\nTurns out there's studies — real studies, not internet stuff — showing microplastics in places they really shouldn't be.\n\n[cut to demonstration]\n\nThis is what hemp can take. Watch.\n\n[flame test or knife test]\n\nStill here. Because plants don't melt.\n\nI'm not saying throw away everything you own. I'm just saying... maybe think about what's against your skin all day.\n\nLink's in bio if you wanna see what we're doing different.",
+        "hooks": [
+          "Your shirt is 62% plastic. Here's what that means.",
+          "I stopped wearing polyester when my wife and I couldn't get pregnant.",
+          "Watch what happens when I hit this $40 shirt with a blowtorch."
+        ],
+        "notes": "Use real competitor percentage (Cuts = 62%). Cite studies naturally, not as attack."
+      },
+      {
+        "title": "Durability Focus",
+        "angle": "Hemp Strength Demo",
+        "creator": "Aaron",
+        "script": "Okay so people keep asking how strong this fabric actually is.\n\nFair question. Let me show you.\n\n[pulls out bow and arrow / BB gun / knife]\n\nThis is a $40 tee. Same one I've worn like 200 times.\n\n[test happens]\n\n...yeah. That's hemp. 4x stronger than cotton.\n\nMost shirts I bought before this, they'd last maybe a year? If I was lucky? Then the collar stretches, the fabric thins out, you're buying another one.\n\nThis thing comes with a lifetime guarantee because they know it's not gonna fail.\n\nI've had it for [X months] now. Still looks the same as day one.\n\nThat's not marketing. That's just... hemp.",
+        "hooks": [
+          "I shot my shirt with a BB gun. Here's what happened.",
+          "This is the last shirt you'll ever need to buy.",
+          "Watch me try to destroy a $40 tee."
+        ],
+        "notes": "Pure demo format. Let the destruction speak. Keep voiceover casual."
+      },
+      {
+        "title": "Airflow/Breathability",
+        "angle": "Bamboo Benefits",
+        "creator": "Josh or Growthpod",
+        "script": "So I used to think all shirts were basically the same when it came to sweating.\n\nLike, you work out, you sweat, your shirt gets gross. That's just how it is, right?\n\nTurns out that's a fabric problem.\n\nPolyester traps heat because plastic doesn't breathe. Cotton absorbs everything and just... holds it.\n\nThis has 31% bamboo in it. And bamboo has these tiny gaps in the fiber that let air actually move through.\n\n[fog machine test or just movement]\n\nI wore this thing for a full day in Florida. 90 degrees. Still didn't smell.\n\nThat's not me bragging about my hygiene. That's the bamboo doing its job.\n\nI don't really think about my shirts anymore. That's the whole point.",
+        "hooks": [
+          "Why does your shirt smell after 2 hours?",
+          "I wore this for 72 hours straight. Here's what happened.",
+          "The reason you sweat through your shirt isn't you."
+        ],
+        "notes": "Casual, relatable. Don't oversell — let the benefit be discovered."
+      },
+      {
+        "title": "Health Focus",
+        "angle": "Microplastics Research",
+        "creator": "Dr. Chris or Dalton",
+        "script": "Alright so I need to tell you about something that's been bothering me.\n\nThere's a study from 2024 — Zhang et al, if you wanna look it up — that found microplastics in human testes.\n\nNot in rats. In humans.\n\nAnd a separate study found them in semen.\n\nNow I'm not saying your polyester shirt is the only source. Microplastics are everywhere — water, air, food.\n\nBut polyester fabric sheds thousands of these particles every time you wear it. Every time you wash it.\n\nAnd that fabric is against your skin. Absorbing into your body. All day.\n\nI switched to hemp and bamboo about a year ago. Zero plastic, zero PFAS, zero microplastics.\n\nI can't undo what's already happened. But I can control what I put on my body going forward.\n\nResearchers are still figuring out what this all means. I just decided I didn't want to wait to find out.",
+        "hooks": [
+          "They found microplastics in human reproductive organs. Here's what I did.",
+          "The clothing industry doesn't want you to know this.",
+          "A 2024 study changed how I think about my clothes."
+        ],
+        "notes": "MUST cite studies properly. Never claim health outcomes. Use 'researchers found' language."
+      },
+      {
+        "title": "Out of the Box - Laundry Test",
+        "angle": "Wash Test Comparison",
+        "creator": "Aaron or new creator",
+        "script": "I'm gonna do something kinda stupid.\n\nThis is the same shirt I've washed... [counts]... probably 150 times? Maybe more.\n\nAnd this is a brand new one from the same batch.\n\n[holds both up side by side]\n\nCan you tell which is which?\n\nMost people can't.\n\nThat's the whole point. Hemp doesn't break down like cotton. It doesn't pill like polyester. It doesn't stretch out or fade or thin out at the collar.\n\nI used to buy like 5 black tees a year because they'd all fall apart. Now I have 3 of these and I'm set.\n\n$120 once. Not $100 every year forever.\n\nThe math just... works.",
+        "hooks": [
+          "This shirt has been washed 150 times. Can you tell?",
+          "I stopped buying t-shirts. Here's why.",
+          "Side by side: 1 year old vs brand new. Guess which is which."
+        ],
+        "notes": "Visual proof of durability claim. Simple, undeniable."
+      },
+      {
+        "title": "NEVER DONE BEFORE - Ice Test",
+        "angle": "Temperature Regulation Demo",
+        "creator": "Aaron",
+        "script": "Nobody's done this before.\n\n[holds up ice pack and two shirts]\n\nI'm gonna wrap this ice in polyester. And this one in our hemp blend.\n\n[time lapse setup]\n\nPolyester traps temperature. Hot or cold, it holds it against your skin.\n\nHemp and bamboo regulate. They breathe.\n\n[reveal after X minutes]\n\nLook at the difference.\n\nThis is why you feel hot in polyester even when it's not that warm out. The fabric is working against you.\n\nI never really thought about this until someone explained it to me. Now I can't un-know it.\n\nNatural fibers were the standard for thousands of years. We switched to plastic because it was cheaper. Not because it was better.",
+        "hooks": [
+          "I froze my shirt. Here's what I learned.",
+          "Polyester vs Hemp: temperature test nobody's tried.",
+          "Why you sweat in polyester even when it's cold."
+        ],
+        "notes": "New demo concept. Proves temperature regulation visually."
+      }
     ],
-    "statement": [
-      "This shirt survived a flamethrower.",
-      "I shot this shirt with a BB gun. It won.",
-      "Your shirt is shedding microplastics into your bloodstream.",
-      "I threw away every polyester shirt I owned.",
-      "This is the last shirt you'll ever need to buy.",
-      "Hemp is 4x stronger than cotton.",
-      "I've worn this shirt 200+ times. Still looks new.",
-      "Polyester is just plastic from fossil fuels.",
-      "Scientists found microplastics in human testes.",
-      "DuPont got hemp banned in 1937 to sell plastic."
+    "editorConcepts": [
+      {
+        "title": "Founder Story - The Pivot",
+        "type": "Text overlay + B-roll",
+        "musicMood": "Emotional, building, hopeful",
+        "textOverlay": [
+          "We spent 3 years building the perfect shirt.",
+          "51% hemp. Indestructible.",
+          "But it had a problem.",
+          "It was 49% polyester.",
+          "Then we started trying to have a kid.",
+          "And I found the studies.",
+          "Microplastics in reproductive organs.",
+          "Polyester shedding thousands of particles.",
+          "We scrapped everything.",
+          "Started over.",
+          "$300k and 2 years later...",
+          "DuraFlow™ was born.",
+          "0% polyester. 0% plastic. 0% PFAS.",
+          "Because some things matter more than profit."
+        ],
+        "bRollClips": [
+          "Chuckie in lab/office working",
+          "Old prototypes being thrown away",
+          "Shelby and Chuckie together",
+          "New fabric being made",
+          "Product reveal shot"
+        ],
+        "hooks": [
+          "We threw away 3 years of work. Here's why.",
+          "The $300k mistake that changed everything.",
+          "My fertility journey led to this shirt."
+        ]
+      },
+      {
+        "title": "Out of the Box - Conspiracy Timeline",
+        "type": "Text overlay + archival footage",
+        "musicMood": "Mysterious, tension building, then uplifting",
+        "concept": "Visual timeline of hemp history with newspaper-style reveals",
+        "textOverlay": [
+          "1776: Declaration of Independence written on hemp.",
+          "Hemp was the world's most used fiber.",
+          "Then in 1937, everything changed.",
+          "DuPont had just patented nylon.",
+          "Guess who lobbied to ban hemp?",
+          "[newspaper clip of Reefer Madness]",
+          "They convinced America hemp = marijuana.",
+          "Plastic replaced plant fiber.",
+          "Fast forward to today...",
+          "Polyester is in 60% of clothing.",
+          "Microplastics are in human blood.",
+          "Hemp was never the problem.",
+          "We're bringing it back."
+        ],
+        "bRollClips": [
+          "Old newspaper headlines",
+          "DuPont factory footage",
+          "Reefer Madness clips",
+          "Modern microplastic imagery",
+          "Hemp growing, product shots"
+        ],
+        "hooks": [
+          "Hemp was banned in 1937. This is why.",
+          "The conspiracy that changed your closet.",
+          "DuPont didn't want you wearing this."
+        ]
+      },
+      {
+        "title": "Totally New - Split Screen Life",
+        "type": "Creative split-screen format",
+        "concept": "Left: guy in polyester having issues. Right: guy in UndrDog thriving. Same scenarios.",
+        "scenes": [
+          "Morning: polyester guy scratchy/uncomfortable vs UD guy comfortable",
+          "Workout: polyester soaked vs UD dry",
+          "After work: polyester smelly vs UD fresh",
+          "6 months later: polyester falling apart vs UD still perfect",
+          "1 year later: buying new shirts vs same 3 shirts"
+        ],
+        "hooks": [
+          "Two guys. Same day. Different shirt.",
+          "The difference a fabric makes.",
+          "Left: $15 shirt. Right: $40 shirt. Watch what happens."
+        ]
+      }
     ],
-    "demo": [
-      "Watch what happens when I hit this shirt with a blowtorch.",
-      "I shot this shirt with an arrow. Here's what happened.",
-      "Pouring gasoline on a $40 shirt.",
-      "Knife vs Hemp. Let's see who wins.",
-      "I wore this shirt for 72 hours straight. Smell test:",
-      "Match test: polyester vs hemp.",
-      "I'm about to destroy a perfectly good shirt.",
-      "Fog machine test: watch the airflow difference.",
-      "Let me show you what 51% hemp can survive."
+    "newConcepts": {
+      "newDemos": [
+        {
+          "name": "Microwave Test",
+          "concept": "Polyester melts/sparks in microwave. Hemp stays intact.",
+          "why": "Visual proof that polyester is plastic",
+          "equipment": "Microwave, both shirts, camera",
+          "safetyNote": "Do outdoors with fire safety"
+        },
+        {
+          "name": "UV Light Microplastic Test",
+          "concept": "Use UV light to show microplastic shedding from polyester",
+          "why": "Makes invisible problem visible",
+          "equipment": "UV flashlight, dark room, both fabrics"
+        },
+        {
+          "name": "Static Cling Test",
+          "concept": "Polyester sticks to everything. Hemp doesn't.",
+          "why": "Relatable everyday annoyance",
+          "equipment": "Both shirts, balloons or fur"
+        }
+      ],
+      "demosToRedo": [
+        {
+          "name": "Flamethrower V2",
+          "original": "Good but lighting was off",
+          "improvements": "Shoot at dusk for dramatic fire glow, multiple angles, slow-mo",
+          "location": "Outdoor open area, concrete backdrop"
+        },
+        {
+          "name": "Fog Test V2",
+          "original": "Concept was good but visibility was poor",
+          "improvements": "Better fog machine, backlit for airflow visibility, tighter shot",
+          "location": "Dark room with single light source behind fabric"
+        }
+      ],
+      "outOfBoxIdeas": [
+        "TIME CAPSULE: Bury a shirt, dig it up in 6 months. Hemp intact, polyester degraded.",
+        "MAKER COLLAB: Send shirt to blacksmith/welder/mechanic. See what it survives at their job.",
+        "ANIMAL TEST: Horse/dog can't chew through it (supervised, safe).",
+        "FREEZE TEST: Freeze shirt overnight, flex immediately. Hemp survives, polyester cracks.",
+        "ROAD TRIP: Same shirt for 7-day road trip. Day by day updates. Still fresh at end."
+      ]
+    },
+    "staticAds": [
+      {
+        "id": 1,
+        "angle": "Anti-Polyester Attack",
+        "format": "4:5",
+        "imageConept": "Split image: Left side shows molecular structure of plastic/polyester, right side shows hemp plant",
+        "textOverlay": "Their shirt: 62% fossil fuel. Ours: 100% plants.",
+        "cta": "Shop Toxin-Free →"
+      },
+      {
+        "id": 2,
+        "angle": "Microplastics Study",
+        "format": "4:5",
+        "imageConept": "Scientific journal style with highlighted text from real study",
+        "textOverlay": "\"Microplastics detected in human testes\" — Zhang et al, 2024\n\n0% polyester. 0% plastic. 0% regrets.",
+        "cta": "Made for men who care"
+      },
+      {
+        "id": 3,
+        "angle": "Lifetime Guarantee",
+        "format": "4:5",
+        "imageConept": "Certificate of authenticity / warranty card visual",
+        "textOverlay": "Their guarantee: 20 days.\nOurs: LIFETIME.\n\nReplace for FREE. Forever.",
+        "cta": "Learn More"
+      },
+      {
+        "id": 4,
+        "angle": "Checklist Format",
+        "format": "4:5",
+        "imageConept": "Clean checklist design on dark background",
+        "textOverlay": "✅ 0% Polyester\n✅ 0% Microplastics\n✅ 0% PFAS\n✅ Hemp + Bamboo\n✅ Lifetime Guarantee\n❌ Plastic\n❌ Chemicals\n❌ Fast Fashion",
+        "cta": "Shop Now"
+      },
+      {
+        "id": 5,
+        "angle": "Price Comparison",
+        "format": "4:5",
+        "imageConept": "Math equation style visual",
+        "textOverlay": "5 cheap shirts/year × $20 = $100/year\n× 10 years = $1,000\n\nOR\n\n3 UndrDog tees × $40 = $120\nForever.",
+        "cta": "Do the math"
+      },
+      {
+        "id": 6,
+        "angle": "X-Ray Fit",
+        "format": "4:5",
+        "imageConept": "X-ray style showing how shirt hugs arms, hides midsection",
+        "textOverlay": "Arms: Hugged.\nChest: Defined.\nGut: Hidden.\n\nThe Alpha Frame Fit™",
+        "cta": "See the difference"
+      },
+      {
+        "id": 7,
+        "angle": "Testimonial",
+        "format": "4:5",
+        "imageConept": "Real customer photo with quote bubble",
+        "textOverlay": "\"I threw away 30 shirts and bought 6 of these. Best decision I ever made.\"\n\n— Real Customer",
+        "cta": "Join 50,000+ men"
+      },
+      {
+        "id": 8,
+        "angle": "Conspiracy Hook",
+        "format": "4:5",
+        "imageConept": "1937 newspaper style with DuPont headline",
+        "textOverlay": "In 1937, DuPont lobbied to ban hemp.\n\nGuess what they were selling?\n\nPlastic.",
+        "cta": "The truth about your shirt"
+      },
+      {
+        "id": 9,
+        "angle": "Demo Result",
+        "format": "4:5",
+        "imageConept": "Shirt with visible burn mark that didn't go through",
+        "textOverlay": "Flamethrower: 0\nHemp: 1\n\n4× stronger than cotton.",
+        "cta": "See the test"
+      },
+      {
+        "id": 10,
+        "angle": "Smell Test",
+        "format": "4:5",
+        "imageConept": "Before/after visual of guy looking comfortable",
+        "textOverlay": "72 hours. 1 shirt. 0 smell.\n\nBamboo has natural antimicrobial properties.",
+        "cta": "Sweat less. Stink less."
+      },
+      {
+        "id": 11,
+        "angle": "Fabric Blend",
+        "format": "4:5",
+        "imageConept": "Pie chart style showing fabric percentages",
+        "textOverlay": "51% Hemp (Strength)\n31% Bamboo (Airflow)\n18% Organic Cotton (Softness)\n\n0% Plastic. 0% Excuses.",
+        "cta": "Patent-pending DuraFlow™"
+      },
+      {
+        "id": 12,
+        "angle": "Social Proof",
+        "format": "4:5",
+        "imageConept": "Review count / rating visual",
+        "textOverlay": "⭐⭐⭐⭐⭐\n50,000+ men have switched.\n\n\"I'll never go back to polyester.\"\n\"Best shirt I've ever owned.\"\n\"Worth every penny.\"",
+        "cta": "Read the reviews"
+      },
+      {
+        "id": 13,
+        "angle": "Blue Collar",
+        "format": "4:5",
+        "imageConept": "Working man on job site, shirt still clean",
+        "textOverlay": "Built for men who work.\nNot men who sit in meetings about work.\n\nSurvives job sites. Survives life.",
+        "cta": "Shop Now"
+      },
+      {
+        "id": 14,
+        "angle": "Dad Bod Transformation",
+        "format": "4:5",
+        "imageConept": "Before/after fit comparison, same guy",
+        "textOverlay": "Same guy. Same body.\nDifferent shirt.\n\nHides the gut. Shows the arms.",
+        "cta": "Look 10 lbs lighter"
+      },
+      {
+        "id": 15,
+        "angle": "Question Hook",
+        "format": "4:5",
+        "imageConept": "Bold text on dark background",
+        "textOverlay": "What if your shirt...\n\n...never stank?\n...never stretched?\n...never needed replacing?\n\nIt's not hypothetical.",
+        "cta": "Meet the UndrDog"
+      },
+      {
+        "id": 16,
+        "angle": "Hemp History",
+        "format": "4:5",
+        "imageConept": "Declaration of Independence + hemp visual",
+        "textOverlay": "The Declaration of Independence was drafted on hemp.\n\nNow it's in your shirt.\n\nHistory. On your back.",
+        "cta": "American made. American fiber."
+      },
+      {
+        "id": 17,
+        "angle": "Value Stack",
+        "format": "4:5",
+        "imageConept": "Stacked value props with checkmarks",
+        "textOverlay": "Included:\n✅ Indestructible hemp blend\n✅ Zero-stink bamboo\n✅ Lifetime guarantee\n✅ Free replacements forever\n✅ Certificate of authenticity\n\nNot included:\n❌ Plastic\n❌ Chemicals\n❌ Regret",
+        "cta": "Get yours"
+      },
+      {
+        "id": 18,
+        "angle": "Vs Competitor",
+        "format": "4:5",
+        "imageConept": "Side by side comparison chart",
+        "textOverlay": "Premium Tee Comparison:\n\nThem:\n• 62% Polyester\n• 20-day returns\n• $54\n\nUs:\n• 0% Polyester\n• LIFETIME guarantee\n• $40\n\nYour call.",
+        "cta": "Choose wisely"
+      },
+      {
+        "id": 19,
+        "angle": "Minimalist",
+        "format": "1:1",
+        "imageConept": "Just the product, beautifully lit",
+        "textOverlay": "51% Hemp. 31% Bamboo. 18% Organic Cotton.\n\nNothing else.",
+        "cta": "DuraFlow™"
+      },
+      {
+        "id": 20,
+        "angle": "Urgency/Drop",
+        "format": "4:5",
+        "imageConept": "Project 000 Clean Slate preview",
+        "textOverlay": "COMING FEBRUARY:\n\nProject 000 Clean Slate\n\nNo dye. No chemicals. Just pure hemp/bamboo.\n\nNatural off-white. Limited drop.",
+        "cta": "Get early access"
+      }
     ],
-    "controversy": [
-      "Nobody's talking about the plastic in your clothes.",
-      "Big Textile doesn't want you to know this.",
-      "DuPont got hemp banned in 1937. Here's why.",
-      "Your 'premium' shirt is 62% plastic.",
-      "The clothing industry is lying to you.",
-      "They called it 'Reefer Madness' to ban this fabric.",
-      "The fertility crisis nobody's connecting to clothing.",
-      "Most 'cotton' shirts are 40% polyester.",
-      "The 1930s conspiracy that changed clothing forever."
-    ],
-    "result": [
-      "My wife noticed the difference immediately.",
-      "Went from dad bod to looking jacked in one shirt.",
-      "$40 shirt. 5 years later. Zero regrets.",
-      "The last shirt you'll ever need to buy.",
-      "I stopped buying shirts entirely.",
-      "Finally, a shirt that hides my gut.",
-      "No more pit stains. No more stink. No more replacing.",
-      "My closet went from 30 shirts to 6.",
-      "The fit made me look 10 pounds lighter."
-    ],
-    "health": [
-      "Researchers found microplastics in human reproductive organs.",
-      "Studies link polyester to decreased testosterone.",
-      "Your skin absorbs what it touches. Including plastic.",
-      "Zero PFAS. Zero microplastics. Zero polyester.",
-      "Made for men who actually care about what touches their body.",
-      "100% plants. 0% plastic. 0% chemicals.",
-      "The toxin-free shirt that started from a fertility journey.",
-      "What's touching your skin 16 hours a day?",
-      "If you filter your water, why not your clothing?"
+    "scriptStructures": [
+      {
+        "name": "Problem → Agitate → Solve",
+        "structure": ["Hook: State the problem", "Agitate: Make it worse", "Solution: Introduce product", "Proof: Demo or data", "CTA: Offer"],
+        "example": "Your shirt is made of plastic → That plastic sheds microplastics → UndrDog is 0% polyester → [demo] → Lifetime guarantee"
+      },
+      {
+        "name": "I Was Skeptical Until...",
+        "structure": ["Skepticism hook", "What changed my mind", "Results I got", "Why you should try"],
+        "example": "I thought $40 for a t-shirt was insane → Then I learned about microplastics → 6 months later, still perfect"
+      },
+      {
+        "name": "3 Reasons Why",
+        "structure": ["Hook: 3 reasons statement", "Reason 1 (most important)", "Reason 2", "Reason 3 (the twist)", "CTA"],
+        "example": "3 reasons I threw away all my polyester → 1. Microplastics → 2. They stink → 3. Hemp is indestructible"
+      },
+      {
+        "name": "Nobody Talks About This",
+        "structure": ["Controversy hook", "The hidden truth", "Evidence", "Solution", "CTA"],
+        "example": "Nobody talks about plastic in clothes → 60% is polyester → Studies found microplastics in blood → UndrDog: 0% polyester"
+      },
+      {
+        "name": "Watch What Happens",
+        "structure": ["Demo setup", "The test", "Surprising result", "What this means", "CTA"],
+        "example": "Hitting this shirt with a blowtorch → [demo] → Still intact → This is hemp"
+      }
     ]
   },
   "brandBible": {
@@ -318,383 +709,307 @@
       "mission": "Nature's revenge on microplastics",
       "fabric": {
         "name": "DuraFlow™ (Patent-Pending)",
-        "blend": "51% Hemp, 31% Bamboo, 18% Organic Cotton",
-        "benefits": ["Doesn't rip", "Doesn't stink", "Doesn't stretch", "Doesn't shrink", "Doesn't trap heat", "Doesn't lose shape"]
+        "blend": "51% Hemp • 31% Bamboo • 18% Organic Cotton",
+        "benefits": ["Doesn't rip", "Doesn't stink", "Doesn't stretch", "Doesn't shrink", "Doesn't trap heat"]
       },
       "fit": {
         "name": "Alpha Frame Fit",
-        "features": ["Hugs arms/chest", "Hides gut & man-boobs", "Curved hem makes you look taller", "Midweight keeps shape"]
+        "features": ["Hugs arms/chest", "Hides gut & man-boobs", "Curved hem = taller look", "Midweight holds shape"]
       },
       "guarantee": "Lifetime Guarantee — Replace for FREE"
     },
+    "coreDemos": [
+      {
+        "name": "Flamethrower Test",
+        "driveLink": "https://drive.google.com/drive/folders/[Aaron UGC > Flamethrower]",
+        "concept": "Hemp survives open flame",
+        "best": "Aaron"
+      },
+      {
+        "name": "BB Gun Test",
+        "driveLink": "https://drive.google.com/drive/folders/[Aaron UGC > BB Gun]",
+        "concept": "Hemp doesn't tear from impact",
+        "best": "Aaron"
+      },
+      {
+        "name": "Bow & Arrow Test",
+        "driveLink": "https://drive.google.com/drive/folders/[Aaron UGC > Bow Test]",
+        "concept": "Extreme durability demo",
+        "best": "Aaron"
+      },
+      {
+        "name": "Knife Test",
+        "driveLink": "https://drive.google.com/drive/folders/[Aaron UGC]",
+        "concept": "Cutting resistance demo",
+        "best": "Aaron"
+      },
+      {
+        "name": "Gasoline Dump",
+        "driveLink": "https://drive.google.com/drive/folders/[Aaron UGC > Gas Can Dump]",
+        "concept": "Survives gasoline + fire",
+        "best": "Aaron"
+      },
+      {
+        "name": "Fog Machine Test",
+        "driveLink": "https://drive.google.com/drive/folders/[Aaron UGC > Fog Test]",
+        "concept": "Shows airflow through fabric",
+        "best": "Aaron"
+      },
+      {
+        "name": "Match Test",
+        "driveLink": "https://drive.google.com/drive/folders/[Aaron UGC > Match Test]",
+        "concept": "Simple fire resistance demo",
+        "best": "Aaron"
+      },
+      {
+        "name": "Pool Test",
+        "driveLink": "https://drive.google.com/drive/folders/[Aaron UGC > Pool Test]",
+        "concept": "Survives water/chlorine",
+        "best": "Aaron"
+      },
+      {
+        "name": "Sweat Test",
+        "driveLink": "https://drive.google.com/drive/folders/[Aaron UGC]",
+        "concept": "72-hour wear test, no smell",
+        "best": "Aaron, Josh"
+      }
+    ],
     "voice": {
       "tone": ["Masculine", "Punchy", "Direct", "No fluff", "Short sentences"],
-      "donts": ["Corporate tone", "Cringe humor", "Preaching", "Health claims without citations"],
-      "examples": {
-        "good": ["Sweat Less. Stink Less. Buy Less.", "Made for men who give a damn.", "Your shirt is made of plastic. Ours isn't."],
-        "bad": ["Experience the revolutionary comfort!", "Unlock your potential with our innovative fabric!", "Join thousands of satisfied customers!"]
-      }
+      "donts": ["Corporate tone", "Cringe humor", "Preaching", "Health claims without citations"]
     },
     "legal": {
       "rules": [
-        "Do NOT mention other brand names in ads",
-        "No health claims outside approved list",
+        "Do NOT mention competitor brand names in ads",
+        "No health claims outside approved list — use 'researchers found' language",
         "Must use 'Patent-pending DuraFlow™' NOT 'Patented'",
-        "Never be the expert — share what studies say",
-        "Always cite who did the study",
+        "Never be the expert — share what studies say, cite sources",
         "Microplastics come from many sources — polyester adds to exposure, isn't the only source"
-      ],
-      "healthClaimsFraming": "Always frame as 'researchers found' or 'studies suggest' — never make direct claims"
-    },
-    "messaging": {
-      "pillars": [
-        "Polyester is plastic from fossil fuels. UndrDog is hemp/bamboo.",
-        "Most durable shirt on the planet (hemp)",
-        "Insane airflow (bamboo)",
-        "Unmatched softness (organic cotton)",
-        "Patent-pending DuraFlow™ tri-blend",
-        "No PFAS. No microplastics. No polyester. No chemicals.",
-        "Sweat Less. Stink Less. Buy Less.",
-        "Makes an average Joe look jacked",
-        "Lifetime Guarantee — yes, for real.",
-        "Buy Once, Wear for Life."
       ]
-    },
-    "terminology": {
-      "use": ["blank tee", "black tee", "DuraFlow™", "Alpha Frame Fit", "hemp", "bamboo"],
-      "avoid": ["shirts", "patented", "our product", "customers", "users"]
     }
   },
-  "research": {
-    "approvedStudies": [
+  "assetLibrary": {
+    "mainDrive": "https://drive.google.com/drive/folders/[Content - UD]",
+    "creatorFolders": [
       {
-        "id": "S001",
-        "title": "Polyester & Male Fertility",
-        "author": "Shafik",
-        "year": 1992,
-        "pubmedId": "1623716",
-        "keyFinding": "Polyester underwear linked to reduced sperm count",
-        "howToCite": "A 1992 study by Shafik found that polyester underwear was associated with reduced sperm production.",
-        "link": "https://pubmed.ncbi.nlm.nih.gov/1623716/"
+        "name": "Aaron UGC",
+        "specialty": "Destructive demos",
+        "link": "https://drive.google.com/drive/folders/[Aaron UGC]",
+        "subfolders": ["Flamethrower", "Gas Can Dump", "Match Test", "Bow Test", "Fog Test", "Pool Test", "BB Gun"]
       },
       {
-        "id": "S002",
-        "title": "Polyester & Pregnancy (dogs)",
-        "author": "Shafik et al",
-        "year": 2007,
-        "pubmedId": "18393023",
-        "keyFinding": "Polyester fabric affected fertility in animal models",
-        "howToCite": "Research by Shafik et al (2007) showed polyester fabric had negative effects on fertility in animal studies.",
-        "link": "https://pubmed.ncbi.nlm.nih.gov/18393023/"
+        "name": "Dr. Chris Raws",
+        "specialty": "Health authority content",
+        "link": "https://drive.google.com/drive/folders/[Dr. Chris Raws]",
+        "note": "$34 CPA winner!"
       },
       {
-        "id": "S003",
-        "title": "Microplastics in Human Testes",
-        "author": "Zhang et al",
-        "year": 2024,
-        "pubmedId": "38745431",
-        "keyFinding": "Microplastics detected in human testicular tissue",
-        "howToCite": "A 2024 study by Zhang et al found microplastics present in human testicular tissue.",
-        "link": "https://pubmed.ncbi.nlm.nih.gov/38745431/"
+        "name": "Chino",
+        "specialty": "AI statics, X-Ray format",
+        "link": "https://drive.google.com/drive/folders/[Chino]"
       },
       {
-        "id": "S004",
-        "title": "Microplastics in Human Semen",
-        "author": "Zhao et al",
-        "year": 2024,
-        "pubmedId": "39342804",
-        "keyFinding": "Microplastic particles found in human semen samples",
-        "howToCite": "Zhao et al (2024) detected microplastic particles in human semen samples.",
-        "link": "https://pubmed.ncbi.nlm.nih.gov/39342804/"
+        "name": "Dalton",
+        "specialty": "Founder content, podcasts",
+        "link": "https://drive.google.com/drive/folders/[Dalton]"
       },
       {
-        "id": "S005",
-        "title": "Microplastics & Testosterone (mice)",
-        "author": "Zhang et al",
-        "year": 2024,
-        "pubmedId": null,
-        "journal": "MDPI Toxics",
-        "keyFinding": "Microplastic exposure associated with testosterone changes in mice",
-        "howToCite": "A 2024 study in MDPI Toxics showed microplastic exposure was associated with testosterone changes in animal models.",
-        "link": "https://www.mdpi.com/journal/toxics"
+        "name": "Sebastian growthpod",
+        "specialty": "UGC volume",
+        "link": "https://drive.google.com/drive/folders/[Sebastian growthpod]"
       },
       {
-        "id": "S006",
-        "title": "Microplastics in Human Brain",
-        "author": "Bindo et al",
-        "year": 2025,
-        "journal": "Nature Medicine",
-        "keyFinding": "Microplastics detected in human brain tissue",
-        "howToCite": "Bindo et al (2025) published in Nature Medicine found microplastics in human brain tissue.",
-        "link": "https://www.nature.com/nm/"
+        "name": "Jason",
+        "specialty": "UGC batch content",
+        "link": "https://drive.google.com/drive/folders/[Jason]"
       },
       {
-        "id": "S007",
-        "title": "Microplastics & Cardiovascular Disease",
-        "author": "Marfella et al",
-        "year": 2024,
-        "pubmedId": "39240674",
-        "keyFinding": "Association between microplastics and cardiovascular outcomes",
-        "howToCite": "Marfella et al (2024) found associations between microplastics and cardiovascular disease markers.",
-        "link": "https://pubmed.ncbi.nlm.nih.gov/39240674/"
+        "name": "Adam UGC",
+        "specialty": "Various",
+        "link": "https://drive.google.com/drive/folders/[Adam UGC]"
       },
       {
-        "id": "S008",
-        "title": "Microplastics in Human Penile Tissue",
-        "author": "Yu et al",
-        "year": 2024,
-        "pubmedId": "38890513",
-        "keyFinding": "Microplastics found in human penile tissue",
-        "howToCite": "Yu et al (2024) detected microplastics in human penile tissue samples.",
-        "link": "https://pubmed.ncbi.nlm.nih.gov/38890513/"
+        "name": "Bret's stuff",
+        "specialty": "Statics",
+        "link": "https://drive.google.com/drive/folders/[Bret's stuff]"
       }
-    ]
+    ],
+    "contentTypeFolders": [
+      {
+        "name": "AOA (Finished Ads)",
+        "link": "https://drive.google.com/drive/folders/[AOA]",
+        "contents": "Gifs, Photos, Renders"
+      },
+      {
+        "name": "B-Roll",
+        "link": "https://drive.google.com/drive/folders/[B-Roll]",
+        "contents": "General footage, Music, SFX"
+      },
+      {
+        "name": "MTRX Photoshoot",
+        "link": "https://drive.google.com/drive/folders/[MTRX Photoshoot Hemp/Bamboo]",
+        "contents": "Agency photoshoots"
+      },
+      {
+        "name": "Joe Rogan (Podcast style)",
+        "link": "https://drive.google.com/drive/folders/[Joe Rogan]",
+        "contents": "Podcast-style clips"
+      },
+      {
+        "name": "Hero Video / Lander Images",
+        "link": "https://drive.google.com/drive/folders/[Hero Video]",
+        "contents": "Website assets"
+      }
+    ],
+    "creativeTracking": "https://docs.google.com/spreadsheets/d/1oBaaWi0mi_kCZnxqsDzTmVPVTAongy0fJMCdS2wraRw/edit"
   },
-  "assets": {
-    "driveBase": "https://drive.google.com/drive/folders/",
-    "folders": {
-      "creators": [
-        { "name": "Aaron UGC", "specialty": "Destructive demos", "folderHint": "Aaron UGC folder in Content - UD" },
-        { "name": "Chino", "specialty": "AI statics, X-Ray format", "folderHint": "Chino folder" },
-        { "name": "Dalton", "specialty": "Founder content, podcasts", "folderHint": "Dalton folder" },
-        { "name": "Jason", "specialty": "UGC batch content", "folderHint": "Jason folder" },
-        { "name": "Growthpod (Sebastian)", "specialty": "UGC volume", "folderHint": "Sebastian growthpod folder" },
-        { "name": "Dr. Chris", "specialty": "Health authority", "folderHint": "Dr. Chris Raws folder" },
-        { "name": "MTRX", "specialty": "Statics, mashups, ranking", "folderHint": "MTRX Photoshoot folder" }
-      ],
-      "contentTypes": [
-        { "name": "AOA (Finished Ads)", "contents": "Gifs, Photos, Renders" },
-        { "name": "B-Roll Library", "contents": "General footage" },
-        { "name": "Music/SFX", "contents": "Sound effects, music tracks" },
-        { "name": "Product Shots", "contents": "Hero images, lifestyle shots" },
-        { "name": "Animations", "contents": "Motion graphics" }
-      ],
-      "destructiveDemos": [
-        "Flamethrower", "Gas Can Dump", "Match Test", "Spoon Test",
-        "Bow Test", "Burn Test", "Gasoline Test", "Fog Test", "Pool Test", "BB Gun Test"
-      ]
-    }
-  },
-  "creators": [
+  "approvedHealthClaims": [
     {
-      "name": "MTRX (Matrix Agency)",
-      "type": "Agency",
-      "specialty": ["Statics (STAT)", "Mashups (MUP)", "Ranking UGC (RSUGC)", "Debate (DEB)"],
-      "bestFor": "High-volume testing, static images, professional production",
-      "weeklySpend": "$50-70K",
-      "currentAssignment": "UD4 batch production",
-      "avgCpa": 41.60,
-      "totalWinners": 8,
-      "contact": "Via agency channels",
-      "notes": "Workhorse. STAT format crushing. Need to keep them sharp."
+      "title": "Polyester & Male Fertility",
+      "source": "Shafik (1992)",
+      "pubmedId": "1623716",
+      "finding": "Polyester underwear linked to reduced sperm count",
+      "citation": "A 1992 study by Shafik found that polyester underwear was associated with reduced sperm production.",
+      "link": "https://pubmed.ncbi.nlm.nih.gov/1623716/"
     },
     {
-      "name": "Aaron",
-      "type": "In-House (Brother)",
-      "specialty": ["Destructive demos", "Fire tests", "Durability content"],
-      "bestFor": "Scroll-stopping destruction content, evergreen demos",
-      "weeklySpend": "$15-25K",
-      "currentAssignment": "Microwave test, new destructive concepts",
-      "avgCpa": 42.86,
-      "totalWinners": 4,
-      "contact": "Direct",
-      "notes": "SweatTest still running after 11 months. Destruction = pattern interrupt."
+      "title": "Microplastics in Human Testes",
+      "source": "Zhang et al (2024)",
+      "pubmedId": "38745431",
+      "finding": "Microplastics detected in human testicular tissue",
+      "citation": "A 2024 study by Zhang et al found microplastics present in human testicular tissue.",
+      "link": "https://pubmed.ncbi.nlm.nih.gov/38745431/"
     },
     {
-      "name": "Dr. Chris",
-      "type": "Expert/Authority",
-      "specialty": ["Health content", "Study citations", "Expert positioning"],
-      "bestFor": "Credibility, health angles, lowest CPAs",
-      "weeklySpend": "$15-20K",
-      "currentAssignment": "V4-V6 scripts needed",
-      "avgCpa": 36.79,
-      "totalWinners": 3,
-      "contact": "Schedule through team",
-      "notes": "BEST CPA IN ACCOUNT. Need more content from him urgently."
+      "title": "Microplastics in Human Semen",
+      "source": "Zhao et al (2024)",
+      "pubmedId": "39342804",
+      "finding": "Microplastic particles found in human semen samples",
+      "citation": "Zhao et al (2024) detected microplastic particles in human semen samples.",
+      "link": "https://pubmed.ncbi.nlm.nih.gov/39342804/"
     },
     {
-      "name": "Chino",
-      "type": "Creator",
-      "specialty": ["AI statics", "X-Ray format", "Fit visualizations"],
-      "bestFor": "Innovative static formats, fit transformation content",
-      "weeklySpend": "$5-17K",
-      "currentAssignment": "X-Ray series expansion",
-      "avgCpa": 46.88,
-      "totalWinners": 2,
-      "contact": "Via Slack",
-      "notes": "XRAY_TAILOREDFIT crushing. New format with lots of potential."
+      "title": "Microplastics & Testosterone (mice)",
+      "source": "Zhang et al (2024)",
+      "journal": "MDPI Toxics",
+      "finding": "Microplastic exposure associated with testosterone changes in mice",
+      "citation": "A 2024 study in MDPI Toxics showed microplastic exposure was associated with testosterone changes in animal models."
     },
     {
-      "name": "Dalton",
-      "type": "In-House",
-      "specialty": ["Founder content", "Podcast clips", "Story content"],
-      "bestFor": "Brand story, conspiracy angles, authenticity",
-      "weeklySpend": "$20-30K",
-      "currentAssignment": "Founder story refresh",
-      "avgCpa": 50.00,
-      "totalWinners": 1,
-      "contact": "Direct",
-      "notes": "CPA trending down. Need to find his winning format."
+      "title": "Microplastics in Human Brain",
+      "source": "Bindo et al (2025)",
+      "journal": "Nature Medicine",
+      "finding": "Microplastics detected in human brain tissue",
+      "citation": "Bindo et al (2025) published in Nature Medicine found microplastics in human brain tissue."
     },
     {
-      "name": "Growthpod (Catalina/Sebastian)",
-      "type": "UGC Agency",
-      "specialty": ["UGC volume", "Testimonial style"],
-      "bestFor": "Scale testing, testimonial content",
-      "weeklySpend": "$5-10K",
-      "currentAssignment": "Testimonial batch",
-      "avgCpa": 50.00,
-      "totalWinners": 1,
-      "contact": "Via agency",
-      "notes": "Volume play. Good for testing angles."
+      "title": "Microplastics & Cardiovascular Disease",
+      "source": "Marfella et al (2024)",
+      "pubmedId": "39240674",
+      "finding": "Association between microplastics and cardiovascular outcomes",
+      "citation": "Marfella et al (2024) found associations between microplastics and cardiovascular disease markers.",
+      "link": "https://pubmed.ncbi.nlm.nih.gov/39240674/"
+    },
+    {
+      "title": "Microplastics in Human Penile Tissue",
+      "source": "Yu et al (2024)",
+      "pubmedId": "38890513",
+      "finding": "Microplastics found in human penile tissue",
+      "citation": "Yu et al (2024) detected microplastics in human penile tissue samples.",
+      "link": "https://pubmed.ncbi.nlm.nih.gov/38890513/"
     }
   ],
-  "scriptFrameworks": {
-    "ugcRewriter": {
-      "name": "Human Ad Script Rewriter",
-      "purpose": "Turn ad scripts into authentic UGC",
-      "coreRules": [
-        "Kill ad voice completely — no buzzwords, no polished phrasing",
-        "Replace conclusions with thought process ('I kinda knew...' not 'This solved...')",
-        "Favor realization language ('At some point it clicked...')",
-        "Use permission/relief language ('I don't even think about this anymore')",
-        "Product is discovered, not announced (quiet 'oh' moment)",
-        "Write how people actually talk (short sentences, imperfect rhythm)",
-        "Keep it paraphrase-safe (creator can tweak without losing meaning)"
-      ],
-      "litmusTest": "If a line could live on a landing page as-is, it needs another pass.",
-      "avoidWords": ["underfoot", "non-negotiable", "eliminates", "optimized", "seamless", "revolutionary", "innovative"]
-    },
-    "structures": [
+  "creatorHub": {
+    "dataNote": "For Last 7 Days (Jan 30 - Feb 5, 2026)",
+    "creators": [
       {
-        "name": "Problem-Agitate-Solution",
-        "steps": ["Hook: State the problem", "Agitate: Make it worse", "Solution: Introduce product", "Proof: Demo or testimonial", "CTA: Offer"],
-        "example": "Your shirt is made of plastic → That plastic sheds microplastics → UndrDog is 0% polyester → [demo] → Lifetime guarantee"
+        "name": "MTRX (Matrix Agency)",
+        "type": "Agency",
+        "spend7d": 3421.82,
+        "purchases7d": 94,
+        "cpa7d": 36.40,
+        "winningAds": ["STAT3_4-5", "RSUGC4_CB_Ke", "STAT3"],
+        "bestFormat": "Static images",
+        "notes": "Workhorse. Static format crushing."
       },
       {
-        "name": "I Was Skeptical Until...",
-        "steps": ["Skepticism hook", "What changed my mind", "Results I got", "Why you should try"],
-        "example": "I thought $40 for a t-shirt was insane → Then I learned about microplastics → 6 months later, still perfect → Lifetime guarantee"
+        "name": "Chino",
+        "type": "Creator",
+        "spend7d": 604.13,
+        "purchases7d": 11,
+        "cpa7d": 54.92,
+        "winningAds": ["XRAY_TAILOREDFIT"],
+        "bestFormat": "AI statics, X-Ray",
+        "notes": "New X-Ray format has potential."
       },
       {
-        "name": "3 Reasons Why",
-        "steps": ["Hook: 3 reasons statement", "Reason 1 (most important)", "Reason 2", "Reason 3 (the twist)", "CTA"],
-        "example": "3 reasons I threw away all my polyester → 1. Microplastics in testes → 2. They stink → 3. Hemp is indestructible [demo]"
+        "name": "Dr. Chris",
+        "type": "Expert",
+        "spend7d": 46.88,
+        "purchases7d": 1,
+        "cpa7d": 46.88,
+        "winningAds": ["DrChrisV3"],
+        "bestFormat": "Health authority UGC",
+        "notes": "Need more volume! Best historical CPA."
       },
       {
-        "name": "Nobody Talks About This",
-        "steps": ["Controversy hook", "The hidden truth", "Evidence/proof", "The solution", "CTA"],
-        "example": "Nobody talks about plastic in clothes → 60% is polyester → Studies found microplastics in blood → UndrDog: 0% polyester"
+        "name": "Bret",
+        "type": "In-house",
+        "spend7d": 114.62,
+        "purchases7d": 4,
+        "cpa7d": 28.66,
+        "winningAds": ["BretStatics_OG.V4"],
+        "bestFormat": "Statics",
+        "notes": "Solid performer."
       },
       {
-        "name": "Watch What Happens",
-        "steps": ["Demo setup", "The test", "Surprising result", "What this means", "CTA"],
-        "example": "Hitting this shirt with a blowtorch → [demo] → Still intact → This is what hemp does → Link in bio"
+        "name": "Aaron",
+        "type": "In-house",
+        "spend7d": 42.43,
+        "purchases7d": 0,
+        "cpa7d": null,
+        "winningAds": ["SweatTest (historical)"],
+        "bestFormat": "Destructive demos",
+        "notes": "SweatTest still converting after 11 months. Need new demos."
       }
-    ],
-    "hookFormulas": [
-      { "formula": "[Surprising stat] + [Why it matters to you]", "example": "60% of your clothes are made from fossil fuels. Here's why that matters." },
-      { "formula": "[Question about common problem]", "example": "Why does your shirt smell after 2 hours?" },
-      { "formula": "[I did X] + [Here's what happened]", "example": "I threw a lit match on my shirt. Watch what happens." },
-      { "formula": "[They don't want you to know] + [The truth]", "example": "Big Textile doesn't want you to know this about your shirt." },
-      { "formula": "[Before/After transformation]", "example": "Went from dad bod to looking jacked. Same body, different shirt." }
-    ],
-    "demoTemplates": [
-      { "name": "Destruction Test", "structure": "Setup → Execute → Survive → Compare to polyester → CTA" },
-      { "name": "Smell Test", "structure": "Wear for X hours → Smell test → React → Explain why → CTA" },
-      { "name": "Side-by-Side", "structure": "Two shirts → Same test → Different results → Explain → CTA" },
-      { "name": "Time Lapse", "structure": "Day 1 → Week 1 → Month 1 → Year 1 → Still perfect → CTA" }
-    ],
-    "testimonialTemplate": {
-      "structure": [
-        "Hook: Single relatable problem",
-        "Background: What I tried before",
-        "Discovery: How I found UndrDog",
-        "Experience: What I noticed",
-        "Result: Life now",
-        "Recommendation: Why you should try"
-      ],
-      "tone": "Conversational, not scripted. Pauses are good. Imperfect is authentic."
-    }
-  },
-  "calendar": {
-    "drops": [
-      { "month": "Feb 2026", "name": "Project 000 Clean Slate", "description": "No-dye tee, natural off-white (hemp/bamboo color)", "status": "Planning" },
-      { "month": "Mar 2026", "name": "Polos", "description": "First polo collection", "status": "Development" },
-      { "month": "Apr 2026", "name": "Boxer Briefs", "description": "Hemp underwear launch — NADS collision course", "status": "Development" },
-      { "month": "May 2026", "name": "Dark Blue", "description": "New colorway", "status": "Planned" },
-      { "month": "Jun 2026", "name": "Gray", "description": "New colorway", "status": "Planned" }
-    ],
-    "pastDrops": [
-      { "name": "Blue Steel", "status": "Complete" },
-      { "name": "White Yeti", "status": "Complete" },
-      { "name": "Daddy Claus", "description": "Christmas — red + dark green", "status": "Complete" },
-      { "name": "Agent Gold", "description": "Brownish colorway", "status": "Complete" }
-    ],
-    "contentDeadlines": [
-      { "date": "2026-02-10", "item": "Anti-Polyester Attack Campaign delivery", "owner": "Aaron" },
-      { "date": "2026-02-15", "item": "X-Ray Fit Series V2 scripts", "owner": "Chino" },
-      { "date": "2026-02-20", "item": "DrChris V4-V6 delivery", "owner": "Dr. Chris" },
-      { "date": "2026-02-25", "item": "Project 000 content prep", "owner": "Multiple" }
-    ],
-    "testingSchedule": [
-      { "week": "Feb 3-9", "focus": "Scale DrChris, test DEB format variants" },
-      { "week": "Feb 10-16", "focus": "X-Ray expansion, anti-Cuts campaign" },
-      { "week": "Feb 17-23", "focus": "New demo concepts, Project 000 teasers" },
-      { "week": "Feb 24-Mar 2", "focus": "Project 000 launch content" }
     ]
   },
-  "dailyBriefing": {
-    "date": "2026-02-05",
-    "focusToday": [
-      "Scale DrChris content — best CPA in account, need volume",
-      "Review X-Ray static performance — TAILOREDFIT crushing",
-      "Brief Aaron on microwave test concept"
-    ],
-    "recentWins": [
-      { "ad": "AOA_IMG1", "cpa": 24.75, "note": "Still crushing after 180 days" },
-      { "ad": "DrChrisV1", "cpa": 34.60, "note": "Health authority angle working" },
-      { "ad": "MTRX_DEB1", "cpa": 35.56, "note": "Debate format emerging" }
-    ],
-    "fires": [
-      { "issue": "DrChris capacity limited", "urgency": "high", "action": "Need to schedule more shoots ASAP" },
-      { "issue": "Dalton CPA trending up", "urgency": "medium", "action": "Review angles, find winning format" }
-    ],
-    "quickActions": [
-      { "action": "Request DrChris V4-V6 scripts approval", "owner": "Creative team" },
-      { "action": "Schedule microwave test shoot with Aaron", "owner": "Production" },
-      { "action": "Review X-Ray variants for expansion", "owner": "Chino" }
-    ],
-    "metrics": {
-      "avgCpaThisWeek": 41.50,
-      "cpaTrend": "down",
-      "topCreator": "Dr. Chris",
-      "topFormat": "STAT",
-      "totalSpend": 130000,
-      "totalPurchases": 3100
+  "dropCalendar": [
+    {
+      "month": "February 2026",
+      "name": "Project 000 Clean Slate",
+      "description": "No-dye tee, natural off-white (pure hemp/bamboo color)",
+      "status": "Planning"
+    },
+    {
+      "month": "March 2026",
+      "name": "Polos",
+      "description": "First polo collection",
+      "status": "Development"
+    },
+    {
+      "month": "April 2026",
+      "name": "Boxer Briefs",
+      "description": "Hemp underwear launch — NADS collision course",
+      "status": "Development"
+    },
+    {
+      "month": "May 2026",
+      "name": "Dark Blue",
+      "description": "New colorway",
+      "status": "Planned"
+    },
+    {
+      "month": "June 2026",
+      "name": "Gray",
+      "description": "New colorway",
+      "status": "Planned"
     }
-  },
-  "trends": {
-    "working": [
-      "MTRX STAT format crushing — $34-48 CPA range",
-      "DrChris/Expert content — best CPAs ($35-37)",
-      "UGC Ranking format (RSUGC) scaling well",
-      "Chino X-Ray statics emerging",
-      "SweatTest still converting after 11 months",
-      "✅ Checklist format — all top competitors use it"
-    ],
-    "gaps": [
-      "Need MORE DrChris content — best CPA, limited volume",
-      "X-Ray/Anatomy format is new — test more variants",
-      "Anti-polyester in TEES — Cuts uses 62%!",
-      "Destructive demos — NOBODY else does this",
-      "Lifetime guarantee — major differentiator"
-    ],
-    "watch": [
-      "True Classic: 2,000+ ads, aggressive pricing",
-      "NADS: Same playbook, expanding to shorts",
-      "Primal Queen: 2,800 ads, testimonial playbook",
-      "Cuts: 62% polyester + 20-day returns = attack opportunity"
-    ]
-  }
+  ],
+  "pastDrops": [
+    "Blue Steel",
+    "White Yeti", 
+    "Daddy Claus (Christmas red + dark green)",
+    "Agent Gold (brownish)"
+  ]
 }

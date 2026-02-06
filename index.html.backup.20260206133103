@@ -1,0 +1,1932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UndrDog Creative Director Hub</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐕</text></svg>">
+    <style>
+        :root {
+            --bg-primary: #0f0f14;
+            --bg-secondary: #16161d;
+            --bg-card: #1c1c26;
+            --bg-hover: #252532;
+            --border: rgba(255,255,255,0.08);
+            --text-primary: #f0f0f5;
+            --text-secondary: #8b8b9a;
+            --text-muted: #5a5a6a;
+            --accent-green: #4ade80;
+            --accent-blue: #6366f1;
+            --accent-purple: #a855f7;
+            --accent-orange: #fb923c;
+            --accent-red: #ef4444;
+            --accent-yellow: #fbbf24;
+            --accent-cyan: #22d3ee;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            line-height: 1.5;
+        }
+        
+        /* Layout */
+        .app-container { display: flex; flex-direction: column; min-height: 100vh; }
+        
+        /* Header */
+        .header {
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border);
+            padding: 12px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-content {
+            max-width: 1600px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo-icon { font-size: 28px; }
+        .logo h1 { font-size: 18px; font-weight: 600; }
+        .logo-sub { font-size: 11px; color: var(--text-muted); margin-top: 2px; }
+        .header-meta { text-align: right; }
+        .header-meta .update { font-size: 12px; color: var(--text-secondary); }
+        .header-meta .update strong { color: var(--accent-green); }
+        
+        /* Search */
+        .search-container {
+            position: relative;
+            width: 300px;
+        }
+        .search-input {
+            width: 100%;
+            padding: 8px 12px 8px 36px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-size: 13px;
+        }
+        .search-input:focus { outline: none; border-color: var(--accent-blue); }
+        .search-icon {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+        
+        /* Tab Navigation */
+        .tab-nav {
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border);
+            padding: 0 24px;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        .tab-nav::-webkit-scrollbar { height: 0; }
+        .tab-list {
+            max-width: 1600px;
+            margin: 0 auto;
+            display: flex;
+            gap: 4px;
+            list-style: none;
+        }
+        .tab-btn {
+            background: none;
+            border: none;
+            padding: 14px 16px;
+            color: var(--text-secondary);
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            white-space: nowrap;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .tab-btn:hover { color: var(--text-primary); background: var(--bg-hover); }
+        .tab-btn.active {
+            color: var(--accent-blue);
+            border-bottom-color: var(--accent-blue);
+        }
+        .tab-emoji { font-size: 14px; }
+        
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            padding: 24px;
+            max-width: 1600px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        
+        .tab-panel { display: none; }
+        .tab-panel.active { display: block; animation: fadeIn 0.3s ease; }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Cards */
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+        .card-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .card-title .emoji { font-size: 16px; }
+        .card-badge {
+            font-size: 10px;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        .badge-green { background: rgba(74, 222, 128, 0.2); color: var(--accent-green); }
+        .badge-blue { background: rgba(99, 102, 241, 0.2); color: var(--accent-blue); }
+        .badge-orange { background: rgba(251, 146, 60, 0.2); color: var(--accent-orange); }
+        .badge-red { background: rgba(239, 68, 68, 0.2); color: var(--accent-red); }
+        .badge-purple { background: rgba(168, 85, 247, 0.2); color: var(--accent-purple); }
+        .badge-yellow { background: rgba(251, 191, 36, 0.2); color: var(--accent-yellow); }
+        
+        /* Grids */
+        .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+        
+        @media (max-width: 1200px) {
+            .grid-4 { grid-template-columns: repeat(2, 1fr); }
+            .grid-3 { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 768px) {
+            .grid-4, .grid-3, .grid-2 { grid-template-columns: 1fr; }
+            .header { padding: 12px 16px; }
+            .main-content { padding: 16px; }
+            .tab-btn { padding: 12px 10px; font-size: 12px; }
+            .search-container { width: 200px; }
+        }
+        
+        /* Stats */
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px;
+        }
+        .stat-label { font-size: 11px; color: var(--text-muted); text-transform: uppercase; margin-bottom: 8px; }
+        .stat-value { font-size: 28px; font-weight: 700; }
+        .stat-value.green { color: var(--accent-green); }
+        .stat-value.blue { color: var(--accent-blue); }
+        .stat-value.orange { color: var(--accent-orange); }
+        .stat-trend { font-size: 11px; margin-top: 4px; display: flex; align-items: center; gap: 4px; }
+        .stat-trend.up { color: var(--accent-green); }
+        .stat-trend.down { color: var(--accent-red); }
+        
+        /* Tables */
+        .table-container { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; font-size: 13px; }
+        th { 
+            text-align: left; 
+            padding: 12px; 
+            border-bottom: 1px solid var(--border);
+            color: var(--text-muted);
+            font-weight: 500;
+            font-size: 11px;
+            text-transform: uppercase;
+        }
+        td { 
+            padding: 12px;
+            border-bottom: 1px solid var(--border);
+        }
+        tr:hover { background: var(--bg-hover); }
+        .table-highlight { background: rgba(99, 102, 241, 0.1); }
+        
+        /* Performance Table */
+        .perf-name { font-weight: 500; }
+        .perf-cpa { color: var(--accent-green); font-weight: 600; }
+        .perf-trophy { color: var(--accent-yellow); margin-left: 4px; }
+        .perf-type {
+            font-size: 10px;
+            padding: 2px 6px;
+            border-radius: 4px;
+            background: rgba(99, 102, 241, 0.2);
+            color: var(--accent-blue);
+        }
+        .perf-type.ugc { background: rgba(168, 85, 247, 0.2); color: var(--accent-purple); }
+        .perf-type.vid { background: rgba(239, 68, 68, 0.2); color: var(--accent-red); }
+        
+        /* Winners Wall */
+        .winner-card {
+            background: linear-gradient(135deg, rgba(251, 191, 36, 0.1), rgba(245, 158, 11, 0.05));
+            border: 1px solid rgba(251, 191, 36, 0.3);
+            border-radius: 12px;
+            padding: 16px;
+        }
+        .winner-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+        .winner-name { font-weight: 600; font-size: 14px; }
+        .winner-trophy { font-size: 24px; }
+        .winner-stats { display: flex; gap: 16px; flex-wrap: wrap; }
+        .winner-stat { font-size: 12px; }
+        .winner-stat span { color: var(--text-muted); }
+        .winner-stat strong { color: var(--accent-green); }
+        
+        /* Format Bars */
+        .format-bar {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 8px 0;
+        }
+        .format-label { width: 80px; font-size: 12px; font-weight: 500; }
+        .format-track {
+            flex: 1;
+            height: 24px;
+            background: var(--bg-secondary);
+            border-radius: 6px;
+            overflow: hidden;
+            position: relative;
+        }
+        .format-fill {
+            height: 100%;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            padding: 0 8px;
+            font-size: 11px;
+            font-weight: 600;
+            color: #000;
+        }
+        .format-fill.stat { background: var(--accent-blue); }
+        .format-fill.ugc { background: var(--accent-purple); }
+        .format-fill.vid { background: var(--accent-red); }
+        .format-fill.drchris { background: var(--accent-green); }
+        .format-cpa { width: 60px; text-align: right; font-size: 12px; color: var(--accent-green); }
+        
+        /* Leaderboard */
+        .leader-item {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            border-bottom: 1px solid var(--border);
+            gap: 12px;
+        }
+        .leader-item:last-child { border-bottom: none; }
+        .leader-rank {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 700;
+            background: var(--bg-secondary);
+        }
+        .leader-rank.gold { background: linear-gradient(135deg, #fbbf24, #f59e0b); color: #000; }
+        .leader-rank.silver { background: linear-gradient(135deg, #94a3b8, #64748b); color: #000; }
+        .leader-rank.bronze { background: linear-gradient(135deg, #d97706, #b45309); color: #fff; }
+        .leader-info { flex: 1; }
+        .leader-name { font-weight: 500; font-size: 14px; }
+        .leader-sub { font-size: 11px; color: var(--text-muted); }
+        .leader-stats { text-align: right; }
+        .leader-cpa { font-size: 14px; font-weight: 600; color: var(--accent-green); }
+        .leader-spend { font-size: 11px; color: var(--text-muted); }
+        
+        /* CPA Trend Chart */
+        .chart-container {
+            padding: 20px 0;
+        }
+        .chart-bars {
+            display: flex;
+            align-items: flex-end;
+            gap: 8px;
+            height: 120px;
+            padding-top: 20px;
+        }
+        .chart-bar-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+        .chart-bar {
+            width: 100%;
+            max-width: 40px;
+            background: linear-gradient(180deg, var(--accent-blue), var(--accent-purple));
+            border-radius: 4px 4px 0 0;
+            position: relative;
+        }
+        .chart-bar-value {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--accent-green);
+        }
+        .chart-bar-label {
+            font-size: 10px;
+            color: var(--text-muted);
+        }
+        
+        /* Competitor Cards */
+        .competitor-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px;
+            transition: all 0.2s;
+        }
+        .competitor-card:hover { border-color: var(--accent-blue); transform: translateY(-2px); }
+        .competitor-card.alert { border-color: var(--accent-red); }
+        .competitor-card.heavy { border-color: var(--accent-orange); }
+        .comp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+        .comp-name { font-weight: 600; font-size: 15px; display: flex; align-items: center; gap: 6px; }
+        .comp-name a { color: var(--accent-blue); text-decoration: none; font-size: 12px; }
+        .comp-site { font-size: 11px; color: var(--text-muted); }
+        .comp-ads {
+            background: rgba(251, 146, 60, 0.2);
+            color: var(--accent-orange);
+            font-size: 11px;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+        .comp-mix {
+            display: flex;
+            height: 6px;
+            border-radius: 3px;
+            overflow: hidden;
+            margin: 12px 0 8px;
+        }
+        .comp-mix .static { background: var(--accent-blue); }
+        .comp-mix .video { background: var(--accent-red); }
+        .comp-mix-legend {
+            display: flex;
+            gap: 12px;
+            font-size: 10px;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+        .comp-mix-legend .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 2px;
+            display: inline-block;
+            margin-right: 4px;
+        }
+        .comp-offers {
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 12px;
+        }
+        .comp-offer {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            padding: 3px 0;
+        }
+        .comp-offer .value { color: var(--accent-green); font-weight: 500; }
+        .comp-working {
+            list-style: none;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+        }
+        .comp-working li {
+            font-size: 11px;
+            padding: 3px 0;
+            padding-left: 14px;
+            position: relative;
+            color: var(--text-secondary);
+        }
+        .comp-working li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--accent-blue);
+        }
+        .comp-steal {
+            background: linear-gradient(135deg, rgba(74, 222, 128, 0.1), rgba(34, 197, 94, 0.05));
+            border: 1px solid rgba(74, 222, 128, 0.3);
+            border-radius: 8px;
+            padding: 10px;
+            margin-top: 12px;
+        }
+        .comp-steal-title {
+            font-size: 10px;
+            font-weight: 600;
+            color: var(--accent-green);
+            margin-bottom: 6px;
+            text-transform: uppercase;
+        }
+        .comp-steal-item {
+            font-size: 11px;
+            padding: 2px 0;
+            color: var(--text-secondary);
+        }
+        
+        /* Brief Cards */
+        .brief-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px;
+            border-left: 4px solid var(--accent-blue);
+        }
+        .brief-card.high { border-left-color: var(--accent-red); }
+        .brief-card.medium { border-left-color: var(--accent-orange); }
+        .brief-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+        }
+        .brief-title { font-weight: 600; font-size: 14px; }
+        .brief-status {
+            font-size: 10px;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        .brief-meta { font-size: 11px; color: var(--text-muted); margin-bottom: 8px; }
+        .brief-meta span { margin-right: 12px; }
+        .brief-notes {
+            font-size: 12px;
+            color: var(--text-secondary);
+            padding: 8px;
+            background: var(--bg-secondary);
+            border-radius: 6px;
+        }
+        
+        /* Template Cards */
+        .template-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .template-card:hover { border-color: var(--accent-purple); transform: translateY(-2px); }
+        .template-name { font-weight: 600; font-size: 14px; color: var(--accent-purple); margin-bottom: 6px; }
+        .template-desc { font-size: 12px; color: var(--text-secondary); margin-bottom: 12px; }
+        .template-steps {
+            list-style: none;
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+        .template-steps li {
+            padding: 3px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        .template-steps li::before {
+            content: attr(data-step);
+            position: absolute;
+            left: 0;
+            color: var(--accent-purple);
+            font-weight: 600;
+        }
+        .template-best { font-size: 10px; color: var(--text-muted); margin-top: 8px; }
+        .template-best strong { color: var(--accent-cyan); }
+        
+        /* Hook Cards */
+        .hook-category {
+            margin-bottom: 24px;
+        }
+        .hook-category-title {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent-orange);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .hooks-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 12px;
+        }
+        .hook-card {
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            padding: 12px;
+            border-left: 3px solid var(--accent-orange);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .hook-card:hover { background: var(--bg-hover); }
+        .hook-text { font-size: 13px; font-weight: 500; color: var(--accent-yellow); }
+        .hook-copy {
+            margin-top: 8px;
+            font-size: 10px;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        
+        /* Brand Bible */
+        .bible-section {
+            margin-bottom: 24px;
+        }
+        .bible-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--accent-purple);
+        }
+        .pillar-item {
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin-bottom: 8px;
+            font-size: 13px;
+            border-left: 3px solid var(--accent-blue);
+        }
+        .rule-item {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin-bottom: 8px;
+            font-size: 13px;
+        }
+        .rule-item::before {
+            content: "⚠️ ";
+        }
+        .voice-example {
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 12px;
+        }
+        .voice-example-title {
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+        .voice-good { border-left: 3px solid var(--accent-green); }
+        .voice-bad { border-left: 3px solid var(--accent-red); }
+        .voice-example-text {
+            font-size: 13px;
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+        
+        /* Study Cards */
+        .study-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px;
+        }
+        .study-title { font-weight: 600; font-size: 14px; margin-bottom: 8px; }
+        .study-meta { font-size: 11px; color: var(--text-muted); margin-bottom: 12px; }
+        .study-finding {
+            background: var(--bg-secondary);
+            border-radius: 6px;
+            padding: 10px;
+            font-size: 12px;
+            margin-bottom: 12px;
+        }
+        .study-cite {
+            font-size: 11px;
+            color: var(--text-secondary);
+            padding: 10px;
+            background: rgba(99, 102, 241, 0.1);
+            border-radius: 6px;
+            font-style: italic;
+        }
+        .study-link {
+            display: inline-block;
+            margin-top: 8px;
+            font-size: 11px;
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+        .study-link:hover { text-decoration: underline; }
+        
+        /* Creator Cards */
+        .creator-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+        }
+        .creator-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+        .creator-name { font-weight: 600; font-size: 16px; }
+        .creator-type { font-size: 11px; color: var(--text-muted); }
+        .creator-cpa { font-size: 20px; font-weight: 700; color: var(--accent-green); }
+        .creator-cpa-label { font-size: 10px; color: var(--text-muted); }
+        .creator-specialty {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin: 12px 0;
+        }
+        .creator-tag {
+            font-size: 10px;
+            padding: 4px 8px;
+            background: rgba(99, 102, 241, 0.2);
+            color: var(--accent-blue);
+            border-radius: 4px;
+        }
+        .creator-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin: 12px 0;
+            padding: 12px;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+        }
+        .creator-stat {
+            text-align: center;
+        }
+        .creator-stat-value { font-size: 14px; font-weight: 600; }
+        .creator-stat-label { font-size: 9px; color: var(--text-muted); text-transform: uppercase; }
+        .creator-assignment {
+            font-size: 12px;
+            padding: 10px;
+            background: rgba(251, 191, 36, 0.1);
+            border-radius: 6px;
+            border-left: 3px solid var(--accent-yellow);
+        }
+        .creator-notes { font-size: 11px; color: var(--text-muted); margin-top: 12px; font-style: italic; }
+        
+        /* Script Framework */
+        .framework-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .framework-title { font-size: 16px; font-weight: 600; color: var(--accent-cyan); margin-bottom: 8px; }
+        .framework-purpose { font-size: 12px; color: var(--text-secondary); margin-bottom: 16px; }
+        .framework-rules {
+            list-style: none;
+        }
+        .framework-rule {
+            font-size: 12px;
+            padding: 8px 12px;
+            background: var(--bg-secondary);
+            border-radius: 6px;
+            margin-bottom: 6px;
+            border-left: 3px solid var(--accent-cyan);
+        }
+        .framework-litmus {
+            background: rgba(251, 191, 36, 0.1);
+            border: 1px solid rgba(251, 191, 36, 0.3);
+            border-radius: 8px;
+            padding: 12px;
+            font-size: 12px;
+            margin-top: 12px;
+        }
+        .framework-litmus strong { color: var(--accent-yellow); }
+        
+        /* Calendar */
+        .calendar-section { margin-bottom: 24px; }
+        .calendar-title {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .drop-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        .drop-info h4 { font-size: 14px; font-weight: 600; }
+        .drop-info p { font-size: 12px; color: var(--text-secondary); }
+        .drop-month { font-size: 12px; color: var(--accent-purple); font-weight: 600; }
+        .deadline-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            margin-bottom: 8px;
+        }
+        .deadline-date {
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--accent-orange);
+            min-width: 80px;
+        }
+        .deadline-item-text { font-size: 12px; flex: 1; }
+        .deadline-owner { font-size: 10px; color: var(--text-muted); }
+        
+        /* Daily Briefing */
+        .briefing-hero {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(168, 85, 247, 0.1));
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+        .briefing-date { font-size: 12px; color: var(--text-muted); margin-bottom: 8px; }
+        .briefing-greeting { font-size: 24px; font-weight: 700; margin-bottom: 16px; }
+        .briefing-metrics {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+        }
+        @media (max-width: 768px) {
+            .briefing-metrics { grid-template-columns: repeat(2, 1fr); }
+        }
+        .focus-item {
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 8px;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .focus-item::before { content: "🎯"; }
+        .win-item {
+            background: rgba(74, 222, 128, 0.1);
+            border: 1px solid rgba(74, 222, 128, 0.2);
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .win-name { font-size: 13px; font-weight: 500; }
+        .win-cpa { font-size: 14px; font-weight: 600; color: var(--accent-green); }
+        .win-note { font-size: 11px; color: var(--text-muted); }
+        .fire-item {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 8px;
+        }
+        .fire-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 6px;
+        }
+        .fire-issue { font-size: 13px; font-weight: 500; }
+        .fire-urgency { font-size: 10px; padding: 2px 6px; border-radius: 4px; font-weight: 600; }
+        .fire-urgency.high { background: var(--accent-red); color: #fff; }
+        .fire-urgency.medium { background: var(--accent-orange); color: #000; }
+        .fire-action { font-size: 12px; color: var(--text-secondary); }
+        .action-item {
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .action-text { font-size: 13px; }
+        .action-owner { font-size: 11px; color: var(--text-muted); }
+        
+        /* Asset Library */
+        .asset-folder {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .asset-folder:hover { border-color: var(--accent-cyan); }
+        .asset-folder-icon { font-size: 24px; margin-bottom: 8px; }
+        .asset-folder-name { font-weight: 600; font-size: 14px; }
+        .asset-folder-desc { font-size: 11px; color: var(--text-muted); }
+        
+        /* Offer Table */
+        .offer-us { background: rgba(99, 102, 241, 0.1) !important; }
+        .guarantee-badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .guarantee-lifetime { background: rgba(251, 191, 36, 0.3); color: var(--accent-yellow); }
+        .guarantee-long { background: rgba(74, 222, 128, 0.2); color: var(--accent-green); }
+        .guarantee-short { background: rgba(239, 68, 68, 0.2); color: var(--accent-red); }
+        
+        /* Links */
+        a.btn {
+            display: inline-block;
+            padding: 8px 16px;
+            background: var(--accent-blue);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        a.btn:hover { background: var(--accent-purple); }
+        a.btn-outline {
+            background: transparent;
+            border: 1px solid var(--accent-blue);
+            color: var(--accent-blue);
+        }
+        a.btn-outline:hover { background: rgba(99, 102, 241, 0.1); }
+        
+        /* Copy button */
+        .copy-btn {
+            background: rgba(99, 102, 241, 0.2);
+            border: none;
+            color: var(--accent-blue);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 10px;
+            cursor: pointer;
+        }
+        .copy-btn:hover { background: rgba(99, 102, 241, 0.4); }
+        
+        /* Expandable */
+        details { margin-bottom: 12px; }
+        summary {
+            cursor: pointer;
+            padding: 12px;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+        summary:hover { background: var(--bg-hover); }
+        details[open] summary { border-radius: 8px 8px 0 0; }
+        details > div {
+            padding: 12px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-top: none;
+            border-radius: 0 0 8px 8px;
+        }
+        
+        /* Utility */
+        .text-green { color: var(--accent-green); }
+        .text-red { color: var(--accent-red); }
+        .text-blue { color: var(--accent-blue); }
+        .text-muted { color: var(--text-muted); }
+        .mt-2 { margin-top: 8px; }
+        .mt-4 { margin-top: 16px; }
+        .mb-2 { margin-bottom: 8px; }
+        .mb-4 { margin-bottom: 16px; }
+        .flex { display: flex; }
+        .flex-wrap { flex-wrap: wrap; }
+        .gap-2 { gap: 8px; }
+        .gap-4 { gap: 16px; }
+        .items-center { align-items: center; }
+        .justify-between { justify-content: space-between; }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">🐕</span>
+                    <div>
+                        <h1>Creative Director Hub</h1>
+                        <div class="logo-sub">UndrDog Operations Center</div>
+                    </div>
+                </div>
+                <div class="search-container">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" class="search-input" placeholder="Search everything..." id="globalSearch">
+                </div>
+                <div class="header-meta">
+                    <div class="update">Last updated: <strong id="lastUpdated">Loading...</strong></div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Tab Navigation -->
+        <nav class="tab-nav">
+            <ul class="tab-list">
+                <li><button class="tab-btn active" data-tab="performance"><span class="tab-emoji">📊</span> Performance</button></li>
+                <li><button class="tab-btn" data-tab="competitors"><span class="tab-emoji">🎯</span> Competitor Intel</button></li>
+                <li><button class="tab-btn" data-tab="briefs"><span class="tab-emoji">📋</span> Creative Briefs</button></li>
+                <li><button class="tab-btn" data-tab="brand"><span class="tab-emoji">📖</span> Brand Bible</button></li>
+                <li><button class="tab-btn" data-tab="assets"><span class="tab-emoji">📁</span> Asset Library</button></li>
+                <li><button class="tab-btn" data-tab="research"><span class="tab-emoji">🔬</span> Research Vault</button></li>
+                <li><button class="tab-btn" data-tab="creators"><span class="tab-emoji">👥</span> Creator Hub</button></li>
+                <li><button class="tab-btn" data-tab="scripts"><span class="tab-emoji">📝</span> Script Frameworks</button></li>
+                <li><button class="tab-btn" data-tab="calendar"><span class="tab-emoji">📅</span> Calendar</button></li>
+                <li><button class="tab-btn" data-tab="briefing"><span class="tab-emoji">☀️</span> Daily Briefing</button></li>
+            </ul>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Tab 1: Performance Dashboard -->
+            <section id="performance" class="tab-panel active">
+                <div class="grid-4 mb-4" id="performanceStats"></div>
+                
+                <div class="grid-2">
+                    <div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title"><span class="emoji">🔥</span> Top 10 Performers (Last 7 Days)</h3>
+                            </div>
+                            <div class="table-container" id="topPerformersTable"></div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title"><span class="emoji">📈</span> CPA Trend</h3>
+                            </div>
+                            <div class="chart-container" id="cpaTrendChart"></div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title"><span class="emoji">🏆</span> Winners Wall</h3>
+                                <span class="card-badge badge-yellow">All-Time Best</span>
+                            </div>
+                            <div id="winnersWall"></div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title"><span class="emoji">📊</span> Format Breakdown</h3>
+                            </div>
+                            <div id="formatBreakdown"></div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title"><span class="emoji">🥇</span> Creator Leaderboard</h3>
+                            </div>
+                            <div id="creatorLeaderboard"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Tab 2: Competitor Intel -->
+            <section id="competitors" class="tab-panel">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3 class="card-title"><span class="emoji">💰</span> Offer Comparison</h3>
+                    </div>
+                    <div class="table-container" id="offerTable"></div>
+                </div>
+                
+                <h3 class="card-title mb-4"><span class="emoji">🏆</span> Competitor Deep Dive</h3>
+                <div class="grid-3" id="competitorCards"></div>
+                
+                <div class="grid-2 mt-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title"><span class="emoji">✅</span> What's Working (Industry-Wide)</h3>
+                        </div>
+                        <div id="trendsWorking"></div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title"><span class="emoji">🎯</span> Gaps to Exploit</h3>
+                        </div>
+                        <div id="trendsGaps"></div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Tab 3: Creative Briefs -->
+            <section id="briefs" class="tab-panel">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3 class="card-title"><span class="emoji">📋</span> Active Briefs</h3>
+                    </div>
+                    <div class="grid-2" id="activeBriefs"></div>
+                </div>
+                
+                <div class="grid-2">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title"><span class="emoji">📄</span> Brief Templates</h3>
+                        </div>
+                        <div id="briefTemplates"></div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title"><span class="emoji">🎣</span> Hook Library</h3>
+                        </div>
+                        <div id="hookLibrary"></div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Tab 4: Brand Bible -->
+            <section id="brand" class="tab-panel">
+                <div class="grid-2">
+                    <div>
+                        <div class="bible-section">
+                            <h3 class="bible-title"><span>🐕</span> Product Overview</h3>
+                            <div class="card" id="productOverview"></div>
+                        </div>
+                        
+                        <div class="bible-section">
+                            <h3 class="bible-title"><span>💬</span> Messaging Pillars</h3>
+                            <div id="messagingPillars"></div>
+                        </div>
+                        
+                        <div class="bible-section">
+                            <h3 class="bible-title"><span>📝</span> Terminology</h3>
+                            <div class="card" id="terminology"></div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="bible-section">
+                            <h3 class="bible-title"><span>⚠️</span> Legal Rules</h3>
+                            <div id="legalRules"></div>
+                        </div>
+                        
+                        <div class="bible-section">
+                            <h3 class="bible-title"><span>🎙️</span> Voice & Tone</h3>
+                            <div id="voiceTone"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Tab 5: Asset Library -->
+            <section id="assets" class="tab-panel">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3 class="card-title"><span class="emoji">📂</span> Creator Folders</h3>
+                    </div>
+                    <div class="grid-4" id="creatorFolders"></div>
+                </div>
+                
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3 class="card-title"><span class="emoji">🎬</span> Content Type Folders</h3>
+                    </div>
+                    <div class="grid-4" id="contentFolders"></div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title"><span class="emoji">🔥</span> Destructive Demo Library</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2" id="destructiveDemos"></div>
+                </div>
+            </section>
+            
+            <!-- Tab 6: Research Vault -->
+            <section id="research" class="tab-panel">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3 class="card-title"><span class="emoji">📚</span> How to Cite Studies</h3>
+                    </div>
+                    <div class="study-cite" style="margin: 0;">
+                        Always frame as <strong>"researchers found"</strong> or <strong>"studies suggest"</strong> — never make direct health claims. Include who did the study and when. Prefer 2022+ research when available.
+                    </div>
+                </div>
+                
+                <h3 class="card-title mb-4"><span class="emoji">🔬</span> Approved Studies</h3>
+                <div class="grid-2" id="studyCards"></div>
+            </section>
+            
+            <!-- Tab 7: Creator Hub -->
+            <section id="creators" class="tab-panel">
+                <div class="grid-2" id="creatorCards"></div>
+            </section>
+            
+            <!-- Tab 8: Script Frameworks -->
+            <section id="scripts" class="tab-panel">
+                <div class="framework-card" id="ugcRewriterFramework"></div>
+                
+                <h3 class="card-title mb-4"><span class="emoji">📝</span> Script Structures</h3>
+                <div class="grid-2 mb-4" id="scriptStructures"></div>
+                
+                <div class="grid-2">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title"><span class="emoji">🎣</span> Hook Formulas</h3>
+                        </div>
+                        <div id="hookFormulas"></div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title"><span class="emoji">🎬</span> Demo Templates</h3>
+                        </div>
+                        <div id="demoTemplates"></div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Tab 9: Calendar -->
+            <section id="calendar" class="tab-panel">
+                <div class="grid-2">
+                    <div>
+                        <div class="calendar-section">
+                            <h3 class="calendar-title"><span>🚀</span> Upcoming Drops</h3>
+                            <div id="upcomingDrops"></div>
+                        </div>
+                        
+                        <div class="calendar-section">
+                            <h3 class="calendar-title"><span>✅</span> Past Drops</h3>
+                            <div id="pastDrops"></div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="calendar-section">
+                            <h3 class="calendar-title"><span>📅</span> Content Deadlines</h3>
+                            <div id="contentDeadlines"></div>
+                        </div>
+                        
+                        <div class="calendar-section">
+                            <h3 class="calendar-title"><span>🧪</span> Testing Schedule</h3>
+                            <div id="testingSchedule"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Tab 10: Daily Briefing -->
+            <section id="briefing" class="tab-panel">
+                <div class="briefing-hero" id="briefingHero"></div>
+                
+                <div class="grid-2">
+                    <div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title"><span class="emoji">🎯</span> Focus Today</h3>
+                            </div>
+                            <div id="focusToday"></div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title"><span class="emoji">🏆</span> Recent Wins</h3>
+                            </div>
+                            <div id="recentWins"></div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title"><span class="emoji">🔥</span> Fires to Put Out</h3>
+                            </div>
+                            <div id="fires"></div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title"><span class="emoji">⚡</span> Quick Actions</h3>
+                            </div>
+                            <div id="quickActions"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script>
+        // Global data
+        let data = null;
+        
+        // Load and render
+        async function loadData() {
+            try {
+                const response = await fetch('data.json');
+                data = await response.json();
+                renderAll();
+            } catch (err) {
+                console.error('Failed to load data:', err);
+            }
+        }
+        
+        function renderAll() {
+            document.getElementById('lastUpdated').textContent = data.meta.lastUpdated;
+            renderPerformance();
+            renderCompetitors();
+            renderBriefs();
+            renderBrandBible();
+            renderAssets();
+            renderResearch();
+            renderCreators();
+            renderScripts();
+            renderCalendar();
+            renderBriefing();
+        }
+        
+        // Format helpers
+        const formatMoney = n => n >= 1000 ? `$${(n/1000).toFixed(1)}K` : `$${n}`;
+        const formatCPA = n => `$${n.toFixed(2)}`;
+        
+        // Tab switching
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+                btn.classList.add('active');
+                document.getElementById(btn.dataset.tab).classList.add('active');
+            });
+        });
+        
+        // Copy to clipboard
+        function copyText(text, btn) {
+            navigator.clipboard.writeText(text);
+            const original = btn.textContent;
+            btn.textContent = '✓ Copied!';
+            setTimeout(() => btn.textContent = original, 1500);
+        }
+        
+        // Render Performance
+        function renderPerformance() {
+            const p = data.performance;
+            
+            // Stats
+            document.getElementById('performanceStats').innerHTML = `
+                <div class="stat-card">
+                    <div class="stat-label">Avg CPA This Week</div>
+                    <div class="stat-value green">${formatCPA(data.dailyBriefing.metrics.avgCpaThisWeek)}</div>
+                    <div class="stat-trend ${data.dailyBriefing.metrics.cpaTrend}">
+                        ${data.dailyBriefing.metrics.cpaTrend === 'down' ? '↓ Improving' : '↑ Rising'}
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Total Spend</div>
+                    <div class="stat-value blue">${formatMoney(data.dailyBriefing.metrics.totalSpend)}</div>
+                    <div class="stat-trend">This week</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Total Purchases</div>
+                    <div class="stat-value orange">${data.dailyBriefing.metrics.totalPurchases.toLocaleString()}</div>
+                    <div class="stat-trend">This week</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Top Creator</div>
+                    <div class="stat-value" style="font-size: 20px;">${data.dailyBriefing.metrics.topCreator}</div>
+                    <div class="stat-trend">By CPA</div>
+                </div>
+            `;
+            
+            // Top performers table
+            document.getElementById('topPerformersTable').innerHTML = `
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ad Name</th>
+                            <th>Type</th>
+                            <th>CPA</th>
+                            <th>Spend</th>
+                            <th>Purchases</th>
+                            <th>Days</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${p.topPerformers7d.map(ad => `
+                            <tr>
+                                <td class="perf-name">${ad.name}${ad.trophy ? '<span class="perf-trophy">🏆</span>' : ''}</td>
+                                <td><span class="perf-type ${ad.type.toLowerCase()}">${ad.type}</span></td>
+                                <td class="perf-cpa">${formatCPA(ad.cpa)}</td>
+                                <td>${formatMoney(ad.spend)}</td>
+                                <td>${ad.purchases}</td>
+                                <td>${ad.daysRunning}d</td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
+            `;
+            
+            // Winners Wall
+            document.getElementById('winnersWall').innerHTML = p.winnersWall.map(w => `
+                <div class="winner-card" style="margin-bottom: 12px;">
+                    <div class="winner-header">
+                        <div>
+                            <div class="winner-name">${w.name}</div>
+                            <div style="font-size: 11px; color: var(--text-muted);">${w.creator} • ${w.angle}</div>
+                        </div>
+                        <span class="winner-trophy">🏆</span>
+                    </div>
+                    <div class="winner-stats">
+                        <div class="winner-stat"><span>CPA:</span> <strong>${formatCPA(w.cpa)}</strong></div>
+                        <div class="winner-stat"><span>Spend:</span> <strong>${formatMoney(w.totalSpend)}</strong></div>
+                        <div class="winner-stat"><span>Sales:</span> <strong>${w.totalPurchases.toLocaleString()}</strong></div>
+                        <div class="winner-stat"><span>Running:</span> <strong>${w.daysRunning}d</strong></div>
+                    </div>
+                </div>
+            `).join('');
+            
+            // Format breakdown
+            document.getElementById('formatBreakdown').innerHTML = p.formatBreakdown.map(f => `
+                <div class="format-bar">
+                    <div class="format-label">${f.format}</div>
+                    <div class="format-track">
+                        <div class="format-fill ${f.format.toLowerCase().replace(' ', '')}" style="width: ${f.pctOfSpend}%;">${f.pctOfSpend}%</div>
+                    </div>
+                    <div class="format-cpa">${formatCPA(f.cpa)}</div>
+                </div>
+            `).join('');
+            
+            // Creator leaderboard
+            document.getElementById('creatorLeaderboard').innerHTML = p.creatorLeaderboard.map((c, i) => `
+                <div class="leader-item">
+                    <div class="leader-rank ${i === 0 ? 'gold' : i === 1 ? 'silver' : i === 2 ? 'bronze' : ''}">${i + 1}</div>
+                    <div class="leader-info">
+                        <div class="leader-name">${c.name}</div>
+                        <div class="leader-sub">${c.winningAds} winners • ${c.trend === 'up' ? '📈' : c.trend === 'down' ? '📉' : '➡️'}</div>
+                    </div>
+                    <div class="leader-stats">
+                        <div class="leader-cpa">${formatCPA(c.avgCpa)}</div>
+                        <div class="leader-spend">${formatMoney(c.spend)}</div>
+                    </div>
+                </div>
+            `).join('');
+            
+            // CPA Trend chart
+            const maxCpa = Math.max(...p.cpaTrend.map(d => d.cpa));
+            document.getElementById('cpaTrendChart').innerHTML = `
+                <div class="chart-bars">
+                    ${p.cpaTrend.map(d => `
+                        <div class="chart-bar-container">
+                            <div class="chart-bar" style="height: ${(d.cpa / maxCpa) * 100}px;">
+                                <span class="chart-bar-value">${formatCPA(d.cpa)}</span>
+                            </div>
+                            <span class="chart-bar-label">${d.week}</span>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+        
+        // Render Competitors
+        function renderCompetitors() {
+            // Offer table
+            document.getElementById('offerTable').innerHTML = `
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Brand</th>
+                            <th>Product</th>
+                            <th>Unit Price</th>
+                            <th>Current Offer</th>
+                            <th>Best Price</th>
+                            <th>Guarantee</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${data.offerComparison.map(o => `
+                            <tr class="${o.isUs ? 'offer-us' : ''}">
+                                <td style="font-weight: 600;">${o.brand}${o.isUs ? ' ⭐' : ''}</td>
+                                <td>${o.product}</td>
+                                <td>$${o.unitPrice}</td>
+                                <td>${o.currentOffer}</td>
+                                <td style="color: var(--accent-green); font-weight: 600;">$${o.effectivePrice}</td>
+                                <td>${getGuaranteeBadge(o.guaranteeDays)}</td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
+            `;
+            
+            // Competitor cards
+            document.getElementById('competitorCards').innerHTML = data.competitors.map(c => `
+                <div class="competitor-card ${c.flags?.includes('direct') ? 'alert' : c.flags?.includes('heavy-spender') ? 'heavy' : ''}">
+                    <div class="comp-header">
+                        <div>
+                            <div class="comp-name">
+                                ${c.name}
+                                ${c.landingPage ? `<a href="${c.landingPage}" target="_blank">↗</a>` : ''}
+                                ${c.flags?.includes('direct') ? '<span class="card-badge badge-red">⚠️ DIRECT</span>' : ''}
+                                ${c.attackOpportunity ? '<span class="card-badge badge-green">🎯 ATTACK</span>' : ''}
+                            </div>
+                            <div class="comp-site">${c.site}</div>
+                        </div>
+                        <span class="comp-ads">${c.adCount} ads</span>
+                    </div>
+                    
+                    <div class="comp-mix">
+                        <div class="static" style="width: ${c.creativeBreakdown?.Static || 0}%"></div>
+                        <div class="video" style="width: ${c.creativeBreakdown?.Video || 0}%"></div>
+                    </div>
+                    <div class="comp-mix-legend">
+                        <span><span class="dot" style="background: var(--accent-blue)"></span>Static ${c.creativeBreakdown?.Static || 0}%</span>
+                        <span><span class="dot" style="background: var(--accent-red)"></span>Video ${c.creativeBreakdown?.Video || 0}%</span>
+                    </div>
+                    
+                    <div class="comp-offers">
+                        ${c.offers.map(o => `<div class="comp-offer"><span>${o.label}</span><span class="value">${o.value}</span></div>`).join('')}
+                    </div>
+                    
+                    <ul class="comp-working">
+                        ${c.whatsWorking?.slice(0, 4).map(w => `<li>${w}</li>`).join('')}
+                    </ul>
+                    
+                    ${c.stealThis ? `
+                        <div class="comp-steal">
+                            <div class="comp-steal-title">🎯 Steal This</div>
+                            ${c.stealThis.map(s => `<div class="comp-steal-item">→ ${s}</div>`).join('')}
+                        </div>
+                    ` : ''}
+                    
+                    <div style="margin-top: 12px;">
+                        <a href="${c.adsLibraryUrl}" target="_blank" class="btn btn-outline" style="font-size: 11px;">View Ads Library →</a>
+                    </div>
+                </div>
+            `).join('');
+            
+            // Trends
+            document.getElementById('trendsWorking').innerHTML = data.trends.working.map(t => `
+                <div class="pillar-item">→ ${t}</div>
+            `).join('');
+            
+            document.getElementById('trendsGaps').innerHTML = data.trends.gaps.map(t => `
+                <div class="pillar-item" style="border-left-color: var(--accent-green);">→ ${t}</div>
+            `).join('');
+        }
+        
+        function getGuaranteeBadge(days) {
+            if (days === 'Lifetime') return '<span class="guarantee-badge guarantee-lifetime">♾️ LIFETIME</span>';
+            if (typeof days === 'number') {
+                if (days >= 90) return `<span class="guarantee-badge guarantee-long">${days}d</span>`;
+                return `<span class="guarantee-badge guarantee-short">${days}d</span>`;
+            }
+            return days;
+        }
+        
+        // Render Briefs
+        function renderBriefs() {
+            const b = data.briefs;
+            
+            // Active briefs
+            document.getElementById('activeBriefs').innerHTML = b.active.map(brief => `
+                <div class="brief-card ${brief.priority}">
+                    <div class="brief-header">
+                        <div class="brief-title">${brief.title}</div>
+                        <span class="card-badge ${brief.status === 'In Production' ? 'badge-green' : brief.status === 'Scripting' ? 'badge-blue' : 'badge-orange'}">${brief.status}</span>
+                    </div>
+                    <div class="brief-meta">
+                        <span>📁 ${brief.angle}</span>
+                        <span>👤 ${brief.creator}</span>
+                        <span>📅 Due: ${brief.dueDate}</span>
+                    </div>
+                    <div class="brief-notes">${brief.notes}</div>
+                </div>
+            `).join('');
+            
+            // Templates
+            document.getElementById('briefTemplates').innerHTML = Object.entries(b.templates).map(([key, t]) => `
+                <details>
+                    <summary>${t.name}</summary>
+                    <div>
+                        <p style="font-size: 12px; color: var(--text-secondary); margin-bottom: 12px;">${t.description}</p>
+                        <div style="font-size: 11px; font-weight: 600; color: var(--text-muted); margin-bottom: 8px;">STRUCTURE:</div>
+                        <ol class="template-steps">
+                            ${t.structure.map((s, i) => `<li data-step="${i+1}.">${s}</li>`).join('')}
+                        </ol>
+                        <div class="template-best mt-2">Best for: <strong>${t.bestFor.join(', ')}</strong></div>
+                        <div style="font-size: 11px; color: var(--text-muted); margin-top: 8px;">Examples: ${t.examples.join(', ')}</div>
+                    </div>
+                </details>
+            `).join('');
+            
+            // Hook library
+            document.getElementById('hookLibrary').innerHTML = Object.entries(data.hookLibrary).slice(0, 3).map(([cat, hooks]) => `
+                <div class="hook-category">
+                    <div class="hook-category-title">${cat.charAt(0).toUpperCase() + cat.slice(1)} Hooks</div>
+                    ${hooks.slice(0, 4).map(h => `
+                        <div class="hook-card" onclick="copyText('${h.replace(/'/g, "\\'")}', this.querySelector('.copy-btn'))">
+                            <div class="hook-text">"${h}"</div>
+                            <div class="hook-copy"><button class="copy-btn">📋 Copy</button></div>
+                        </div>
+                    `).join('')}
+                </div>
+            `).join('');
+        }
+        
+        // Render Brand Bible
+        function renderBrandBible() {
+            const bb = data.brandBible;
+            
+            // Product overview
+            document.getElementById('productOverview').innerHTML = `
+                <h4 style="font-size: 18px; margin-bottom: 4px;">${bb.product.name}</h4>
+                <p style="font-size: 13px; color: var(--accent-green); margin-bottom: 16px;">${bb.product.tagline}</p>
+                
+                <div style="background: var(--bg-secondary); border-radius: 8px; padding: 12px; margin-bottom: 12px;">
+                    <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 4px;">FABRIC</div>
+                    <div style="font-size: 14px; font-weight: 600; color: var(--accent-blue);">${bb.product.fabric.name}</div>
+                    <div style="font-size: 12px; margin-top: 4px;">${bb.product.fabric.blend}</div>
+                </div>
+                
+                <div style="background: var(--bg-secondary); border-radius: 8px; padding: 12px; margin-bottom: 12px;">
+                    <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 4px;">FIT</div>
+                    <div style="font-size: 14px; font-weight: 600; color: var(--accent-purple);">${bb.product.fit.name}</div>
+                    <div style="font-size: 12px; margin-top: 4px;">${bb.product.fit.features.join(' • ')}</div>
+                </div>
+                
+                <div style="background: linear-gradient(135deg, rgba(251, 191, 36, 0.2), rgba(245, 158, 11, 0.1)); border-radius: 8px; padding: 12px;">
+                    <div style="font-size: 14px; font-weight: 600; color: var(--accent-yellow);">⭐ ${bb.product.guarantee}</div>
+                </div>
+            `;
+            
+            // Messaging pillars
+            document.getElementById('messagingPillars').innerHTML = bb.messaging.pillars.map(p => `
+                <div class="pillar-item">${p}</div>
+            `).join('');
+            
+            // Legal rules
+            document.getElementById('legalRules').innerHTML = bb.legal.rules.map(r => `
+                <div class="rule-item">${r}</div>
+            `).join('') + `
+                <div class="pillar-item" style="background: rgba(99, 102, 241, 0.1); border-left-color: var(--accent-blue); margin-top: 12px;">
+                    <strong>Health Claims Framing:</strong> ${bb.legal.healthClaimsFraming}
+                </div>
+            `;
+            
+            // Voice & tone
+            document.getElementById('voiceTone').innerHTML = `
+                <div class="card" style="margin-bottom: 12px;">
+                    <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 8px;">TONE</div>
+                    <div class="flex flex-wrap gap-2">
+                        ${bb.voice.tone.map(t => `<span class="card-badge badge-blue">${t}</span>`).join('')}
+                    </div>
+                </div>
+                
+                <div class="voice-example voice-good">
+                    <div class="voice-example-title">✅ Good Examples</div>
+                    ${bb.voice.examples.good.map(e => `<div class="voice-example-text">"${e}"</div>`).join('')}
+                </div>
+                
+                <div class="voice-example voice-bad">
+                    <div class="voice-example-title">❌ Avoid</div>
+                    ${bb.voice.examples.bad.map(e => `<div class="voice-example-text">"${e}"</div>`).join('')}
+                </div>
+                
+                <div class="card" style="margin-top: 12px;">
+                    <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 8px;">DON'TS</div>
+                    ${bb.voice.donts.map(d => `<div style="font-size: 12px; padding: 4px 0;">❌ ${d}</div>`).join('')}
+                </div>
+            `;
+            
+            // Terminology
+            document.getElementById('terminology').innerHTML = `
+                <div style="margin-bottom: 12px;">
+                    <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 8px;">✅ USE THESE TERMS</div>
+                    <div class="flex flex-wrap gap-2">
+                        ${bb.terminology.use.map(t => `<span class="card-badge badge-green">${t}</span>`).join('')}
+                    </div>
+                </div>
+                <div>
+                    <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 8px;">❌ AVOID THESE TERMS</div>
+                    <div class="flex flex-wrap gap-2">
+                        ${bb.terminology.avoid.map(t => `<span class="card-badge badge-red">${t}</span>`).join('')}
+                    </div>
+                </div>
+            `;
+        }
+        
+        // Render Assets
+        function renderAssets() {
+            const a = data.assets;
+            
+            document.getElementById('creatorFolders').innerHTML = a.folders.creators.map(f => `
+                <div class="asset-folder">
+                    <div class="asset-folder-icon">📁</div>
+                    <div class="asset-folder-name">${f.name}</div>
+                    <div class="asset-folder-desc">${f.specialty}</div>
+                </div>
+            `).join('');
+            
+            document.getElementById('contentFolders').innerHTML = a.folders.contentTypes.map(f => `
+                <div class="asset-folder">
+                    <div class="asset-folder-icon">🎬</div>
+                    <div class="asset-folder-name">${f.name}</div>
+                    <div class="asset-folder-desc">${f.contents}</div>
+                </div>
+            `).join('');
+            
+            document.getElementById('destructiveDemos').innerHTML = a.folders.destructiveDemos.map(d => `
+                <span class="card-badge badge-orange" style="padding: 8px 12px; font-size: 12px;">🔥 ${d}</span>
+            `).join('');
+        }
+        
+        // Render Research
+        function renderResearch() {
+            document.getElementById('studyCards').innerHTML = data.research.approvedStudies.map(s => `
+                <div class="study-card">
+                    <div class="study-title">${s.title}</div>
+                    <div class="study-meta">${s.author} (${s.year}) ${s.pubmedId ? `• PubMed: ${s.pubmedId}` : `• ${s.journal}`}</div>
+                    <div class="study-finding">
+                        <strong>Key Finding:</strong> ${s.keyFinding}
+                    </div>
+                    <div class="study-cite">
+                        <strong>How to cite:</strong> "${s.howToCite}"
+                        <button class="copy-btn mt-2" onclick="copyText('${s.howToCite.replace(/'/g, "\\'")}', this)">📋 Copy Citation</button>
+                    </div>
+                    ${s.link ? `<a href="${s.link}" target="_blank" class="study-link">View on PubMed →</a>` : ''}
+                </div>
+            `).join('');
+        }
+        
+        // Render Creators
+        function renderCreators() {
+            document.getElementById('creatorCards').innerHTML = data.creators.map(c => `
+                <div class="creator-card">
+                    <div class="creator-header">
+                        <div>
+                            <div class="creator-name">${c.name}</div>
+                            <div class="creator-type">${c.type}</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <div class="creator-cpa">${formatCPA(c.avgCpa)}</div>
+                            <div class="creator-cpa-label">Avg CPA</div>
+                        </div>
+                    </div>
+                    
+                    <div class="creator-specialty">
+                        ${c.specialty.map(s => `<span class="creator-tag">${s}</span>`).join('')}
+                    </div>
+                    
+                    <div class="creator-stats">
+                        <div class="creator-stat">
+                            <div class="creator-stat-value">${c.weeklySpend}</div>
+                            <div class="creator-stat-label">Weekly Spend</div>
+                        </div>
+                        <div class="creator-stat">
+                            <div class="creator-stat-value">${c.totalWinners}</div>
+                            <div class="creator-stat-label">Winners</div>
+                        </div>
+                        <div class="creator-stat">
+                            <div class="creator-stat-value">${c.contact === 'Direct' ? '📞' : '📧'}</div>
+                            <div class="creator-stat-label">${c.contact}</div>
+                        </div>
+                    </div>
+                    
+                    <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 8px;">BEST FOR</div>
+                    <div style="font-size: 12px; margin-bottom: 12px;">${c.bestFor}</div>
+                    
+                    <div class="creator-assignment">
+                        <strong>Current Assignment:</strong> ${c.currentAssignment}
+                    </div>
+                    
+                    <div class="creator-notes">💡 ${c.notes}</div>
+                </div>
+            `).join('');
+        }
+        
+        // Render Scripts
+        function renderScripts() {
+            const sf = data.scriptFrameworks;
+            
+            // UGC Rewriter
+            document.getElementById('ugcRewriterFramework').innerHTML = `
+                <div class="framework-title">🎬 ${sf.ugcRewriter.name}</div>
+                <div class="framework-purpose">${sf.ugcRewriter.purpose}</div>
+                
+                <div style="font-size: 11px; font-weight: 600; color: var(--text-muted); margin-bottom: 8px;">CORE RULES</div>
+                ${sf.ugcRewriter.coreRules.map(r => `<div class="framework-rule">${r}</div>`).join('')}
+                
+                <div class="framework-litmus">
+                    <strong>Litmus Test:</strong> ${sf.ugcRewriter.litmusTest}
+                </div>
+                
+                <div style="margin-top: 12px;">
+                    <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 8px;">WORDS TO AVOID</div>
+                    <div class="flex flex-wrap gap-2">
+                        ${sf.ugcRewriter.avoidWords.map(w => `<span class="card-badge badge-red">${w}</span>`).join('')}
+                    </div>
+                </div>
+            `;
+            
+            // Script structures
+            document.getElementById('scriptStructures').innerHTML = sf.structures.map(s => `
+                <div class="template-card">
+                    <div class="template-name">${s.name}</div>
+                    <ol class="template-steps">
+                        ${s.steps.map((step, i) => `<li data-step="${i+1}.">${step}</li>`).join('')}
+                    </ol>
+                    <div style="background: rgba(99, 102, 241, 0.1); border-radius: 6px; padding: 10px; margin-top: 12px; font-size: 11px; font-style: italic; color: var(--text-secondary);">
+                        "${s.example}"
+                    </div>
+                </div>
+            `).join('');
+            
+            // Hook formulas
+            document.getElementById('hookFormulas').innerHTML = sf.hookFormulas.map(h => `
+                <div style="background: var(--bg-secondary); border-radius: 8px; padding: 12px; margin-bottom: 8px;">
+                    <div style="font-size: 12px; font-weight: 500; color: var(--accent-orange);">${h.formula}</div>
+                    <div style="font-size: 11px; color: var(--text-muted); margin-top: 6px; font-style: italic;">"${h.example}"</div>
+                </div>
+            `).join('');
+            
+            // Demo templates
+            document.getElementById('demoTemplates').innerHTML = sf.demoTemplates.map(d => `
+                <div style="background: var(--bg-secondary); border-radius: 8px; padding: 12px; margin-bottom: 8px;">
+                    <div style="font-size: 12px; font-weight: 600; color: var(--accent-purple);">${d.name}</div>
+                    <div style="font-size: 11px; color: var(--text-secondary); margin-top: 6px;">${d.structure}</div>
+                </div>
+            `).join('');
+        }
+        
+        // Render Calendar
+        function renderCalendar() {
+            const cal = data.calendar;
+            
+            // Upcoming drops
+            document.getElementById('upcomingDrops').innerHTML = cal.drops.map(d => `
+                <div class="drop-card">
+                    <div class="drop-info">
+                        <h4>${d.name}</h4>
+                        <p>${d.description}</p>
+                    </div>
+                    <div style="text-align: right;">
+                        <div class="drop-month">${d.month}</div>
+                        <span class="card-badge ${d.status === 'Planning' ? 'badge-orange' : d.status === 'Development' ? 'badge-blue' : 'badge-purple'}">${d.status}</span>
+                    </div>
+                </div>
+            `).join('');
+            
+            // Past drops
+            document.getElementById('pastDrops').innerHTML = cal.pastDrops.map(d => `
+                <div class="drop-card" style="opacity: 0.7;">
+                    <div class="drop-info">
+                        <h4>${d.name}</h4>
+                        <p>${d.description || ''}</p>
+                    </div>
+                    <span class="card-badge badge-green">✓ Complete</span>
+                </div>
+            `).join('');
+            
+            // Content deadlines
+            document.getElementById('contentDeadlines').innerHTML = cal.contentDeadlines.map(d => `
+                <div class="deadline-item">
+                    <div class="deadline-date">${d.date}</div>
+                    <div class="deadline-item-text">${d.item}</div>
+                    <div class="deadline-owner">${d.owner}</div>
+                </div>
+            `).join('');
+            
+            // Testing schedule
+            document.getElementById('testingSchedule').innerHTML = cal.testingSchedule.map(t => `
+                <div class="deadline-item">
+                    <div class="deadline-date">${t.week}</div>
+                    <div class="deadline-item-text">${t.focus}</div>
+                </div>
+            `).join('');
+        }
+        
+        // Render Daily Briefing
+        function renderBriefing() {
+            const db = data.dailyBriefing;
+            
+            // Hero
+            document.getElementById('briefingHero').innerHTML = `
+                <div class="briefing-date">${db.date}</div>
+                <div class="briefing-greeting">Good morning, Creative Team! ☀️</div>
+                <div class="briefing-metrics">
+                    <div class="stat-card">
+                        <div class="stat-label">Avg CPA</div>
+                        <div class="stat-value green" style="font-size: 24px;">${formatCPA(db.metrics.avgCpaThisWeek)}</div>
+                        <div class="stat-trend ${db.metrics.cpaTrend}">${db.metrics.cpaTrend === 'down' ? '↓ Improving' : '↑ Watch'}</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Total Spend</div>
+                        <div class="stat-value blue" style="font-size: 24px;">${formatMoney(db.metrics.totalSpend)}</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Purchases</div>
+                        <div class="stat-value orange" style="font-size: 24px;">${db.metrics.totalPurchases.toLocaleString()}</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Top Format</div>
+                        <div class="stat-value" style="font-size: 20px;">${db.metrics.topFormat}</div>
+                    </div>
+                </div>
+            `;
+            
+            // Focus today
+            document.getElementById('focusToday').innerHTML = db.focusToday.map(f => `
+                <div class="focus-item">${f}</div>
+            `).join('');
+            
+            // Recent wins
+            document.getElementById('recentWins').innerHTML = db.recentWins.map(w => `
+                <div class="win-item">
+                    <div>
+                        <div class="win-name">${w.ad}</div>
+                        <div class="win-note">${w.note}</div>
+                    </div>
+                    <div class="win-cpa">${formatCPA(w.cpa)}</div>
+                </div>
+            `).join('');
+            
+            // Fires
+            document.getElementById('fires').innerHTML = db.fires.map(f => `
+                <div class="fire-item">
+                    <div class="fire-header">
+                        <div class="fire-issue">🔥 ${f.issue}</div>
+                        <span class="fire-urgency ${f.urgency}">${f.urgency.toUpperCase()}</span>
+                    </div>
+                    <div class="fire-action">→ ${f.action}</div>
+                </div>
+            `).join('');
+            
+            // Quick actions
+            document.getElementById('quickActions').innerHTML = db.quickActions.map(a => `
+                <div class="action-item">
+                    <div class="action-text">☐ ${a.action}</div>
+                    <div class="action-owner">${a.owner}</div>
+                </div>
+            `).join('');
+        }
+        
+        // Global search
+        document.getElementById('globalSearch').addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            if (query.length < 2) return;
+            
+            // Simple search highlight - could be expanded
+            console.log('Searching for:', query);
+        });
+        
+        // Init
+        loadData();
+    </script>
+</body>
+</html>
