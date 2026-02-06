@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UndrDog Competitor Intel</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎯</text></svg>">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e4e4e4;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container { max-width: 1400px; margin: 0 auto; }
+        
+        header {
+            display: flex; justify-content: space-between; align-items: center;
+            margin-bottom: 30px; padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .logo { display: flex; align-items: center; gap: 15px; }
+        .logo h1 { font-size: 24px; }
+        .logo span { font-size: 32px; }
+        .last-updated { color: #888; font-size: 14px; text-align: right; }
+        .last-updated strong { color: #4ade80; }
+
+        /* Section Styles */
+        section { background: rgba(255,255,255,0.05); border-radius: 16px; padding: 24px; margin-bottom: 24px; }
+        section h2 { font-size: 18px; margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
+        .section-desc { font-size: 13px; color: #888; margin-bottom: 16px; }
+
+        /* UndrDog Intel Section */
+        .undrdog-section { background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(168, 85, 247, 0.15)); border: 1px solid rgba(99, 102, 241, 0.3); }
+        .undrdog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .undrdog-card { background: rgba(0,0,0,0.3); border-radius: 12px; padding: 16px; }
+        .undrdog-card h3 { font-size: 14px; color: #a5b4fc; margin-bottom: 12px; text-transform: uppercase; }
+        .top-ad-item { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.05); font-size: 13px; }
+        .top-ad-item:last-child { border-bottom: none; }
+        .top-ad-item .name { font-weight: 500; }
+        .top-ad-item .cpa { color: #4ade80; font-weight: 600; }
+        .top-ad-item .status { font-size: 11px; color: #888; }
+        .angle-item { padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .angle-item:last-child { border-bottom: none; }
+        .angle-item .angle-name { font-weight: 500; font-size: 13px; }
+        .angle-item .angle-desc { font-size: 12px; color: #888; }
+        .key-message { background: rgba(99, 102, 241, 0.2); padding: 8px 12px; border-radius: 6px; font-size: 12px; margin-bottom: 8px; border-left: 3px solid #6366f1; }
+
+        /* Hook Bank */
+        .hook-tabs { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+        .hook-tab { background: rgba(0,0,0,0.3); border: none; color: #888; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-size: 12px; transition: all 0.2s; }
+        .hook-tab.active { background: #f59e0b; color: #000; }
+        .hook-tab:hover { background: rgba(245, 158, 11, 0.3); color: white; }
+        .hook-content { display: none; }
+        .hook-content.active { display: block; }
+        .hook-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; }
+        .hook-card { background: rgba(0,0,0,0.3); border-radius: 10px; padding: 14px; border-left: 3px solid #f59e0b; }
+        .hook-card .hook-text { font-size: 14px; font-weight: 500; color: #fbbf24; margin-bottom: 6px; }
+        .hook-card .hook-source { font-size: 11px; color: #888; }
+        .hook-card .copy-btn { background: rgba(245, 158, 11, 0.2); border: none; color: #fbbf24; padding: 4px 8px; border-radius: 4px; font-size: 10px; cursor: pointer; margin-top: 8px; }
+        .hook-card .copy-btn:hover { background: rgba(245, 158, 11, 0.4); }
+
+        /* Winning Formats */
+        .formats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; }
+        .format-card { background: rgba(0,0,0,0.3); border-radius: 12px; padding: 16px; }
+        .format-card h4 { font-size: 15px; font-weight: 600; margin-bottom: 8px; color: #4ade80; }
+        .format-card .desc { font-size: 13px; color: #bbb; margin-bottom: 10px; }
+        .format-card .why { font-size: 12px; color: #888; margin-bottom: 10px; padding: 8px; background: rgba(74, 222, 128, 0.1); border-radius: 6px; }
+        .format-card .examples { font-size: 11px; color: #a5b4fc; }
+        .format-card .competitors { font-size: 11px; color: #888; margin-top: 6px; }
+
+        /* Script Structures */
+        .scripts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 16px; }
+        .script-card { background: rgba(0,0,0,0.3); border-radius: 12px; padding: 16px; }
+        .script-card h4 { font-size: 14px; font-weight: 600; margin-bottom: 12px; color: #a5b4fc; }
+        .script-card .structure { list-style: none; margin-bottom: 12px; }
+        .script-card .structure li { font-size: 12px; padding: 4px 0; padding-left: 20px; position: relative; color: #888; }
+        .script-card .structure li::before { content: attr(data-step); position: absolute; left: 0; color: #6366f1; font-weight: 600; }
+        .script-card .example { font-size: 12px; color: #bbb; padding: 10px; background: rgba(99, 102, 241, 0.1); border-radius: 6px; font-style: italic; }
+
+        /* Hot Angles */
+        .angles-grid { display: flex; flex-direction: column; gap: 12px; }
+        .angles-list { display: flex; flex-wrap: wrap; gap: 12px; }
+        .angle-tag { background: rgba(0,0,0,0.3); border-radius: 8px; padding: 12px 16px; display: flex; align-items: center; gap: 10px; }
+        .angle-tag .heat { font-size: 14px; }
+        .angle-tag .name { font-weight: 500; font-size: 13px; }
+        .angle-tag .why { font-size: 11px; color: #888; max-width: 200px; }
+        
+        /* Load More */
+        .load-more-btn { display: block; margin: 20px auto 0; padding: 12px 24px; background: linear-gradient(135deg, #6366f1, #8b5cf6); border: none; color: white; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+        .load-more-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4); }
+        .all-loaded { text-align: center; color: #4ade80; font-size: 12px; margin-top: 16px; }
+
+        /* New This Week */
+        .new-this-week { background: linear-gradient(135deg, rgba(251, 146, 60, 0.15), rgba(239, 68, 68, 0.15)); border: 1px solid rgba(251, 146, 60, 0.3); }
+        .new-items { display: flex; flex-wrap: wrap; gap: 12px; }
+        .new-item { background: rgba(0,0,0,0.3); border-radius: 8px; padding: 12px 16px; font-size: 13px; display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit; transition: all 0.2s; border: 1px solid transparent; }
+        .new-item:hover { background: rgba(251, 146, 60, 0.2); border-color: rgba(251, 146, 60, 0.4); }
+        .new-item .brand-tag { background: #fb923c; color: #000; font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 4px; }
+        .new-item .date { color: #888; font-size: 11px; }
+
+        /* Offer Comparison */
+        .offer-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+        .offer-table th { text-align: left; padding: 12px; border-bottom: 1px solid rgba(255,255,255,0.1); color: #888; font-weight: 500; font-size: 11px; text-transform: uppercase; }
+        .offer-table td { padding: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .offer-table tr:hover { background: rgba(255,255,255,0.03); }
+        .offer-table .brand-name { font-weight: 600; }
+        .offer-table .effective-price { color: #4ade80; font-weight: 600; }
+        .offer-table .us-row { background: rgba(99, 102, 241, 0.1); }
+        .guarantee-badge { display: inline-block; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+        .guarantee-badge.lifetime { background: rgba(234, 179, 8, 0.3); color: #fbbf24; }
+        .guarantee-badge.long { background: rgba(74, 222, 128, 0.2); color: #4ade80; }
+        .guarantee-badge.standard { background: rgba(255,255,255,0.1); color: #888; }
+        .guarantee-badge.short { background: rgba(239, 68, 68, 0.2); color: #ef4444; }
+
+        /* Competitors */
+        .competitor-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 20px; }
+        .competitor-card { background: rgba(255,255,255,0.05); border-radius: 16px; padding: 20px; border: 1px solid rgba(255,255,255,0.1); }
+        .competitor-card.alert { border-color: rgba(239, 68, 68, 0.5); }
+        .competitor-card.heavy-spender { border-color: rgba(251, 146, 60, 0.5); }
+        .card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }
+        .card-header h3 { font-size: 16px; display: flex; align-items: center; gap: 8px; }
+        .card-header h3 a { color: #6366f1; text-decoration: none; font-size: 14px; }
+        .card-header .meta { font-size: 11px; color: #888; margin-top: 4px; }
+        .card-header .ads-count { background: rgba(251, 146, 60, 0.2); color: #fb923c; font-size: 11px; padding: 4px 10px; border-radius: 20px; }
+        .badge { font-size: 10px; padding: 3px 8px; border-radius: 4px; font-weight: 600; margin-left: 6px; }
+        .badge.direct { background: #ef4444; }
+        .badge.spender { background: #fb923c; }
+        .mix-bar { display: flex; height: 8px; border-radius: 4px; overflow: hidden; margin: 8px 0; }
+        .mix-bar .static { background: #6366f1; }
+        .mix-bar .video { background: #ef4444; }
+        .mix-legend { display: flex; gap: 12px; font-size: 10px; color: #888; margin-bottom: 12px; }
+        .mix-legend .dot { width: 8px; height: 8px; border-radius: 2px; display: inline-block; margin-right: 4px; }
+        .offer-section { background: rgba(0,0,0,0.2); border-radius: 8px; padding: 12px; margin-bottom: 12px; }
+        .offer-section h4 { font-size: 11px; text-transform: uppercase; color: #888; margin-bottom: 8px; }
+        .offer-item { display: flex; justify-content: space-between; font-size: 12px; padding: 3px 0; }
+        .offer-item .value { color: #4ade80; font-weight: 500; }
+        .creative-item { background: rgba(0,0,0,0.2); border-radius: 6px; padding: 10px; margin-bottom: 8px; text-decoration: none; color: inherit; display: block; transition: all 0.2s; }
+        .creative-item:hover { background: rgba(99, 102, 241, 0.15); }
+        .creative-item .hook { font-size: 12px; font-weight: 500; margin-bottom: 4px; }
+        .creative-item .meta { font-size: 10px; color: #888; }
+        .creative-item .format { background: rgba(99, 102, 241, 0.3); color: #a5b4fc; font-size: 9px; padding: 2px 5px; border-radius: 3px; margin-right: 5px; }
+        .creative-item .format.video { background: rgba(239, 68, 68, 0.3); color: #f87171; }
+        .longevity { font-size: 9px; padding: 2px 5px; border-radius: 3px; }
+        .longevity.winner { background: rgba(234, 179, 8, 0.3); color: #fbbf24; }
+        .longevity.new { background: rgba(251, 146, 60, 0.3); color: #fb923c; }
+        .view-all-ads { display: inline-block; margin-top: 8px; padding: 6px 12px; background: rgba(99, 102, 241, 0.2); color: #a5b4fc; text-decoration: none; border-radius: 5px; font-size: 11px; }
+        .view-all-ads:hover { background: rgba(99, 102, 241, 0.4); }
+        .working-list { list-style: none; margin-top: 12px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.1); }
+        .working-list li { font-size: 11px; padding: 3px 0; padding-left: 14px; position: relative; color: #bbb; }
+        .working-list li::before { content: "→"; position: absolute; left: 0; color: #6366f1; }
+
+        /* Trends & Actions */
+        .trends-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+        .trend-card { background: rgba(0,0,0,0.3); border-radius: 12px; padding: 16px; }
+        .trend-card h4 { font-size: 14px; margin-bottom: 12px; }
+        .trend-item { font-size: 12px; padding: 5px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .trend-item:last-child { border-bottom: none; }
+        .actions-section { background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(168, 85, 247, 0.2)); border: 1px solid rgba(168, 85, 247, 0.3); }
+        .action-item { background: rgba(0,0,0,0.3); border-radius: 10px; padding: 14px; margin-bottom: 10px; display: flex; align-items: flex-start; gap: 12px; }
+        .action-priority { font-size: 10px; font-weight: 600; padding: 4px 8px; border-radius: 4px; }
+        .action-priority.high { background: #ef4444; }
+        .action-priority.med { background: #f59e0b; }
+        .action-content h5 { font-size: 13px; margin-bottom: 4px; }
+        .action-content p { font-size: 11px; color: #888; }
+
+        @media (max-width: 768px) {
+            .competitor-grid { grid-template-columns: 1fr; }
+            .offer-table { font-size: 11px; }
+            .offer-table th, .offer-table td { padding: 8px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <span>🎯</span>
+                <h1>UndrDog Creator Intel</h1>
+            </div>
+            <div class="last-updated">
+                Last updated: <strong id="lastUpdated"></strong>
+            </div>
+        </header>
+
+        <!-- UndrDog Intel -->
+        <section class="undrdog-section">
+            <h2>🐕 What's Working for UndrDog</h2>
+            <div class="undrdog-grid" id="undrdogIntel"></div>
+        </section>
+
+        <!-- Hook Bank -->
+        <section>
+            <h2>🎣 Hook Bank for UndrDog</h2>
+            <p class="section-desc">Scroll-stopping opening lines written for UndrDog. Click to copy.</p>
+            <div class="hook-tabs" id="hookTabs"></div>
+            <div id="hookContent"></div>
+        </section>
+
+        <!-- Winning Formats -->
+        <section>
+            <h2>🎬 Winning Formats</h2>
+            <p class="section-desc">Content types that convert. Pick your format, then find hooks above.</p>
+            <div class="formats-grid" id="winningFormats"></div>
+        </section>
+
+        <!-- Creator Scripts -->
+        <section class="creator-scripts-section" style="background: linear-gradient(135deg, rgba(74, 222, 128, 0.15), rgba(34, 197, 94, 0.15)); border: 1px solid rgba(74, 222, 128, 0.3);">
+            <h2>🎬 Creator Scripts — Ready to Shoot</h2>
+            <p class="section-desc">Written human, not ad voice. Based on competitor intel + what's working.</p>
+            <div class="scripts-grid" id="creatorScripts"></div>
+        </section>
+
+        <!-- Script Structures -->
+        <section>
+            <h2>📝 Script Structures</h2>
+            <p class="section-desc">Proven templates. Fill in the blanks with UndrDog content.</p>
+            <div class="scripts-grid" id="scriptStructures"></div>
+        </section>
+
+        <!-- Hot Angles -->
+        <section>
+            <h2>🔥 Hot Angles Right Now</h2>
+            <div class="angles-grid" id="hotAngles"></div>
+        </section>
+
+        <!-- New This Week -->
+        <section class="new-this-week">
+            <h2>📢 New This Week</h2>
+            <div class="new-items" id="newThisWeek"></div>
+        </section>
+
+        <!-- Offer Comparison -->
+        <section>
+            <h2>💰 Offer Comparison</h2>
+            <div style="overflow-x: auto;">
+                <table class="offer-table">
+                    <thead>
+                        <tr><th>Brand</th><th>Product</th><th>Price</th><th>Offer</th><th>Best Price</th><th>Guarantee</th></tr>
+                    </thead>
+                    <tbody id="offerTable"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Competitors -->
+        <section>
+            <h2>🏆 Competitor Deep Dive</h2>
+            <div class="competitor-grid" id="competitors"></div>
+        </section>
+
+        <!-- Trends -->
+        <section>
+            <h2>📈 Patterns & Gaps</h2>
+            <div class="trends-grid" id="trends"></div>
+        </section>
+
+        <!-- Actions -->
+        <section class="actions-section">
+            <h2>🎬 Recommended Tests</h2>
+            <div id="actions"></div>
+        </section>
+    </div>
+
+    <script>
+        async function loadData() {
+            const response = await fetch('data.json');
+            const data = await response.json();
+            render(data);
+        }
+
+        function render(data) {
+            document.getElementById('lastUpdated').textContent = data.lastUpdated;
+
+            // UndrDog Intel
+            if (data.undrdogIntel) {
+                const ud = data.undrdogIntel;
+                const formatMoney = n => n >= 1000 ? `$${(n/1000).toFixed(1)}K` : `$${n}`;
+                document.getElementById('undrdogIntel').innerHTML = `
+                    <div class="undrdog-card">
+                        <h3>🔥 Top Ads — Last 7 Days</h3>
+                        <div style="font-size:10px;color:#888;margin-bottom:8px;">Real-time data from Meta Ads</div>
+                        ${(ud.topAdsLast7d || []).slice(0,5).map(ad => `
+                            <div class="top-ad-item">
+                                <div>
+                                    <div class="name">${ad.name}</div>
+                                    <div class="status">${ad.status} • ${ad.type} • ${ad.angle}</div>
+                                </div>
+                                <div style="text-align:right">
+                                    <div class="cpa">$${ad.cpa.toFixed(0)} CPA</div>
+                                    <div style="font-size:10px;color:#888">${formatMoney(ad.spend)} • ${ad.purchases} sales</div>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                    <div class="undrdog-card">
+                        <h3>🏆 Top Ads — Last 30 Days</h3>
+                        <div style="font-size:10px;color:#888;margin-bottom:8px;">Updated: ${ud.dataAsOf || data.lastUpdated}</div>
+                        ${(ud.topAdsLast30d || []).slice(0,6).map(ad => `
+                            <div class="top-ad-item">
+                                <div>
+                                    <div class="name">${ad.name}</div>
+                                    <div class="status">${ad.status} • ${ad.type} • ${ad.angle}</div>
+                                </div>
+                                <div style="text-align:right">
+                                    <div class="cpa">$${ad.cpa.toFixed(0)} CPA</div>
+                                    <div style="font-size:10px;color:#888">${formatMoney(ad.spend)} • ${ad.purchases} sales</div>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                    <div class="undrdog-card">
+                        <h3>🎯 Winning Angles</h3>
+                        ${(ud.winningAngles || []).map(a => `
+                            <div class="angle-item">
+                                <div class="angle-name">${a.angle}</div>
+                                <div class="angle-desc">${a.desc}</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                    <div class="undrdog-card">
+                        <h3>💬 Key Messages</h3>
+                        ${(ud.keyMessages || []).map(m => `<div class="key-message">${m}</div>`).join('')}
+                    </div>
+                `;
+            }
+
+            // Hook Bank with Load More
+            if (data.hookBank) {
+                window.hookData = data.hookBank;
+                window.hookVisible = {};
+                const categories = Object.keys(data.hookBank);
+                const labels = { question: '❓ Question', statement: '💥 Statement', demo: '🔬 Demo', controversy: '🔥 Controversy', result: '✨ Result', health: '🏥 Health' };
+                categories.forEach(cat => window.hookVisible[cat] = 5);
+                
+                document.getElementById('hookTabs').innerHTML = categories.map((cat, i) => 
+                    `<button class="hook-tab ${i === 0 ? 'active' : ''}" data-tab="${cat}">${labels[cat] || cat}</button>`
+                ).join('');
+                
+                function renderHooks() {
+                    document.getElementById('hookContent').innerHTML = categories.map((cat, i) => {
+                        const hooks = data.hookBank[cat];
+                        const visible = window.hookVisible[cat];
+                        const hasMore = hooks.length > visible;
+                        return `
+                            <div class="hook-content ${i === 0 ? 'active' : ''}" data-content="${cat}">
+                                <div class="hook-grid">
+                                    ${hooks.slice(0, visible).map(h => `
+                                        <div class="hook-card">
+                                            <div class="hook-text">"${h.hook}"</div>
+                                            <button class="copy-btn" onclick="navigator.clipboard.writeText('${h.hook.replace(/'/g, "\\'")}'); this.textContent='Copied!'">📋 Copy</button>
+                                        </div>
+                                    `).join('')}
+                                </div>
+                                ${hasMore ? `<button class="load-more-btn" onclick="loadMoreHooks('${cat}')" data-cat="${cat}">Load More (${hooks.length - visible} remaining)</button>` : '<p class="all-loaded">✓ All hooks loaded</p>'}
+                            </div>
+                        `;
+                    }).join('');
+                }
+                renderHooks();
+                
+                window.loadMoreHooks = function(cat) {
+                    window.hookVisible[cat] += 5;
+                    renderHooks();
+                    document.querySelector(`[data-content="${cat}"]`).classList.add('active');
+                    document.querySelectorAll('.hook-tab').forEach(t => t.classList.toggle('active', t.dataset.tab === cat));
+                };
+                
+                document.querySelectorAll('.hook-tab').forEach(tab => {
+                    tab.addEventListener('click', () => {
+                        document.querySelectorAll('.hook-tab').forEach(t => t.classList.remove('active'));
+                        document.querySelectorAll('.hook-content').forEach(c => c.classList.remove('active'));
+                        tab.classList.add('active');
+                        document.querySelector(`[data-content="${tab.dataset.tab}"]`).classList.add('active');
+                    });
+                });
+            }
+
+            // Winning Formats
+            if (data.winningFormats) {
+                document.getElementById('winningFormats').innerHTML = data.winningFormats.map(f => `
+                    <div class="format-card">
+                        <h4>${f.format}</h4>
+                        <div class="desc">${f.desc}</div>
+                        <div class="why">💡 ${f.whyWorks}</div>
+                        <div class="examples">Examples: ${f.examples.join(', ')}</div>
+                        <div class="competitors">Who's using it: ${f.competitors}</div>
+                    </div>
+                `).join('');
+            }
+
+            // Creator Scripts
+            if (data.creatorScripts) {
+                document.getElementById('creatorScripts').innerHTML = data.creatorScripts.map(s => `
+                    <div class="script-card" style="border-left: 3px solid ${s.priority === 'high' ? '#ef4444' : s.priority === 'medium' ? '#f59e0b' : '#22c55e'};">
+                        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px;">
+                            <h4 style="color:#4ade80;">${s.title}</h4>
+                            <span style="font-size:10px;padding:3px 8px;border-radius:4px;background:${s.priority === 'high' ? '#ef4444' : s.priority === 'medium' ? '#f59e0b' : '#22c55e'};color:#000;font-weight:600;">${s.priority.toUpperCase()}</span>
+                        </div>
+                        <div style="font-size:11px;color:#888;margin-bottom:8px;">
+                            <strong>Angle:</strong> ${s.angle} • <strong>Format:</strong> ${s.format}
+                        </div>
+                        <div style="font-size:11px;color:#a5b4fc;margin-bottom:12px;">
+                            <strong>Best for:</strong> ${s.bestFor.join(', ')}
+                        </div>
+                        <div style="font-size:11px;color:#fbbf24;margin-bottom:8px;font-weight:500;">
+                            🎬 Hook: ${s.hook}
+                        </div>
+                        ${s.concept ? `<div style="font-size:11px;color:#888;margin-bottom:8px;padding:8px;background:rgba(74,222,128,0.1);border-radius:6px;">💡 ${s.concept}</div>` : ''}
+                        <details style="margin-top:8px;">
+                            <summary style="cursor:pointer;font-size:12px;color:#4ade80;font-weight:500;">📜 View Full Script</summary>
+                            <div style="margin-top:10px;padding:12px;background:rgba(0,0,0,0.3);border-radius:8px;font-size:12px;line-height:1.6;white-space:pre-wrap;color:#ddd;">${s.script}</div>
+                            <button onclick="navigator.clipboard.writeText(\`${s.script.replace(/`/g, '\\`').replace(/\$/g, '\\$')}\`); this.textContent='Copied!'" style="margin-top:8px;padding:6px 12px;background:rgba(74,222,128,0.2);border:none;color:#4ade80;border-radius:4px;font-size:11px;cursor:pointer;">📋 Copy Script</button>
+                        </details>
+                    </div>
+                `).join('');
+            }
+
+            // Script Structures
+            if (data.scriptStructures) {
+                document.getElementById('scriptStructures').innerHTML = data.scriptStructures.map(s => `
+                    <div class="script-card">
+                        <h4>${s.name}</h4>
+                        <ol class="structure">
+                            ${s.structure.map((step, i) => `<li data-step="${i+1}.">${step}</li>`).join('')}
+                        </ol>
+                        <div class="example">"${s.example}"</div>
+                    </div>
+                `).join('');
+            }
+
+            // Hot Angles with Load More
+            if (data.hotAngles) {
+                window.anglesData = data.hotAngles;
+                window.anglesVisible = 6;
+                
+                function renderAngles() {
+                    const visible = window.anglesVisible;
+                    const hasMore = data.hotAngles.length > visible;
+                    document.getElementById('hotAngles').innerHTML = `
+                        <div class="angles-list">
+                            ${data.hotAngles.slice(0, visible).map(a => `
+                                <div class="angle-tag">
+                                    <span class="heat">${a.heat}</span>
+                                    <div>
+                                        <div class="name">${a.angle}</div>
+                                        <div class="why">${a.why}</div>
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                        ${hasMore ? `<button class="load-more-btn" onclick="loadMoreAngles()">Load More Angles (${data.hotAngles.length - visible} remaining)</button>` : '<p class="all-loaded">✓ All angles loaded</p>'}
+                    `;
+                }
+                renderAngles();
+                
+                window.loadMoreAngles = function() {
+                    window.anglesVisible += 5;
+                    renderAngles();
+                };
+            }
+
+            // New This Week
+            if (data.newThisWeek) {
+                document.getElementById('newThisWeek').innerHTML = data.newThisWeek.map(item => `
+                    <a href="${item.link}" target="_blank" class="new-item">
+                        <span class="brand-tag">${item.brand}</span>
+                        <span>${item.detail}</span>
+                        <span class="date">${item.date}</span>
+                    </a>
+                `).join('');
+            }
+
+            // Offer Comparison
+            if (data.offerComparison) {
+                document.getElementById('offerTable').innerHTML = data.offerComparison.map(p => `
+                    <tr class="${p.isUs ? 'us-row' : ''}">
+                        <td class="brand-name">${p.brand}${p.isUs ? ' ⭐' : ''}</td>
+                        <td>${p.product}</td>
+                        <td>$${p.unitPrice}</td>
+                        <td>${p.currentOffer}</td>
+                        <td class="effective-price">$${p.effectivePrice}</td>
+                        <td>${getGuaranteeBadge(p.guaranteeDays)}</td>
+                    </tr>
+                `).join('');
+            }
+
+            // Competitors
+            if (data.competitors) {
+                document.getElementById('competitors').innerHTML = data.competitors.map(c => {
+                    const badges = [];
+                    if (c.flags?.includes('direct')) badges.push('<span class="badge direct">⚠️ DIRECT</span>');
+                    if (c.flags?.includes('heavy-spender')) badges.push('<span class="badge spender">🔥 HEAVY</span>');
+                    const cardClass = c.flags?.includes('direct') ? 'alert' : c.flags?.includes('heavy-spender') ? 'heavy-spender' : '';
+                    const staticPct = c.creativeBreakdown?.Static || 0;
+                    const videoPct = c.creativeBreakdown?.Video || 0;
+                    return `
+                        <div class="competitor-card ${cardClass}">
+                            <div class="card-header">
+                                <div>
+                                    <h3>${c.name} ${c.landingPage ? `<a href="${c.landingPage}" target="_blank">↗</a>` : ''}${badges.join('')}</h3>
+                                    <div class="meta">${c.site}</div>
+                                </div>
+                                ${c.adCount ? `<span class="ads-count">${c.adCount}</span>` : ''}
+                            </div>
+                            <div class="mix-bar">
+                                <div class="static" style="width:${staticPct}%"></div>
+                                <div class="video" style="width:${videoPct}%"></div>
+                            </div>
+                            <div class="mix-legend">
+                                <span><span class="dot" style="background:#6366f1"></span>Static ${staticPct}%</span>
+                                <span><span class="dot" style="background:#ef4444"></span>Video ${videoPct}%</span>
+                            </div>
+                            <div class="offer-section">
+                                <h4>Current Offer</h4>
+                                ${c.offers.map(o => `<div class="offer-item"><span>${o.label}</span><span class="value">${o.value}</span></div>`).join('')}
+                            </div>
+                            <div>
+                                <h4 style="font-size:11px;color:#888;margin-bottom:8px;">TOP CREATIVES — LAST 7 DAYS</h4>
+                                ${c.topCreatives?.slice(0,3).map(cr => `
+                                    <a href="${cr.url}" target="_blank" class="creative-item">
+                                        <div class="hook"><span class="format ${cr.format.toLowerCase().includes('video') ? 'video' : ''}">${cr.format}</span>${cr.hook}</div>
+                                        <div class="meta">${cr.note || ''} ${cr.daysRunning >= 60 ? '<span class="longevity winner">🏆 60d+</span>' : cr.isNew ? '<span class="longevity new">🆕 NEW</span>' : ''}</div>
+                                    </a>
+                                `).join('') || ''}
+                                ${c.adsLibraryUrl ? `<a href="${c.adsLibraryUrl}" target="_blank" class="view-all-ads">View All Ads →</a>` : ''}
+                            </div>
+                            <ul class="working-list">
+                                ${c.whatsWorking?.slice(0,4).map(w => `<li>${w}</li>`).join('') || ''}
+                            </ul>
+                        </div>
+                    `;
+                }).join('');
+            }
+
+            // Trends
+            if (data.trends) {
+                document.getElementById('trends').innerHTML = `
+                    <div class="trend-card"><h4>✅ What's Working</h4>${data.trends.working.map(t => `<div class="trend-item">→ ${t}</div>`).join('')}</div>
+                    <div class="trend-card"><h4>🎯 Gaps to Exploit</h4>${data.trends.gaps.map(t => `<div class="trend-item">→ ${t}</div>`).join('')}</div>
+                    <div class="trend-card"><h4>🚨 Watch List</h4>${data.trends.watch.map(t => `<div class="trend-item">⚠️ ${t}</div>`).join('')}</div>
+                `;
+            }
+
+            // Actions
+            if (data.actions) {
+                document.getElementById('actions').innerHTML = data.actions.map(a => `
+                    <div class="action-item">
+                        <span class="action-priority ${a.priority}">${a.priority.toUpperCase()}</span>
+                        <div class="action-content"><h5>${a.title}</h5><p>${a.description}</p></div>
+                    </div>
+                `).join('');
+            }
+        }
+
+        function getGuaranteeBadge(days) {
+            if (days === 'Lifetime') return '<span class="guarantee-badge lifetime">♾️ LIFETIME</span>';
+            if (typeof days === 'number') {
+                if (days >= 100) return `<span class="guarantee-badge long">${days}d</span>`;
+                if (days >= 90) return `<span class="guarantee-badge standard">${days}d</span>`;
+                return `<span class="guarantee-badge short">${days}d</span>`;
+            }
+            return `<span class="guarantee-badge standard">${days}</span>`;
+        }
+
+        loadData();
+    </script>
+</body>
+</html>
+
+<!-- rebuild Mon Feb  2 14:36:08 EST 2026 -->
+<!-- rebuild 1770070835 -->
