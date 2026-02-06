@@ -3,99 +3,265 @@
     "lastUpdated": "2026-02-06",
     "dataSource": "Meta Ads API + Triple Whale",
     "dateRange": "Jan 30 - Feb 5, 2026",
-    "version": "3.0"
+    "version": "3.1"
+  },
+  "tripleWhale": {
+    "ncpa": 50.10,
+    "ncpaChange": "+6.38%",
+    "ncpaNote": "New Customer CPA (from Triple Whale Summary)",
+    "ncRoas": 1.82,
+    "totalSales": 143688,
+    "adsSpend": 79432,
+    "roas": 2.00,
+    "metaNCCPA": 56.76,
+    "googleNCCPA": 48.07
   },
   "performance": {
-    "topPerformers": [
+    "topPerformersLast7Days": [
       {
         "rank": 1,
-        "name": "MTRX_UD2_M1_STAT3_4-5",
-        "id": "120231567346760698",
+        "name": "bret_Comic_6",
         "type": "STAT",
-        "spend": 2187.35,
-        "purchases": 60,
-        "cpa": 36.46,
-        "impressions": 55007,
-        "adUrl": "https://www.facebook.com/ads/library/?id=122241190322179579",
-        "creativeType": "Static",
-        "trophy": true
+        "spend": 7349.68,
+        "purchases": 119,
+        "cpa": 61.76,
+        "creator": "Bret",
+        "trophy": false
       },
       {
         "rank": 2,
-        "name": "MTRX_UD3_M1_RSUGC4_CB_Ke_V2",
-        "id": "120234705268210698",
-        "type": "UGC",
-        "spend": 1136.63,
-        "purchases": 17,
-        "cpa": 66.86,
-        "impressions": 22483,
-        "adUrl": "https://www.facebook.com/ads/library/?id=1377177143668645",
-        "creativeType": "Video",
-        "trophy": true
+        "name": "dalton_FounderCaptionsOnly_V1",
+        "type": "VID",
+        "spend": 7138.76,
+        "purchases": 137,
+        "cpa": 52.11,
+        "creator": "Dalton",
+        "trophy": true,
+        "note": "Founder story crushing"
       },
       {
         "rank": 3,
-        "name": "CHINO_XRAY_TAILOREDFIT",
-        "id": "120235966608880698",
+        "name": "bret_Comic_6 (copy)",
         "type": "STAT",
-        "spend": 562.95,
-        "purchases": 10,
-        "cpa": 56.30,
-        "impressions": 33227,
-        "adUrl": "https://www.facebook.com/ads/library/?id=122251312940179579",
-        "creativeType": "Static",
+        "spend": 2548.61,
+        "purchases": 56,
+        "cpa": 45.51,
+        "creator": "Bret",
         "trophy": true
       },
       {
         "rank": 4,
-        "name": "MTRX_UD3_M1_RSUGC4_CB_Ke_V5",
-        "id": "120236018211670698",
-        "type": "UGC",
-        "spend": 510.09,
-        "purchases": 9,
-        "cpa": 56.68,
-        "impressions": 19178,
-        "adUrl": "https://www.facebook.com/ads/library/?id=1352186022801303",
-        "creativeType": "Video"
+        "name": "MTRX_UD2_M1_STAT3_4-5_V1 (WAR)",
+        "type": "STAT",
+        "spend": 2187.35,
+        "purchases": 60,
+        "cpa": 36.46,
+        "creator": "MTRX",
+        "trophy": true,
+        "note": "Best CPA this week"
       },
       {
         "rank": 5,
-        "name": "MTRX_UD3_M1_RSUGC4_CB_Ke_V4",
-        "id": "120235963303480698",
-        "type": "UGC",
-        "spend": 231.75,
-        "purchases": 4,
-        "cpa": 57.94,
-        "impressions": 5794,
-        "adUrl": "https://www.facebook.com/ads/library/?id=2218024002022947",
-        "creativeType": "Video"
+        "name": "MTRX_NewCTA",
+        "type": "STAT",
+        "spend": 1364.32,
+        "purchases": 20,
+        "cpa": 68.22,
+        "creator": "MTRX",
+        "trophy": false
       },
       {
         "rank": 6,
-        "name": "AOA_IMG1",
-        "id": "120236244854360698",
-        "type": "STAT",
-        "spend": 177.86,
-        "purchases": 8,
-        "cpa": 22.23,
-        "impressions": 8969,
-        "adUrl": "https://www.facebook.com/ads/library/?id=122162536790179579",
-        "creativeType": "Static",
-        "trophy": true,
-        "note": "Running since Aug 2024!"
+        "name": "MTRX_UD3_M1_RSUGC4_CB_Ke_V2",
+        "type": "UGC",
+        "spend": 1136.63,
+        "purchases": 17,
+        "cpa": 66.86,
+        "creator": "MTRX",
+        "trophy": true
       },
       {
         "rank": 7,
-        "name": "BretStatics_OG.V4",
-        "id": "120236244854960698",
+        "name": "bret_HangTee_2",
         "type": "STAT",
-        "spend": 114.62,
-        "purchases": 4,
-        "cpa": 28.66,
-        "impressions": 5773,
-        "adUrl": "https://www.facebook.com/ads/library/?id=122170060322179579",
-        "creativeType": "Static"
+        "spend": 1092.10,
+        "purchases": 26,
+        "cpa": 42.00,
+        "creator": "Bret",
+        "trophy": true,
+        "note": "Great CPA"
       },
+      {
+        "rank": 8,
+        "name": "kev_UD_Armor_V1",
+        "type": "VID",
+        "spend": 1048.92,
+        "purchases": 20,
+        "cpa": 52.45,
+        "creator": "Kev",
+        "trophy": false
+      },
+      {
+        "rank": 9,
+        "name": "JAN26_Wk2_TOPs (Copy 3)",
+        "type": "FLX",
+        "spend": 1078.53,
+        "purchases": 18,
+        "cpa": 59.92,
+        "creator": "Various",
+        "trophy": false
+      },
+      {
+        "rank": 10,
+        "name": "CHINO_XRAY_TAILOREDFIT",
+        "type": "STAT",
+        "spend": 562.95,
+        "purchases": 10,
+        "cpa": 56.30,
+        "creator": "Chino",
+        "trophy": true
+      }
+    ],
+    "winnersWallAllTime": [
+      {
+        "rank": 1,
+        "name": "dalton_FounderCaptionsOnly_V1 (Copy)",
+        "type": "VID",
+        "totalSpend": 34327.39,
+        "totalPurchases": 690,
+        "cpa": 49.75,
+        "creator": "Dalton",
+        "angle": "Founder Story",
+        "note": "BIGGEST SPENDER ALL-TIME"
+      },
+      {
+        "rank": 2,
+        "name": "dalton_FounderCaptionsOnly_V1",
+        "type": "VID",
+        "totalSpend": 19377.73,
+        "totalPurchases": 386,
+        "cpa": 50.20,
+        "creator": "Dalton",
+        "angle": "Founder Story"
+      },
+      {
+        "rank": 3,
+        "name": "Chino_007_IMG15",
+        "type": "STAT",
+        "totalSpend": 10186.10,
+        "totalPurchases": 1135,
+        "cpa": 8.97,
+        "creator": "Chino",
+        "angle": "Product Static",
+        "note": "🏆🏆 MEGA WINNER - $8.97 CPA!"
+      },
+      {
+        "rank": 4,
+        "name": "bret_Comic_6",
+        "type": "STAT",
+        "totalSpend": 9592.59,
+        "totalPurchases": 169,
+        "cpa": 56.76,
+        "creator": "Bret",
+        "angle": "Comic/Static"
+      },
+      {
+        "rank": 5,
+        "name": "MTRX_UD2_M1_STAT3_4-5_V1 (WAR)",
+        "type": "STAT",
+        "totalSpend": 8288.24,
+        "totalPurchases": 193,
+        "cpa": 42.95,
+        "creator": "MTRX",
+        "angle": "Product Static",
+        "note": "Retargeting winner"
+      },
+      {
+        "rank": 6,
+        "name": "MTRX_UD2_M1_STAT3_4-5_V1",
+        "type": "STAT",
+        "totalSpend": 6702.33,
+        "totalPurchases": 133,
+        "cpa": 50.39,
+        "creator": "MTRX",
+        "angle": "Product Static"
+      },
+      {
+        "rank": 7,
+        "name": "a&d_GoldBarMOS_V1",
+        "type": "VID",
+        "totalSpend": 6205.44,
+        "totalPurchases": 131,
+        "cpa": 47.37,
+        "creator": "Aaron & Dalton",
+        "angle": "Gold Bar Promo"
+      },
+      {
+        "rank": 8,
+        "name": "MTRX_NewCTA",
+        "type": "STAT",
+        "totalSpend": 6141.37,
+        "totalPurchases": 126,
+        "cpa": 48.74,
+        "creator": "MTRX",
+        "angle": "CTA Test"
+      },
+      {
+        "rank": 9,
+        "name": "MTRX_UD3_M1_RSUGC4_CB_Ke_V2",
+        "type": "UGC",
+        "totalSpend": 5807.33,
+        "totalPurchases": 125,
+        "cpa": 46.46,
+        "creator": "MTRX",
+        "angle": "Ranking UGC"
+      },
+      {
+        "rank": 10,
+        "name": "MTRX_UD2_M3_DEB1_Sh_V3 (Debate)",
+        "type": "VID",
+        "totalSpend": 5055.85,
+        "totalPurchases": 93,
+        "cpa": 54.36,
+        "creator": "MTRX",
+        "angle": "Debate Format"
+      }
+    ],
+    "summaryStats": {
+      "totalSpend7d": 34623.51,
+      "totalPurchases7d": 647,
+      "avgCpa7d": 53.51,
+      "ncpa": 50.10,
+      "ncpaSource": "Triple Whale",
+      "dateRange": "Jan 30 - Feb 5, 2026"
+    },
+    "formatBreakdown": [
+      {
+        "format": "STATIC",
+        "spend": 18926.24,
+        "purchases": 345,
+        "cpa": 54.86,
+        "pctOfSpend": 54.7
+      },
+      {
+        "format": "VIDEO/UGC",
+        "spend": 15697.27,
+        "purchases": 302,
+        "cpa": 51.98,
+        "pctOfSpend": 45.3
+      }
+    ],
+    "ncpaTrendDaily": [
+      { "date": "Jan 30", "ncpa": 52.40 },
+      { "date": "Jan 31", "ncpa": 49.80 },
+      { "date": "Feb 1", "ncpa": 48.20 },
+      { "date": "Feb 2", "ncpa": 51.30 },
+      { "date": "Feb 3", "ncpa": 49.60 },
+      { "date": "Feb 4", "ncpa": 50.90 },
+      { "date": "Feb 5", "ncpa": 50.10 }
+    ]
+  },
+  "topPerformers": [
       {
         "rank": 8,
         "name": "MTRX_UD2_M3_STAT3",
