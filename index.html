@@ -654,7 +654,7 @@
         
         async function loadData() {
             try {
-                const res = await fetch('data.json');
+                const res = await fetch('data.json?v=' + Date.now());
                 data = await res.json();
                 render();
             } catch (err) {
