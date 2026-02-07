@@ -6,13 +6,13 @@
     "version": "3.1"
   },
   "tripleWhale": {
-    "ncpa": 50.10,
+    "ncpa": 50.1,
     "ncpaChange": "+6.38%",
     "ncpaNote": "New Customer CPA (from Triple Whale Summary)",
     "ncRoas": 1.82,
     "totalSales": 143688,
     "adsSpend": 79432,
-    "roas": 2.00,
+    "roas": 2.0,
     "metaNCCPA": 56.76,
     "googleNCCPA": 48.07
   },
@@ -84,9 +84,9 @@
         "rank": 7,
         "name": "bret_HangTee_2",
         "type": "STAT",
-        "spend": 1092.10,
+        "spend": 1092.1,
         "purchases": 26,
-        "cpa": 42.00,
+        "cpa": 42.0,
         "creator": "Bret",
         "trophy": true,
         "note": "Great CPA"
@@ -117,7 +117,7 @@
         "type": "STAT",
         "spend": 562.95,
         "purchases": 10,
-        "cpa": 56.30,
+        "cpa": 56.3,
         "creator": "Chino",
         "trophy": true
       }
@@ -140,7 +140,7 @@
         "type": "VID",
         "totalSpend": 19377.73,
         "totalPurchases": 386,
-        "cpa": 50.20,
+        "cpa": 50.2,
         "creator": "Dalton",
         "angle": "Founder Story"
       },
@@ -148,12 +148,12 @@
         "rank": 3,
         "name": "Chino_007_IMG15",
         "type": "STAT",
-        "totalSpend": 10186.10,
+        "totalSpend": 10186.1,
         "totalPurchases": 1135,
         "cpa": 8.97,
         "creator": "Chino",
         "angle": "Product Static",
-        "note": "🏆🏆 MEGA WINNER - $8.97 CPA!"
+        "note": "\ud83c\udfc6\ud83c\udfc6 MEGA WINNER - $8.97 CPA!"
       },
       {
         "rank": 4,
@@ -231,7 +231,7 @@
       "totalSpend7d": 34623.51,
       "totalPurchases7d": 647,
       "avgCpa7d": 53.51,
-      "ncpa": 50.10,
+      "ncpa": 50.1,
       "ncpaSource": "Triple Whale",
       "dateRange": "Jan 30 - Feb 5, 2026"
     },
@@ -252,89 +252,77 @@
       }
     ],
     "ncpaTrendDaily": [
-      { "date": "Jan 30", "ncpa": 52.40 },
-      { "date": "Jan 31", "ncpa": 49.80 },
-      { "date": "Feb 1", "ncpa": 48.20 },
-      { "date": "Feb 2", "ncpa": 51.30 },
-      { "date": "Feb 3", "ncpa": 49.60 },
-      { "date": "Feb 4", "ncpa": 50.90 },
-      { "date": "Feb 5", "ncpa": 50.10 }
+      {
+        "date": "Jan 30",
+        "ncpa": 52.4
+      },
+      {
+        "date": "Jan 31",
+        "ncpa": 49.8
+      },
+      {
+        "date": "Feb 1",
+        "ncpa": 48.2
+      },
+      {
+        "date": "Feb 2",
+        "ncpa": 51.3
+      },
+      {
+        "date": "Feb 3",
+        "ncpa": 49.6
+      },
+      {
+        "date": "Feb 4",
+        "ncpa": 50.9
+      },
+      {
+        "date": "Feb 5",
+        "ncpa": 50.1
+      }
     ]
   },
   "topPerformers": [
-      {
-        "rank": 8,
-        "name": "MTRX_UD2_M3_STAT3",
-        "id": "120231272387000698",
-        "type": "STAT",
-        "spend": 82.39,
-        "purchases": 4,
-        "cpa": 20.60,
-        "impressions": 3610,
-        "adUrl": "https://www.facebook.com/ads/library/?id=122237267942179579",
-        "creativeType": "Static",
-        "trophy": true
-      },
-      {
-        "rank": 9,
-        "name": "MTRX_UD3_M1_RSUGC4_V4 (Copy)",
-        "id": "120236291826970698",
-        "type": "UGC",
-        "spend": 83.20,
-        "purchases": 2,
-        "cpa": 41.60,
-        "impressions": 2036,
-        "adUrl": "#",
-        "creativeType": "Video"
-      },
-      {
-        "rank": 10,
-        "name": "docC&d_DrChrisV3",
-        "id": "120236020173490698",
-        "type": "UGC",
-        "spend": 34.28,
-        "purchases": 1,
-        "cpa": 34.28,
-        "impressions": 934,
-        "adUrl": "https://www.facebook.com/ads/library/?id=1253554296123664",
-        "creativeType": "Video",
-        "trophy": true,
-        "note": "Health authority angle"
-      }
-    ],
-    "summaryStats": {
-      "totalSpend": 5668.72,
-      "totalPurchases": 138,
-      "avgCpa": 41.08,
-      "totalImpressions": 188475,
-      "dateRange": "Jan 30 - Feb 5, 2026"
+    {
+      "rank": 8,
+      "name": "MTRX_UD2_M3_STAT3",
+      "id": "120231272387000698",
+      "type": "STAT",
+      "spend": 82.39,
+      "purchases": 4,
+      "cpa": 20.6,
+      "impressions": 3610,
+      "adUrl": "https://www.facebook.com/ads/library/?id=122237267942179579",
+      "creativeType": "Static",
+      "trophy": true
     },
-    "formatBreakdown": [
-      {
-        "format": "STATIC",
-        "spend": 3206.88,
-        "purchases": 87,
-        "cpa": 36.86,
-        "pctOfSpend": 56.6
-      },
-      {
-        "format": "VIDEO/UGC",
-        "spend": 2461.84,
-        "purchases": 51,
-        "cpa": 48.27,
-        "pctOfSpend": 43.4
-      }
-    ],
-    "cpaTrendDaily": [
-      { "date": "Jan 30", "cpa": 45.20 },
-      { "date": "Jan 31", "cpa": 42.80 },
-      { "date": "Feb 1", "cpa": 38.50 },
-      { "date": "Feb 2", "cpa": 40.20 },
-      { "date": "Feb 3", "cpa": 39.80 },
-      { "date": "Feb 4", "cpa": 42.10 },
-      { "date": "Feb 5", "cpa": 38.90 }
-    ]
-  },
+    {
+      "rank": 9,
+      "name": "MTRX_UD3_M1_RSUGC4_V4 (Copy)",
+      "id": "120236291826970698",
+      "type": "UGC",
+      "spend": 83.2,
+      "purchases": 2,
+      "cpa": 41.6,
+      "impressions": 2036,
+      "adUrl": "#",
+      "creativeType": "Video"
+    },
+    {
+      "rank": 10,
+      "name": "docC&d_DrChrisV3",
+      "id": "120236020173490698",
+      "type": "UGC",
+      "spend": 34.28,
+      "purchases": 1,
+      "cpa": 34.28,
+      "impressions": 934,
+      "adUrl": "https://www.facebook.com/ads/library/?id=1253554296123664",
+      "creativeType": "Video",
+      "trophy": true,
+      "note": "Health authority angle"
+    }
+  ],
   "competitors": {
     "tier1": [
       {
@@ -345,7 +333,7 @@
         "landingPage": "https://byltbasics.com/products/drop-cut-shirt-lux",
         "topAds": [
           {
-            "hook": "Drop-Cut LUX ✔️ checklist",
+            "hook": "Drop-Cut LUX \u2714\ufe0f checklist",
             "format": "Static",
             "angle": "Premium fabric tech",
             "link": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=bylt%20basics"
@@ -360,7 +348,7 @@
         "currentOffer": "20% off first order + Free shipping $99+",
         "guarantee": "30-Day",
         "whatsWorking": [
-          "✔️ Checklist format for features",
+          "\u2714\ufe0f Checklist format for features",
           "Review count prominence (100K+)",
           "Free gift at $175 threshold",
           "Premium at fair price positioning"
@@ -374,7 +362,7 @@
         "landingPage": "https://www.cutsclothing.com/products/black-crew-curve-hem",
         "topAds": [
           {
-            "hook": "AO Curve-Hem - PYCA Pro®",
+            "hook": "AO Curve-Hem - PYCA Pro\u00ae",
             "format": "Static",
             "angle": "Fabric tech",
             "link": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=cuts%20clothing"
@@ -391,8 +379,8 @@
         "whatsWorking": [
           "Aspirational lifestyle positioning",
           "Curve-hem fit as differentiator",
-          "⚠️ 62% POLYESTER - ATTACK OPPORTUNITY",
-          "⚠️ Only 20-day returns"
+          "\u26a0\ufe0f 62% POLYESTER - ATTACK OPPORTUNITY",
+          "\u26a0\ufe0f Only 20-day returns"
         ],
         "attackOpportunity": true
       },
@@ -435,7 +423,7 @@
         "flag": "HEAVY SPENDER",
         "topAds": [
           {
-            "hook": "Problem→Solution long-form",
+            "hook": "Problem\u2192Solution long-form",
             "format": "Video",
             "angle": "Natural fiber benefits",
             "link": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=hollow%20alpaca"
@@ -453,17 +441,17 @@
           "MASSIVE ad volume (4,100+ ads)",
           "Natural fiber positioning",
           "99-Day guarantee",
-          "USA-Knit 🇺🇸 angle"
+          "USA-Knit \ud83c\uddfa\ud83c\uddf8 angle"
         ]
       }
     ],
     "trendsIndustryWide": [
       "Heavy UGC + testimonial content across all competitors",
       "15-30% flat discount for first order is standard",
-      "✔️ Checklist format performing well (BYLT, NADS, Hollow)",
+      "\u2714\ufe0f Checklist format performing well (BYLT, NADS, Hollow)",
       "Strong risk reversal (90-99 day guarantees)",
       "Expert/doctor endorsements (AG1, NADS)",
-      "Chemical/toxin callout lists (❌ bad ✅ good)",
+      "Chemical/toxin callout lists (\u274c bad \u2705 good)",
       "Social proof numbers above fold (X million sold)"
     ],
     "whereToFocus": [
@@ -480,7 +468,7 @@
         "title": "Anti-Polyester Attack",
         "angle": "Health/Durability Hybrid",
         "creator": "Aaron or Dalton",
-        "script": "Look, I'm not gonna tell you what to wear. But I will show you what your shirt is actually made of.\n\n[holds up polyester shirt]\n\nThis... this is plastic. Like, actual plastic from fossil fuels. 62% polyester means 62% of this came from an oil refinery.\n\nI started thinking about this when my wife and I were trying to have a kid. Started looking into all the stuff touching my body 16 hours a day.\n\nTurns out there's studies — real studies, not internet stuff — showing microplastics in places they really shouldn't be.\n\n[cut to demonstration]\n\nThis is what hemp can take. Watch.\n\n[flame test or knife test]\n\nStill here. Because plants don't melt.\n\nI'm not saying throw away everything you own. I'm just saying... maybe think about what's against your skin all day.\n\nLink's in bio if you wanna see what we're doing different.",
+        "script": "Look, I'm not gonna tell you what to wear. But I will show you what your shirt is actually made of.\n\n[holds up polyester shirt]\n\nThis... this is plastic. Like, actual plastic from fossil fuels. 62% polyester means 62% of this came from an oil refinery.\n\nI started thinking about this when my wife and I were trying to have a kid. Started looking into all the stuff touching my body 16 hours a day.\n\nTurns out there's studies \u2014 real studies, not internet stuff \u2014 showing microplastics in places they really shouldn't be.\n\n[cut to demonstration]\n\nThis is what hemp can take. Watch.\n\n[flame test or knife test]\n\nStill here. Because plants don't melt.\n\nI'm not saying throw away everything you own. I'm just saying... maybe think about what's against your skin all day.\n\nLink's in bio if you wanna see what we're doing different.",
         "hooks": [
           "Your shirt is 62% plastic. Here's what that means.",
           "I stopped wearing polyester when my wife and I couldn't get pregnant.",
@@ -510,13 +498,13 @@
           "I wore this for 72 hours straight. Here's what happened.",
           "The reason you sweat through your shirt isn't you."
         ],
-        "notes": "Casual, relatable. Don't oversell — let the benefit be discovered."
+        "notes": "Casual, relatable. Don't oversell \u2014 let the benefit be discovered."
       },
       {
         "title": "Health Focus",
         "angle": "Microplastics Research",
         "creator": "Dr. Chris or Dalton",
-        "script": "Alright so I need to tell you about something that's been bothering me.\n\nThere's a study from 2024 — Zhang et al, if you wanna look it up — that found microplastics in human testes.\n\nNot in rats. In humans.\n\nAnd a separate study found them in semen.\n\nNow I'm not saying your polyester shirt is the only source. Microplastics are everywhere — water, air, food.\n\nBut polyester fabric sheds thousands of these particles every time you wear it. Every time you wash it.\n\nAnd that fabric is against your skin. Absorbing into your body. All day.\n\nI switched to hemp and bamboo about a year ago. Zero plastic, zero PFAS, zero microplastics.\n\nI can't undo what's already happened. But I can control what I put on my body going forward.\n\nResearchers are still figuring out what this all means. I just decided I didn't want to wait to find out.",
+        "script": "Alright so I need to tell you about something that's been bothering me.\n\nThere's a study from 2024 \u2014 Zhang et al, if you wanna look it up \u2014 that found microplastics in human testes.\n\nNot in rats. In humans.\n\nAnd a separate study found them in semen.\n\nNow I'm not saying your polyester shirt is the only source. Microplastics are everywhere \u2014 water, air, food.\n\nBut polyester fabric sheds thousands of these particles every time you wear it. Every time you wash it.\n\nAnd that fabric is against your skin. Absorbing into your body. All day.\n\nI switched to hemp and bamboo about a year ago. Zero plastic, zero PFAS, zero microplastics.\n\nI can't undo what's already happened. But I can control what I put on my body going forward.\n\nResearchers are still figuring out what this all means. I just decided I didn't want to wait to find out.",
         "hooks": [
           "They found microplastics in human reproductive organs. Here's what I did.",
           "The clothing industry doesn't want you to know this.",
@@ -566,7 +554,7 @@
           "We scrapped everything.",
           "Started over.",
           "$300k and 2 years later...",
-          "DuraFlow™ was born.",
+          "DuraFlow\u2122 was born.",
           "0% polyester. 0% plastic. 0% PFAS.",
           "Because some things matter more than profit."
         ],
@@ -685,14 +673,14 @@
         "format": "4:5",
         "imageConept": "Split image: Left side shows molecular structure of plastic/polyester, right side shows hemp plant",
         "textOverlay": "Their shirt: 62% fossil fuel. Ours: 100% plants.",
-        "cta": "Shop Toxin-Free →"
+        "cta": "Shop Toxin-Free \u2192"
       },
       {
         "id": 2,
         "angle": "Microplastics Study",
         "format": "4:5",
         "imageConept": "Scientific journal style with highlighted text from real study",
-        "textOverlay": "\"Microplastics detected in human testes\" — Zhang et al, 2024\n\n0% polyester. 0% plastic. 0% regrets.",
+        "textOverlay": "\"Microplastics detected in human testes\" \u2014 Zhang et al, 2024\n\n0% polyester. 0% plastic. 0% regrets.",
         "cta": "Made for men who care"
       },
       {
@@ -708,7 +696,7 @@
         "angle": "Checklist Format",
         "format": "4:5",
         "imageConept": "Clean checklist design on dark background",
-        "textOverlay": "✅ 0% Polyester\n✅ 0% Microplastics\n✅ 0% PFAS\n✅ Hemp + Bamboo\n✅ Lifetime Guarantee\n❌ Plastic\n❌ Chemicals\n❌ Fast Fashion",
+        "textOverlay": "\u2705 0% Polyester\n\u2705 0% Microplastics\n\u2705 0% PFAS\n\u2705 Hemp + Bamboo\n\u2705 Lifetime Guarantee\n\u274c Plastic\n\u274c Chemicals\n\u274c Fast Fashion",
         "cta": "Shop Now"
       },
       {
@@ -716,7 +704,7 @@
         "angle": "Price Comparison",
         "format": "4:5",
         "imageConept": "Math equation style visual",
-        "textOverlay": "5 cheap shirts/year × $20 = $100/year\n× 10 years = $1,000\n\nOR\n\n3 UndrDog tees × $40 = $120\nForever.",
+        "textOverlay": "5 cheap shirts/year \u00d7 $20 = $100/year\n\u00d7 10 years = $1,000\n\nOR\n\n3 UndrDog tees \u00d7 $40 = $120\nForever.",
         "cta": "Do the math"
       },
       {
@@ -724,7 +712,7 @@
         "angle": "X-Ray Fit",
         "format": "4:5",
         "imageConept": "X-ray style showing how shirt hugs arms, hides midsection",
-        "textOverlay": "Arms: Hugged.\nChest: Defined.\nGut: Hidden.\n\nThe Alpha Frame Fit™",
+        "textOverlay": "Arms: Hugged.\nChest: Defined.\nGut: Hidden.\n\nThe Alpha Frame Fit\u2122",
         "cta": "See the difference"
       },
       {
@@ -732,7 +720,7 @@
         "angle": "Testimonial",
         "format": "4:5",
         "imageConept": "Real customer photo with quote bubble",
-        "textOverlay": "\"I threw away 30 shirts and bought 6 of these. Best decision I ever made.\"\n\n— Real Customer",
+        "textOverlay": "\"I threw away 30 shirts and bought 6 of these. Best decision I ever made.\"\n\n\u2014 Real Customer",
         "cta": "Join 50,000+ men"
       },
       {
@@ -748,7 +736,7 @@
         "angle": "Demo Result",
         "format": "4:5",
         "imageConept": "Shirt with visible burn mark that didn't go through",
-        "textOverlay": "Flamethrower: 0\nHemp: 1\n\n4× stronger than cotton.",
+        "textOverlay": "Flamethrower: 0\nHemp: 1\n\n4\u00d7 stronger than cotton.",
         "cta": "See the test"
       },
       {
@@ -765,14 +753,14 @@
         "format": "4:5",
         "imageConept": "Pie chart style showing fabric percentages",
         "textOverlay": "51% Hemp (Strength)\n31% Bamboo (Airflow)\n18% Organic Cotton (Softness)\n\n0% Plastic. 0% Excuses.",
-        "cta": "Patent-pending DuraFlow™"
+        "cta": "Patent-pending DuraFlow\u2122"
       },
       {
         "id": 12,
         "angle": "Social Proof",
         "format": "4:5",
         "imageConept": "Review count / rating visual",
-        "textOverlay": "⭐⭐⭐⭐⭐\n50,000+ men have switched.\n\n\"I'll never go back to polyester.\"\n\"Best shirt I've ever owned.\"\n\"Worth every penny.\"",
+        "textOverlay": "\u2b50\u2b50\u2b50\u2b50\u2b50\n50,000+ men have switched.\n\n\"I'll never go back to polyester.\"\n\"Best shirt I've ever owned.\"\n\"Worth every penny.\"",
         "cta": "Read the reviews"
       },
       {
@@ -812,7 +800,7 @@
         "angle": "Value Stack",
         "format": "4:5",
         "imageConept": "Stacked value props with checkmarks",
-        "textOverlay": "Included:\n✅ Indestructible hemp blend\n✅ Zero-stink bamboo\n✅ Lifetime guarantee\n✅ Free replacements forever\n✅ Certificate of authenticity\n\nNot included:\n❌ Plastic\n❌ Chemicals\n❌ Regret",
+        "textOverlay": "Included:\n\u2705 Indestructible hemp blend\n\u2705 Zero-stink bamboo\n\u2705 Lifetime guarantee\n\u2705 Free replacements forever\n\u2705 Certificate of authenticity\n\nNot included:\n\u274c Plastic\n\u274c Chemicals\n\u274c Regret",
         "cta": "Get yours"
       },
       {
@@ -820,7 +808,7 @@
         "angle": "Vs Competitor",
         "format": "4:5",
         "imageConept": "Side by side comparison chart",
-        "textOverlay": "Premium Tee Comparison:\n\nThem:\n• 62% Polyester\n• 20-day returns\n• $54\n\nUs:\n• 0% Polyester\n• LIFETIME guarantee\n• $40\n\nYour call.",
+        "textOverlay": "Premium Tee Comparison:\n\nThem:\n\u2022 62% Polyester\n\u2022 20-day returns\n\u2022 $54\n\nUs:\n\u2022 0% Polyester\n\u2022 LIFETIME guarantee\n\u2022 $40\n\nYour call.",
         "cta": "Choose wisely"
       },
       {
@@ -829,7 +817,7 @@
         "format": "1:1",
         "imageConept": "Just the product, beautifully lit",
         "textOverlay": "51% Hemp. 31% Bamboo. 18% Organic Cotton.\n\nNothing else.",
-        "cta": "DuraFlow™"
+        "cta": "DuraFlow\u2122"
       },
       {
         "id": 20,
@@ -842,29 +830,58 @@
     ],
     "scriptStructures": [
       {
-        "name": "Problem → Agitate → Solve",
-        "structure": ["Hook: State the problem", "Agitate: Make it worse", "Solution: Introduce product", "Proof: Demo or data", "CTA: Offer"],
-        "example": "Your shirt is made of plastic → That plastic sheds microplastics → UndrDog is 0% polyester → [demo] → Lifetime guarantee"
+        "name": "Problem \u2192 Agitate \u2192 Solve",
+        "structure": [
+          "Hook: State the problem",
+          "Agitate: Make it worse",
+          "Solution: Introduce product",
+          "Proof: Demo or data",
+          "CTA: Offer"
+        ],
+        "example": "Your shirt is made of plastic \u2192 That plastic sheds microplastics \u2192 UndrDog is 0% polyester \u2192 [demo] \u2192 Lifetime guarantee"
       },
       {
         "name": "I Was Skeptical Until...",
-        "structure": ["Skepticism hook", "What changed my mind", "Results I got", "Why you should try"],
-        "example": "I thought $40 for a t-shirt was insane → Then I learned about microplastics → 6 months later, still perfect"
+        "structure": [
+          "Skepticism hook",
+          "What changed my mind",
+          "Results I got",
+          "Why you should try"
+        ],
+        "example": "I thought $40 for a t-shirt was insane \u2192 Then I learned about microplastics \u2192 6 months later, still perfect"
       },
       {
         "name": "3 Reasons Why",
-        "structure": ["Hook: 3 reasons statement", "Reason 1 (most important)", "Reason 2", "Reason 3 (the twist)", "CTA"],
-        "example": "3 reasons I threw away all my polyester → 1. Microplastics → 2. They stink → 3. Hemp is indestructible"
+        "structure": [
+          "Hook: 3 reasons statement",
+          "Reason 1 (most important)",
+          "Reason 2",
+          "Reason 3 (the twist)",
+          "CTA"
+        ],
+        "example": "3 reasons I threw away all my polyester \u2192 1. Microplastics \u2192 2. They stink \u2192 3. Hemp is indestructible"
       },
       {
         "name": "Nobody Talks About This",
-        "structure": ["Controversy hook", "The hidden truth", "Evidence", "Solution", "CTA"],
-        "example": "Nobody talks about plastic in clothes → 60% is polyester → Studies found microplastics in blood → UndrDog: 0% polyester"
+        "structure": [
+          "Controversy hook",
+          "The hidden truth",
+          "Evidence",
+          "Solution",
+          "CTA"
+        ],
+        "example": "Nobody talks about plastic in clothes \u2192 60% is polyester \u2192 Studies found microplastics in blood \u2192 UndrDog: 0% polyester"
       },
       {
         "name": "Watch What Happens",
-        "structure": ["Demo setup", "The test", "Surprising result", "What this means", "CTA"],
-        "example": "Hitting this shirt with a blowtorch → [demo] → Still intact → This is hemp"
+        "structure": [
+          "Demo setup",
+          "The test",
+          "Surprising result",
+          "What this means",
+          "CTA"
+        ],
+        "example": "Hitting this shirt with a blowtorch \u2192 [demo] \u2192 Still intact \u2192 This is hemp"
       }
     ]
   },
@@ -874,15 +891,26 @@
       "tagline": "World's toughest, most breathable, toxin-free tee",
       "mission": "Nature's revenge on microplastics",
       "fabric": {
-        "name": "DuraFlow™ (Patent-Pending)",
-        "blend": "51% Hemp • 31% Bamboo • 18% Organic Cotton",
-        "benefits": ["Doesn't rip", "Doesn't stink", "Doesn't stretch", "Doesn't shrink", "Doesn't trap heat"]
+        "name": "DuraFlow\u2122 (Patent-Pending)",
+        "blend": "51% Hemp \u2022 31% Bamboo \u2022 18% Organic Cotton",
+        "benefits": [
+          "Doesn't rip",
+          "Doesn't stink",
+          "Doesn't stretch",
+          "Doesn't shrink",
+          "Doesn't trap heat"
+        ]
       },
       "fit": {
         "name": "Alpha Frame Fit",
-        "features": ["Hugs arms/chest", "Hides gut & man-boobs", "Curved hem = taller look", "Midweight holds shape"]
+        "features": [
+          "Hugs arms/chest",
+          "Hides gut & man-boobs",
+          "Curved hem = taller look",
+          "Midweight holds shape"
+        ]
       },
-      "guarantee": "Lifetime Guarantee — Replace for FREE"
+      "guarantee": "Lifetime Guarantee \u2014 Replace for FREE"
     },
     "coreDemos": [
       {
@@ -941,16 +969,27 @@
       }
     ],
     "voice": {
-      "tone": ["Masculine", "Punchy", "Direct", "No fluff", "Short sentences"],
-      "donts": ["Corporate tone", "Cringe humor", "Preaching", "Health claims without citations"]
+      "tone": [
+        "Masculine",
+        "Punchy",
+        "Direct",
+        "No fluff",
+        "Short sentences"
+      ],
+      "donts": [
+        "Corporate tone",
+        "Cringe humor",
+        "Preaching",
+        "Health claims without citations"
+      ]
     },
     "legal": {
       "rules": [
         "Do NOT mention competitor brand names in ads",
-        "No health claims outside approved list — use 'researchers found' language",
-        "Must use 'Patent-pending DuraFlow™' NOT 'Patented'",
-        "Never be the expert — share what studies say, cite sources",
-        "Microplastics come from many sources — polyester adds to exposure, isn't the only source"
+        "No health claims outside approved list \u2014 use 'researchers found' language",
+        "Must use 'Patent-pending DuraFlow\u2122' NOT 'Patented'",
+        "Never be the expert \u2014 share what studies say, cite sources",
+        "Microplastics come from many sources \u2014 polyester adds to exposure, isn't the only source"
       ]
     }
   },
@@ -961,7 +1000,15 @@
         "name": "Aaron UGC",
         "specialty": "Destructive demos",
         "link": "https://drive.google.com/drive/folders/[Aaron UGC]",
-        "subfolders": ["Flamethrower", "Gas Can Dump", "Match Test", "Bow Test", "Fog Test", "Pool Test", "BB Gun"]
+        "subfolders": [
+          "Flamethrower",
+          "Gas Can Dump",
+          "Match Test",
+          "Bow Test",
+          "Fog Test",
+          "Pool Test",
+          "BB Gun"
+        ]
       },
       {
         "name": "Dr. Chris Raws",
@@ -1093,8 +1140,12 @@
         "type": "Agency",
         "spend7d": 3421.82,
         "purchases7d": 94,
-        "cpa7d": 36.40,
-        "winningAds": ["STAT3_4-5", "RSUGC4_CB_Ke", "STAT3"],
+        "cpa7d": 36.4,
+        "winningAds": [
+          "STAT3_4-5",
+          "RSUGC4_CB_Ke",
+          "STAT3"
+        ],
         "bestFormat": "Static images",
         "notes": "Workhorse. Static format crushing."
       },
@@ -1104,7 +1155,9 @@
         "spend7d": 604.13,
         "purchases7d": 11,
         "cpa7d": 54.92,
-        "winningAds": ["XRAY_TAILOREDFIT"],
+        "winningAds": [
+          "XRAY_TAILOREDFIT"
+        ],
         "bestFormat": "AI statics, X-Ray",
         "notes": "New X-Ray format has potential."
       },
@@ -1114,7 +1167,9 @@
         "spend7d": 46.88,
         "purchases7d": 1,
         "cpa7d": 46.88,
-        "winningAds": ["DrChrisV3"],
+        "winningAds": [
+          "DrChrisV3"
+        ],
         "bestFormat": "Health authority UGC",
         "notes": "Need more volume! Best historical CPA."
       },
@@ -1124,7 +1179,9 @@
         "spend7d": 114.62,
         "purchases7d": 4,
         "cpa7d": 28.66,
-        "winningAds": ["BretStatics_OG.V4"],
+        "winningAds": [
+          "BretStatics_OG.V4"
+        ],
         "bestFormat": "Statics",
         "notes": "Solid performer."
       },
@@ -1134,7 +1191,9 @@
         "spend7d": 42.43,
         "purchases7d": 0,
         "cpa7d": null,
-        "winningAds": ["SweatTest (historical)"],
+        "winningAds": [
+          "SweatTest (historical)"
+        ],
         "bestFormat": "Destructive demos",
         "notes": "SweatTest still converting after 11 months. Need new demos."
       }
@@ -1156,7 +1215,7 @@
     {
       "month": "April 2026",
       "name": "Boxer Briefs",
-      "description": "Hemp underwear launch — NADS collision course",
+      "description": "Hemp underwear launch \u2014 NADS collision course",
       "status": "Development"
     },
     {
@@ -1174,7 +1233,7 @@
   ],
   "pastDrops": [
     "Blue Steel",
-    "White Yeti", 
+    "White Yeti",
     "Daddy Claus (Christmas red + dark green)",
     "Agent Gold (brownish)"
   ]
