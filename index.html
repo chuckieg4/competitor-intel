@@ -468,6 +468,7 @@
         <nav>
             <ul class="tabs">
                 <li><button class="tab-btn active" data-tab="performance"><span class="tab-emoji">📊</span> Performance</button></li>
+                <li><button class="tab-btn" data-tab="whatsworking"><span class="tab-emoji">🔥</span> What's Working</button></li>
                 <li><button class="tab-btn" data-tab="competitors"><span class="tab-emoji">🎯</span> Competitor Intel</button></li>
                 <li><button class="tab-btn" data-tab="briefs"><span class="tab-emoji">📝</span> Creative Briefs</button></li>
                 <li><button class="tab-btn" data-tab="brand"><span class="tab-emoji">📖</span> Brand Bible</button></li>
@@ -517,6 +518,25 @@
                             </div>
                             <div id="formatBreakdown"></div>
                         </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- TAB: WHAT'S WORKING -->
+            <section id="whatsworking" class="panel">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3 class="card-title">🔥 Top 5 Performers — Last 7 Days</h3>
+                        <span class="badge badge-green" id="whatsworking-sync">Loading...</span>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 13px; margin-bottom: 16px;">
+                        Minimum $50 spend • Sorted by CPA • Auto-syncs daily at 9 AM EST
+                    </p>
+                </div>
+                
+                <div id="whatsworking-grid" class="grid-3" style="gap: 20px;">
+                    <div class="card" style="padding: 40px; text-align: center; grid-column: span 3;">
+                        <p style="color: var(--text-muted);">Loading top creatives...</p>
                     </div>
                 </div>
             </section>
@@ -665,6 +685,7 @@
         function render() {
             document.getElementById('dataRange').textContent = data.meta.dateRange;
             renderPerformance();
+            renderWhatsWorking();
             renderCompetitors();
             renderBriefs();
             renderBrandBible();
@@ -672,6 +693,70 @@
             renderHealthClaims();
             renderCreators();
             renderCalendar();
+        }
+        
+        async function renderWhatsWorking() {
+            try {
+                const res = await fetch('https://raw.githubusercontent.com/chuckieg4/jerry-status/main/status.json?v=' + Date.now());
+                const statusData = await res.json();
+                
+                const ww = statusData.whatsWorking;
+                if (!ww || !ww.topCreatives) {
+                    document.getElementById('whatsworking-grid').innerHTML = '<div class="card" style="grid-column: span 3; text-align: center; padding: 40px;"><p>No creative data available yet</p></div>';
+                    return;
+                }
+                
+                // Update sync badge
+                const syncDate = new Date(ww.lastSync);
+                document.getElementById('whatsworking-sync').textContent = 'Updated ' + syncDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
+                
+                // Render creative cards
+                let html = '';
+                ww.topCreatives.forEach((c, i) => {
+                    const rank = i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : `#${i+1}`;
+                    const typeIcon = c.type === 'video' ? '🎬' : '🖼️';
+                    const cpaClass = c.cpa < 15 ? 'accent-green' : c.cpa < 25 ? 'accent-yellow' : 'accent-orange';
+                    const roasClass = c.roas > 5 ? 'accent-green' : c.roas > 3 ? 'accent-yellow' : 'accent-orange';
+                    
+                    html += `
+                        <div class="card" style="position: relative;">
+                            <div style="position: absolute; top: 12px; right: 12px; font-size: 24px;">${rank}</div>
+                            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px;">
+                                <span style="font-size: 20px;">${typeIcon}</span>
+                                <span style="font-size: 11px; color: var(--text-muted); text-transform: uppercase;">${c.type}</span>
+                            </div>
+                            <h4 style="font-size: 14px; font-weight: 600; margin-bottom: 4px; padding-right: 40px; line-height: 1.4;">${c.name || 'Unnamed Creative'}</h4>
+                            <p style="font-size: 11px; color: var(--text-muted); margin-bottom: 16px; word-break: break-all;">${c.fullName ? c.fullName.slice(0, 60) + '...' : ''}</p>
+                            
+                            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 12px;">
+                                <div style="background: var(--bg-secondary); border-radius: 8px; padding: 10px; text-align: center;">
+                                    <div style="font-size: 18px; font-weight: 700; color: var(--${cpaClass});">$${c.cpa?.toFixed(2) || '—'}</div>
+                                    <div style="font-size: 10px; color: var(--text-muted); text-transform: uppercase;">CPA</div>
+                                </div>
+                                <div style="background: var(--bg-secondary); border-radius: 8px; padding: 10px; text-align: center;">
+                                    <div style="font-size: 18px; font-weight: 700; color: var(--${roasClass});">${c.roas?.toFixed(1) || '—'}x</div>
+                                    <div style="font-size: 10px; color: var(--text-muted); text-transform: uppercase;">ROAS</div>
+                                </div>
+                                <div style="background: var(--bg-secondary); border-radius: 8px; padding: 10px; text-align: center;">
+                                    <div style="font-size: 18px; font-weight: 700;">${c.purchases || '—'}</div>
+                                    <div style="font-size: 10px; color: var(--text-muted); text-transform: uppercase;">Sales</div>
+                                </div>
+                            </div>
+                            
+                            <div style="display: flex; gap: 12px; font-size: 12px; color: var(--text-secondary);">
+                                <span>💰 $${c.spend?.toFixed(0) || '—'}</span>
+                                <span>👁️ ${c.impressions ? (c.impressions/1000).toFixed(1) + 'K' : '—'}</span>
+                                <span>📊 ${c.ctr?.toFixed(2) || '—'}%</span>
+                            </div>
+                        </div>
+                    `;
+                });
+                
+                document.getElementById('whatsworking-grid').innerHTML = html;
+            } catch (err) {
+                console.error('Failed to load What\'s Working:', err);
+                document.getElementById('whatsworking-grid').innerHTML = '<div class="card" style="grid-column: span 3; text-align: center; padding: 40px;"><p style="color: var(--accent-red);">Failed to load creative data</p></div>';
+            }
         }
         
         const formatMoney = n => n >= 1000 ? `$${(n/1000).toFixed(1)}K` : `$${n.toFixed(2)}`;
