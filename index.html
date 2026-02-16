@@ -526,16 +526,16 @@
             <section id="whatsworking" class="panel">
                 <div class="card mb-4">
                     <div class="card-header">
-                        <h3 class="card-title">🔥 Top 5 Performers — Last 7 Days</h3>
+                        <h3 class="card-title">🔥 Top 4 Spenders — Last 7 Days</h3>
                         <span class="badge badge-green" id="whatsworking-sync">Loading...</span>
                     </div>
                     <p style="color: var(--text-secondary); font-size: 13px; margin-bottom: 16px;">
-                        Minimum $50 spend • Sorted by CPA • Auto-syncs daily at 9 AM EST
+                        Sorted by highest spend • Auto-syncs daily at 9 AM EST
                     </p>
                 </div>
                 
-                <div id="whatsworking-grid" class="grid-3" style="gap: 20px;">
-                    <div class="card" style="padding: 40px; text-align: center; grid-column: span 3;">
+                <div id="whatsworking-grid" class="grid-2" style="gap: 20px;">
+                    <div class="card" style="padding: 40px; text-align: center; grid-column: span 2;">
                         <p style="color: var(--text-muted);">Loading top creatives...</p>
                     </div>
                 </div>
@@ -710,43 +710,58 @@
                 const syncDate = new Date(ww.lastSync);
                 document.getElementById('whatsworking-sync').textContent = 'Updated ' + syncDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
                 
-                // Render creative cards
+                // Render creative cards (2 columns for larger images)
                 let html = '';
                 ww.topCreatives.forEach((c, i) => {
                     const rank = i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : `#${i+1}`;
                     const typeIcon = c.type === 'video' ? '🎬' : '🖼️';
-                    const cpaClass = c.cpa < 15 ? 'accent-green' : c.cpa < 25 ? 'accent-yellow' : 'accent-orange';
+                    const cpaClass = c.cpa < 25 ? 'accent-green' : c.cpa < 40 ? 'accent-yellow' : 'accent-orange';
                     const roasClass = c.roas > 5 ? 'accent-green' : c.roas > 3 ? 'accent-yellow' : 'accent-orange';
+                    const imageUrl = c.imageUrl || c.thumbnail || '';
+                    const videoUrl = c.videoUrl || '';
                     
                     html += `
-                        <div class="card" style="position: relative;">
-                            <div style="position: absolute; top: 12px; right: 12px; font-size: 24px;">${rank}</div>
-                            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px;">
-                                <span style="font-size: 20px;">${typeIcon}</span>
-                                <span style="font-size: 11px; color: var(--text-muted); text-transform: uppercase;">${c.type}</span>
-                            </div>
-                            <h4 style="font-size: 14px; font-weight: 600; margin-bottom: 4px; padding-right: 40px; line-height: 1.4;">${c.name || 'Unnamed Creative'}</h4>
-                            <p style="font-size: 11px; color: var(--text-muted); margin-bottom: 16px; word-break: break-all;">${c.fullName ? c.fullName.slice(0, 60) + '...' : ''}</p>
+                        <div class="card" style="position: relative; padding: 16px;">
+                            <div style="position: absolute; top: 12px; right: 12px; font-size: 28px; z-index: 10;">${rank}</div>
                             
-                            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 12px;">
-                                <div style="background: var(--bg-secondary); border-radius: 8px; padding: 10px; text-align: center;">
-                                    <div style="font-size: 18px; font-weight: 700; color: var(--${cpaClass});">$${c.cpa?.toFixed(2) || '—'}</div>
-                                    <div style="font-size: 10px; color: var(--text-muted); text-transform: uppercase;">CPA</div>
-                                </div>
-                                <div style="background: var(--bg-secondary); border-radius: 8px; padding: 10px; text-align: center;">
-                                    <div style="font-size: 18px; font-weight: 700; color: var(--${roasClass});">${c.roas?.toFixed(1) || '—'}x</div>
-                                    <div style="font-size: 10px; color: var(--text-muted); text-transform: uppercase;">ROAS</div>
-                                </div>
-                                <div style="background: var(--bg-secondary); border-radius: 8px; padding: 10px; text-align: center;">
-                                    <div style="font-size: 18px; font-weight: 700;">${c.purchases || '—'}</div>
-                                    <div style="font-size: 10px; color: var(--text-muted); text-transform: uppercase;">Sales</div>
+                            <!-- Creative Preview -->
+                            <div style="margin-bottom: 16px; border-radius: 12px; overflow: hidden; background: var(--bg-primary); aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center; position: relative;">
+                                ${videoUrl ? `
+                                    <video src="${videoUrl}" poster="${imageUrl}" controls style="width: 100%; height: 100%; object-fit: contain;"></video>
+                                ` : imageUrl ? `
+                                    <img src="${imageUrl}" alt="${c.name}" style="width: 100%; height: 100%; object-fit: contain;" loading="lazy" onerror="this.style.display='none'; this.parentElement.innerHTML='<span style=\\'color:var(--text-muted);\\'>Preview unavailable</span>';">
+                                ` : `
+                                    <span style="color: var(--text-muted);">No preview</span>
+                                `}
+                                <div style="position: absolute; top: 8px; left: 8px; background: rgba(0,0,0,0.7); padding: 4px 8px; border-radius: 4px; font-size: 11px;">
+                                    ${typeIcon} ${c.type.toUpperCase()}
                                 </div>
                             </div>
                             
-                            <div style="display: flex; gap: 12px; font-size: 12px; color: var(--text-secondary);">
-                                <span>💰 $${c.spend?.toFixed(0) || '—'}</span>
-                                <span>👁️ ${c.impressions ? (c.impressions/1000).toFixed(1) + 'K' : '—'}</span>
-                                <span>📊 ${c.ctr?.toFixed(2) || '—'}%</span>
+                            <h4 style="font-size: 13px; font-weight: 600; margin-bottom: 12px; line-height: 1.4;">${c.name || 'Unnamed Creative'}</h4>
+                            
+                            <!-- Stats Grid -->
+                            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin-bottom: 12px;">
+                                <div style="background: var(--bg-secondary); border-radius: 6px; padding: 8px 6px; text-align: center;">
+                                    <div style="font-size: 15px; font-weight: 700;">$${c.spend >= 1000 ? (c.spend/1000).toFixed(1) + 'K' : c.spend?.toFixed(0) || '—'}</div>
+                                    <div style="font-size: 9px; color: var(--text-muted); text-transform: uppercase;">Spend</div>
+                                </div>
+                                <div style="background: var(--bg-secondary); border-radius: 6px; padding: 8px 6px; text-align: center;">
+                                    <div style="font-size: 15px; font-weight: 700; color: var(--${cpaClass});">$${c.cpa?.toFixed(0) || '—'}</div>
+                                    <div style="font-size: 9px; color: var(--text-muted); text-transform: uppercase;">CPA</div>
+                                </div>
+                                <div style="background: var(--bg-secondary); border-radius: 6px; padding: 8px 6px; text-align: center;">
+                                    <div style="font-size: 15px; font-weight: 700; color: var(--${roasClass});">${c.roas?.toFixed(1) || '—'}x</div>
+                                    <div style="font-size: 9px; color: var(--text-muted); text-transform: uppercase;">ROAS</div>
+                                </div>
+                                <div style="background: var(--bg-secondary); border-radius: 6px; padding: 8px 6px; text-align: center;">
+                                    <div style="font-size: 15px; font-weight: 700;">${c.purchases || '—'}</div>
+                                    <div style="font-size: 9px; color: var(--text-muted); text-transform: uppercase;">Sales</div>
+                                </div>
+                            </div>
+                            
+                            <div style="font-size: 11px; color: var(--text-muted);">
+                                ${c.impressions ? (c.impressions/1000).toFixed(1) + 'K impressions' : ''} ${c.ctr ? '• ' + c.ctr.toFixed(2) + '% CTR' : ''}
                             </div>
                         </div>
                     `;
