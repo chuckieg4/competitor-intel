@@ -60,13 +60,43 @@
         .header-meta { text-align: right; font-size: 12px; color: var(--text-secondary); }
         .header-meta strong { color: var(--accent-green); }
         
-        /* Tab Navigation */
+        /* App Layout - Sidebar + Content */
+        .app-layout {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        
+        @media (min-width: 1024px) {
+            .app-layout {
+                flex-direction: row;
+                min-height: calc(100vh - 70px);
+            }
+        }
+        
+        /* Tab Navigation - Left Sidebar on Desktop */
         nav {
             background: var(--bg-secondary);
             border-bottom: 1px solid var(--border);
             padding: 0 24px;
             overflow-x: auto;
         }
+        
+        @media (min-width: 1024px) {
+            nav {
+                border-bottom: none;
+                border-right: 1px solid var(--border);
+                padding: 1.5rem 0.75rem;
+                overflow-x: visible;
+                overflow-y: auto;
+                position: sticky;
+                top: 70px;
+                height: calc(100vh - 70px);
+                min-width: 200px;
+                width: 200px;
+            }
+        }
+        
         .tabs {
             max-width: 1800px;
             margin: 0 auto;
@@ -74,6 +104,15 @@
             gap: 4px;
             list-style: none;
         }
+        
+        @media (min-width: 1024px) {
+            .tabs {
+                flex-direction: column;
+                gap: 0.25rem;
+                max-width: none;
+            }
+        }
+        
         .tab-btn {
             background: none;
             border: none;
@@ -89,6 +128,26 @@
             align-items: center;
             gap: 6px;
         }
+        
+        @media (min-width: 1024px) {
+            .tab-btn {
+                padding: 0.6rem 0.75rem;
+                border-bottom: none;
+                border-radius: 8px;
+                border: 1px solid transparent;
+                width: 100%;
+                justify-content: flex-start;
+            }
+            .tab-btn:hover { 
+                background: var(--bg-hover); 
+            }
+            .tab-btn.active { 
+                color: var(--accent-blue); 
+                background: rgba(99, 102, 241, 0.15);
+                border-color: var(--accent-blue);
+            }
+        }
+        
         .tab-btn:hover { color: var(--text-primary); background: var(--bg-hover); }
         .tab-btn.active { color: var(--accent-blue); border-bottom-color: var(--accent-blue); }
         .tab-emoji { font-size: 14px; }
@@ -100,6 +159,13 @@
             max-width: 1800px;
             margin: 0 auto;
             width: 100%;
+        }
+        
+        @media (min-width: 1024px) {
+            main {
+                max-width: none;
+                padding: 2rem;
+            }
         }
         
         .panel { display: none; }
@@ -465,6 +531,8 @@
             </div>
         </header>
         
+        <div class="app-layout">
+        
         <nav>
             <ul class="tabs">
                 <li><button class="tab-btn active" data-tab="performance"><span class="tab-emoji">📊</span> Performance</button></li>
@@ -667,7 +735,9 @@
                 <div id="pastDrops" class="flex flex-wrap gap-2"></div>
             </section>
         </main>
-    </div>
+        
+        </div><!-- end app-layout -->
+    </div><!-- end app -->
     
     <script>
         let data = null;
