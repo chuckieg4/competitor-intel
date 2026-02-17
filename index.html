@@ -718,7 +718,7 @@
                     const cpaClass = c.cpa < 25 ? 'accent-green' : c.cpa < 40 ? 'accent-yellow' : 'accent-orange';
                     const roasClass = c.roas > 5 ? 'accent-green' : c.roas > 3 ? 'accent-yellow' : 'accent-orange';
                     const imageUrl = c.imageUrl || c.thumbnail || '';
-                    const videoUrl = c.videoUrl || '';
+                    const previewUrl = c.previewUrl || '';
                     
                     html += `
                         <div class="card" style="position: relative; padding: 16px;">
@@ -726,9 +726,7 @@
                             
                             <!-- Creative Preview -->
                             <div style="margin-bottom: 16px; border-radius: 12px; overflow: hidden; background: var(--bg-primary); aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center; position: relative;">
-                                ${videoUrl ? `
-                                    <video src="${videoUrl}" poster="${imageUrl}" controls style="width: 100%; height: 100%; object-fit: contain;"></video>
-                                ` : imageUrl ? `
+                                ${imageUrl ? `
                                     <img src="${imageUrl}" alt="${c.name}" style="width: 100%; height: 100%; object-fit: contain;" loading="lazy" onerror="this.style.display='none'; this.parentElement.innerHTML='<span style=\\'color:var(--text-muted);\\'>Preview unavailable</span>';">
                                 ` : `
                                     <span style="color: var(--text-muted);">No preview</span>
@@ -736,6 +734,11 @@
                                 <div style="position: absolute; top: 8px; left: 8px; background: rgba(0,0,0,0.7); padding: 4px 8px; border-radius: 4px; font-size: 11px;">
                                     ${typeIcon} ${c.type.toUpperCase()}
                                 </div>
+                                ${c.type === 'video' && previewUrl ? `
+                                    <button onclick="openVideoPreview('${previewUrl}')" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(249,115,22,0.9); border: none; border-radius: 50%; width: 60px; height: 60px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 24px; color: white; box-shadow: 0 4px 20px rgba(0,0,0,0.4);">
+                                        ▶
+                                    </button>
+                                ` : ''}
                             </div>
                             
                             <h4 style="font-size: 13px; font-weight: 600; margin-bottom: 12px; line-height: 1.4;">${c.name || 'Unnamed Creative'}</h4>
@@ -792,6 +795,21 @@
             const orig = btn.textContent;
             btn.textContent = '✓ Copied!';
             setTimeout(() => btn.textContent = orig, 1500);
+        }
+        
+        function openVideoPreview(previewUrl) {
+            // Create modal overlay
+            const modal = document.createElement('div');
+            modal.id = 'video-modal';
+            modal.style.cssText = 'position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 9999; display: flex; align-items: center; justify-content: center; padding: 20px;';
+            modal.innerHTML = `
+                <div style="position: relative; width: 100%; max-width: 500px; max-height: 90vh;">
+                    <button onclick="document.getElementById('video-modal').remove()" style="position: absolute; top: -40px; right: 0; background: none; border: none; color: white; font-size: 32px; cursor: pointer; z-index: 10;">×</button>
+                    <iframe src="${previewUrl}" style="width: 100%; height: 80vh; border: none; border-radius: 12px; background: #000;"></iframe>
+                </div>
+            `;
+            modal.onclick = (e) => { if (e.target === modal) modal.remove(); };
+            document.body.appendChild(modal);
         }
         
         function renderPerformance() {
